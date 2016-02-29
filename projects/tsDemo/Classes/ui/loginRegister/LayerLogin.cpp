@@ -68,27 +68,15 @@ void LayerLogin::onNodeLoaded(cocos2d::CCNode * pNode,  cocos2d::extension::CCNo
 
 LayerLogin::LayerLogin()
 {
-    
+    //设置音乐
+    CData::getCData()->setyinyue("bg.mp3");
+    //连接服务器
+    SocketManager::getInstance()->startSocket();
 }
 
 LayerLogin::~LayerLogin()
 {
 
-}
-
-bool LayerLogin::init()
-{
-    if(!CCLayer::init())
-    {
-        return false;
-    }
-    
-    //设置音乐
-    CData::getCData()->setyinyue("bg.mp3");
-    //连接服务器
-    SocketManager::getInstance()->startSocket();
-    
-    return true;
 }
 
 void LayerLogin::onEnter()

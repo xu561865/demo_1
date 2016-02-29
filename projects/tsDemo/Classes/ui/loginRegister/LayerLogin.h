@@ -26,7 +26,7 @@ public:
     LayerLogin();
     virtual ~LayerLogin();
     CREATE_FUNC(LayerLogin);
-    virtual bool init();
+
     virtual void onEnter() override;
     virtual void onExit() override;
     static CCScene* scene();
