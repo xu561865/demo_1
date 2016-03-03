@@ -20,8 +20,8 @@ SocketManager* SocketManager::getInstance()
 
 void SocketManager::startSocket()
 {
-    _socket = new SocketClient("192.168.1.111",11009,1,1);
-    //_socket = new SocketClient("182.92.129.73",11009,1,1);
+//    _socket = new SocketClient("192.168.1.111",11009,1,1);
+    _socket = new SocketClient("182.92.129.73",3563,1,1);
     _socket->start();
 }
 
