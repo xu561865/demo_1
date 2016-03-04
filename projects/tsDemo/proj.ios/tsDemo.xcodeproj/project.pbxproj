@@ -601,7 +601,6 @@
 		F1D1DD721A9622290035FB59 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = F1D1DD6F1A9622290035FB59 /* Icon-76.png */; };
 		F1D1DD741A9622290035FB59 /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = F1D1DD711A9622290035FB59 /* Icon-152.png */; };
 		F1E3D2F91ACDEA4B006433CC /* ccbi in Resources */ = {isa = PBXBuildFile; fileRef = F1E3D2F81ACDEA4B006433CC /* ccbi */; };
-		F1E3D2FB1ACDED4D006433CC /* ccbResources in Resources */ = {isa = PBXBuildFile; fileRef = F1E3D2FA1ACDED4D006433CC /* ccbResources */; };
 		F1E80D231AE021F4002465AE /* AnimatePacker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1E80D1B1AE021F4002465AE /* AnimatePacker.cpp */; };
 		F1E80D251AE021F4002465AE /* skillList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1E80D1F1AE021F4002465AE /* skillList.cpp */; };
 		F1E80D261AE021F4002465AE /* TeXiao.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1E80D211AE021F4002465AE /* TeXiao.cpp */; };
@@ -1476,7 +1475,6 @@
 		F1D1DD6F1A9622290035FB59 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
 		F1D1DD711A9622290035FB59 /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-152.png"; sourceTree = "<group>"; };
 		F1E3D2F81ACDEA4B006433CC /* ccbi */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ccbi; sourceTree = "<group>"; };
-		F1E3D2FA1ACDED4D006433CC /* ccbResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ccbResources; sourceTree = "<group>"; };
 		F1E80D1B1AE021F4002465AE /* AnimatePacker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimatePacker.cpp; sourceTree = "<group>"; };
 		F1E80D1C1AE021F4002465AE /* AnimatePacker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatePacker.h; sourceTree = "<group>"; };
 		F1E80D1F1AE021F4002465AE /* skillList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = skillList.cpp; sourceTree = "<group>"; };
@@ -2038,7 +2036,6 @@
 			isa = PBXGroup;
 			children = (
 				F1A0DF921ADE944B002B4E5E /* map.png */,
-				F1E3D2FA1ACDED4D006433CC /* ccbResources */,
 				F1E3D2F81ACDEA4B006433CC /* ccbi */,
 				F143C86E1A98A5720063A833 /* Icon-76.png */,
 				F143C86F1A98A5720063A833 /* Icon-120.png */,
@@ -3284,7 +3281,6 @@
 				F143C85B1A980D300063A833 /* Icon-58.png in Resources */,
 				18FB0CF617C372E200D6A66F /* srzs.xml in Resources */,
 				18FB0CF717C372E200D6A66F /* srzstx.plist in Resources */,
-				F1E3D2FB1ACDED4D006433CC /* ccbResources in Resources */,
 				18FB0CF817C372E200D6A66F /* srzstx.png in Resources */,
 				18FB0CF917C372E200D6A66F /* starbg.png in Resources */,
 				18FB0CFA17C372E200D6A66F /* start_xr.png in Resources */,
