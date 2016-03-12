@@ -5,6 +5,7 @@
 #include "cocos2d.h"
 #include "message.h"
 #include "SocketClient.h"
+#include "Json.h"
 
 USING_NS_CC;
 
@@ -14,6 +15,8 @@ public:
     static SocketManager* getInstance();
     void startSocket();
     void sendMessage(const char* data,int commandId);
+    void sendMessage(Json::Value, int commandId);
+    void sendMessage(std::string);
     
 private:
     SocketManager();

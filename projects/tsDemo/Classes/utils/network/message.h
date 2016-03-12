@@ -3,6 +3,8 @@
 
 #include "Util.h"
 #include "cocos2d.h"
+#include "Json.h"
+
 USING_NS_CC;
 
 //连接失败
@@ -44,6 +46,16 @@ public:
     ~Message();
     
     int datalength();
+};
+
+class NewMessage
+{
+public:
+    void* data;
+    unsigned short length;
+    int datalength();
+//    int length;
+//    Json::Value value;
 };
 
 #endif

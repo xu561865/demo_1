@@ -52,6 +52,13 @@ SocketClient::~SocketClient()
         m_sendMessageQueue.pop();
         SAFE_DELETE_ELEMENT(m);
     }
+    
+    while (!m_sendNewMessageQueue.empty())
+    {
+        NewMessage* m = m_sendNewMessageQueue.front();
+        m_sendNewMessageQueue.pop();
+        SAFE_DELETE_ELEMENT(m);
+    }
 }
 
 void SocketClient::start()
@@ -102,6 +109,46 @@ byte* SocketClient::intToByte(int i)
     abyte0[0] = (byte) ((0xff000000 & i) >> 24);
     
     return abyte0;
+}
+
+NewMessage* SocketClient::constructMessage(std::string value)
+{
+    NewMessage *msg = new NewMessage;
+    
+    const char *pValue = value.c_str();
+    unsigned short valueLength = strlen(pValue);
+    msg->length = valueLength + 2;
+    msg->data = new char(msg->length);
+    
+    void *pLeng = static_cast<void*>(&valueLength);
+    memcpy(msg->data, static_cast<char*>(pLeng) + 1, sizeof(char));
+    memcpy(static_cast<char*>(msg->data) + 1, &valueLength, sizeof(char));
+    
+    memcpy(static_cast<char*>(msg->data) + 2, pValue, valueLength);
+    
+    CCLog("messge %s", pValue);
+    
+    return msg;
+}
+
+NewMessage* SocketClient::constructMessage(Json::Value value, int commandId)
+{
+    NewMessage *msg = new NewMessage;
+    
+    
+    void *pValue = static_cast<void*>(&value);
+    unsigned short valueLength = strlen(static_cast<char*>(pValue));
+    msg->length = valueLength + 2;
+    msg->data = new char(msg->length);
+    
+    void *pLeng = static_cast<void*>(&valueLength);
+    memcpy(msg->data, static_cast<char*>(pLeng) + 1, sizeof(char));
+    
+    memcpy(static_cast<char*>(msg->data) + 1, &valueLength, sizeof(char));
+    
+    memcpy(static_cast<char*>(msg->data) + 2, pValue, valueLength);
+    
+    return msg;
 }
 
 Message* SocketClient::constructMessage(const char* data,int commandId)
@@ -232,6 +279,26 @@ void SocketClient::sendMessage_(Message* msg,bool b)
 	}
 }
 
+void SocketClient::sendMessage_(NewMessage* msg,bool b)
+{
+    if(m_iState == SocketClient_DESTROY)
+    {
+        delete msg;
+        return;
+    }
+    
+    {
+        MyLock lock(&m_sendqueue_mutex);
+        m_sendNewMessageQueue.push(msg);
+    }
+    
+    if( m_iState == SocketClient_OK)
+    {
+        MyLock lock(&m_thread_cond_mutex);
+        pthread_cond_signal(&m_threadCond);
+    }
+}
+
 void* SocketClient::ThreadSendMessage(void *p)
 {
 	SocketClient* This = static_cast<SocketClient*>(p) ;
@@ -295,26 +362,30 @@ void* SocketClient::ThreadSendMessage(void *p)
                 sendBuff.compact();
             }
             
-            Message* msg = NULL;
-            while( This->m_iState != SocketClient_DESTROY && This->m_sendMessageQueue.size()> 0)
+//            Message* msg = NULL;
+            NewMessage* msg = NULL;
+            while( This->m_iState != SocketClient_DESTROY && This->m_sendNewMessageQueue.size()> 0)
             {
                 {
                     MyLock lock(&This->m_sendqueue_mutex);
-                    msg = This->m_sendMessageQueue.front();
-                    This->m_sendMessageQueue.pop();
+//                    msg = This->m_sendMessageQueue.front();
+//                    This->m_sendMessageQueue.pop();
+                    msg = This->m_sendNewMessageQueue.front();
+                    This->m_sendNewMessageQueue.pop();
                 }
                 
-                printf(" sendData length: %d  %ld" ,  msg->datalength(), sizeof(char));
-                if(msg->datalength() + sendBuff.getPosition() > sendBuff.getLimit())
-                {
-                    This->m_iState = SocketClient_DESTROY;
-                    printf("send buffer is full, send thread stop!");
-                    MyLock lock(&This->m_sendqueue_mutex);
-                    This->m_receivedMessageQueue.push(constructErrorMessage(TYPE_SELF_DEINE_MESSAGE_CANNOT_SEND_MESSAGE,0,"发送缓冲器已满，您的网络环境好像出现了问题！"));
-                    return ((void *)0);
-                }
-                sendBuff.put(msg->data,0,msg->datalength());
+//                printf(" sendData length: %d  %ld" ,  msg->datalength(), sizeof(char));
+//                if(msg->datalength() + sendBuff.getPosition() > sendBuff.getLimit())
+//                {
+//                    This->m_iState = SocketClient_DESTROY;
+//                    printf("send buffer is full, send thread stop!");
+//                    MyLock lock(&This->m_sendqueue_mutex);
+//                    This->m_receivedMessageQueue.push(constructErrorMessage(TYPE_SELF_DEINE_MESSAGE_CANNOT_SEND_MESSAGE,0,"发送缓冲器已满，您的网络环境好像出现了问题！"));
+//                    return ((void *)0);
+//                }
+                sendBuff.put(static_cast<char*>(msg->data), 0, msg->datalength());
                 sendBuff.flip();
+                
                 int ret = send(socket,(char *)sendBuff.getBuffer(),sendBuff.getLimit(),0);
                 if(ret == -1)
                 {
@@ -332,7 +403,8 @@ void* SocketClient::ThreadSendMessage(void *p)
             }
 		}
 		
-		if(This->m_iState != SocketClient_DESTROY && This->m_sendMessageQueue.size() == 0)
+//		if(This->m_iState != SocketClient_DESTROY && This->m_sendMessageQueue.size() == 0)
+        if(This->m_iState != SocketClient_DESTROY && This->m_sendNewMessageQueue.size() == 0)
         {
 			//sleep
 			struct timeval tv;
@@ -342,7 +414,8 @@ void* SocketClient::ThreadSendMessage(void *p)
 			ts.tv_nsec = 0;
 			
 			MyLock lock(&(This->m_thread_cond_mutex));
-			if(This->m_iState != SocketClient_DESTROY && This->m_sendMessageQueue.size() == 0)
+//			if(This->m_iState != SocketClient_DESTROY && This->m_sendMessageQueue.size() == 0)
+            if(This->m_iState != SocketClient_DESTROY && This->m_sendNewMessageQueue.size() == 0)
             {
 				pthread_cond_timedwait(&(This->m_threadCond),&(This->m_thread_cond_mutex),&ts);
 			}

@@ -68,15 +68,27 @@ void LayerLogin::onNodeLoaded(cocos2d::CCNode * pNode,  cocos2d::extension::CCNo
 
 LayerLogin::LayerLogin()
 {
-    //设置音乐
-    CData::getCData()->setyinyue("bg.mp3");
-    //连接服务器
-    SocketManager::getInstance()->startSocket();
+    
 }
 
 LayerLogin::~LayerLogin()
 {
 
+}
+
+bool LayerLogin::init()
+{
+    if(!CCLayer::init())
+    {
+        return false;
+    }
+    
+    //设置音乐
+    CData::getCData()->setyinyue("bg.mp3");
+    //连接服务器
+    SocketManager::getInstance()->startSocket();
+    
+    return true;
 }
 
 void LayerLogin::onEnter()
@@ -131,13 +143,28 @@ void LayerLogin::menuItemCallbackLogin(CCObject* pSender)
             load=Loading::create();
             addChild(load,9999);
             
+//            Json::Value person;
+//            Json::FastWriter writer;
+//            person["username"]=userName;
+//            person["password"]=password;
+//            std::string strPerson=writer.write(person);
+//            const char *pStr = strPerson.c_str();
+//            CCLog("pwd use %s", pStr);
+//
+//            SocketManager::getInstance()->sendMessage(strPerson.c_str(), 101);
+            
+            
             Json::Value person;
+            person["User"]=userName;
+            person["Passwd"]=password;
+            
+            Json::Value RegisterMsg;
+            RegisterMsg["RegisterMsg"] = person;
+            
             Json::FastWriter writer;
-            person["username"]=userName;
-            person["password"]=password;
-            std::string strPerson=writer.write(person);
-
-            SocketManager::getInstance()->sendMessage(strPerson.c_str(), 101);
+            std::string strRegisterMsg=writer.write(RegisterMsg);
+            
+            SocketManager::getInstance()->sendMessage(strRegisterMsg);
             this->schedule(schedule_selector(LayerLogin::receiveLoginData), 0.2);
         }
     }

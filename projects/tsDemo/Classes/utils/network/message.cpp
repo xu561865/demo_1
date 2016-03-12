@@ -19,3 +19,9 @@ int Message::datalength()
 {
     return SocketClient::bytesToInt(length)+13;
 }
+
+
+int NewMessage::datalength()
+{
+    return length;
+}
