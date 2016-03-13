@@ -427,7 +427,7 @@ void* SocketClient::ThreadSendMessage(void *p)
 
 bool g_bcheckReceivedMessage = true;
 
-void* SocketClient::ThreadReceiveMessage(void *p)
+void* SocketClient::ThreadReceiveMessageOld(void *p)
 {
 	fd_set fdRead;
 	
@@ -646,36 +646,281 @@ void* SocketClient::ThreadReceiveMessage(void *p)
 	return (void*)0;
 }
 
+void* SocketClient::ThreadReceiveMessage(void *p)
+{
+    fd_set fdRead;
+    
+    struct timeval	aTime;
+    aTime.tv_sec = 1;
+    aTime.tv_usec = 0;
+    
+    //最大多少秒，连接上收不到数据就提示用户，重新登录
+    int maxIdleTimeInSeconds = 60*3;
+    
+    //最大多少秒，连接上收不到数据就提示用户，选择重连
+    int hint2TimeInSeconds = 60;
+    
+    //多长时间没有收到任何数据，提示用户
+    int hintTimeInSeconds = 30;
+    
+    struct timeval lastHintUserTime;
+    struct timeval lastReceiveDataTime;
+    struct timeval now;
+    
+    gettimeofday(&lastReceiveDataTime, NULL);
+    lastHintUserTime = lastReceiveDataTime;
+    
+    SocketClient* This = static_cast<SocketClient*>(p) ;
+    
+    ByteBuffer* recvBuff = &This->m_cbRecvBuf;
+    
+    while (This->m_iState != SocketClient_DESTROY)
+    {
+        if(This->m_iState != SocketClient_OK)
+        {
+            usleep(1000);
+            continue;
+        }
+        FD_ZERO(&fdRead);
+        
+        FD_SET(This->m_hSocket,&fdRead);
+        
+        aTime.tv_sec = 1;
+        aTime.tv_usec = 0;
+        
+        int ret = select(This->m_hSocket+1,&fdRead,NULL,NULL,&aTime);
+        if (ret == -1 )
+        {
+            if(errno == EINTR)
+            {
+                printf("======   收到中断信号，什么都不处理＝＝＝＝＝＝＝＝＝");
+            }
+            else
+            {
+                This->m_iState = SocketClient_DESTROY;
+                MyLock lock(&This->m_sendqueue_mutex);
+                return ((void *)0);
+            }
+        }
+        else if(ret==0)
+        {
+            gettimeofday(&now, NULL);
+            if( g_bcheckReceivedMessage )
+            {
+                if(now.tv_sec - lastReceiveDataTime.tv_sec > maxIdleTimeInSeconds && now.tv_sec - lastHintUserTime.tv_sec > hintTimeInSeconds)
+                {
+                    lastHintUserTime = now;
+                    
+                    MyLock lock(&This->m_sendqueue_mutex);
+                    
+                    while( This->m_receivedNewMessageQueue.size()>0)
+                    {
+                        NewMessage* msg = This->m_receivedNewMessageQueue.front();
+                        This->m_receivedNewMessageQueue.pop();
+                        CCLog("删除消息");
+                        delete msg;
+                    }
+                }
+                else if(now.tv_sec - lastReceiveDataTime.tv_sec > hint2TimeInSeconds && now.tv_sec - lastHintUserTime.tv_sec > hintTimeInSeconds)
+                {
+                    lastHintUserTime = now;
+                    MyLock lock(&This->m_sendqueue_mutex);
+                }
+                else if(now.tv_sec - lastReceiveDataTime.tv_sec > hintTimeInSeconds && now.tv_sec - lastHintUserTime.tv_sec > hintTimeInSeconds)
+                {
+                    lastHintUserTime = now;
+                    MyLock lock(&This->m_sendqueue_mutex);
+                }
+            }
+            else
+            {
+                lastHintUserTime = now;
+                lastReceiveDataTime= now;
+            }
+        }
+        else if (ret > 0)
+        {
+            if (FD_ISSET(This->m_hSocket,&fdRead))
+            {
+                int iRetCode = 0;
+                printf(" recv data %d \n", recvBuff->remaining());
+                if(recvBuff->remaining() > 0)
+                {
+                    iRetCode = recv(This->m_hSocket,recvBuff->getBuffer()+recvBuff->getPosition(), recvBuff->remaining(),0);
+                }
+                
+                printf(" recv data later  %d   %d \n", recvBuff->remaining(), iRetCode);
+                if (iRetCode == -1)
+                {
+                    This->m_iState = SocketClient_DESTROY;
+                    MyLock lock(&This->m_sendqueue_mutex);
+                    
+                    while( This->m_receivedNewMessageQueue.size()>0)
+                    {
+                        NewMessage* msg = This->m_receivedNewMessageQueue.front();
+                        This->m_receivedNewMessageQueue.pop();
+                        CCLog("删除消息");
+                        delete msg;
+                    }
+                    
+                    string tmp("网络连接中断！");
+                    return ((void *)0);
+                }
+                else if(iRetCode == 0 && recvBuff->remaining() > 0)
+                {
+                    This->m_iState = SocketClient_DESTROY;
+                    MyLock lock(&This->m_sendqueue_mutex);
+                    while( This->m_receivedNewMessageQueue.size()>0)
+                    {
+                        NewMessage* msg = This->m_receivedNewMessageQueue.front();
+                        This->m_receivedNewMessageQueue.pop();
+                        CCLog("删除消息");
+                        delete msg;
+                    }
+                    
+                    return ((void *)0);
+                }
+                else
+                {
+                    gettimeofday(&lastReceiveDataTime, NULL);
+                    
+                    recvBuff->setPosition(recvBuff->getPosition()+ iRetCode);
+                    recvBuff->flip();
+                    
+                    unsigned short messageLength = 0;
+                    void *pLen = &messageLength;
+                    
+                    byte high = recvBuff->getByte();
+                    memcpy(static_cast<char*>(pLen) + 1, &high, sizeof(char));
+                    
+                    byte low = recvBuff->getByte();
+                    memcpy(pLen, &low, sizeof(char));
+                    
+                    CCLog("receive message %d", messageLength);
+
+                    char *pstrMessage = new char(messageLength);
+                    recvBuff->get(pstrMessage, 0, messageLength);
+                    
+                    CCLog("message--- %s", pstrMessage);
+                    
+                    Json::Reader read;
+                    Json::Value root;
+                    read.parse(pstrMessage, root);
+                    Json::Value data=root["ResRegMsg"];
+                    int ret = data["ResState"].asInt();   //0: 成功  1:server error   2:已注册
+                    CCLog("%d", ret);
+                    
+                    
+                    int tmpOffset = 17;
+                    while(recvBuff->remaining() > tmpOffset)
+                    {
+                        int pos = recvBuff->position;
+                        int length= recvBuff->getLength(9);
+                        
+                        if(recvBuff->remaining()+tmpOffset >= length)
+                        {
+                            NewMessage* message = new NewMessage();
+                            
+                            unsigned short messageLength = 0;
+                            void *pLen = &messageLength;
+                            
+                            byte low = recvBuff->getByte();
+                            memcpy(pLen, &low, sizeof(char));
+                            byte high = recvBuff->getByte();
+                            memcpy(static_cast<char*>(pLen) + 1, &high, sizeof(char));
+
+                            
+                            CCLog("receive message %d", messageLength);
+                            
+                            char* tmp = new char[length-3];
+                            recvBuff->get(tmp,0,length-4);
+                            tmp[length-4] = '\0';
+                            message->data = tmp;
+                            printf("%s",tmp);
+                            MyLock lock(&This->m_sendqueue_mutex);
+                            
+                            This->m_receivedNewMessageQueue.push(message);
+
+//                            CData::getCData()->m_dictionary->setObject(message,bytesToInt(message->commandId));
+                            
+                        }
+                        else if(length>recvBuff->getCapacity())
+                        {
+                            This->m_iState = SocketClient_DESTROY;
+                            
+                            MyLock lock(&This->m_sendqueue_mutex);
+                            
+                            while( This->m_receivedNewMessageQueue.size()>0)
+                            {
+                                NewMessage* msg = This->m_receivedNewMessageQueue.front();
+                                This->m_receivedNewMessageQueue.pop();
+                                CCLog("删除消息");
+                                delete msg;
+                            }
+                            
+                            This->m_receivedMessageQueue.push(constructErrorMessage(TYPE_SELF_DEINE_MESSAGE_CONNECT_TERMINATE,0,"数据包太大，连接中断！"));
+                            return ((void *)0);
+                        }
+                        else
+                        {
+                            recvBuff->position = pos;
+                            break;
+                        }
+                    }
+                    
+                    recvBuff->compact();
+                }
+                
+            }
+        }
+    }
+    
+    return (void*)0;
+}
+
 //获取服务器包
-Message* SocketClient::pickReceivedMessage()
+NewMessage* SocketClient::pickReceivedMessage()
 {
-	Message* msg = NULL;
+	NewMessage* msg = NULL;
 	MyLock lock(&m_sendqueue_mutex);
-	if( m_receivedMessageQueue.size()>0)
+//	if( m_receivedMessageQueue.size()>0)
+//    {
+//		msg = m_receivedMessageQueue.front();
+//	}
+    
+    if( m_receivedNewMessageQueue.size()>0)
     {
-		msg = m_receivedMessageQueue.front();
-	}
+        msg = m_receivedNewMessageQueue.front();
+    }
+
 	
 	return msg;
 }
 
-Message* SocketClient::popReceivedMessage()
+NewMessage* SocketClient::popReceivedMessage()
 {
-	Message* msg = NULL;
+	NewMessage* msg = NULL;
 	MyLock lock(&m_sendqueue_mutex);
-	if( m_receivedMessageQueue.size()>0)
+//	if( m_receivedMessageQueue.size()>0)
+//    {
+//		msg = m_receivedMessageQueue.front();
+//		m_receivedMessageQueue.pop();
+//	}
+    
+    if( m_receivedNewMessageQueue.size()>0)
     {
-		msg = m_receivedMessageQueue.front();
-		m_receivedMessageQueue.pop();
-	}
+        msg = m_receivedNewMessageQueue.front();
+        m_receivedNewMessageQueue.pop();
+    }
 	
 	return msg;
 }
 
-void SocketClient::pushReceivedMessage(Message* msg)
+void SocketClient::pushReceivedMessage(NewMessage* msg)
 {
 	MyLock lock(&m_sendqueue_mutex);
-	m_receivedMessageQueue.push(msg);
+//	m_receivedMessageQueue.push(msg);
+    m_receivedNewMessageQueue.push(msg);
 }
 
 long long SocketClient::getSeq()

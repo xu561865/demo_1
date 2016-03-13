@@ -46,7 +46,7 @@ public:
 	
 	//收到服务端消息
 	queue<Message*> m_receivedMessageQueue;
-    queue<Message*> m_receivedNewMessageQueue;
+    queue<NewMessage*> m_receivedNewMessageQueue;
 	
 	//需要发送到服务端的消息
 	queue<Message*> m_sendMessageQueue;
@@ -79,7 +79,8 @@ private:
 	//连接服务器
 	bool  connectServer();
 	
-	static void* ThreadReceiveMessage(void *p);
+	static void* ThreadReceiveMessageOld(void *p);
+    static void* ThreadReceiveMessage(void *p);
 	static void* ThreadSendMessage(void *p);
 	
 public:
@@ -94,10 +95,10 @@ public:
 	void sendMessage_(Message* msg,bool b);
     void sendMessage_(NewMessage* msg,bool b);
 	
-	Message* popReceivedMessage();
-	Message* pickReceivedMessage();
+	NewMessage* popReceivedMessage();
+	NewMessage* pickReceivedMessage();
 	
-	void pushReceivedMessage(Message* msg);
+	void pushReceivedMessage(NewMessage* msg);
 	
     Message* constructMessage(const char* data,int commandId);
     NewMessage* constructMessage(Json::Value value, int commandId);
