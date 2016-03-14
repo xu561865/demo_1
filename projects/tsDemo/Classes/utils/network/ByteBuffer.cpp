@@ -5,18 +5,24 @@
 
 ByteBuffer::ByteBuffer(int capacity)
 {
-
+    if(capacity <= 0)
+    {
+        
+    }
+    
 	buffer = new char[capacity];
+    
 	position = 0;
 	this->capacity = capacity;
 	this->limit = capacity;
 }
 
-ByteBuffer::ByteBuffer(char* data,int offset,int size)
+ByteBuffer::ByteBuffer(char* data, int offset, int size)
 {
 	buffer = new char[size];
+    memcpy(buffer, data + offset, size);
+    
 	position = 0;
-	memcpy(buffer,data+offset,size);
 	this->capacity = size;
 	this->limit = this->capacity;
 }

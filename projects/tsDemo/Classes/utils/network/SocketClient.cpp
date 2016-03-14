@@ -577,7 +577,7 @@ void* SocketClient::ThreadReceiveMessageOld(void *p)
 					int tmpOffset = 17;
 					while(recvBuff->remaining() > tmpOffset)
                     {
-						int pos = recvBuff->position;
+						int pos = recvBuff->getPosition();
 						int length= recvBuff->getLength(9);
 						
 						if(recvBuff->remaining()+tmpOffset >= length)
@@ -631,7 +631,7 @@ void* SocketClient::ThreadReceiveMessageOld(void *p)
 						}
                         else
                         {
-							recvBuff->position = pos;
+							recvBuff->setPosition(pos);
 							break;
 						}
 					}
@@ -814,7 +814,7 @@ void* SocketClient::ThreadReceiveMessage(void *p)
                     int tmpOffset = 17;
                     while(recvBuff->remaining() > tmpOffset)
                     {
-                        int pos = recvBuff->position;
+                        int pos = recvBuff->getPosition();
                         int length= recvBuff->getLength(9);
                         
                         if(recvBuff->remaining()+tmpOffset >= length)
@@ -863,7 +863,7 @@ void* SocketClient::ThreadReceiveMessage(void *p)
                         }
                         else
                         {
-                            recvBuff->position = pos;
+                            recvBuff->setPosition(pos);
                             break;
                         }
                     }

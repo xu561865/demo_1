@@ -7,7 +7,6 @@ int readIntFromBuffer(char* buffer,int position);
 
 class ByteBuffer
 {
-public:
 	char* buffer;
 	
 	int position;
