@@ -273,6 +273,7 @@ public:
     
     void addOwnerOutletName(std::string name);
     void addOwnerOutletNode(CCNode *node);
+    CCNode * preLoadNode(CCNodeLoader *loader);
 
 private:
     void cleanUpNodeGraph(CCNode *pNode);

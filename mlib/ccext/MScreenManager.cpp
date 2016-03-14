@@ -174,7 +174,7 @@ void MScreenManager::popup(cocos2d::CCNode *node,
     
     node->setPosition(position);
     
-    CCScene * runningScene = CCDirector::sharedDirector()->getCommingScene();
+    CCScene * runningScene = CCDirector::sharedDirector()->getRunningScene();
     
     MPopupContainer * bg = MPopupContainer::createContainer(node, isModal, bgColor);
     bg->isTemp = isTemp;

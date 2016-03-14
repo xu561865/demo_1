@@ -12,7 +12,7 @@
 
 #ifdef SDK_PP
 
-#import <PPAppPlatformKit/PPAppPlatformKit.h>
+//#import <PPAppPlatformKit/PPAppPlatformKit.h>
 
 MLIB_NS_BEGIN
 

@@ -8,6 +8,7 @@
 
 #include "MIAPTask.h"
 #include "MIAPAppStoreManager.h"
+#include "mlib.h"
 
 #ifdef SDK_91
 #else

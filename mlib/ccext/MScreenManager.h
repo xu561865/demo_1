@@ -23,6 +23,7 @@ using namespace cocos2d::extension;
 
 MLIB_NS_BEGIN
 
+
 class MScreenManager
 {
 public:

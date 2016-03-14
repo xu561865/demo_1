@@ -1066,4 +1066,63 @@ void CCBReader::setResolutionScale(float scale)
     __ccbResolutionScale = scale;
 }
 
+// modified by xujinyang(for cc)
+CCNode * CCBReader::preLoadNode(CCNodeLoader *loader)
+{
+    int curByte = mCurrentByte;
+    
+    CCNode *node = loader->loadCCNode(NULL, this);
+    
+    // Read animated properties
+    CCDictionary *seqs = CCDictionary::create();
+    mAnimatedProps = new set<string>();
+    
+    int numSequence = readInt(false);
+    for (int i = 0; i < numSequence; ++i)
+    {
+        int seqId = readInt(false);
+        CCDictionary *seqNodeProps = CCDictionary::create();
+        
+        int numProps = readInt(false);
+        
+        for (int j = 0; j < numProps; ++j)
+        {
+            CCBSequenceProperty *seqProp = new CCBSequenceProperty();
+            seqProp->autorelease();
+            
+            seqProp->setName(readCachedString().c_str());
+            seqProp->setType(readInt(false));
+            mAnimatedProps->insert(seqProp->getName());
+            
+            int numKeyframes = readInt(false);
+            
+            for (int k = 0; k < numKeyframes; ++k)
+            {
+                CCBKeyframe *keyframe = readKeyframe(seqProp->getType());
+                
+                seqProp->getKeyframes()->addObject(keyframe);
+            }
+            
+            seqNodeProps->setObject(seqProp, seqProp->getName());
+        }
+        
+        seqs->setObject(seqNodeProps, seqId);
+    }
+    
+    if (seqs->count() > 0)
+    {
+        mActionManager->addNode(node, seqs);
+    }
+    
+    // Read properties
+    loader->parseProperties(node, NULL, this);
+    
+    delete mAnimatedProps;
+    mAnimatedProps = NULL;
+    
+    mCurrentByte = curByte;
+    
+    return node;
+}
+
 NS_CC_EXT_END;

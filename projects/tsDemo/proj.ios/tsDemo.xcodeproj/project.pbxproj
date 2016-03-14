@@ -730,6 +730,67 @@
 		F1EAE2F51C96B8BE006FFF04 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE28B1C96B3AA006FFF04 /* libwebsockets.a */; };
 		F1EAE2F91C96B8D7006FFF04 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE2F81C96B8D7006FFF04 /* libwebsockets.a */; settings = {ASSET_TAGS = (); }; };
 		F1EAE2FB1C96BB7A006FFF04 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE2FA1C96BB7A006FFF04 /* libz.tbd */; };
+		F1EAE46C1C96BDDD006FFF04 /* mlib_thread.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE3E01C96BDDD006FFF04 /* mlib_thread.mm */; settings = {ASSET_TAGS = (); }; };
+		F1EAE46D1C96BDDD006FFF04 /* mlib_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE3E31C96BDDD006FFF04 /* mlib_buffer.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE46E1C96BDDD006FFF04 /* mlib_event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE3E51C96BDDD006FFF04 /* mlib_event.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE46F1C96BDDD006FFF04 /* mlib_exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE3E71C96BDDD006FFF04 /* mlib_exception.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4701C96BDDD006FFF04 /* mlib_http.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE3EA1C96BDDD006FFF04 /* mlib_http.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4711C96BDDD006FFF04 /* mlib_localize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE3EC1C96BDDD006FFF04 /* mlib_localize.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4721C96BDDD006FFF04 /* mlib_log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE3EE1C96BDDD006FFF04 /* mlib_log.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4731C96BDDD006FFF04 /* mlib_md5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE3F01C96BDDD006FFF04 /* mlib_md5.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4741C96BDDD006FFF04 /* mlib_shared_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE3F21C96BDDD006FFF04 /* mlib_shared_queue.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4751C96BDDD006FFF04 /* mlib_task.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE3F41C96BDDD006FFF04 /* mlib_task.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4761C96BDDD006FFF04 /* mlib_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE3F71C96BDDD006FFF04 /* mlib_utils.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4771C96BDDD006FFF04 /* mlib_version_number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE3F91C96BDDD006FFF04 /* mlib_version_number.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4811C96BDDD006FFF04 /* CCEditBoxLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4081C96BDDD006FFF04 /* CCEditBoxLoader.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4821C96BDDD006FFF04 /* CCProgressTimerLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE40A1C96BDDD006FFF04 /* CCProgressTimerLoader.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4831C96BDDD006FFF04 /* CCRemove.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE40C1C96BDDD006FFF04 /* CCRemove.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4851C96BDDD006FFF04 /* MAnalysisManagerIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4101C96BDDD006FFF04 /* MAnalysisManagerIOS.mm */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4861C96BDDD006FFF04 /* MAppTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4111C96BDDD006FFF04 /* MAppTracker.mm */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4871C96BDDD006FFF04 /* MFileUtilsIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4131C96BDDD006FFF04 /* MFileUtilsIOS.mm */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4881C96BDDD006FFF04 /* MIAP91StoreManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4151C96BDDD006FFF04 /* MIAP91StoreManager.mm */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4891C96BDDD006FFF04 /* MIAPAppStoreManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4171C96BDDD006FFF04 /* MIAPAppStoreManager.mm */; settings = {ASSET_TAGS = (); }; };
+		F1EAE48A1C96BDDD006FFF04 /* MIAPPPStoreManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4191C96BDDD006FFF04 /* MIAPPPStoreManager.mm */; settings = {ASSET_TAGS = (); }; };
+		F1EAE48B1C96BDDD006FFF04 /* MIAPTaskIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE41A1C96BDDD006FFF04 /* MIAPTaskIOS.mm */; settings = {ASSET_TAGS = (); }; };
+		F1EAE48C1C96BDDD006FFF04 /* MMediaPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE41B1C96BDDD006FFF04 /* MMediaPlayer.mm */; settings = {ASSET_TAGS = (); }; };
+		F1EAE48D1C96BDDD006FFF04 /* MRemoteNotificationManagerIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE41C1C96BDDD006FFF04 /* MRemoteNotificationManagerIOS.mm */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4901C96BDDD006FFF04 /* MTextViewImplIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4211C96BDDD006FFF04 /* MTextViewImplIOS.mm */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4911C96BDDD006FFF04 /* MUtilsIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4221C96BDDD006FFF04 /* MUtilsIOS.mm */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4921C96BDDD006FFF04 /* MWebViewImplIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4241C96BDDD006FFF04 /* MWebViewImplIOS.mm */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4931C96BDDD006FFF04 /* MAnalysisManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4251C96BDDD006FFF04 /* MAnalysisManager.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4941C96BDDD006FFF04 /* MAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4271C96BDDD006FFF04 /* MAnimation.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4951C96BDDD006FFF04 /* MAppManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4291C96BDDD006FFF04 /* MAppManager.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4961C96BDDD006FFF04 /* MBMFontButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE42C1C96BDDD006FFF04 /* MBMFontButton.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4971C96BDDD006FFF04 /* MButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE42E1C96BDDD006FFF04 /* MButton.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4981C96BDDD006FFF04 /* MCallbackAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4301C96BDDD006FFF04 /* MCallbackAction.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4991C96BDDD006FFF04 /* MControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4321C96BDDD006FFF04 /* MControl.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE49A1C96BDDD006FFF04 /* MDragDownView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4341C96BDDD006FFF04 /* MDragDownView.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE49B1C96BDDD006FFF04 /* MFileDownloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4361C96BDDD006FFF04 /* MFileDownloader.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE49C1C96BDDD006FFF04 /* MFileUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4381C96BDDD006FFF04 /* MFileUtils.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE49D1C96BDDD006FFF04 /* MFrameAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE43A1C96BDDD006FFF04 /* MFrameAnimation.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE49E1C96BDDD006FFF04 /* MGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE43C1C96BDDD006FFF04 /* MGrid.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE49F1C96BDDD006FFF04 /* MIAPShop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE43E1C96BDDD006FFF04 /* MIAPShop.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4A01C96BDDD006FFF04 /* MIAPTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4401C96BDDD006FFF04 /* MIAPTask.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4A11C96BDDD006FFF04 /* MIAPTransaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4421C96BDDD006FFF04 /* MIAPTransaction.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4A21C96BDDD006FFF04 /* MLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4441C96BDDD006FFF04 /* MLayer.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4A31C96BDDD006FFF04 /* MRemoteNotificationManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4491C96BDDD006FFF04 /* MRemoteNotificationManager.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4A41C96BDDD006FFF04 /* MRemoteSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE44B1C96BDDD006FFF04 /* MRemoteSprite.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4A51C96BDDD006FFF04 /* MRichLabelTTF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE44D1C96BDDD006FFF04 /* MRichLabelTTF.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4A61C96BDDD006FFF04 /* MScreenManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE44F1C96BDDD006FFF04 /* MScreenManager.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4A71C96BDDD006FFF04 /* MScrollView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4511C96BDDD006FFF04 /* MScrollView.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4A81C96BDDD006FFF04 /* MSpeedCheck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4531C96BDDD006FFF04 /* MSpeedCheck.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4A91C96BDDD006FFF04 /* MSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4551C96BDDD006FFF04 /* MSprite.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4AA1C96BDDD006FFF04 /* MSpriteLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4571C96BDDD006FFF04 /* MSpriteLoader.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4AB1C96BDDD006FFF04 /* MTabButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4591C96BDDD006FFF04 /* MTabButton.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4AE1C96BDDD006FFF04 /* MTextView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE45D1C96BDDD006FFF04 /* MTextView.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4AF1C96BDDD006FFF04 /* MTextViewLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4601C96BDDD006FFF04 /* MTextViewLoader.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4B01C96BDDD006FFF04 /* MUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4621C96BDDD006FFF04 /* MUtils.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4B11C96BDDD006FFF04 /* MWebView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4641C96BDDD006FFF04 /* MWebView.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4B21C96BDDD006FFF04 /* MWebViewImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4661C96BDDD006FFF04 /* MWebViewImpl.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4B61C96C293006FFF04 /* LAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EAE4B41C96C292006FFF04 /* LAudio.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EAE4B91C96DBCC006FFF04 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE4B81C96DBCC006FFF04 /* MediaPlayer.framework */; };
+		F1EAE4BB1C96DBFC006FFF04 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE4BA1C96DBFC006FFF04 /* StoreKit.framework */; };
+		F1EAE4BF1C96DD23006FFF04 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE4BE1C96DD23006FFF04 /* AdSupport.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1869,6 +1930,129 @@
 		F1EAE2ED1C96B3F5006FFF04 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		F1EAE2F81C96B8D7006FFF04 /* libwebsockets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebsockets.a; path = ../../../external/libwebsockets/lib/libwebsockets.a; sourceTree = "<group>"; };
 		F1EAE2FA1C96BB7A006FFF04 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F1EAE3E01C96BDDD006FFF04 /* mlib_thread.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = mlib_thread.mm; sourceTree = "<group>"; };
+		F1EAE3E11C96BDDD006FFF04 /* mlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib.h; sourceTree = "<group>"; };
+		F1EAE3E21C96BDDD006FFF04 /* mlib_assert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib_assert.h; sourceTree = "<group>"; };
+		F1EAE3E31C96BDDD006FFF04 /* mlib_buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mlib_buffer.cpp; sourceTree = "<group>"; };
+		F1EAE3E41C96BDDD006FFF04 /* mlib_buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib_buffer.h; sourceTree = "<group>"; };
+		F1EAE3E51C96BDDD006FFF04 /* mlib_event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mlib_event.cpp; sourceTree = "<group>"; };
+		F1EAE3E61C96BDDD006FFF04 /* mlib_event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib_event.h; sourceTree = "<group>"; };
+		F1EAE3E71C96BDDD006FFF04 /* mlib_exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mlib_exception.cpp; sourceTree = "<group>"; };
+		F1EAE3E81C96BDDD006FFF04 /* mlib_exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib_exception.h; sourceTree = "<group>"; };
+		F1EAE3E91C96BDDD006FFF04 /* mlib_helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib_helpers.h; sourceTree = "<group>"; };
+		F1EAE3EA1C96BDDD006FFF04 /* mlib_http.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mlib_http.cpp; sourceTree = "<group>"; };
+		F1EAE3EB1C96BDDD006FFF04 /* mlib_http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib_http.h; sourceTree = "<group>"; };
+		F1EAE3EC1C96BDDD006FFF04 /* mlib_localize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mlib_localize.cpp; sourceTree = "<group>"; };
+		F1EAE3ED1C96BDDD006FFF04 /* mlib_localize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib_localize.h; sourceTree = "<group>"; };
+		F1EAE3EE1C96BDDD006FFF04 /* mlib_log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mlib_log.cpp; sourceTree = "<group>"; };
+		F1EAE3EF1C96BDDD006FFF04 /* mlib_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib_log.h; sourceTree = "<group>"; };
+		F1EAE3F01C96BDDD006FFF04 /* mlib_md5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mlib_md5.cpp; sourceTree = "<group>"; };
+		F1EAE3F11C96BDDD006FFF04 /* mlib_md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib_md5.h; sourceTree = "<group>"; };
+		F1EAE3F21C96BDDD006FFF04 /* mlib_shared_queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mlib_shared_queue.cpp; sourceTree = "<group>"; };
+		F1EAE3F31C96BDDD006FFF04 /* mlib_shared_queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib_shared_queue.h; sourceTree = "<group>"; };
+		F1EAE3F41C96BDDD006FFF04 /* mlib_task.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mlib_task.cpp; sourceTree = "<group>"; };
+		F1EAE3F51C96BDDD006FFF04 /* mlib_task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib_task.h; sourceTree = "<group>"; };
+		F1EAE3F61C96BDDD006FFF04 /* mlib_thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib_thread.h; sourceTree = "<group>"; };
+		F1EAE3F71C96BDDD006FFF04 /* mlib_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mlib_utils.cpp; sourceTree = "<group>"; };
+		F1EAE3F81C96BDDD006FFF04 /* mlib_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib_utils.h; sourceTree = "<group>"; };
+		F1EAE3F91C96BDDD006FFF04 /* mlib_version_number.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mlib_version_number.cpp; sourceTree = "<group>"; };
+		F1EAE3FA1C96BDDD006FFF04 /* mlib_version_number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib_version_number.h; sourceTree = "<group>"; };
+		F1EAE4081C96BDDD006FFF04 /* CCEditBoxLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCEditBoxLoader.cpp; sourceTree = "<group>"; };
+		F1EAE4091C96BDDD006FFF04 /* CCEditBoxLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCEditBoxLoader.h; sourceTree = "<group>"; };
+		F1EAE40A1C96BDDD006FFF04 /* CCProgressTimerLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCProgressTimerLoader.cpp; sourceTree = "<group>"; };
+		F1EAE40B1C96BDDD006FFF04 /* CCProgressTimerLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCProgressTimerLoader.h; sourceTree = "<group>"; };
+		F1EAE40C1C96BDDD006FFF04 /* CCRemove.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCRemove.cpp; sourceTree = "<group>"; };
+		F1EAE40D1C96BDDD006FFF04 /* CCRemove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRemove.h; sourceTree = "<group>"; };
+		F1EAE4101C96BDDD006FFF04 /* MAnalysisManagerIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MAnalysisManagerIOS.mm; sourceTree = "<group>"; };
+		F1EAE4111C96BDDD006FFF04 /* MAppTracker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MAppTracker.mm; sourceTree = "<group>"; };
+		F1EAE4121C96BDDD006FFF04 /* MFileUtilsIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFileUtilsIOS.h; sourceTree = "<group>"; };
+		F1EAE4131C96BDDD006FFF04 /* MFileUtilsIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MFileUtilsIOS.mm; sourceTree = "<group>"; };
+		F1EAE4141C96BDDD006FFF04 /* MIAP91StoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIAP91StoreManager.h; sourceTree = "<group>"; };
+		F1EAE4151C96BDDD006FFF04 /* MIAP91StoreManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MIAP91StoreManager.mm; sourceTree = "<group>"; };
+		F1EAE4161C96BDDD006FFF04 /* MIAPAppStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIAPAppStoreManager.h; sourceTree = "<group>"; };
+		F1EAE4171C96BDDD006FFF04 /* MIAPAppStoreManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MIAPAppStoreManager.mm; sourceTree = "<group>"; };
+		F1EAE4181C96BDDD006FFF04 /* MIAPPPStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIAPPPStoreManager.h; sourceTree = "<group>"; };
+		F1EAE4191C96BDDD006FFF04 /* MIAPPPStoreManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MIAPPPStoreManager.mm; sourceTree = "<group>"; };
+		F1EAE41A1C96BDDD006FFF04 /* MIAPTaskIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MIAPTaskIOS.mm; sourceTree = "<group>"; };
+		F1EAE41B1C96BDDD006FFF04 /* MMediaPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MMediaPlayer.mm; sourceTree = "<group>"; };
+		F1EAE41C1C96BDDD006FFF04 /* MRemoteNotificationManagerIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MRemoteNotificationManagerIOS.mm; sourceTree = "<group>"; };
+		F1EAE4201C96BDDD006FFF04 /* MTextViewImplIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTextViewImplIOS.h; sourceTree = "<group>"; };
+		F1EAE4211C96BDDD006FFF04 /* MTextViewImplIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MTextViewImplIOS.mm; sourceTree = "<group>"; };
+		F1EAE4221C96BDDD006FFF04 /* MUtilsIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MUtilsIOS.mm; sourceTree = "<group>"; };
+		F1EAE4231C96BDDD006FFF04 /* MWebViewImplIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWebViewImplIOS.h; sourceTree = "<group>"; };
+		F1EAE4241C96BDDD006FFF04 /* MWebViewImplIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MWebViewImplIOS.mm; sourceTree = "<group>"; };
+		F1EAE4251C96BDDD006FFF04 /* MAnalysisManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MAnalysisManager.cpp; sourceTree = "<group>"; };
+		F1EAE4261C96BDDD006FFF04 /* MAnalysisManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAnalysisManager.h; sourceTree = "<group>"; };
+		F1EAE4271C96BDDD006FFF04 /* MAnimation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MAnimation.cpp; sourceTree = "<group>"; };
+		F1EAE4281C96BDDD006FFF04 /* MAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAnimation.h; sourceTree = "<group>"; };
+		F1EAE4291C96BDDD006FFF04 /* MAppManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MAppManager.cpp; sourceTree = "<group>"; };
+		F1EAE42A1C96BDDD006FFF04 /* MAppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAppManager.h; sourceTree = "<group>"; };
+		F1EAE42B1C96BDDD006FFF04 /* MAppTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAppTracker.h; sourceTree = "<group>"; };
+		F1EAE42C1C96BDDD006FFF04 /* MBMFontButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBMFontButton.cpp; sourceTree = "<group>"; };
+		F1EAE42D1C96BDDD006FFF04 /* MBMFontButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBMFontButton.h; sourceTree = "<group>"; };
+		F1EAE42E1C96BDDD006FFF04 /* MButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MButton.cpp; sourceTree = "<group>"; };
+		F1EAE42F1C96BDDD006FFF04 /* MButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MButton.h; sourceTree = "<group>"; };
+		F1EAE4301C96BDDD006FFF04 /* MCallbackAction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MCallbackAction.cpp; sourceTree = "<group>"; };
+		F1EAE4311C96BDDD006FFF04 /* MCallbackAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCallbackAction.h; sourceTree = "<group>"; };
+		F1EAE4321C96BDDD006FFF04 /* MControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MControl.cpp; sourceTree = "<group>"; };
+		F1EAE4331C96BDDD006FFF04 /* MControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MControl.h; sourceTree = "<group>"; };
+		F1EAE4341C96BDDD006FFF04 /* MDragDownView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MDragDownView.cpp; sourceTree = "<group>"; };
+		F1EAE4351C96BDDD006FFF04 /* MDragDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDragDownView.h; sourceTree = "<group>"; };
+		F1EAE4361C96BDDD006FFF04 /* MFileDownloader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MFileDownloader.cpp; sourceTree = "<group>"; };
+		F1EAE4371C96BDDD006FFF04 /* MFileDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFileDownloader.h; sourceTree = "<group>"; };
+		F1EAE4381C96BDDD006FFF04 /* MFileUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MFileUtils.cpp; sourceTree = "<group>"; };
+		F1EAE4391C96BDDD006FFF04 /* MFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFileUtils.h; sourceTree = "<group>"; };
+		F1EAE43A1C96BDDD006FFF04 /* MFrameAnimation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MFrameAnimation.cpp; sourceTree = "<group>"; };
+		F1EAE43B1C96BDDD006FFF04 /* MFrameAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFrameAnimation.h; sourceTree = "<group>"; };
+		F1EAE43C1C96BDDD006FFF04 /* MGrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGrid.cpp; sourceTree = "<group>"; };
+		F1EAE43D1C96BDDD006FFF04 /* MGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGrid.h; sourceTree = "<group>"; };
+		F1EAE43E1C96BDDD006FFF04 /* MIAPShop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIAPShop.cpp; sourceTree = "<group>"; };
+		F1EAE43F1C96BDDD006FFF04 /* MIAPShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIAPShop.h; sourceTree = "<group>"; };
+		F1EAE4401C96BDDD006FFF04 /* MIAPTask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIAPTask.cpp; sourceTree = "<group>"; };
+		F1EAE4411C96BDDD006FFF04 /* MIAPTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIAPTask.h; sourceTree = "<group>"; };
+		F1EAE4421C96BDDD006FFF04 /* MIAPTransaction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIAPTransaction.cpp; sourceTree = "<group>"; };
+		F1EAE4431C96BDDD006FFF04 /* MIAPTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIAPTransaction.h; sourceTree = "<group>"; };
+		F1EAE4441C96BDDD006FFF04 /* MLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MLayer.cpp; sourceTree = "<group>"; };
+		F1EAE4451C96BDDD006FFF04 /* MLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLayer.h; sourceTree = "<group>"; };
+		F1EAE4461C96BDDD006FFF04 /* mlib_ccext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib_ccext.h; sourceTree = "<group>"; };
+		F1EAE4471C96BDDD006FFF04 /* mlib_ccext_helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib_ccext_helpers.h; sourceTree = "<group>"; };
+		F1EAE4481C96BDDD006FFF04 /* MMediaPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMediaPlayer.h; sourceTree = "<group>"; };
+		F1EAE4491C96BDDD006FFF04 /* MRemoteNotificationManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MRemoteNotificationManager.cpp; sourceTree = "<group>"; };
+		F1EAE44A1C96BDDD006FFF04 /* MRemoteNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRemoteNotificationManager.h; sourceTree = "<group>"; };
+		F1EAE44B1C96BDDD006FFF04 /* MRemoteSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MRemoteSprite.cpp; sourceTree = "<group>"; };
+		F1EAE44C1C96BDDD006FFF04 /* MRemoteSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRemoteSprite.h; sourceTree = "<group>"; };
+		F1EAE44D1C96BDDD006FFF04 /* MRichLabelTTF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MRichLabelTTF.cpp; sourceTree = "<group>"; };
+		F1EAE44E1C96BDDD006FFF04 /* MRichLabelTTF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRichLabelTTF.h; sourceTree = "<group>"; };
+		F1EAE44F1C96BDDD006FFF04 /* MScreenManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MScreenManager.cpp; sourceTree = "<group>"; };
+		F1EAE4501C96BDDD006FFF04 /* MScreenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MScreenManager.h; sourceTree = "<group>"; };
+		F1EAE4511C96BDDD006FFF04 /* MScrollView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MScrollView.cpp; sourceTree = "<group>"; };
+		F1EAE4521C96BDDD006FFF04 /* MScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MScrollView.h; sourceTree = "<group>"; };
+		F1EAE4531C96BDDD006FFF04 /* MSpeedCheck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MSpeedCheck.cpp; sourceTree = "<group>"; };
+		F1EAE4541C96BDDD006FFF04 /* MSpeedCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSpeedCheck.h; sourceTree = "<group>"; };
+		F1EAE4551C96BDDD006FFF04 /* MSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MSprite.cpp; sourceTree = "<group>"; };
+		F1EAE4561C96BDDD006FFF04 /* MSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSprite.h; sourceTree = "<group>"; };
+		F1EAE4571C96BDDD006FFF04 /* MSpriteLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MSpriteLoader.cpp; sourceTree = "<group>"; };
+		F1EAE4581C96BDDD006FFF04 /* MSpriteLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSpriteLoader.h; sourceTree = "<group>"; };
+		F1EAE4591C96BDDD006FFF04 /* MTabButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MTabButton.cpp; sourceTree = "<group>"; };
+		F1EAE45A1C96BDDD006FFF04 /* MTabButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTabButton.h; sourceTree = "<group>"; };
+		F1EAE45D1C96BDDD006FFF04 /* MTextView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MTextView.cpp; sourceTree = "<group>"; };
+		F1EAE45E1C96BDDD006FFF04 /* MTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTextView.h; sourceTree = "<group>"; };
+		F1EAE45F1C96BDDD006FFF04 /* MTextViewImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTextViewImpl.h; sourceTree = "<group>"; };
+		F1EAE4601C96BDDD006FFF04 /* MTextViewLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MTextViewLoader.cpp; sourceTree = "<group>"; };
+		F1EAE4611C96BDDD006FFF04 /* MTextViewLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTextViewLoader.h; sourceTree = "<group>"; };
+		F1EAE4621C96BDDD006FFF04 /* MUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MUtils.cpp; sourceTree = "<group>"; };
+		F1EAE4631C96BDDD006FFF04 /* MUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUtils.h; sourceTree = "<group>"; };
+		F1EAE4641C96BDDD006FFF04 /* MWebView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MWebView.cpp; sourceTree = "<group>"; };
+		F1EAE4651C96BDDD006FFF04 /* MWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWebView.h; sourceTree = "<group>"; };
+		F1EAE4661C96BDDD006FFF04 /* MWebViewImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MWebViewImpl.cpp; sourceTree = "<group>"; };
+		F1EAE4671C96BDDD006FFF04 /* MWebViewImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWebViewImpl.h; sourceTree = "<group>"; };
+		F1EAE4B41C96C292006FFF04 /* LAudio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LAudio.cpp; sourceTree = "<group>"; };
+		F1EAE4B51C96C293006FFF04 /* LAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAudio.h; sourceTree = "<group>"; };
+		F1EAE4B71C96C2D7006FFF04 /* LConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LConstants.h; sourceTree = "<group>"; };
+		F1EAE4B81C96DBCC006FFF04 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		F1EAE4BA1C96DBFC006FFF04 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F1EAE4BC1C96DD0B006FFF04 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F1EAE4BE1C96DD23006FFF04 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1876,6 +2060,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1EAE4BF1C96DD23006FFF04 /* AdSupport.framework in Frameworks */,
+				F1EAE4BB1C96DBFC006FFF04 /* StoreKit.framework in Frameworks */,
+				F1EAE4B91C96DBCC006FFF04 /* MediaPlayer.framework in Frameworks */,
 				F1EAE2FB1C96BB7A006FFF04 /* libz.tbd in Frameworks */,
 				F1EAE2F51C96B8BE006FFF04 /* libwebsockets.a in Frameworks */,
 				F1EAE01F1C9698CB006FFF04 /* libwebp.a in Frameworks */,
@@ -2122,6 +2309,8 @@
 		18D69EFC17B20D6A001FE88C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F1EAE4B71C96C2D7006FFF04 /* LConstants.h */,
+				F1EAE4B31C96C292006FFF04 /* audio */,
 				18D69EFF17B20D6A001FE88C /* AppDelegate.cpp */,
 				18D69F0017B20D6A001FE88C /* AppDelegate.h */,
 				F1E80D191AE021F4002465AE /* data */,
@@ -2676,6 +2865,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				F1EAE3D81C96BDDD006FFF04 /* mlib */,
 				F1EAE2FC1C96BC92006FFF04 /* libs */,
 				18D69EFC17B20D6A001FE88C /* Classes */,
 				F143C8681A983B620063A833 /* Default-568h@2x.png */,
@@ -2690,6 +2880,10 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F1EAE4BE1C96DD23006FFF04 /* AdSupport.framework */,
+				F1EAE4BC1C96DD0B006FFF04 /* Security.framework */,
+				F1EAE4BA1C96DBFC006FFF04 /* StoreKit.framework */,
+				F1EAE4B81C96DBCC006FFF04 /* MediaPlayer.framework */,
 				F1EAE2FA1C96BB7A006FFF04 /* libz.tbd */,
 				F1EAE2F81C96B8D7006FFF04 /* libwebsockets.a */,
 				F1EAE01E1C9698CB006FFF04 /* libwebp.a */,
@@ -3854,6 +4048,171 @@
 			name = libs;
 			sourceTree = "<group>";
 		};
+		F1EAE3D81C96BDDD006FFF04 /* mlib */ = {
+			isa = PBXGroup;
+			children = (
+				F1EAE3DA1C96BDDD006FFF04 /* c++ */,
+				F1EAE3FB1C96BDDD006FFF04 /* ccext */,
+			);
+			name = mlib;
+			path = ../../../mlib;
+			sourceTree = "<group>";
+		};
+		F1EAE3DA1C96BDDD006FFF04 /* c++ */ = {
+			isa = PBXGroup;
+			children = (
+				F1EAE3DE1C96BDDD006FFF04 /* ios */,
+				F1EAE3E11C96BDDD006FFF04 /* mlib.h */,
+				F1EAE3E21C96BDDD006FFF04 /* mlib_assert.h */,
+				F1EAE3E31C96BDDD006FFF04 /* mlib_buffer.cpp */,
+				F1EAE3E41C96BDDD006FFF04 /* mlib_buffer.h */,
+				F1EAE3E51C96BDDD006FFF04 /* mlib_event.cpp */,
+				F1EAE3E61C96BDDD006FFF04 /* mlib_event.h */,
+				F1EAE3E71C96BDDD006FFF04 /* mlib_exception.cpp */,
+				F1EAE3E81C96BDDD006FFF04 /* mlib_exception.h */,
+				F1EAE3E91C96BDDD006FFF04 /* mlib_helpers.h */,
+				F1EAE3EA1C96BDDD006FFF04 /* mlib_http.cpp */,
+				F1EAE3EB1C96BDDD006FFF04 /* mlib_http.h */,
+				F1EAE3EC1C96BDDD006FFF04 /* mlib_localize.cpp */,
+				F1EAE3ED1C96BDDD006FFF04 /* mlib_localize.h */,
+				F1EAE3EE1C96BDDD006FFF04 /* mlib_log.cpp */,
+				F1EAE3EF1C96BDDD006FFF04 /* mlib_log.h */,
+				F1EAE3F01C96BDDD006FFF04 /* mlib_md5.cpp */,
+				F1EAE3F11C96BDDD006FFF04 /* mlib_md5.h */,
+				F1EAE3F21C96BDDD006FFF04 /* mlib_shared_queue.cpp */,
+				F1EAE3F31C96BDDD006FFF04 /* mlib_shared_queue.h */,
+				F1EAE3F41C96BDDD006FFF04 /* mlib_task.cpp */,
+				F1EAE3F51C96BDDD006FFF04 /* mlib_task.h */,
+				F1EAE3F61C96BDDD006FFF04 /* mlib_thread.h */,
+				F1EAE3F71C96BDDD006FFF04 /* mlib_utils.cpp */,
+				F1EAE3F81C96BDDD006FFF04 /* mlib_utils.h */,
+				F1EAE3F91C96BDDD006FFF04 /* mlib_version_number.cpp */,
+				F1EAE3FA1C96BDDD006FFF04 /* mlib_version_number.h */,
+			);
+			path = "c++";
+			sourceTree = "<group>";
+		};
+		F1EAE3DE1C96BDDD006FFF04 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				F1EAE3E01C96BDDD006FFF04 /* mlib_thread.mm */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		F1EAE3FB1C96BDDD006FFF04 /* ccext */ = {
+			isa = PBXGroup;
+			children = (
+				F1EAE4081C96BDDD006FFF04 /* CCEditBoxLoader.cpp */,
+				F1EAE4091C96BDDD006FFF04 /* CCEditBoxLoader.h */,
+				F1EAE40A1C96BDDD006FFF04 /* CCProgressTimerLoader.cpp */,
+				F1EAE40B1C96BDDD006FFF04 /* CCProgressTimerLoader.h */,
+				F1EAE40C1C96BDDD006FFF04 /* CCRemove.cpp */,
+				F1EAE40D1C96BDDD006FFF04 /* CCRemove.h */,
+				F1EAE40E1C96BDDD006FFF04 /* ios */,
+				F1EAE4251C96BDDD006FFF04 /* MAnalysisManager.cpp */,
+				F1EAE4261C96BDDD006FFF04 /* MAnalysisManager.h */,
+				F1EAE4271C96BDDD006FFF04 /* MAnimation.cpp */,
+				F1EAE4281C96BDDD006FFF04 /* MAnimation.h */,
+				F1EAE4291C96BDDD006FFF04 /* MAppManager.cpp */,
+				F1EAE42A1C96BDDD006FFF04 /* MAppManager.h */,
+				F1EAE42B1C96BDDD006FFF04 /* MAppTracker.h */,
+				F1EAE42C1C96BDDD006FFF04 /* MBMFontButton.cpp */,
+				F1EAE42D1C96BDDD006FFF04 /* MBMFontButton.h */,
+				F1EAE42E1C96BDDD006FFF04 /* MButton.cpp */,
+				F1EAE42F1C96BDDD006FFF04 /* MButton.h */,
+				F1EAE4301C96BDDD006FFF04 /* MCallbackAction.cpp */,
+				F1EAE4311C96BDDD006FFF04 /* MCallbackAction.h */,
+				F1EAE4321C96BDDD006FFF04 /* MControl.cpp */,
+				F1EAE4331C96BDDD006FFF04 /* MControl.h */,
+				F1EAE4341C96BDDD006FFF04 /* MDragDownView.cpp */,
+				F1EAE4351C96BDDD006FFF04 /* MDragDownView.h */,
+				F1EAE4361C96BDDD006FFF04 /* MFileDownloader.cpp */,
+				F1EAE4371C96BDDD006FFF04 /* MFileDownloader.h */,
+				F1EAE4381C96BDDD006FFF04 /* MFileUtils.cpp */,
+				F1EAE4391C96BDDD006FFF04 /* MFileUtils.h */,
+				F1EAE43A1C96BDDD006FFF04 /* MFrameAnimation.cpp */,
+				F1EAE43B1C96BDDD006FFF04 /* MFrameAnimation.h */,
+				F1EAE43C1C96BDDD006FFF04 /* MGrid.cpp */,
+				F1EAE43D1C96BDDD006FFF04 /* MGrid.h */,
+				F1EAE43E1C96BDDD006FFF04 /* MIAPShop.cpp */,
+				F1EAE43F1C96BDDD006FFF04 /* MIAPShop.h */,
+				F1EAE4401C96BDDD006FFF04 /* MIAPTask.cpp */,
+				F1EAE4411C96BDDD006FFF04 /* MIAPTask.h */,
+				F1EAE4421C96BDDD006FFF04 /* MIAPTransaction.cpp */,
+				F1EAE4431C96BDDD006FFF04 /* MIAPTransaction.h */,
+				F1EAE4441C96BDDD006FFF04 /* MLayer.cpp */,
+				F1EAE4451C96BDDD006FFF04 /* MLayer.h */,
+				F1EAE4461C96BDDD006FFF04 /* mlib_ccext.h */,
+				F1EAE4471C96BDDD006FFF04 /* mlib_ccext_helpers.h */,
+				F1EAE4481C96BDDD006FFF04 /* MMediaPlayer.h */,
+				F1EAE4491C96BDDD006FFF04 /* MRemoteNotificationManager.cpp */,
+				F1EAE44A1C96BDDD006FFF04 /* MRemoteNotificationManager.h */,
+				F1EAE44B1C96BDDD006FFF04 /* MRemoteSprite.cpp */,
+				F1EAE44C1C96BDDD006FFF04 /* MRemoteSprite.h */,
+				F1EAE44D1C96BDDD006FFF04 /* MRichLabelTTF.cpp */,
+				F1EAE44E1C96BDDD006FFF04 /* MRichLabelTTF.h */,
+				F1EAE44F1C96BDDD006FFF04 /* MScreenManager.cpp */,
+				F1EAE4501C96BDDD006FFF04 /* MScreenManager.h */,
+				F1EAE4511C96BDDD006FFF04 /* MScrollView.cpp */,
+				F1EAE4521C96BDDD006FFF04 /* MScrollView.h */,
+				F1EAE4531C96BDDD006FFF04 /* MSpeedCheck.cpp */,
+				F1EAE4541C96BDDD006FFF04 /* MSpeedCheck.h */,
+				F1EAE4551C96BDDD006FFF04 /* MSprite.cpp */,
+				F1EAE4561C96BDDD006FFF04 /* MSprite.h */,
+				F1EAE4571C96BDDD006FFF04 /* MSpriteLoader.cpp */,
+				F1EAE4581C96BDDD006FFF04 /* MSpriteLoader.h */,
+				F1EAE4591C96BDDD006FFF04 /* MTabButton.cpp */,
+				F1EAE45A1C96BDDD006FFF04 /* MTabButton.h */,
+				F1EAE45D1C96BDDD006FFF04 /* MTextView.cpp */,
+				F1EAE45E1C96BDDD006FFF04 /* MTextView.h */,
+				F1EAE45F1C96BDDD006FFF04 /* MTextViewImpl.h */,
+				F1EAE4601C96BDDD006FFF04 /* MTextViewLoader.cpp */,
+				F1EAE4611C96BDDD006FFF04 /* MTextViewLoader.h */,
+				F1EAE4621C96BDDD006FFF04 /* MUtils.cpp */,
+				F1EAE4631C96BDDD006FFF04 /* MUtils.h */,
+				F1EAE4641C96BDDD006FFF04 /* MWebView.cpp */,
+				F1EAE4651C96BDDD006FFF04 /* MWebView.h */,
+				F1EAE4661C96BDDD006FFF04 /* MWebViewImpl.cpp */,
+				F1EAE4671C96BDDD006FFF04 /* MWebViewImpl.h */,
+			);
+			path = ccext;
+			sourceTree = "<group>";
+		};
+		F1EAE40E1C96BDDD006FFF04 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				F1EAE4101C96BDDD006FFF04 /* MAnalysisManagerIOS.mm */,
+				F1EAE4111C96BDDD006FFF04 /* MAppTracker.mm */,
+				F1EAE4121C96BDDD006FFF04 /* MFileUtilsIOS.h */,
+				F1EAE4131C96BDDD006FFF04 /* MFileUtilsIOS.mm */,
+				F1EAE4141C96BDDD006FFF04 /* MIAP91StoreManager.h */,
+				F1EAE4151C96BDDD006FFF04 /* MIAP91StoreManager.mm */,
+				F1EAE4161C96BDDD006FFF04 /* MIAPAppStoreManager.h */,
+				F1EAE4171C96BDDD006FFF04 /* MIAPAppStoreManager.mm */,
+				F1EAE4181C96BDDD006FFF04 /* MIAPPPStoreManager.h */,
+				F1EAE4191C96BDDD006FFF04 /* MIAPPPStoreManager.mm */,
+				F1EAE41A1C96BDDD006FFF04 /* MIAPTaskIOS.mm */,
+				F1EAE41B1C96BDDD006FFF04 /* MMediaPlayer.mm */,
+				F1EAE41C1C96BDDD006FFF04 /* MRemoteNotificationManagerIOS.mm */,
+				F1EAE4201C96BDDD006FFF04 /* MTextViewImplIOS.h */,
+				F1EAE4211C96BDDD006FFF04 /* MTextViewImplIOS.mm */,
+				F1EAE4221C96BDDD006FFF04 /* MUtilsIOS.mm */,
+				F1EAE4231C96BDDD006FFF04 /* MWebViewImplIOS.h */,
+				F1EAE4241C96BDDD006FFF04 /* MWebViewImplIOS.mm */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		F1EAE4B31C96C292006FFF04 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				F1EAE4B41C96C292006FFF04 /* LAudio.cpp */,
+				F1EAE4B51C96C293006FFF04 /* LAudio.h */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -4293,10 +4652,12 @@
 				F1EADFD71C969582006FFF04 /* CCParticleSystem.cpp in Sources */,
 				F1EAE2A41C96B3AA006FFF04 /* b2Island.cpp in Sources */,
 				F1EAE2EE1C96B3F5006FFF04 /* ByteBuffer.cpp in Sources */,
+				F1EAE4751C96BDDD006FFF04 /* mlib_task.cpp in Sources */,
 				F1EADF981C969582006FFF04 /* CCActionInstant.cpp in Sources */,
 				F1EAE2921C96B3AA006FFF04 /* b2CollidePolygon.cpp in Sources */,
 				F1EADFB01C969582006FFF04 /* CCZone.cpp in Sources */,
 				F1EADFB31C969582006FFF04 /* CCDrawNode.cpp in Sources */,
+				F1EAE4901C96BDDD006FFF04 /* MTextViewImplIOS.mm in Sources */,
 				F1A0DF991ADE9B78002B4E5E /* middlePage.cpp in Sources */,
 				F1EAE0191C969582006FFF04 /* CCTouchHandler.cpp in Sources */,
 				F1EADFA51C969582006FFF04 /* CCScheduler.cpp in Sources */,
@@ -4311,6 +4672,7 @@
 				F1A0DF841ADE9215002B4E5E /* BottomPage.cpp in Sources */,
 				F1EAE0061C969582006FFF04 /* CCUserDefaultAndroid.cpp in Sources */,
 				F1EADFA71C969582006FFF04 /* CCArray.cpp in Sources */,
+				F1EAE4971C96BDDD006FFF04 /* MButton.cpp in Sources */,
 				F1A0DF5F1ADE8D77002B4E5E /* personalinfo.cpp in Sources */,
 				F1EAE2BF1C96B3AA006FFF04 /* cpConstraint.c in Sources */,
 				F1EADFFC1C969582006FFF04 /* ccUtils.cpp in Sources */,
@@ -4336,6 +4698,7 @@
 				F1EAE0131C969582006FFF04 /* CCTMXLayer.cpp in Sources */,
 				F1EADF941C969582006FFF04 /* CCActionCatmullRom.cpp in Sources */,
 				F1EAE2D41C96B3AA006FFF04 /* cpSpaceComponent.c in Sources */,
+				F1EAE4AE1C96BDDD006FFF04 /* MTextView.cpp in Sources */,
 				F1EAE2E21C96B3AA006FFF04 /* sqlite3.c in Sources */,
 				F1EADFD01C969582006FFF04 /* CCMenuItem.cpp in Sources */,
 				F1EADFB91C969582006FFF04 /* mat4stack.c in Sources */,
@@ -4346,12 +4709,15 @@
 				F1EADF971C969582006FFF04 /* CCActionGrid3D.cpp in Sources */,
 				F1EAE2AA1C96B3AA006FFF04 /* b2Contact.cpp in Sources */,
 				F1EADFA81C969582006FFF04 /* CCAutoreleasePool.cpp in Sources */,
+				F1EAE4701C96BDDD006FFF04 /* mlib_http.cpp in Sources */,
 				F1EADFC41C969582006FFF04 /* vec4.c in Sources */,
 				F13659941ADEC74B0083AA12 /* EmployPage.cpp in Sources */,
+				F1EAE4831C96BDDD006FFF04 /* CCRemove.cpp in Sources */,
 				F1EADFAA1C969582006FFF04 /* CCDictionary.cpp in Sources */,
 				F1E80D251AE021F4002465AE /* skillList.cpp in Sources */,
 				F1A0DF1F1ADE8AAA002B4E5E /* friendemploylog.cpp in Sources */,
 				F1EAE2BD1C96B3AA006FFF04 /* chipmunk.c in Sources */,
+				F1EAE4921C96BDDD006FFF04 /* MWebViewImplIOS.mm in Sources */,
 				F1EADF9D1C969582006FFF04 /* CCActionTiledGrid.cpp in Sources */,
 				F1EAE0151C969582006FFF04 /* CCTMXTiledMap.cpp in Sources */,
 				F1EADFA61C969582006FFF04 /* CCAffineTransform.cpp in Sources */,
@@ -4371,13 +4737,18 @@
 				F1A0DF901ADE9252002B4E5E /* startAnimate.cpp in Sources */,
 				F1EADFE51C969582006FFF04 /* CCFileUtilsIOS.mm in Sources */,
 				F1EADFEB1C969582006FFF04 /* platform.cpp in Sources */,
+				F1EAE4861C96BDDD006FFF04 /* MAppTracker.mm in Sources */,
+				F1EAE4821C96BDDD006FFF04 /* CCProgressTimerLoader.cpp in Sources */,
 				F1A0DF241ADE8AAA002B4E5E /* hcbag.cpp in Sources */,
+				F1EAE46C1C96BDDD006FFF04 /* mlib_thread.mm in Sources */,
 				F1EADFB21C969582006FFF04 /* CCDrawingPrimitives.cpp in Sources */,
 				F1EAE2AC1C96B3AA006FFF04 /* b2EdgeAndCircleContact.cpp in Sources */,
 				F1EADFEE1C969582006FFF04 /* ccGLStateCache.cpp in Sources */,
+				F1EAE4A21C96BDDD006FFF04 /* MLayer.cpp in Sources */,
 				F1EADFD41C969582006FFF04 /* CCClippingNode.cpp in Sources */,
 				F1EADFBA1C969582006FFF04 /* matrix.c in Sources */,
 				F1EAE2F11C96B3F5006FFF04 /* SocketManager.cpp in Sources */,
+				F1EAE4A31C96BDDD006FFF04 /* MRemoteNotificationManager.cpp in Sources */,
 				F1EADFBE1C969582006FFF04 /* plane.c in Sources */,
 				F1EADFCE1C969582006FFF04 /* CCTransitionProgress.cpp in Sources */,
 				F1EAE28F1C96B3AA006FFF04 /* b2BroadPhase.cpp in Sources */,
@@ -4411,8 +4782,12 @@
 				F1EADFC51C969582006FFF04 /* CCKeypadDelegate.cpp in Sources */,
 				15A3DA331682F826002FB0C5 /* CCBKeyframe.cpp in Sources */,
 				15A3DA341682F826002FB0C5 /* CCBReader.cpp in Sources */,
+				F1EAE49F1C96BDDD006FFF04 /* MIAPShop.cpp in Sources */,
+				F1EAE4AF1C96BDDD006FFF04 /* MTextViewLoader.cpp in Sources */,
 				15A3DA351682F826002FB0C5 /* CCBSequence.cpp in Sources */,
+				F1EAE4B61C96C293006FFF04 /* LAudio.cpp in Sources */,
 				15A3DA361682F826002FB0C5 /* CCBSequenceProperty.cpp in Sources */,
+				F1EAE4A91C96BDDD006FFF04 /* MSprite.cpp in Sources */,
 				F136598F1ADEB95A0083AA12 /* CombinePage.cpp in Sources */,
 				F1EAE2B31C96B3AA006FFF04 /* b2Joint.cpp in Sources */,
 				F1EADFE81C969582006FFF04 /* CCThread.mm in Sources */,
@@ -4422,8 +4797,10 @@
 				F1EAE2D01C96B3AA006FFF04 /* cpHashSet.c in Sources */,
 				F1A0DF421ADE8B5F002B4E5E /* MailRead.cpp in Sources */,
 				F1EADFCD1C969582006FFF04 /* CCTransitionPageTurn.cpp in Sources */,
+				F1EAE49E1C96BDDD006FFF04 /* MGrid.cpp in Sources */,
 				15A3DA381682F826002FB0C5 /* CCControlButtonLoader.cpp in Sources */,
 				F1EADFA41C969582006FFF04 /* ccFPSImages.c in Sources */,
+				F1EAE4A61C96BDDD006FFF04 /* MScreenManager.cpp in Sources */,
 				15A3DA391682F826002FB0C5 /* CCControlLoader.cpp in Sources */,
 				F1EADFA21C969582006FFF04 /* CCConfiguration.cpp in Sources */,
 				15A3DA3A1682F826002FB0C5 /* CCData.cpp in Sources */,
@@ -4433,7 +4810,9 @@
 				F1EADFC21C969582006FFF04 /* vec2.c in Sources */,
 				F1EAE2931C96B3AA006FFF04 /* b2Collision.cpp in Sources */,
 				15A3DA3E1682F826002FB0C5 /* CCLayerGradientLoader.cpp in Sources */,
+				F1EAE49D1C96BDDD006FFF04 /* MFrameAnimation.cpp in Sources */,
 				15A3DA3F1682F826002FB0C5 /* CCLayerLoader.cpp in Sources */,
+				F1EAE4A01C96BDDD006FFF04 /* MIAPTask.cpp in Sources */,
 				15A3DA401682F826002FB0C5 /* CCMenuItemImageLoader.cpp in Sources */,
 				15A3DA411682F826002FB0C5 /* CCMenuItemLoader.cpp in Sources */,
 				F1EAE2B61C96B3AA006FFF04 /* b2PulleyJoint.cpp in Sources */,
@@ -4441,6 +4820,7 @@
 				15A3DA431682F826002FB0C5 /* CCNodeLoader.cpp in Sources */,
 				F1A0DF961ADE9B4B002B4E5E /* headPage.cpp in Sources */,
 				15A3DA441682F826002FB0C5 /* CCNodeLoaderLibrary.cpp in Sources */,
+				F1EAE4951C96BDDD006FFF04 /* MAppManager.cpp in Sources */,
 				15A3DA451682F826002FB0C5 /* CCParticleSystemQuadLoader.cpp in Sources */,
 				15A3DA461682F826002FB0C5 /* CCScale9SpriteLoader.cpp in Sources */,
 				F1EAE2A01C96B3AA006FFF04 /* b2Timer.cpp in Sources */,
@@ -4451,6 +4831,7 @@
 				15A3DA491682F826002FB0C5 /* CCControl.cpp in Sources */,
 				15A3DA4A1682F826002FB0C5 /* CCControlButton.cpp in Sources */,
 				15A3DA4B1682F826002FB0C5 /* CCControlColourPicker.cpp in Sources */,
+				F1EAE4761C96BDDD006FFF04 /* mlib_utils.cpp in Sources */,
 				15A3DA4C1682F826002FB0C5 /* CCControlHuePicker.cpp in Sources */,
 				F1A0DF411ADE8B5F002B4E5E /* MailInfo.cpp in Sources */,
 				F1EADF9A1C969582006FFF04 /* CCActionManager.cpp in Sources */,
@@ -4468,6 +4849,7 @@
 				F1EADFAF1C969582006FFF04 /* CCString.cpp in Sources */,
 				15A3DA551682F826002FB0C5 /* CCEditBox.cpp in Sources */,
 				F1A0DF1E1ADE8AAA002B4E5E /* friendemploycell.cpp in Sources */,
+				F1EAE4A71C96BDDD006FFF04 /* MScrollView.cpp in Sources */,
 				F1EADFF51C969582006FFF04 /* CCSpriteFrame.cpp in Sources */,
 				F1EAE2D71C96B3AA006FFF04 /* cpSpaceStep.c in Sources */,
 				F1EADFED1C969582006FFF04 /* CCGLProgram.cpp in Sources */,
@@ -4476,13 +4858,18 @@
 				F1EAE2E01C96B3AA006FFF04 /* json_writer.cpp in Sources */,
 				15A3DA591682F826002FB0C5 /* CCScrollView.cpp in Sources */,
 				F1EADFFE1C969582006FFF04 /* TransformUtils.cpp in Sources */,
+				F1EAE4931C96BDDD006FFF04 /* MAnalysisManager.cpp in Sources */,
 				F1EAE2911C96B3AA006FFF04 /* b2CollideEdge.cpp in Sources */,
 				F1EADFE61C969582006FFF04 /* CCImage.mm in Sources */,
 				F1EADFAC1C969582006FFF04 /* CCNS.cpp in Sources */,
+				F1EAE4881C96BDDD006FFF04 /* MIAP91StoreManager.mm in Sources */,
+				F1EAE4A11C96BDDD006FFF04 /* MIAPTransaction.cpp in Sources */,
 				15A3DA5A1682F826002FB0C5 /* CCSorting.cpp in Sources */,
 				15A3DA5B1682F826002FB0C5 /* CCTableView.cpp in Sources */,
+				F1EAE4941C96BDDD006FFF04 /* MAnimation.cpp in Sources */,
 				F1EAE2961C96B3AA006FFF04 /* b2TimeOfImpact.cpp in Sources */,
 				F1EAE2A71C96B3AA006FFF04 /* b2ChainAndCircleContact.cpp in Sources */,
+				F1EAE4731C96BDDD006FFF04 /* mlib_md5.cpp in Sources */,
 				F1EADFD91C969582006FFF04 /* CCEGLViewProtocol.cpp in Sources */,
 				F1EAE2D91C96B3AA006FFF04 /* cpSweep1D.c in Sources */,
 				15A3DA5C1682F826002FB0C5 /* CCTableViewCell.cpp in Sources */,
@@ -4492,10 +4879,12 @@
 				15A3DA5F1682F826002FB0C5 /* CCPhysicsSprite.cpp in Sources */,
 				F1EAE2C01C96B3AA006FFF04 /* cpDampedRotarySpring.c in Sources */,
 				15A3DAEB1682F8A6002FB0C5 /* CDAudioManager.m in Sources */,
+				F1EAE4A41C96BDDD006FFF04 /* MRemoteSprite.cpp in Sources */,
 				15A3DAEC1682F8A6002FB0C5 /* CDOpenALSupport.m in Sources */,
 				F1EADFC71C969582006FFF04 /* CCLabelAtlas.cpp in Sources */,
 				F1EAE29B1C96B3AA006FFF04 /* b2BlockAllocator.cpp in Sources */,
 				F1EAE2A51C96B3AA006FFF04 /* b2World.cpp in Sources */,
+				F1EAE48A1C96BDDD006FFF04 /* MIAPPPStoreManager.mm in Sources */,
 				F1EAE2A31C96B3AA006FFF04 /* b2Fixture.cpp in Sources */,
 				15A3DAED1682F8A6002FB0C5 /* CocosDenshion.m in Sources */,
 				15A3DAEE1682F8A6002FB0C5 /* SimpleAudioEngine.mm in Sources */,
@@ -4503,8 +4892,10 @@
 				F1EAE2BA1C96B3AA006FFF04 /* b2WheelJoint.cpp in Sources */,
 				1A27573F1697CF2B00504026 /* CCEditBoxImplAndroid.cpp in Sources */,
 				1AC3624916D4A1E8000847F2 /* AppController.mm in Sources */,
+				F1EAE4811C96BDDD006FFF04 /* CCEditBoxLoader.cpp in Sources */,
 				1AC3624B16D4A1E8000847F2 /* main.m in Sources */,
 				1AFCDA8216D4A25900906EA6 /* RootViewController.mm in Sources */,
+				F1EAE4961C96BDDD006FFF04 /* MBMFontButton.cpp in Sources */,
 				F1EAE2DA1C96B3AA006FFF04 /* cpVect.c in Sources */,
 				F1EAE2C31C96B3AA006FFF04 /* cpGrooveJoint.c in Sources */,
 				F15860C31AE02ED200F4A3C3 /* UserData.cpp in Sources */,
@@ -4513,32 +4904,43 @@
 				F1EAE2AE1C96B3AA006FFF04 /* b2PolygonAndCircleContact.cpp in Sources */,
 				F1EAE00E1C969582006FFF04 /* CCTextureCache.cpp in Sources */,
 				F1EAE2EF1C96B3F5006FFF04 /* message.cpp in Sources */,
+				F1EAE4721C96BDDD006FFF04 /* mlib_log.cpp in Sources */,
+				F1EAE48D1C96BDDD006FFF04 /* MRemoteNotificationManagerIOS.mm in Sources */,
 				F1EAE2AB1C96B3AA006FFF04 /* b2ContactSolver.cpp in Sources */,
 				F1EADFC61C969582006FFF04 /* CCKeypadDispatcher.cpp in Sources */,
 				F1E80D2E1AE02285002465AE /* goodsItem.cpp in Sources */,
 				F1EAE2C81C96B3AA006FFF04 /* cpSimpleMotor.c in Sources */,
+				F1EAE4851C96BDDD006FFF04 /* MAnalysisManagerIOS.mm in Sources */,
 				F1EAE00C1C969582006FFF04 /* CCTexture2D.cpp in Sources */,
+				F1EAE49B1C96BDDD006FFF04 /* MFileDownloader.cpp in Sources */,
 				F1EAE2CA1C96B3AA006FFF04 /* cpArbiter.c in Sources */,
 				F1EADFF21C969582006FFF04 /* CCAnimationCache.cpp in Sources */,
 				F1EAE2CF1C96B3AA006FFF04 /* cpCollision.c in Sources */,
 				F1EAE0101C969582006FFF04 /* CCTextureETC.cpp in Sources */,
 				F1C9D2921AE6174500183990 /* FightPage.cpp in Sources */,
+				F1EAE4981C96BDDD006FFF04 /* MCallbackAction.cpp in Sources */,
 				F1EADFCC1C969582006FFF04 /* CCTransition.cpp in Sources */,
+				F1EAE48C1C96BDDD006FFF04 /* MMediaPlayer.mm in Sources */,
 				F1EADFD81C969582006FFF04 /* CCParticleSystemQuad.cpp in Sources */,
 				F1EADFDF1C969582006FFF04 /* CCApplication.mm in Sources */,
 				F1EADFDE1C969582006FFF04 /* CCAccelerometer.mm in Sources */,
+				F1EAE4A51C96BDDD006FFF04 /* MRichLabelTTF.cpp in Sources */,
 				F1EADFFF1C969582006FFF04 /* CCComponent.cpp in Sources */,
 				F1EAE0111C969582006FFF04 /* CCParallaxNode.cpp in Sources */,
 				F1EADFE91C969582006FFF04 /* EAGLView.mm in Sources */,
 				F1EADFBF1C969582006FFF04 /* quaternion.c in Sources */,
 				F1EAE2D31C96B3AA006FFF04 /* cpSpace.c in Sources */,
 				F1E80D231AE021F4002465AE /* AnimatePacker.cpp in Sources */,
+				F1EAE4741C96BDDD006FFF04 /* mlib_shared_queue.cpp in Sources */,
 				F1EAE2981C96B3AA006FFF04 /* b2CircleShape.cpp in Sources */,
+				F1EAE4991C96BDDD006FFF04 /* MControl.cpp in Sources */,
 				F1EADF991C969582006FFF04 /* CCActionInterval.cpp in Sources */,
 				F1EAE2C11C96B3AA006FFF04 /* cpDampedSpring.c in Sources */,
 				F1EAE2971C96B3AA006FFF04 /* b2ChainShape.cpp in Sources */,
 				F1EAE29D1C96B3AA006FFF04 /* b2Math.cpp in Sources */,
+				F1EAE4711C96BDDD006FFF04 /* mlib_localize.cpp in Sources */,
 				F1EADFC11C969582006FFF04 /* utility.c in Sources */,
+				F1EAE4771C96BDDD006FFF04 /* mlib_version_number.cpp in Sources */,
 				F1E80D2F1AE02285002465AE /* LodingLayer.cpp in Sources */,
 				F1EADFF61C969582006FFF04 /* CCSpriteFrameCache.cpp in Sources */,
 				F1EADFE71C969582006FFF04 /* CCLock.cpp in Sources */,
@@ -4547,9 +4949,11 @@
 				1A9CE8781765A12C000E3062 /* AssetsManager.cpp in Sources */,
 				1A9CE8791765A12C000E3062 /* CCArmatureAnimation.cpp in Sources */,
 				1A9CE87A1765A12C000E3062 /* CCProcessBase.cpp in Sources */,
+				F1EAE4A81C96BDDD006FFF04 /* MSpeedCheck.cpp in Sources */,
 				1A9CE87B1765A12C000E3062 /* CCTween.cpp in Sources */,
 				1A9CE87C1765A12C000E3062 /* CCArmature.cpp in Sources */,
 				1A9CE87D1765A12C000E3062 /* CCBone.cpp in Sources */,
+				F1EAE4AA1C96BDDD006FFF04 /* MSpriteLoader.cpp in Sources */,
 				1A9CE87E1765A12C000E3062 /* CCDatas.cpp in Sources */,
 				1A9CE87F1765A12C000E3062 /* CCBatchNode.cpp in Sources */,
 				F1EADFCF1C969582006FFF04 /* CCMenu.cpp in Sources */,
@@ -4567,7 +4971,10 @@
 				1A9CE8821765A12C000E3062 /* CCDisplayManager.cpp in Sources */,
 				1A9CE8831765A12C000E3062 /* CCShaderNode.cpp in Sources */,
 				F1EAE2A81C96B3AA006FFF04 /* b2ChainAndPolygonContact.cpp in Sources */,
+				F1EAE4B11C96BDDD006FFF04 /* MWebView.cpp in Sources */,
 				F1EADF9B1C969582006FFF04 /* CCActionPageTurn3D.cpp in Sources */,
+				F1EAE4911C96BDDD006FFF04 /* MUtilsIOS.mm in Sources */,
+				F1EAE46E1C96BDDD006FFF04 /* mlib_event.cpp in Sources */,
 				1A9CE8841765A12C000E3062 /* CCSkin.cpp in Sources */,
 				1A9CE8851765A12C000E3062 /* CCTexture2DMutable.cpp in Sources */,
 				1A9CE8861765A12C000E3062 /* GLES-Render.cpp in Sources */,
@@ -4576,6 +4983,7 @@
 				F1A0DF681ADE8E61002B4E5E /* GameOver.cpp in Sources */,
 				F1EADFBB1C969582006FFF04 /* mat3.c in Sources */,
 				F1EADFB51C969582006FFF04 /* CCGrid.cpp in Sources */,
+				F1EAE46D1C96BDDD006FFF04 /* mlib_buffer.cpp in Sources */,
 				1A9CE88A1765A12C000E3062 /* json_reader.cpp in Sources */,
 				1A9CE88B1765A12C000E3062 /* json_value.cpp in Sources */,
 				1A9CE88D1765A12C000E3062 /* json_writer.cpp in Sources */,
@@ -4584,12 +4992,15 @@
 				F1EAE0001C969582006FFF04 /* CCComponentContainer.cpp in Sources */,
 				F1EADFF91C969582006FFF04 /* CCPointExtension.cpp in Sources */,
 				1A9CE8901765A12C000E3062 /* CCPhysicsWorld.cpp in Sources */,
+				F1EAE4AB1C96BDDD006FFF04 /* MTabButton.cpp in Sources */,
 				1A9CE8911765A12C000E3062 /* CCArmatureDataManager.cpp in Sources */,
 				F1EADFF41C969582006FFF04 /* CCSpriteBatchNode.cpp in Sources */,
 				F1EAE2D51C96B3AA006FFF04 /* cpSpaceHash.c in Sources */,
 				F1EAE2C21C96B3AA006FFF04 /* cpGearJoint.c in Sources */,
+				F1EAE46F1C96BDDD006FFF04 /* mlib_exception.cpp in Sources */,
 				F1EAE2B21C96B3AA006FFF04 /* b2GearJoint.cpp in Sources */,
 				1A9CE8921765A12C000E3062 /* CCDataReaderHelper.cpp in Sources */,
+				F1EAE4891C96BDDD006FFF04 /* MIAPAppStoreManager.mm in Sources */,
 				1A9CE8931765A12C000E3062 /* CCSpriteFrameCacheHelper.cpp in Sources */,
 				F1EADFA01C969582006FFF04 /* CCNode.cpp in Sources */,
 				F1EAE2901C96B3AA006FFF04 /* b2CollideCircle.cpp in Sources */,
@@ -4601,9 +5012,11 @@
 				1A9CE8951765A12C000E3062 /* CCTweenFunction.cpp in Sources */,
 				F1EADFDD1C969582006FFF04 /* AccelerometerDelegateWrapper.mm in Sources */,
 				F1EAE29C1C96B3AA006FFF04 /* b2Draw.cpp in Sources */,
+				F1EAE49A1C96BDDD006FFF04 /* MDragDownView.cpp in Sources */,
 				1A9CE8961765A12C000E3062 /* CCUtilMath.cpp in Sources */,
 				F1EAE2A21C96B3AA006FFF04 /* b2ContactManager.cpp in Sources */,
 				1A9CE8971765A12C000E3062 /* CCComAttribute.cpp in Sources */,
+				F1EAE49C1C96BDDD006FFF04 /* MFileUtils.cpp in Sources */,
 				F1EAE2C61C96B3AA006FFF04 /* cpRatchetJoint.c in Sources */,
 				F1EADFDC1C969582006FFF04 /* CCSAXParser.cpp in Sources */,
 				1A9CE8981765A12C000E3062 /* CCComAudio.cpp in Sources */,
@@ -4618,16 +5031,20 @@
 				1A9CE89A1765A12C000E3062 /* CCInputDelegate.cpp in Sources */,
 				F1A0DF651ADE8E3C002B4E5E /* tiplayer.cpp in Sources */,
 				F1EADFAE1C969582006FFF04 /* CCSet.cpp in Sources */,
+				F1EAE4B01C96BDDD006FFF04 /* MUtils.cpp in Sources */,
 				18D69FB417B20D6A001FE88C /* AppDelegate.cpp in Sources */,
 				F1EAE0081C969582006FFF04 /* unzip.cpp in Sources */,
 				F1EADFFD1C969582006FFF04 /* CCVertex.cpp in Sources */,
 				F1E80D361AE022BB002465AE /* CData.cpp in Sources */,
 				18D69FB917B20D6A001FE88C /* HelloWorldScene.cpp in Sources */,
+				F1EAE48B1C96BDDD006FFF04 /* MIAPTaskIOS.mm in Sources */,
+				F1EAE4B21C96BDDD006FFF04 /* MWebViewImpl.cpp in Sources */,
 				F1EAE2B01C96B3AA006FFF04 /* b2DistanceJoint.cpp in Sources */,
 				F1EADFC91C969582006FFF04 /* CCLabelTTF.cpp in Sources */,
 				F1EADF9F1C969582006FFF04 /* CCAtlasNode.cpp in Sources */,
 				F1EAE2C41C96B3AA006FFF04 /* cpPinJoint.c in Sources */,
 				F1EAE2CC1C96B3AA006FFF04 /* cpBB.c in Sources */,
+				F1EAE4871C96BDDD006FFF04 /* MFileUtilsIOS.mm in Sources */,
 				F1A0DF851ADE9215002B4E5E /* homePage.cpp in Sources */,
 				F1EADFBD1C969582006FFF04 /* neon_matrix_impl.c in Sources */,
 			);
@@ -4642,9 +5059,14 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -4686,7 +5108,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "armv6 armv7";
+				VALID_ARCHS = "armv6 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -4696,9 +5118,13 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -4738,7 +5164,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "armv6 armv7";
+				VALID_ARCHS = "armv6 armv7 armv7s";
 			};
 			name = Release;
 		};

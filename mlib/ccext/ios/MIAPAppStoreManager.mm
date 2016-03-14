@@ -8,6 +8,9 @@
 
 #import "MIAPAppStoreManager.h"
 #include <map>
+#include <mutex>
+#include "mlib.h"
+#include "mlib_log.h"
 
 using namespace std;
 map<string, SKProduct *> g_products;
