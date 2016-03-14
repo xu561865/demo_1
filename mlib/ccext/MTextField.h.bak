@@ -1,0 +1,68 @@
+//
+//  MTextField.h
+//  legend
+//
+//  Created by Minhao Zhang on 5/12/13.
+//
+//
+
+#ifndef __legend__MTextField__
+#define __legend__MTextField__
+
+#include "cocos2d.h"
+#include "cocos-ext.h"
+#include "mlib_ccext.h"
+
+class MTextFieldImpl;
+
+class MTextField :
+public cocos2d::extension::CCControlButton,
+public cocos2d::extension::CCNodeLoaderListener,
+public mlib::MEventDispatcher
+{
+public:
+    static const std::string EVENT_INPUT_FINISHED;
+    static const std::string EVENT_RETURN;
+    
+    static cocos2d::CCDictionary * defaultUserData();
+public:
+    CREATE_FUNC(MTextField);
+    MTextField();
+    virtual ~MTextField();
+    virtual bool init();
+public:
+    virtual void onNodeLoaded(CCNode * pNode, cocos2d::extension::CCNodeLoader * pNodeLoader);
+    
+    virtual void onEnter();
+    virtual void onExit();
+
+    void reloadData();
+    
+    void onTouchUpInside(CCObject *sender, cocos2d::extension::CCControlEvent controlEvent);
+    
+public:
+    MLIB_DECLARE_PROPERTY_SETTER_TO_IMPL(std::string, text);
+    MLIB_DECLARE_PROPERTY_SETTER_TO_IMPL(std::string, placeholder);
+    MLIB_DECLARE_PROPERTY(std::string, prompt);
+    MLIB_DECLARE_PROPERTY(bool, isSecure);
+    
+    MLIB_DECLARE_RETAIN_PROPERTY(cocos2d::CCDictionary *, userData);
+    
+private:
+    MTextFieldImpl * _impl;
+};
+
+MLIB_DECLARE_CCBLOADER(MTextField, CCControlButton);
+
+class MTextFieldImpl : public mlib::MEventDispatcher
+{
+public:
+    static const std::string EVENT_TEXT_EDITED;
+public:
+    void show(MTextField * owner);
+    
+    MLIB_DECLARE_PROPERTY(std::string, text);
+};
+
+
+#endif /* defined(__legend__MTextField__) */

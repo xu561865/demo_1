@@ -1,0 +1,116 @@
+//
+//  MTextField.cpp
+//  legend
+//
+//  Created by Minhao Zhang on 5/12/13.
+//
+//
+
+#include "MTextField.h"
+
+USING_NS_CC;
+USING_NS_CC_EXT;
+
+MLIB_REGISTER_CCBLOADER(MTextField)
+
+const std::string MTextField::EVENT_INPUT_FINISHED = "event_input_finished";
+const std::string MTextField::EVENT_RETURN = "event_return";
+
+cocos2d::CCDictionary * MTextField::defaultUserData()
+{
+    static CCDictionary * dict = nullptr;
+    if (dict == nullptr)
+    {
+        dict = CCDictionary::create();
+        dict->retain();
+    }
+    return dict;
+}
+
+MTextField::MTextField()
+{
+    MLIB_PROPERTY_INIT(cocos2d::CCDictionary *, userData);
+    userData(CCDictionary::createWithDictionary(MTextField::defaultUserData()));
+    _isSecure = false;
+    _impl = new MTextFieldImpl;
+    
+    this->addEventListener(
+                           MTextField::EVENT_INPUT_FINISHED,
+                           [this] (mlib::MEvent * evt) {
+                               this->reloadData();
+                           });
+}
+
+MTextField::~MTextField()
+{
+    delete _impl;
+    MLIB_PROPERTY_RELEASE(cocos2d::CCDictionary *, userData);
+}
+
+void MTextField::text(std::string atext)
+{
+    if (_text != atext)
+    {
+        _text = atext;
+        reloadData();
+    }
+}
+
+void MTextField::placeholder(std::string aplaceholder)
+{
+    if (_placeholder != aplaceholder)
+    {
+        _placeholder = aplaceholder;
+        reloadData();
+    }
+}
+
+bool MTextField::init()
+{
+    if (!CCControlButton::init())
+    {
+        return false;
+    }
+    
+    this->addTargetWithActionForControlEvents(this, cccontrol_selector(MTextField::onTouchUpInside), CCControlEventTouchUpInside);
+    
+    return true;
+}
+
+void MTextField::onNodeLoaded(CCNode * pNode, cocos2d::extension::CCNodeLoader * pNodeLoader)
+{
+    placeholder(this->getTitleForState(CCControlStateNormal)->getCString());
+}
+
+
+void MTextField::onEnter()
+{
+    CCControlButton::onEnter();
+    
+    reloadData();
+}
+
+void MTextField::onExit()
+{
+    CCControlButton::onExit();
+}
+
+void MTextField::reloadData()
+{
+    std::string title;
+    if (_text.empty()) title = _placeholder;
+    else title = _text;
+    
+    this->setTitleForState(CCString::create(title), CCControlStateNormal);
+    this->setTitleForState(CCString::create(title), CCControlStateHighlighted);
+    this->setTitleForState(CCString::create(title), CCControlStateDisabled);
+}
+
+void MTextField::onTouchUpInside(cocos2d::CCObject *sender, cocos2d::extension::CCControlEvent controlEvent)
+{
+    _impl->show(this);
+}
+
+#pragma mark Impl
+const std::string MTextFieldImpl::EVENT_TEXT_EDITED = "event_text_edited";
+
