@@ -23,7 +23,10 @@ private:
 
 #define M_THROW(msg) \
 {\
-std::stringstream __ss__throw; __ss__throw << msg; M_ERROR("Exception: " << __ss__throw.str()); throw MLIB_NS::MException(__ss__throw.str()); \
+    std::stringstream __ss__throw; \
+    __ss__throw << msg; \
+    M_ERROR("Exception: " << __ss__throw.str()); \
+    throw MLIB_NS::MException(__ss__throw.str()); \
 }
     
 

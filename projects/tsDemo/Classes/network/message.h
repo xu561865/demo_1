@@ -48,7 +48,7 @@ public:
     int datalength();
 };
 
-class NewMessage
+class NewMessage : public CCObject
 {
 public:
     void* data;

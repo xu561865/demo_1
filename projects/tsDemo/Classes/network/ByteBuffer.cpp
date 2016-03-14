@@ -1,14 +1,12 @@
 #include "ByteBuffer.h"
 #include "Util.h"
 #include "SocketClient.h"
+#include "mlib.h"
 
 
 ByteBuffer::ByteBuffer(int capacity)
 {
-    if(capacity <= 0)
-    {
-        
-    }
+    M_ASSERT(capacity > 0);
     
 	buffer = new char[capacity];
     
@@ -19,6 +17,8 @@ ByteBuffer::ByteBuffer(int capacity)
 
 ByteBuffer::ByteBuffer(char* data, int offset, int size)
 {
+    M_ASSERT(data && (size > 0));
+    
 	buffer = new char[size];
     memcpy(buffer, data + offset, size);
     
@@ -29,7 +29,7 @@ ByteBuffer::ByteBuffer(char* data, int offset, int size)
 
 ByteBuffer::~ByteBuffer()
 {
-	SAFE_DELETE_ARRAY( buffer);
+	CC_SAFE_DELETE_ARRAY( buffer);
 }
 
 int ByteBuffer::remaining()
@@ -37,15 +37,17 @@ int ByteBuffer::remaining()
 	return limit - position;
 }
 
-void ByteBuffer::put(const char* bytes,int offset,int len)
+void ByteBuffer::put(const char* data,int offset,int len)
 {
+    M_ASSERT(data && len > 0);
+    
 	if(position + len > capacity)
     {
 		printf("error -ByteBuffer::put(const char* bytes,int offset,int len)---position=%d,len=%d,capacity=%d\n",position,len,capacity);
 		return;
 	}
     
-	memcpy(buffer+position,bytes+offset,len);
+	memcpy(buffer + position, data + offset, len);
 	position += len;
 }
 

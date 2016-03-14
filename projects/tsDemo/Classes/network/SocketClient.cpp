@@ -4,6 +4,7 @@
 #include <signal.h>
 #include "CData.h"
 #include "Util.h"
+#include "cocos2d.h"
 
 SocketClient::SocketClient(std::string host, int port, byte clientid, byte serverid):
                             m_iState(SocketClient_WAIT_CONNECT),
@@ -43,21 +44,21 @@ SocketClient::~SocketClient()
     {
         Message* m = m_receivedMessageQueue.front();
         m_receivedMessageQueue.pop();
-        SAFE_DELETE_ELEMENT(m);
+        CC_SAFE_RELEASE(m);
     }
     
     while (!m_sendMessageQueue.empty())
     {
         Message* m = m_sendMessageQueue.front();
         m_sendMessageQueue.pop();
-        SAFE_DELETE_ELEMENT(m);
+        CC_SAFE_RELEASE(m);
     }
     
     while (!m_sendNewMessageQueue.empty())
     {
         NewMessage* m = m_sendNewMessageQueue.front();
         m_sendNewMessageQueue.pop();
-        SAFE_DELETE_ELEMENT(m);
+        CC_SAFE_RELEASE(m);
     }
 }
 

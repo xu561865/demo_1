@@ -36,7 +36,9 @@ public:
 
 #define __M_MAKE_LOG(level, msg) \
 {\
-    std::stringstream ss; ss << msg; MLIB_NS::MLogger::SharedInstance().log(level, ss.str(), __FILE__, __LINE__); \
+    std::stringstream ss; \
+    ss << msg; \
+    MLIB_NS::MLogger::SharedInstance().log(level, ss.str(), __FILE__, __LINE__); \
 }
 
 #ifdef DEBUG

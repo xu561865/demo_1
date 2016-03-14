@@ -34,8 +34,6 @@ extern string byteToHexStr(unsigned char *byte_arr, int arr_len);
 extern double distance(double x1, double y1, double x2, double y2);
 extern unsigned long msNextPOT(unsigned long x);
 
-#define SAFE_DELETE_ELEMENT( ptr ) if (ptr != NULL) {delete ptr; ptr = NULL;}
-#define SAFE_DELETE_ARRAY( ptr )if (ptr != NULL){delete[] ptr;ptr = NULL;}
 
 template<typename _RandomAccessIterator>
 inline void safe_delete_vector(_RandomAccessIterator __first, _RandomAccessIterator __last)

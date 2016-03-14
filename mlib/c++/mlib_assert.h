@@ -11,19 +11,16 @@ MLIB_NS_END
 
 #ifdef DEBUG
 
-#define __M_ASSERT_NO_MSG(cond) \
-if (!(cond)) { M_THROW("ASSERTION FAILED " << #cond << ", " << __FILE__ << "[" << __LINE__ << "]"); }
+#define __M_ASSERT_NO_MSG(cond) if (!(cond)) { M_THROW("ASSERTION FAILED " << #cond << ", " << __FILE__ << "[" << __LINE__ << "]"); }
 
 #define __M_ASSERT_WITH_MSG(cond, msg) \
 {\
-if (!(cond)) {\
-M_THROW("ASSERTION FAILED " << #cond << ", " << msg << ", " << __FILE__ << "[" << __LINE__ << "]"); \
-}\
+    if (!(cond)) {\
+        M_THROW("ASSERTION FAILED " << #cond << ", " << msg << ", " << __FILE__ << "[" << __LINE__ << "]"); \
+    }\
 }
 
-#define __M_ASSERT_MACRO_CHOOSER(...) \
-M_GET_3RD_ARG(__VA_ARGS__, __M_ASSERT_WITH_MSG, __M_ASSERT_NO_MSG)
-
+#define __M_ASSERT_MACRO_CHOOSER(...) M_GET_3RD_ARG(__VA_ARGS__, __M_ASSERT_WITH_MSG, __M_ASSERT_NO_MSG)
 
 #define M_ASSERT(...) __M_ASSERT_MACRO_CHOOSER(__VA_ARGS__)(__VA_ARGS__)
 
