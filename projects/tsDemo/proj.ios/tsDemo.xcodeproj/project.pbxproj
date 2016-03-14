@@ -2085,6 +2085,7 @@
 		15A3DA6B1682F8A6002FB0C5 /* CocosDenshion */ = {
 			isa = PBXGroup;
 			children = (
+				F1EAE1D31C96B3AA006FFF04 /* external */,
 				15A3DA811682F8A6002FB0C5 /* include */,
 				15A3DA841682F8A6002FB0C5 /* ios */,
 			);
@@ -2675,12 +2676,9 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				F1EAE2FC1C96BC92006FFF04 /* libs */,
 				18D69EFC17B20D6A001FE88C /* Classes */,
-				F1EADF911C969582006FFF04 /* cocos2dx */,
-				15A3DA6B1682F8A6002FB0C5 /* CocosDenshion */,
 				F143C8681A983B620063A833 /* Default-568h@2x.png */,
-				15A3D9B31682F826002FB0C5 /* extensions */,
-				F1EAE1D31C96B3AA006FFF04 /* external */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				080E96DDFE201D6D7F000001 /* ios */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -3504,7 +3502,7 @@
 				F1EAE28C1C96B3AA006FFF04 /* sqlite3 */,
 			);
 			name = external;
-			path = ../../../external;
+			path = ../external;
 			sourceTree = "<group>";
 		};
 		F1EAE1D41C96B3AA006FFF04 /* Box2D */ = {
@@ -3844,6 +3842,16 @@
 				F1EAE2ED1C96B3F5006FFF04 /* Util.h */,
 			);
 			path = network;
+			sourceTree = "<group>";
+		};
+		F1EAE2FC1C96BC92006FFF04 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				F1EADF911C969582006FFF04 /* cocos2dx */,
+				15A3DA6B1682F8A6002FB0C5 /* CocosDenshion */,
+				15A3D9B31682F826002FB0C5 /* extensions */,
+			);
+			name = libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
