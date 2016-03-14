@@ -168,7 +168,7 @@ unsigned char* getFileData(const char* pszFileName, bool isfullPath,unsigned int
 }
 
 static int randC = 0;
-String createRandString(int len,boolean filter)
+std::string createRandString(int len,boolean filter)
 {
 	string s;
 	s.resize(len+10);

@@ -5,7 +5,7 @@
 #include "CData.h"
 #include "Util.h"
 
-SocketClient::SocketClient(String host, int port, byte clientid, byte serverid):
+SocketClient::SocketClient(std::string host, int port, byte clientid, byte serverid):
                             m_iState(SocketClient_WAIT_CONNECT),
                             m_cbRecvBuf(1024*60),m_cbSendBuf(1024*60)
 {   

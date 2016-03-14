@@ -32,7 +32,7 @@ public:
 	void putInt(int n);
 	void putLong(long long n);
 	void putUTF(const char* str);
-	void putUTF(const String& str);
+    void putUTF(const std::string& str);
 	void putArray(vector<byte>& a);
 	void putArray(vector<bool>& a);
 	void putArray(vector<short>& a);
@@ -51,8 +51,8 @@ public:
 	void getArray(vector<int>& a,int len);
 	void getArray(vector<long long>& a,int len);
 	void getArray(vector<string>& a,int len);
-	void getUTF(String& str);
-	String getUTF();
+    void getUTF(std::string& str);
+    std::string getUTF();
 	int getPosition();
 	void setPosition(int p);
     //void reset();
@@ -68,7 +68,7 @@ public:
 	short getShort();
 	
 	//这个方法只能用于打开的是文本文件的时候
-	String getLine();
+    std::string getLine();
 	
 	long long getLong();
 	void get(char* bytes,int size);

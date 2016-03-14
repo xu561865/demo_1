@@ -84,7 +84,7 @@ private:
 	static void* ThreadSendMessage(void *p);
 	
 public:
-	SocketClient(String host, int port, byte clientId, byte serverId);
+    SocketClient(std::string host, int port, byte clientId, byte serverId);
 	
 	~SocketClient();
 	void start();

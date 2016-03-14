@@ -159,7 +159,7 @@ void ByteBuffer::putUTF(const char* str)
 	}
 }
 
-void ByteBuffer::putUTF(const String& str)
+void ByteBuffer::putUTF(const std::string& str)
 {
 	putUTF(str.c_str());
 }
@@ -330,7 +330,7 @@ void ByteBuffer::getArray(vector<string>& a,int size)
 	}
 }
 
-void ByteBuffer::getUTF(String& str)
+void ByteBuffer::getUTF(std::string& str)
 {
 	short len = getShort();		
 	if( len>0)
@@ -344,9 +344,9 @@ void ByteBuffer::getUTF(String& str)
 	}
 }
 
-String ByteBuffer::getUTF()
+std::string ByteBuffer::getUTF()
 {
-	String str;
+    std::string str;
 	getUTF(str);		
 	return str;
 }
@@ -592,7 +592,7 @@ void ByteBuffer::putBoolean(bool b)
 }
 
 //这个方法只能用于打开的是文本文件的时候
-String ByteBuffer::getLine()
+std::string ByteBuffer::getLine()
 {
     if( position>=capacity)
     {
