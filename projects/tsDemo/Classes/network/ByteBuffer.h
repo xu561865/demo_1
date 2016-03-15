@@ -22,6 +22,8 @@ public:
 	int remaining();
 	//void markPosition();
 	void setIntAt(int n,int index);
+    
+    //put
 	void put(const char* bytes,int offset,int len);
 	void put(int n);
 	void putBoolean(bool b);
@@ -32,47 +34,48 @@ public:
 	void putLong(long long n);
 	void putUTF(const char* str);
     void putUTF(const std::string& str);
-	void putArray(vector<byte>& a);
-	void putArray(vector<bool>& a);
-	void putArray(vector<short>& a);
-	void putArray(vector<int>& a);
-	void putArray(vector<long long>& a);
-	void putArray(vector<string>& a);
-	void getArray(vector<byte>& a);
-	void getArray(vector<bool>& a);
-	void getArray(vector<short>& a);
-	void getArray(vector<int>& a);
-	void getArray(vector<long long>& a);
-	void getArray(vector<string>& a);
-	void getArray(vector<byte>& a,int len);
-	void getArray(vector<bool>& a,int len);
-	void getArray(vector<short>& a,int len);
-	void getArray(vector<int>& a,int len);
-	void getArray(vector<long long>& a,int len);
-	void getArray(vector<string>& a,int len);
+    void putArray(const std::vector<byte>& a);
+    void putArray(const std::vector<bool>& a);
+    void putArray(const std::vector<short>& a);
+    void putArray(const std::vector<int>& a);
+    void putArray(const std::vector<long long>& a);
+    void putArray(const std::vector<std::string>& a);
+    
+    //get
+    byte getByte();
+    bool getBoolean();
+    int getInt();
+    float getFloat();
+    short getShort();
+    long long getLong();
+    void get(char* bytes,int size);
+    void get(char* bytes,int offset,int len);
+    void getArray(std::vector<byte>& a);
+    void getArray(std::vector<bool>& a);
+    void getArray(std::vector<short>& a);
+    void getArray(std::vector<int>& a);
+    void getArray(std::vector<long long>& a);
+    void getArray(std::vector<std::string>& a);
+	void getArray(std::vector<byte>& a,int len);
+	void getArray(std::vector<bool>& a,int len);
+	void getArray(std::vector<short>& a,int len);
+	void getArray(std::vector<int>& a,int len);
+	void getArray(std::vector<long long>& a,int len);
+	void getArray(std::vector<std::string>& a,int len);
     void getUTF(std::string& str);
+    
     std::string getUTF();
 	int getPosition();
 	void setPosition(int p);
-    //void reset();
 	int getLimit();
 	int getCapacity();
+    
 	char* getBuffer();
 	char* toByteArray();
-	char get();
-	byte getByte();
-	bool getBoolean();
-	int getInt();
-	float getFloat();
-	short getShort();
 	
 	//这个方法只能用于打开的是文本文件的时候
     std::string getLine();
 	
-	long long getLong();
-	void get(char* bytes,int size);
-	
-	void get(char* bytes,int offset,int len);
 	/**
 	 * makes a buffer ready for a new sequence of channel-read or relative put operations: It sets the limit to the capacity and the position to zero.
 	 */

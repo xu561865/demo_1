@@ -16,8 +16,6 @@ typedef signed char byte;
 typedef bool boolean;
 class ByteBuffer;
 
-using namespace std;
-
 #define  Float_MAX_VALUE  3.4028235E+38F
 #define  Float_MIN_VALUE  1.4E-45F;
 
@@ -30,7 +28,7 @@ using namespace std;
  */
 static const double ERROR_INS = 0.005;
 extern unsigned char* readFile(const char *filename);
-extern string byteToHexStr(unsigned char *byte_arr, int arr_len);
+extern std::string byteToHexStr(unsigned char *byte_arr, int arr_len);
 extern double distance(double x1, double y1, double x2, double y2);
 extern unsigned long msNextPOT(unsigned long x);
 

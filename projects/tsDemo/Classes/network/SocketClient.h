@@ -25,8 +25,6 @@ USING_NS_CC;
 class Message;
 class NewMessage;
 
-using namespace std;
-
 class SocketClient
 {
 public:
@@ -34,25 +32,25 @@ public:
 
 	char m_serverId;
 	char m_clientId;
-	string m_host;
+    std::string m_host;
 	int m_iport;
 
-	vector<char> m_serverId2;
-	vector<char> m_clientId2;
-	vector<string> m_host2;
-	vector<int> m_iport2;//链接服务器1失败后，如果服务器2存在将连服务器2
+	std::vector<char> m_serverId2;
+	std::vector<char> m_clientId2;
+	std::vector<std::string> m_host2;
+	std::vector<int> m_iport2;//链接服务器1失败后，如果服务器2存在将连服务器2
 	
 	//发送和接收缓冲区，发送缓冲区满的时候，会断开连接，并提示信号不好
 	ByteBuffer m_cbRecvBuf;
 	ByteBuffer m_cbSendBuf;
 	
 	//收到服务端消息
-	queue<Message*> m_receivedMessageQueue;
-    queue<NewMessage*> m_receivedNewMessageQueue;
+	std::queue<Message*> m_receivedMessageQueue;
+    std::queue<NewMessage*> m_receivedNewMessageQueue;
 	
 	//需要发送到服务端的消息
-	queue<Message*> m_sendMessageQueue;
-    queue<NewMessage*> m_sendNewMessageQueue;
+	std::queue<Message*> m_sendMessageQueue;
+    std::queue<NewMessage*> m_sendNewMessageQueue;
 	
 	int m_iState;
 	
@@ -63,6 +61,7 @@ public:
 	//发送线程
 	bool m_bThreadSendCreated;
 	pthread_t pthread_t_send;
+    
 	pthread_mutex_t m_thread_cond_mutex;//pthread_mutex_t 互斥锁
 	pthread_cond_t m_threadCond;
 	

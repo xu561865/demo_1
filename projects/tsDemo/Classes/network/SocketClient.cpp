@@ -136,7 +136,6 @@ NewMessage* SocketClient::constructMessage(Json::Value value, int commandId)
 {
     NewMessage *msg = new NewMessage;
     
-    
     void *pValue = static_cast<void*>(&value);
     unsigned short valueLength = strlen(static_cast<char*>(pValue));
     msg->length = valueLength + 2;
@@ -217,41 +216,41 @@ bool SocketClient::connectServer()
     {
         return false;
     }
-	int dwServerIP = inet_addr(m_host.c_str());
-	unsigned short wPort = m_iport;
     
 	if( m_hSocket != -1)
     {
 		close(m_hSocket);
 	}
     
-	m_hSocket = socket(AF_INET,SOCK_STREAM,0);
+	m_hSocket = socket(AF_INET, SOCK_STREAM, 0);
 	if (m_hSocket == -1)
 	{
 		return false;
 	}
 	
-	sockaddr_in SocketAddr;
-	memset(&SocketAddr,0,sizeof(SocketAddr));
+	sockaddr_in socketAddr;
+	memset(&socketAddr, 0, sizeof(socketAddr));
     
-	SocketAddr.sin_family=AF_INET;
-	SocketAddr.sin_port=htons(wPort);
-	SocketAddr.sin_addr.s_addr=dwServerIP;
+	socketAddr.sin_family = AF_INET;
+	socketAddr.sin_port = htons(m_iport);
+	socketAddr.sin_addr.s_addr = inet_addr(m_host.c_str());
     
-    memset(&(SocketAddr.sin_zero),0,sizeof(SocketAddr.sin_zero));
+    memset(&(socketAddr.sin_zero), 0, sizeof(socketAddr.sin_zero));
     
-	int iErrorCode=0;
-	iErrorCode= connect(m_hSocket,(sockaddr*)&SocketAddr,sizeof(SocketAddr));
-	if (iErrorCode==-1)
+	int iErrorCode = connect(m_hSocket, (sockaddr*)&socketAddr, sizeof(socketAddr));
+	if (iErrorCode == -1)
 	{
 		printf("socket connect error:%d\n",errno);
 		return false;
 	}
     
-	if( !m_bThreadRecvCreated )
+	if(!m_bThreadRecvCreated)
     {
-		if(pthread_create( &pthread_t_receive, NULL,ThreadReceiveMessage, this)!=0)
+        if(pthread_create(&pthread_t_receive, NULL, SocketClient::ThreadReceiveMessage, this) != 0)
+        {
 			return false;
+        }
+        
 		m_bThreadRecvCreated = true;
 	}
     
@@ -280,7 +279,7 @@ void SocketClient::sendMessage_(Message* msg,bool b)
 	}
 }
 
-void SocketClient::sendMessage_(NewMessage* msg,bool b)
+void SocketClient::sendMessage_(NewMessage* msg, bool b)
 {
     if(m_iState == SocketClient_DESTROY)
     {

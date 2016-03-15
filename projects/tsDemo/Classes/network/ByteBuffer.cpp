@@ -51,6 +51,22 @@ void ByteBuffer::put(const char* data,int offset,int len)
 	position += len;
 }
 
+void ByteBuffer::putBoolean(bool b)
+{
+    if( position + 1> capacity )
+    {
+        printf("error putBoolean position+len> limit------------position=%d,len=%d,capacity=%d\n",position,1,capacity);
+        
+        return;
+    }
+    
+    if(b)
+        buffer[position] =(1 & 0xff);
+    else
+        buffer[position]=(0 & 0xff);
+    position+=1;
+}
+
 void ByteBuffer::putByte(byte n)
 {
 	if(position + 1 > capacity)
@@ -155,7 +171,7 @@ void ByteBuffer::putLong(long long n)
 void ByteBuffer::putUTF(const char* str)
 {
 	short len = strlen(str);
-	if(position + 2+len > capacity)
+	if(position + 2 + len > capacity)
     {
 		printf("error ByteBuffer::putUTF----position=%d,len=%d,capacity=%d\n",position,2+len,capacity);
 		return;
@@ -172,169 +188,59 @@ void ByteBuffer::putUTF(const std::string& str)
 	putUTF(str.c_str());
 }
 
-void ByteBuffer::putArray(vector<byte>& a)
+void ByteBuffer::putArray(const std::vector<byte>& a)
 {
 	putInt(a.size());
-	for(int i=0;i< a.size();++i)
+	for(int i = 0;i < a.size(); ++i)
     {
 		put(a[i]);
 	}	
 }
 
-void ByteBuffer::putArray(vector<bool>& a)
+void ByteBuffer::putArray(const std::vector<bool>& a)
 {
 	putInt(a.size());
-	for(int i=0;i< a.size();++i)
+	for(int i=0; i< a.size(); ++i)
     {
 		put(a[i]);
 	}	
 }
 
-void ByteBuffer::putArray(vector<short>& a)
+void ByteBuffer::putArray(const std::vector<short>& a)
 {
 	putInt(a.size());
-	for(int i=0;i< a.size();++i)
+	for(int i=0; i< a.size(); ++i)
     {
 		putShort(a[i]);
 	}
 }
 
-void ByteBuffer::putArray(vector<int>& a)
+void ByteBuffer::putArray(const std::vector<int>& a)
 {
 	putInt(a.size());
-	for(int i=0;i< a.size();++i)
+	for(int i=0; i< a.size(); ++i)
     {
 		putInt(a[i]);
 	}
 }
 
-void ByteBuffer::putArray(vector<long long>& a)
+void ByteBuffer::putArray(const std::vector<long long>& a)
 {
 	putInt(a.size());
 
-	for(int i=0;i< a.size();++i)
+	for(int i=0; i< a.size(); ++i)
     {
 		putLong(a[i]);
 	}
 }
 
-void ByteBuffer::putArray(vector<string>& a)
+void ByteBuffer::putArray(const std::vector<std::string>& a)
 {
 	putInt(a.size());
 	
-	for(int i=0;i< a.size();++i)
+	for(int i=0; i< a.size(); ++i)
     {
 		putUTF(a[i]);
-	}
-}
-
-void ByteBuffer::getArray(vector<byte>& a)
-{
-	int size = getInt();
-	a.resize(size);
-	for(int i=0;i< size;++i)
-    {
-		a[i] = get();
-	}
-}
-
-void ByteBuffer::getArray(vector<bool>& a)
-{
-	int size = getInt();
-	a.resize(size);
-	for(int i=0;i< size;++i)
-    {
-		a[i] = getBoolean();
-	}
-}
-
-void ByteBuffer::getArray(vector<short>& a)
-{
-	int size = getInt();
-	a.resize(size);
-	for(int i=0;i< size;++i)
-    {
-		a[i] = getShort();
-	}
-}
-
-void ByteBuffer::getArray(vector<int>& a)
-{
-	int size = getInt();
-	a.resize(size);
-	for(int i=0;i< size;++i)
-    {
-		a[i] = getInt();
-	}
-}
-
-void ByteBuffer::getArray(vector<long long>& a)
-{
-	int size = getInt();
-	a.resize(size);
-	for(int i=0;i< size;++i)
-    {
-		a[i] = getLong();
-	}
-}
-
-void ByteBuffer::getArray(vector<string>& a)
-{
-	int size =getInt();
-	getArray(a,size);
-}
-
-void ByteBuffer::getArray(vector<byte>& a,int size)
-{
-	a.resize(size);
-	for(int i=0;i< size;++i)
-    {
-		a[i] = getByte();
-	}
-}
-
-void ByteBuffer::getArray(vector<bool>& a,int size)
-{
-	a.resize(size);
-	for(int i=0;i< size;++i)
-    {
-		a[i] = getBoolean();
-	}	
-}
-
-void ByteBuffer::getArray(vector<short>& a,int size)
-{
-	a.resize(size);
-	for(int i=0;i< size;++i)
-    {
-		a[i] = getShort();
-	}
-}
-
-void ByteBuffer::getArray(vector<int>& a,int size)
-{
-	a.resize(size);
-	for(int i=0;i< size;++i)
-    {
-		a[i] = getInt();
-	}
-}
-
-void ByteBuffer::getArray(vector<long long>& a,int size)
-{
-	a.resize(size);
-	for(int i=0;i< size;++i)
-    {
-		a[i] = getLong();
-	}
-}
-
-void ByteBuffer::getArray(vector<string>& a,int size)
-{
-	a.resize(size);
-	for(int i=0;i< size;++i)
-    {
-		getUTF(a[i]);
 	}
 }
 
@@ -395,16 +301,6 @@ char* ByteBuffer::toByteArray()
 	return tmp;
 }
 
-char ByteBuffer::get()
-{
-	if(position < limit)
-    {
-		return buffer[position++];
-	}
-	printf("error ByteBuffer::get() position+1> limit------------position=%d,limit=%d\n",position,limit);
-	return 0;	
-}
-
 byte ByteBuffer::getByte()
 {
 	if(position + 1 > limit)
@@ -425,22 +321,225 @@ bool ByteBuffer::getBoolean()
 	return buffer[position++]!=0;
 }
 
-int readIntFromBuffer(byte* buffer,int position)
+void ByteBuffer::getAsBytes(byte* bytes)
 {
-	int rt = 0;
-	for(int i = 0 ; i < 4 ; i++)
+    for(int i = 0 ; i < 4 ; i++)
     {
-		rt |=  ((buffer[position] & 0xFF) << (8 *(3 - i)));
-		position++;
+        bytes[i]=  buffer[position];
+        position++;
+    }
+}
+
+int ByteBuffer::getInt()
+{
+    if(position + 4 > limit)
+    {
+        printf("error ByteBuffer::getInt() position+4> limit------------position=%d,limit=%d\n",position,limit);
+        return 0;
+    }
+    int rt = 0;
+    for(int i = 0 ; i < 4 ; i++)
+    {
+        rt |=  ((buffer[position] & 0xFF) << (8 *(3 - i)));
+        position++;
+    }
+    return rt;
+}
+
+float ByteBuffer::getFloat()
+{
+    if(position + 4 > limit)
+    {
+        printf("error ByteBuffer::getFloat() position+4> limit------------position=%d,limit=%d\n",position,limit);
+        return 0;
+    }
+    float floatValue;
+    unsigned char* pBytes;
+    pBytes = (unsigned char*)&floatValue;
+    pBytes[3] = buffer[position++];
+    pBytes[2] = buffer[position++];
+    pBytes[1] = buffer[position++];
+    pBytes[0] = buffer[position++];
+    return floatValue;
+}
+
+short ByteBuffer::getShort()
+{
+    if(position + 2 > limit)
+    {
+        printf("error ByteBuffer::getShort() position+2> limit------------position=%d,limit=%d\n",position,limit);
+        return 0;
+    }
+    short n = 0;
+    for(int i = 0 ; i < 2 ; i++)
+    {
+        n |= ((buffer[position] & 0xFF) << (8 *(1 - i)));
+        position++;
+    }
+    return n;
+}
+
+long long ByteBuffer::getLong()
+{
+    if( position + 8 > limit )
+    {
+        printf("error ByteBuffer::getLong() position+8> limit------------position=%d,limit=%d\n",position,limit);
+        return 0;
+    }
+    long long n = 0;
+    for(int i = 0 ; i < 8 ; i++)
+    {
+        long long tmp = (buffer[position] & 0xFF);
+        n |= (tmp << (8 *(7 - i)));
+        
+        position++;
+    }
+    return n;
+}
+
+void ByteBuffer::getArray(std::vector<byte>& a)
+{
+    int size = getInt();
+    a.resize(size);
+    for(int i = 0; i < size; ++i)
+    {
+        a[i] = getByte();
+    }
+}
+
+void ByteBuffer::getArray(std::vector<bool>& a)
+{
+    int size = getInt();
+    a.resize(size);
+    for(int i = 0; i < size; ++i)
+    {
+        a[i] = getBoolean();
+    }
+}
+
+void ByteBuffer::getArray(std::vector<short>& a)
+{
+    int size = getInt();
+    a.resize(size);
+    for(int i = 0; i < size; ++i)
+    {
+        a[i] = getShort();
+    }
+}
+
+void ByteBuffer::getArray(std::vector<int>& a)
+{
+    int size = getInt();
+    a.resize(size);
+    for(int i = 0; i < size; ++i)
+    {
+        a[i] = getInt();
+    }
+}
+
+void ByteBuffer::getArray(std::vector<long long>& a)
+{
+    int size = getInt();
+    a.resize(size);
+    for(int i = 0; i < size; ++i)
+    {
+        a[i] = getLong();
+    }
+}
+
+void ByteBuffer::getArray(std::vector<std::string>& a)
+{
+    int size = getInt();
+    getArray(a, size);
+}
+
+void ByteBuffer::getArray(std::vector<byte>& a, int size)
+{
+    a.resize(size);
+    for(int i = 0; i < size; ++i)
+    {
+        a[i] = getByte();
+    }
+}
+
+void ByteBuffer::getArray(std::vector<bool>& a, int size)
+{
+    a.resize(size);
+    for(int i = 0; i < size; ++i)
+    {
+        a[i] = getBoolean();
+    }
+}
+
+void ByteBuffer::getArray(std::vector<short>& a, int size)
+{
+    a.resize(size);
+    for(int i = 0; i < size; ++i)
+    {
+        a[i] = getShort();
+    }
+}
+
+void ByteBuffer::getArray(std::vector<int>& a, int size)
+{
+    a.resize(size);
+    for(int i = 0; i < size; ++i)
+    {
+        a[i] = getInt();
+    }
+}
+
+void ByteBuffer::getArray(std::vector<long long>& a, int size)
+{
+    a.resize(size);
+    for(int i = 0; i < size;++i)
+    {
+        a[i] = getLong();
+    }
+}
+
+void ByteBuffer::getArray(std::vector<std::string>& a, int size)
+{
+    a.resize(size);
+    for(int i = 0; i < size; ++i)
+    {
+        getUTF(a[i]);
+    }
+}
+
+void ByteBuffer::get(char* bytes, int size)
+{
+	get(bytes, 0, size);
+}
+
+void ByteBuffer::get(char* bytes, int offset, int len)
+{
+	if(position + len > limit)
+    {
+		memset(bytes+offset, 0, len );
+		printf("error ByteBuffer::get(char* bytes,int offset,int len) position+len> limit------------position=%d,len=%d,limit=%d\n",position,len,limit);
+		return;
 	}
-	return rt; 
+	memcpy(bytes+offset,buffer+position,len);
+	position += len;
+}
+
+int readIntFromBuffer(byte* buffer, int position)
+{
+    int rt = 0;
+    for(int i = 0; i < 4; i++)
+    {
+        rt |=  ((buffer[position] & 0xFF) << (8 *(3 - i)));
+        position++;
+    }
+    return rt; 
 }
 
 int ByteBuffer::getLength(int offset)
 {
-    int lengthPos = position+ offset;
+    int lengthPos = position + offset;
     byte* pos = new byte[4];
-    for(int i = 0;i < 4 ;i++)
+    for(int i = 0; i < 4 ; i++)
     {
         pos[i] = buffer[lengthPos+i];
     }
@@ -454,98 +553,6 @@ int ByteBuffer::getLength(int offset)
     return SocketClient::bytesToInt(pos);
 }
 
-void ByteBuffer::getAsBytes(byte* bytes)
-{
-    for(int i = 0 ; i < 4 ; i++)
-    {
-		bytes[i]=  buffer[position];
-		position++;
-	}
-}
-
-int ByteBuffer::getInt()
-{
-	if(position + 4 > limit)
-    {
-		printf("error ByteBuffer::getInt() position+4> limit------------position=%d,limit=%d\n",position,limit);
-		return 0;
-	}
-	int rt = 0;
-	for(int i = 0 ; i < 4 ; i++)
-    {
-		rt |=  ((buffer[position] & 0xFF) << (8 *(3 - i)));
-		position++;
-	}
-	return rt;
-}
-
-float ByteBuffer::getFloat()
-{
-	if(position + 4 > limit)
-    {
-		printf("error ByteBuffer::getFloat() position+4> limit------------position=%d,limit=%d\n",position,limit);
-		return 0;
-	}
-	float floatValue;
-	unsigned char* pBytes;
-	pBytes = (unsigned char*)&floatValue;
-	pBytes[3] = buffer[position++];
-	pBytes[2] = buffer[position++];
-	pBytes[1] = buffer[position++];
-	pBytes[0] = buffer[position++];
-	return floatValue;
-}
-
-short ByteBuffer::getShort()
-{
-	if(position + 2 > limit)
-    {
-		printf("error ByteBuffer::getShort() position+2> limit------------position=%d,limit=%d\n",position,limit);
-		return 0;
-	}
-	short n = 0;
-	for(int i = 0 ; i < 2 ; i++)
-    {
-		n |= ((buffer[position] & 0xFF) << (8 *(1 - i)));
-		position++;
-	}
-	return n;
-}
-
-long long ByteBuffer::getLong()
-{
-	if( position + 8 > limit )
-    {
-		printf("error ByteBuffer::getLong() position+8> limit------------position=%d,limit=%d\n",position,limit);
-		return 0;
-	}
-	long long n = 0;
-	for(int i = 0 ; i < 8 ; i++)
-    {
-		long long tmp = (buffer[position] & 0xFF);
-		n |= (tmp << (8 *(7 - i)));
-		
-		position++;
-	}
-	return n;
-}
-
-void ByteBuffer::get(char* bytes,int size)
-{
-	get(bytes,0,size);
-}
-
-void ByteBuffer::get(char* bytes,int offset,int len)
-{
-	if(position + len > limit)
-    {
-		memset(bytes+offset, 0, len );
-		printf("error ByteBuffer::get(char* bytes,int offset,int len) position+len> limit------------position=%d,len=%d,limit=%d\n",position,len,limit);
-		return;
-	}
-	memcpy(bytes+offset,buffer+position,len);
-	position += len;
-}
 
 /**
  * makes a buffer ready for a new sequence of channel-read or relative put operations: It sets the limit to the capacity and the position to zero.
@@ -583,31 +590,15 @@ void ByteBuffer::rewind()
 	position = 0;
 }
 
-void ByteBuffer::putBoolean(bool b)
-{
-	if( position+1> capacity )
-    {
-		printf("error putBoolean position+len> limit------------position=%d,len=%d,capacity=%d\n",position,1,capacity);
-
-		return;
-	}
-	
-	if(b)
-		buffer[position] =(1&0xff);
-	else 
-		buffer[position]=(0&0xff);
-	position+=1;
-}
-
 //这个方法只能用于打开的是文本文件的时候
 std::string ByteBuffer::getLine()
 {
-    if( position>=capacity)
+    if( position >= capacity)
     {
         return "";
     }
     
-	string line;
+	std::string line;
 	for (int i = position; i<capacity; i++)
     {
 		if (buffer[i] == '\n')
@@ -618,7 +609,7 @@ std::string ByteBuffer::getLine()
 		}
 	}
 	line.append(buffer + position, capacity - position);
-	position = capacity +1;
+	position = capacity + 1;
 	return line;
 }
 

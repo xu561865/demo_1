@@ -5,9 +5,9 @@
 #include <sys/stat.h>
 using namespace cocos2d;
 
-string byteToHexStr(unsigned char *byte_arr, int arr_len)
+std::string byteToHexStr(unsigned char *byte_arr, int arr_len)
 {
-	string  hexstr;
+	std::string  hexstr;
 	for (int i=0;i<arr_len;i++)
 	{
 		char hex1;
@@ -57,7 +57,7 @@ const char* fullpathFromRelatePath(const char* relatePath)
 /**
  存档路径
  **/
-string getWriteableFullPath(const char* relatePath)
+std::string getWriteableFullPath(const char* relatePath)
 {
 	const char* relate = relatePath[0]=='/'?(relatePath+1):relatePath;
     
@@ -69,7 +69,7 @@ string getWriteableFullPath(const char* relatePath)
  **/
 bool writeSaveData(const char* relatePath,char* buf,int len)
 {
-	string pszfullFilepath = getWriteableFullPath(relatePath);
+	std::string pszfullFilepath = getWriteableFullPath(relatePath);
 	FILE *fp = fopen(pszfullFilepath.c_str(),"wb");
 	if( fp!=NULL)
     {
@@ -91,7 +91,7 @@ bool writeSaveData(const char* relatePath,char* buf,int len)
 
 ByteBuffer* readSaveData(const char* relatePath)
 {
-	string pszfullFilepath = getWriteableFullPath(relatePath);
+	std::string pszfullFilepath = getWriteableFullPath(relatePath);
 	ByteBuffer * pBuffer = NULL;	
 	int size = 0;
 	do 
@@ -119,13 +119,13 @@ ByteBuffer* readSaveData(const char* relatePath)
 
 void deleteSaveData(const char* relatePath)
 {
-	string pszfullFilepath = getWriteableFullPath(relatePath);
+	std::string pszfullFilepath = getWriteableFullPath(relatePath);
 	remove(pszfullFilepath.c_str());
 }
 
 ByteBuffer* getFileData(const char* pszFileName, bool isfullPath)
 {
-	string temp = pszFileName;
+	std::string temp = pszFileName;
 	if (!isfullPath)
     {
 		//temp = ResourceDataManager::getInstance()->fullPath(temp);
@@ -152,7 +152,7 @@ ByteBuffer* getFileData(const char* pszFileName, bool isfullPath)
 
 unsigned char* getFileData(const char* pszFileName, bool isfullPath,unsigned int* size)
 {
-	string temp = pszFileName;
+	std::string temp = pszFileName;
 	if (!isfullPath)
     {
 		//temp = ResourceDataManager::getInstance()->fullPath(temp);
@@ -170,7 +170,7 @@ unsigned char* getFileData(const char* pszFileName, bool isfullPath,unsigned int
 static int randC = 0;
 std::string createRandString(int len,boolean filter)
 {
-	string s;
+	std::string s;
 	s.resize(len+10);
 	char c;
 	for (int i = 0; i < len; i++)
@@ -215,15 +215,15 @@ MyLock::~MyLock()
 	//printf("[MyLock::~MyLock(),mutex_address:%p] \n",this->mutex_t);
 }
 
-void makeDirectory(const string& path)
+void makeDirectory(const std::string& path)
 {
-	string root = "";
-	string temp = path;
+	std::string root = "";
+	std::string temp = path;
 	size_t index = temp.find("/");
 	
-	while (index != string::npos)
+	while (index != std::string::npos)
     {
-		string dir = temp.substr(0, index);
+		std::string dir = temp.substr(0, index);
 		root.append(dir);
 		mkdir(root.c_str(), 511);
 		temp = temp.substr(index + 1, temp.length()-index-1);
@@ -252,15 +252,15 @@ unsigned long msNextPOT(unsigned long x)
 	return x + 1;
 }
 
-vector<string> splitStr(const string &str)
+std::vector<std::string> splitStr(const std::string &str)
 {
 	int beginIndex = 0;
-	vector<string> value;
+	std::vector<std::string> value;
 	for (int i=0; i<str.size();i++)
     {
 		if (str[i]==',')
         {
-			string s =i> beginIndex? str.substr(beginIndex, i-beginIndex):"";
+			std::string s =i> beginIndex? str.substr(beginIndex, i-beginIndex):"";
 			beginIndex = i+1;
 			value.push_back(s);
 		}
