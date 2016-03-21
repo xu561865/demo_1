@@ -110,7 +110,7 @@
 		<link>
 			<name>Classes</name>
 			<type>2</type>
-			<locationURI>PARENT-2-PROJECT_LOC/tsDemo/tsDemo/Classes</locationURI>
+			<location>/Users/xuyi/Program/demo_1/tsDemo/tsDemo/Classes</location>
 		</link>
 		<link>
 			<name>c++</name>
@@ -126,11 +126,6 @@
 			<name>cocos2dx-src</name>
 			<type>2</type>
 			<locationURI>PARENT-2-PROJECT_LOC/cocos2dx/cocos2dx/platform/android/java/src</locationURI>
-		</link>
-		<link>
-			<name>scripting</name>
-			<type>2</type>
-			<locationURI>COCOS2DX/scripting</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
