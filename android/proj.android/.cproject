@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?fileVersion 4.0.0?>
-
-<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
 	<storageModule moduleId="org.eclipse.cdt.core.settings">
 		<cconfiguration id="0.756827735">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.756827735" moduleId="org.eclipse.cdt.core.settings" name="Default">
@@ -26,8 +24,8 @@
 								</outputEntries>
 							</builder>
 							<tool errorParsers="org.eclipse.cdt.core.VCErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="org.eclipse.cdt.build.core.settings.holder.libs.1844369373" name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs">
-								<option id="org.eclipse.cdt.build.core.settings.holder.libfiles.628519629" name="Library Files" superClass="org.eclipse.cdt.build.core.settings.holder.libfiles" valueType="libFiles"/>
-								<option id="org.eclipse.cdt.build.core.settings.holder.libpaths.1705781501" name="Library Paths" superClass="org.eclipse.cdt.build.core.settings.holder.libpaths" valueType="libPaths"/>
+								<option id="org.eclipse.cdt.build.core.settings.holder.libfiles.628519629" name="Library Files" superClass="org.eclipse.cdt.build.core.settings.holder.libfiles"/>
+								<option id="org.eclipse.cdt.build.core.settings.holder.libpaths.1705781501" name="Library Paths" superClass="org.eclipse.cdt.build.core.settings.holder.libpaths"/>
 							</tool>
 							<tool errorParsers="org.eclipse.cdt.core.VCErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="org.eclipse.cdt.build.core.settings.holder.991472034" name="Assembly" superClass="org.eclipse.cdt.build.core.settings.holder">
 								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.1413805376" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
@@ -82,19 +80,9 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
-					<folderInfo id="0.756827735.1206258805" name="/" resourcePath="Classes">
-						<toolChain id="org.eclipse.cdt.build.core.prefbase.toolchain.159770853" name="No ToolChain" superClass="org.eclipse.cdt.build.core.prefbase.toolchain" unusedChildren="">
-							<tool id="org.eclipse.cdt.build.core.settings.holder.libs.615871487" name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs.1844369373"/>
-							<tool id="org.eclipse.cdt.build.core.settings.holder.2021722762" name="Assembly" superClass="org.eclipse.cdt.build.core.settings.holder.991472034"/>
-							<tool id="org.eclipse.cdt.build.core.settings.holder.147324442" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder.2035290044"/>
-							<tool id="org.eclipse.cdt.build.core.settings.holder.172991187" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.731367497"/>
-						</toolChain>
-					</folderInfo>
 					<sourceEntries>
 						<entry excluding="scripting|extensions|cocos2dx|Classes" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="cocos2dx"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="scripting"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="extensions"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

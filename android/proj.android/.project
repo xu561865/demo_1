@@ -108,29 +108,24 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>Classes</name>
+			<type>2</type>
+			<locationURI>PARENT-2-PROJECT_LOC/tsDemo/tsDemo/Classes</locationURI>
+		</link>
+		<link>
 			<name>c++</name>
 			<type>2</type>
-			<location>/Users/xuyi/Program/demo_1/mlib/c++</location>
+			<locationURI>PARENT-2-PROJECT_LOC/mlib/c++</locationURI>
 		</link>
 		<link>
 			<name>ccext</name>
 			<type>2</type>
-			<location>/Users/xuyi/Program/demo_1/mlib/ccext</location>
-		</link>
-		<link>
-			<name>cocos2dx</name>
-			<type>2</type>
-			<locationURI>COCOS2DX/cocos2dx</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/mlib/ccext</locationURI>
 		</link>
 		<link>
 			<name>cocos2dx-src</name>
 			<type>2</type>
-			<location>/Users/xuyi/Program/demo_1/cocos2dx/cocos2dx/platform/android/java/src</location>
-		</link>
-		<link>
-			<name>extensions</name>
-			<type>2</type>
-			<locationURI>COCOS2DX/extensions</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/cocos2dx/cocos2dx/platform/android/java/src</locationURI>
 		</link>
 		<link>
 			<name>scripting</name>
