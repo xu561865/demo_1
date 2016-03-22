@@ -77,7 +77,8 @@ static const int CC_EDIT_BOX_PADDING = 5;
         textField_.backgroundColor = [UIColor clearColor];
         textField_.borderStyle = UITextBorderStyleNone;
         textField_.delegate = self;
-        textField_.returnKeyType = UIReturnKeyDefault;
+        textField_.hidden = true;
+		textField_.returnKeyType = UIReturnKeyDefault;
         [textField_ addTarget:self action:@selector(textChanged) forControlEvents:UIControlEventEditingChanged];
         self.editBox = editBox;
         
@@ -254,7 +255,6 @@ CCEditBoxImplIOS::CCEditBoxImplIOS(CCEditBox* pEditText)
 , m_obAnchorPoint(ccp(0.5f, 0.5f))
 , m_nMaxTextLength(-1)
 {
-    m_bInRetinaMode = [[EAGLView sharedEGLView] contentScaleFactor] == 2.0f ? true : false;
 }
 
 CCEditBoxImplIOS::~CCEditBoxImplIOS()
@@ -278,11 +278,9 @@ bool CCEditBoxImplIOS::initWithSize(const CCSize& size)
 
         CGRect rect = CGRectMake(0, 0, size.width * eglView->getScaleX(),size.height * eglView->getScaleY());
 
-        if (m_bInRetinaMode)
-        {
-            rect.size.width /= 2.0f;
-            rect.size.height /= 2.0f;
-        }
+        float factor = [[EAGLView sharedEGLView] contentScaleFactor];
+        rect.size.width /= factor;
+        rect.size.height /= factor;
         
         m_systemControl = [[EditBoxImplIOS alloc] initWithFrame:rect editBox:this];
         if (!m_systemControl) break;
@@ -349,7 +347,7 @@ void CCEditBoxImplIOS::setFont(const char* pFontName, int fontSize)
         isValidFontName = false;
     }
 
-    float retinaFactor = m_bInRetinaMode ? 2.0f : 1.0f;
+    float retinaFactor = [[EAGLView sharedEGLView] contentScaleFactor];
 	NSString * fntName = [NSString stringWithUTF8String:pFontName];
     float scaleFactor = CCEGLView::sharedOpenGLView()->getScaleX();
     UIFont *textFont = nil;
@@ -507,7 +505,7 @@ void CCEditBoxImplIOS::setPlaceHolder(const char* pText)
 	m_pLabelPlaceHolder->setString(pText);
 }
 
-static CGPoint convertDesignCoordToScreenCoord(const CCPoint& designCoord, bool bInRetinaMode)
+static CGPoint convertDesignCoordToScreenCoord(const CCPoint& designCoord)
 {
     CCEGLViewProtocol* eglView = CCEGLView::sharedOpenGLView();
     float viewH = (float)[[EAGLView sharedEGLView] getHeight];
@@ -517,11 +515,10 @@ static CGPoint convertDesignCoordToScreenCoord(const CCPoint& designCoord, bool 
     
     CGPoint screenPos = CGPointMake(screenGLPos.x, viewH - screenGLPos.y);
     
-    if (bInRetinaMode)
-    {
-        screenPos.x = screenPos.x / 2.0f;
-        screenPos.y = screenPos.y / 2.0f;
-    }
+    float scaleFactor = [[EAGLView sharedEGLView] contentScaleFactor];
+    screenPos.x = screenPos.x / scaleFactor;
+    screenPos.y = screenPos.y / scaleFactor;
+    
     CCLOG("[EditBox] pos x = %f, y = %f", screenGLPos.x, screenGLPos.y);
     return screenPos;
 }
@@ -545,11 +542,11 @@ void CCEditBoxImplIOS::setContentSize(const CCSize& size)
     CCEGLViewProtocol* eglView = CCEGLView::sharedOpenGLView();
     CGSize controlSize = CGSizeMake(size.width * eglView->getScaleX(),size.height * eglView->getScaleY());
     
-    if (m_bInRetinaMode)
-    {
-        controlSize.width /= 2.0f;
-        controlSize.height /= 2.0f;
-    }
+    float scaleFactor = [[EAGLView sharedEGLView] contentScaleFactor];
+    
+    controlSize.width /= scaleFactor;
+    controlSize.height /= scaleFactor;
+
     [m_systemControl setContentSize:controlSize];
 }
 
@@ -581,7 +578,7 @@ void CCEditBoxImplIOS::adjustTextFieldPosition()
     rect = CCRectApplyAffineTransform(rect, m_pEditBox->nodeToWorldTransform());
 	
 	CCPoint designCoord = ccp(rect.origin.x, rect.origin.y + rect.size.height);
-    [m_systemControl setPosition:convertDesignCoordToScreenCoord(designCoord, m_bInRetinaMode)];
+    [m_systemControl setPosition:convertDesignCoordToScreenCoord(designCoord)];
 }
 
 void CCEditBoxImplIOS::openKeyboard()

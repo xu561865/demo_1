@@ -469,7 +469,7 @@ void CCScheduler::scheduleUpdateForTarget(CCObject *pTarget, int nPriority, bool
         CCAssert(pHashElement->entry->markedForDeletion,"");
 #endif
         // TODO: check if priority has changed!
-
+        pHashElement->entry->paused = bPaused;
         pHashElement->entry->markedForDeletion = false;
         return;
     }
@@ -779,7 +779,7 @@ void CCScheduler::resumeTargets(CCSet* pTargetsToResume)
     }
 }
 
-// main loop
+// main loop                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 void CCScheduler::update(float dt)
 {
     m_bUpdateHashLocked = true;

@@ -272,7 +272,6 @@ void CCActionManager::removeActionByTag(unsigned int tag, CCObject *pTarget)
 
     tHashElement *pElement = NULL;
     HASH_FIND_INT(m_pTargets, &pTarget, pElement);
-
     if (pElement)
     {
         unsigned int limit = pElement->actions->num;
@@ -297,7 +296,6 @@ CCAction* CCActionManager::getActionByTag(unsigned int tag, CCObject *pTarget)
 
     tHashElement *pElement = NULL;
     HASH_FIND_INT(m_pTargets, &pTarget, pElement);
-
     if (pElement)
     {
         if (pElement->actions != NULL)
@@ -346,8 +344,7 @@ void CCActionManager::update(float dt)
         if (! m_pCurrentTarget->paused)
         {
             // The 'actions' CCMutableArray may change while inside this loop.
-            for (m_pCurrentTarget->actionIndex = 0; m_pCurrentTarget->actionIndex < m_pCurrentTarget->actions->num;
-                m_pCurrentTarget->actionIndex++)
+            for (m_pCurrentTarget->actionIndex = 0; m_pCurrentTarget->actionIndex < m_pCurrentTarget->actions->num; m_pCurrentTarget->actionIndex++)
             {
                 m_pCurrentTarget->currentAction = (CCAction*)m_pCurrentTarget->actions->arr[m_pCurrentTarget->actionIndex];
                 if (m_pCurrentTarget->currentAction == NULL)
@@ -365,8 +362,8 @@ void CCActionManager::update(float dt)
                     // accidentally deallocating itself before finishing its step, we retained
                     // it. Now that step is done, it's safe to release it.
                     m_pCurrentTarget->currentAction->release();
-                } else
-                if (m_pCurrentTarget->currentAction->isDone())
+                }
+                else if (m_pCurrentTarget->currentAction->isDone())
                 {
                     m_pCurrentTarget->currentAction->stop();
 

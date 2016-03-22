@@ -493,7 +493,6 @@ CCCallFuncN * CCCallFuncN::create(CCObject* pSelectorTarget, SEL_CallFuncN selec
 CCCallFuncN * CCCallFuncN::create(int nHandler)
 {
 	CCCallFuncN *pRet = new CCCallFuncN();
-
 	if (pRet) {
 		pRet->m_nScriptHandler = nHandler;
 		pRet->autorelease();
@@ -504,8 +503,7 @@ CCCallFuncN * CCCallFuncN::create(int nHandler)
 	return pRet;
 }
 
-bool CCCallFuncN::initWithTarget(CCObject* pSelectorTarget,
-        SEL_CallFuncN selector) {
+bool CCCallFuncN::initWithTarget(CCObject* pSelectorTarget, SEL_CallFuncN selector) {
     if (CCCallFunc::initWithTarget(pSelectorTarget)) {
         m_pCallFuncN = selector;
         return true;

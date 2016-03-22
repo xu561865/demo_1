@@ -275,21 +275,6 @@
 		F1C5D7711C9D63A7001CC4D0 /* Slot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D7001C9D63A7001CC4D0 /* Slot.cpp */; };
 		F1C5D7721C9D63A7001CC4D0 /* SlotData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D7021C9D63A7001CC4D0 /* SlotData.cpp */; };
 		F1C5D7731C9D63A7001CC4D0 /* spine-cocos2dx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D7041C9D63A7001CC4D0 /* spine-cocos2dx.cpp */; };
-		F1C5D7EF1C9D63D5001CC4D0 /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D7911C9D63D5001CC4D0 /* CDAudioManager.m */; };
-		F1C5D7F01C9D63D5001CC4D0 /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D7941C9D63D5001CC4D0 /* CDOpenALSupport.m */; };
-		F1C5D7F11C9D63D5001CC4D0 /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D7961C9D63D5001CC4D0 /* CocosDenshion.m */; };
-		F1C5D7F21C9D63D5001CC4D0 /* SimpleAudioEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D7971C9D63D5001CC4D0 /* SimpleAudioEngine.mm */; };
-		F1C5D7F31C9D63D5001CC4D0 /* SimpleAudioEngine_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D7991C9D63D5001CC4D0 /* SimpleAudioEngine_objc.m */; };
-		F1C5D8001C9D63D5001CC4D0 /* libfmodex-4.36.01.so in Resources */ = {isa = PBXBuildFile; fileRef = F1C5D7CA1C9D63D5001CC4D0 /* libfmodex-4.36.01.so */; };
-		F1C5D8011C9D63D5001CC4D0 /* libfmodex.so in Resources */ = {isa = PBXBuildFile; fileRef = F1C5D7CB1C9D63D5001CC4D0 /* libfmodex.so */; };
-		F1C5D8021C9D63D5001CC4D0 /* libfmodexL-4.36.01.so in Resources */ = {isa = PBXBuildFile; fileRef = F1C5D7CC1C9D63D5001CC4D0 /* libfmodexL-4.36.01.so */; };
-		F1C5D8031C9D63D5001CC4D0 /* libfmodexL.so in Resources */ = {isa = PBXBuildFile; fileRef = F1C5D7CD1C9D63D5001CC4D0 /* libfmodexL.so */; };
-		F1C5D8041C9D63D5001CC4D0 /* libfmodex64-4.38.00.so in Resources */ = {isa = PBXBuildFile; fileRef = F1C5D7DA1C9D63D5001CC4D0 /* libfmodex64-4.38.00.so */; };
-		F1C5D8051C9D63D5001CC4D0 /* libfmodex64.so in Resources */ = {isa = PBXBuildFile; fileRef = F1C5D7DB1C9D63D5001CC4D0 /* libfmodex64.so */; };
-		F1C5D8061C9D63D5001CC4D0 /* libfmodexL64-4.38.00.so in Resources */ = {isa = PBXBuildFile; fileRef = F1C5D7DC1C9D63D5001CC4D0 /* libfmodexL64-4.38.00.so */; };
-		F1C5D8071C9D63D5001CC4D0 /* libfmodexL64.so in Resources */ = {isa = PBXBuildFile; fileRef = F1C5D7DD1C9D63D5001CC4D0 /* libfmodexL64.so */; };
-		F1C5D8081C9D63D5001CC4D0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D7DE1C9D63D5001CC4D0 /* Makefile */; };
-		F1C5D8091C9D63D5001CC4D0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D7DF1C9D63D5001CC4D0 /* Makefile */; };
 		F1C5D8951C9D6442001CC4D0 /* mlib_thread.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D8131C9D6442001CC4D0 /* mlib_thread.mm */; };
 		F1C5D8961C9D6442001CC4D0 /* mlib_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D8161C9D6442001CC4D0 /* mlib_buffer.cpp */; };
 		F1C5D8971C9D6442001CC4D0 /* mlib_event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D8181C9D6442001CC4D0 /* mlib_event.cpp */; };
@@ -1402,44 +1387,6 @@
 		F1C5D7041C9D63A7001CC4D0 /* spine-cocos2dx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "spine-cocos2dx.cpp"; sourceTree = "<group>"; };
 		F1C5D7051C9D63A7001CC4D0 /* spine-cocos2dx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "spine-cocos2dx.h"; sourceTree = "<group>"; };
 		F1C5D7061C9D63A7001CC4D0 /* spine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spine.h; sourceTree = "<group>"; };
-		F1C5D78D1C9D63D5001CC4D0 /* Export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Export.h; sourceTree = "<group>"; };
-		F1C5D78E1C9D63D5001CC4D0 /* SimpleAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioEngine.h; sourceTree = "<group>"; };
-		F1C5D7901C9D63D5001CC4D0 /* CDAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAudioManager.h; sourceTree = "<group>"; };
-		F1C5D7911C9D63D5001CC4D0 /* CDAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAudioManager.m; sourceTree = "<group>"; };
-		F1C5D7921C9D63D5001CC4D0 /* CDConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDConfig.h; sourceTree = "<group>"; };
-		F1C5D7931C9D63D5001CC4D0 /* CDOpenALSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOpenALSupport.h; sourceTree = "<group>"; };
-		F1C5D7941C9D63D5001CC4D0 /* CDOpenALSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOpenALSupport.m; sourceTree = "<group>"; };
-		F1C5D7951C9D63D5001CC4D0 /* CocosDenshion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosDenshion.h; sourceTree = "<group>"; };
-		F1C5D7961C9D63D5001CC4D0 /* CocosDenshion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocosDenshion.m; sourceTree = "<group>"; };
-		F1C5D7971C9D63D5001CC4D0 /* SimpleAudioEngine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SimpleAudioEngine.mm; sourceTree = "<group>"; };
-		F1C5D7981C9D63D5001CC4D0 /* SimpleAudioEngine_objc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioEngine_objc.h; sourceTree = "<group>"; };
-		F1C5D7991C9D63D5001CC4D0 /* SimpleAudioEngine_objc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAudioEngine_objc.m; sourceTree = "<group>"; };
-		F1C5D7C11C9D63D5001CC4D0 /* fmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod.h; sourceTree = "<group>"; };
-		F1C5D7C21C9D63D5001CC4D0 /* fmod.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod.hpp; sourceTree = "<group>"; };
-		F1C5D7C31C9D63D5001CC4D0 /* fmod_codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_codec.h; sourceTree = "<group>"; };
-		F1C5D7C41C9D63D5001CC4D0 /* fmod_dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp.h; sourceTree = "<group>"; };
-		F1C5D7C51C9D63D5001CC4D0 /* fmod_errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_errors.h; sourceTree = "<group>"; };
-		F1C5D7C61C9D63D5001CC4D0 /* fmod_memoryinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_memoryinfo.h; sourceTree = "<group>"; };
-		F1C5D7C71C9D63D5001CC4D0 /* fmod_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_output.h; sourceTree = "<group>"; };
-		F1C5D7C81C9D63D5001CC4D0 /* fmodlinux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmodlinux.h; sourceTree = "<group>"; };
-		F1C5D7CA1C9D63D5001CC4D0 /* libfmodex-4.36.01.so */ = {isa = PBXFileReference; lastKnownFileType = file; path = "libfmodex-4.36.01.so"; sourceTree = "<group>"; };
-		F1C5D7CB1C9D63D5001CC4D0 /* libfmodex.so */ = {isa = PBXFileReference; lastKnownFileType = file; path = libfmodex.so; sourceTree = "<group>"; };
-		F1C5D7CC1C9D63D5001CC4D0 /* libfmodexL-4.36.01.so */ = {isa = PBXFileReference; lastKnownFileType = file; path = "libfmodexL-4.36.01.so"; sourceTree = "<group>"; };
-		F1C5D7CD1C9D63D5001CC4D0 /* libfmodexL.so */ = {isa = PBXFileReference; lastKnownFileType = file; path = libfmodexL.so; sourceTree = "<group>"; };
-		F1C5D7D11C9D63D5001CC4D0 /* fmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod.h; sourceTree = "<group>"; };
-		F1C5D7D21C9D63D5001CC4D0 /* fmod.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod.hpp; sourceTree = "<group>"; };
-		F1C5D7D31C9D63D5001CC4D0 /* fmod_codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_codec.h; sourceTree = "<group>"; };
-		F1C5D7D41C9D63D5001CC4D0 /* fmod_dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp.h; sourceTree = "<group>"; };
-		F1C5D7D51C9D63D5001CC4D0 /* fmod_errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_errors.h; sourceTree = "<group>"; };
-		F1C5D7D61C9D63D5001CC4D0 /* fmod_memoryinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_memoryinfo.h; sourceTree = "<group>"; };
-		F1C5D7D71C9D63D5001CC4D0 /* fmod_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_output.h; sourceTree = "<group>"; };
-		F1C5D7D81C9D63D5001CC4D0 /* fmodlinux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmodlinux.h; sourceTree = "<group>"; };
-		F1C5D7DA1C9D63D5001CC4D0 /* libfmodex64-4.38.00.so */ = {isa = PBXFileReference; lastKnownFileType = file; path = "libfmodex64-4.38.00.so"; sourceTree = "<group>"; };
-		F1C5D7DB1C9D63D5001CC4D0 /* libfmodex64.so */ = {isa = PBXFileReference; lastKnownFileType = file; path = libfmodex64.so; sourceTree = "<group>"; };
-		F1C5D7DC1C9D63D5001CC4D0 /* libfmodexL64-4.38.00.so */ = {isa = PBXFileReference; lastKnownFileType = file; path = "libfmodexL64-4.38.00.so"; sourceTree = "<group>"; };
-		F1C5D7DD1C9D63D5001CC4D0 /* libfmodexL64.so */ = {isa = PBXFileReference; lastKnownFileType = file; path = libfmodexL64.so; sourceTree = "<group>"; };
-		F1C5D7DE1C9D63D5001CC4D0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		F1C5D7DF1C9D63D5001CC4D0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		F1C5D8131C9D6442001CC4D0 /* mlib_thread.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = mlib_thread.mm; sourceTree = "<group>"; };
 		F1C5D8141C9D6442001CC4D0 /* mlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib.h; sourceTree = "<group>"; };
 		F1C5D8151C9D6442001CC4D0 /* mlib_assert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib_assert.h; sourceTree = "<group>"; };
@@ -3222,140 +3169,6 @@
 			path = spine;
 			sourceTree = "<group>";
 		};
-		F1C5D7741C9D63D5001CC4D0 /* CocosDenshion */ = {
-			isa = PBXGroup;
-			children = (
-				F1C5D78C1C9D63D5001CC4D0 /* include */,
-				F1C5D78F1C9D63D5001CC4D0 /* ios */,
-				F1C5D7AF1C9D63D5001CC4D0 /* third_party */,
-			);
-			name = CocosDenshion;
-			path = ../cocos2dx/CocosDenshion;
-			sourceTree = "<group>";
-		};
-		F1C5D78C1C9D63D5001CC4D0 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				F1C5D78D1C9D63D5001CC4D0 /* Export.h */,
-				F1C5D78E1C9D63D5001CC4D0 /* SimpleAudioEngine.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		F1C5D78F1C9D63D5001CC4D0 /* ios */ = {
-			isa = PBXGroup;
-			children = (
-				F1C5D7901C9D63D5001CC4D0 /* CDAudioManager.h */,
-				F1C5D7911C9D63D5001CC4D0 /* CDAudioManager.m */,
-				F1C5D7921C9D63D5001CC4D0 /* CDConfig.h */,
-				F1C5D7931C9D63D5001CC4D0 /* CDOpenALSupport.h */,
-				F1C5D7941C9D63D5001CC4D0 /* CDOpenALSupport.m */,
-				F1C5D7951C9D63D5001CC4D0 /* CocosDenshion.h */,
-				F1C5D7961C9D63D5001CC4D0 /* CocosDenshion.m */,
-				F1C5D7971C9D63D5001CC4D0 /* SimpleAudioEngine.mm */,
-				F1C5D7981C9D63D5001CC4D0 /* SimpleAudioEngine_objc.h */,
-				F1C5D7991C9D63D5001CC4D0 /* SimpleAudioEngine_objc.m */,
-			);
-			path = ios;
-			sourceTree = "<group>";
-		};
-		F1C5D7AF1C9D63D5001CC4D0 /* third_party */ = {
-			isa = PBXGroup;
-			children = (
-				F1C5D7BE1C9D63D5001CC4D0 /* fmod */,
-			);
-			path = third_party;
-			sourceTree = "<group>";
-		};
-		F1C5D7BE1C9D63D5001CC4D0 /* fmod */ = {
-			isa = PBXGroup;
-			children = (
-				F1C5D7BF1C9D63D5001CC4D0 /* api */,
-				F1C5D7CE1C9D63D5001CC4D0 /* lib64 */,
-				F1C5D7DF1C9D63D5001CC4D0 /* Makefile */,
-			);
-			path = fmod;
-			sourceTree = "<group>";
-		};
-		F1C5D7BF1C9D63D5001CC4D0 /* api */ = {
-			isa = PBXGroup;
-			children = (
-				F1C5D7C01C9D63D5001CC4D0 /* inc */,
-				F1C5D7C91C9D63D5001CC4D0 /* lib */,
-			);
-			path = api;
-			sourceTree = "<group>";
-		};
-		F1C5D7C01C9D63D5001CC4D0 /* inc */ = {
-			isa = PBXGroup;
-			children = (
-				F1C5D7C11C9D63D5001CC4D0 /* fmod.h */,
-				F1C5D7C21C9D63D5001CC4D0 /* fmod.hpp */,
-				F1C5D7C31C9D63D5001CC4D0 /* fmod_codec.h */,
-				F1C5D7C41C9D63D5001CC4D0 /* fmod_dsp.h */,
-				F1C5D7C51C9D63D5001CC4D0 /* fmod_errors.h */,
-				F1C5D7C61C9D63D5001CC4D0 /* fmod_memoryinfo.h */,
-				F1C5D7C71C9D63D5001CC4D0 /* fmod_output.h */,
-				F1C5D7C81C9D63D5001CC4D0 /* fmodlinux.h */,
-			);
-			path = inc;
-			sourceTree = "<group>";
-		};
-		F1C5D7C91C9D63D5001CC4D0 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				F1C5D7CA1C9D63D5001CC4D0 /* libfmodex-4.36.01.so */,
-				F1C5D7CB1C9D63D5001CC4D0 /* libfmodex.so */,
-				F1C5D7CC1C9D63D5001CC4D0 /* libfmodexL-4.36.01.so */,
-				F1C5D7CD1C9D63D5001CC4D0 /* libfmodexL.so */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		F1C5D7CE1C9D63D5001CC4D0 /* lib64 */ = {
-			isa = PBXGroup;
-			children = (
-				F1C5D7CF1C9D63D5001CC4D0 /* api */,
-				F1C5D7DE1C9D63D5001CC4D0 /* Makefile */,
-			);
-			path = lib64;
-			sourceTree = "<group>";
-		};
-		F1C5D7CF1C9D63D5001CC4D0 /* api */ = {
-			isa = PBXGroup;
-			children = (
-				F1C5D7D01C9D63D5001CC4D0 /* inc */,
-				F1C5D7D91C9D63D5001CC4D0 /* lib */,
-			);
-			path = api;
-			sourceTree = "<group>";
-		};
-		F1C5D7D01C9D63D5001CC4D0 /* inc */ = {
-			isa = PBXGroup;
-			children = (
-				F1C5D7D11C9D63D5001CC4D0 /* fmod.h */,
-				F1C5D7D21C9D63D5001CC4D0 /* fmod.hpp */,
-				F1C5D7D31C9D63D5001CC4D0 /* fmod_codec.h */,
-				F1C5D7D41C9D63D5001CC4D0 /* fmod_dsp.h */,
-				F1C5D7D51C9D63D5001CC4D0 /* fmod_errors.h */,
-				F1C5D7D61C9D63D5001CC4D0 /* fmod_memoryinfo.h */,
-				F1C5D7D71C9D63D5001CC4D0 /* fmod_output.h */,
-				F1C5D7D81C9D63D5001CC4D0 /* fmodlinux.h */,
-			);
-			path = inc;
-			sourceTree = "<group>";
-		};
-		F1C5D7D91C9D63D5001CC4D0 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				F1C5D7DA1C9D63D5001CC4D0 /* libfmodex64-4.38.00.so */,
-				F1C5D7DB1C9D63D5001CC4D0 /* libfmodex64.so */,
-				F1C5D7DC1C9D63D5001CC4D0 /* libfmodexL64-4.38.00.so */,
-				F1C5D7DD1C9D63D5001CC4D0 /* libfmodexL64.so */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
 		F1C5D80E1C9D6442001CC4D0 /* mlib */ = {
 			isa = PBXGroup;
 			children = (
@@ -4478,7 +4291,6 @@
 				F1C5E0A51C9D8A13001CC4D0 /* New Group */,
 				F1C5DC661C9D6968001CC4D0 /* external */,
 				F1C5D80E1C9D6442001CC4D0 /* mlib */,
-				F1C5D7741C9D63D5001CC4D0 /* CocosDenshion */,
 				F1C5D6091C9D63A7001CC4D0 /* extensions */,
 				F1C5CC5B1C9D4B48001CC4D0 /* cocos2dx */,
 			);
@@ -4549,7 +4361,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1C5DFE21C9D71C7001CC4D0 /* mutileTX_03.xml in Resources */,
-				F1C5D8021C9D63D5001CC4D0 /* libfmodexL-4.36.01.so in Resources */,
 				F1C5DF511C9D71C7001CC4D0 /* dlrh.xml in Resources */,
 				F1C5E0441C9D71C7001CC4D0 /* tgntx.png in Resources */,
 				F1C5E02B1C9D71C7001CC4D0 /* sjsqltx.png in Resources */,
@@ -4623,7 +4434,6 @@
 				F1C5DF681C9D71C7001CC4D0 /* ggjs.xml in Resources */,
 				F1C5E0591C9D71C7001CC4D0 /* words2.png in Resources */,
 				F1C5DF1D1C9D71C7001CC4D0 /* base.png in Resources */,
-				F1C5D8061C9D63D5001CC4D0 /* libfmodexL64-4.38.00.so in Resources */,
 				F1C5DFA31C9D71C7001CC4D0 /* item_13.png in Resources */,
 				F1C5DFED1C9D71C7001CC4D0 /* pjjtx.png in Resources */,
 				F1C5DF271C9D71C7001CC4D0 /* btn_return_2.png in Resources */,
@@ -4699,7 +4509,6 @@
 				F1C5DF7B1C9D71C7001CC4D0 /* hycc.ttf in Resources */,
 				F1C5DF1E1C9D71C7001CC4D0 /* battleAttack1.mp3 in Resources */,
 				F1C5DFC91C9D71C7001CC4D0 /* level.json in Resources */,
-				F1C5D8001C9D63D5001CC4D0 /* libfmodex-4.36.01.so in Resources */,
 				F1C5DFCE1C9D71C7001CC4D0 /* lntx.plist in Resources */,
 				F1C5DFB81C9D71C7001CC4D0 /* item_100025.png in Resources */,
 				F1C5E0541C9D71C7001CC4D0 /* wlbf.xml in Resources */,
@@ -4727,7 +4536,6 @@
 				F1C5DF711C9D71C7001CC4D0 /* hc_btn_hc_3.png in Resources */,
 				F1C5E0271C9D71C7001CC4D0 /* sfzstx.png in Resources */,
 				F1C5DFC81C9D71C7001CC4D0 /* ldztx.png in Resources */,
-				F1C5D8011C9D63D5001CC4D0 /* libfmodex.so in Resources */,
 				F1C5DFEA1C9D71C7001CC4D0 /* persons_bg.png in Resources */,
 				F1C5DFAD1C9D71C7001CC4D0 /* item_100006.png in Resources */,
 				F1C5E0191C9D71C7001CC4D0 /* qstx_01.plist in Resources */,
@@ -4736,7 +4544,6 @@
 				F1C5D71D1C9D63A7001CC4D0 /* sconscript in Resources */,
 				F1C5DF431C9D71C7001CC4D0 /* common_btn_send_1.png in Resources */,
 				F1C5E0701C9D71C7001CC4D0 /* zjm_arena_1.png in Resources */,
-				F1C5D8031C9D63D5001CC4D0 /* libfmodexL.so in Resources */,
 				F1C5DFF61C9D71C7001CC4D0 /* popbuilding_wei.png in Resources */,
 				F1C5E0461C9D71C7001CC4D0 /* tjbgz.xml in Resources */,
 				F1C5DFF31C9D71C7001CC4D0 /* popbuilding_fire_2.png in Resources */,
@@ -4781,7 +4588,6 @@
 				F1C5DF771C9D71C7001CC4D0 /* hqz.xml in Resources */,
 				F1C5D3731C9D4B49001CC4D0 /* ChangeLog in Resources */,
 				F1C5E06D1C9D71C7001CC4D0 /* zhxj.xml in Resources */,
-				F1C5D8071C9D63D5001CC4D0 /* libfmodexL64.so in Resources */,
 				F1C5E06B1C9D71C7001CC4D0 /* yszstx.png in Resources */,
 				F1C5DF3D1C9D71C7001CC4D0 /* common_btn_ok_3.png in Resources */,
 				F1C5E0421C9D71C7001CC4D0 /* tgn.xml in Resources */,
@@ -4841,7 +4647,6 @@
 				F1C5DF6B1C9D71C7001CC4D0 /* guild 17-40-08-904.png in Resources */,
 				F1C5E06C1C9D71C7001CC4D0 /* yx.mp3 in Resources */,
 				F1C5E0101C9D71C7001CC4D0 /* qs_6038.png in Resources */,
-				F1C5D8051C9D63D5001CC4D0 /* libfmodex64.so in Resources */,
 				F1C5DF521C9D71C7001CC4D0 /* dlrhtx.plist in Resources */,
 				F1C5E0751C9D71C7001CC4D0 /* zjm_employfriends_1.png in Resources */,
 				F1C5DF3C1C9D71C7001CC4D0 /* common_btn_ok_2.png in Resources */,
@@ -4855,7 +4660,6 @@
 				F1C5DFA61C9D71C7001CC4D0 /* item_16.png in Resources */,
 				F1C5DF421C9D71C7001CC4D0 /* common_btn_return_22.png in Resources */,
 				F1C5E0611C9D71C7001CC4D0 /* xsjbuff.png in Resources */,
-				F1C5D8041C9D63D5001CC4D0 /* libfmodex64-4.38.00.so in Resources */,
 				F1C5E05D1C9D71C7001CC4D0 /* xfztx.png in Resources */,
 				F1C5E0431C9D71C7001CC4D0 /* tgntx.plist in Resources */,
 				F1C5E0151C9D71C7001CC4D0 /* qs_6048.png in Resources */,
@@ -4940,7 +4744,6 @@
 				F1C5D38C1C9D4B49001CC4D0 /* CCMenuItem.cpp in Sources */,
 				F1C5DD6A1C9D6968001CC4D0 /* cpSpaceQuery.c in Sources */,
 				F1C5D8991C9D6442001CC4D0 /* mlib_http.cpp in Sources */,
-				F1C5D8091C9D63D5001CC4D0 /* Makefile in Sources */,
 				F1C5D94E1C9D6470001CC4D0 /* ByteBuffer.cpp in Sources */,
 				F1C5D7501C9D63A7001CC4D0 /* CCEditBoxImplIOS.mm in Sources */,
 				F1C5D97E1C9D6504001CC4D0 /* main.m in Sources */,
@@ -5029,7 +4832,6 @@
 				F1C5D7131C9D63A7001CC4D0 /* CCSkin.cpp in Sources */,
 				F1C5DD301C9D6968001CC4D0 /* b2Draw.cpp in Sources */,
 				F1C5DD711C9D6968001CC4D0 /* json_reader.cpp in Sources */,
-				F1C5D7EF1C9D63D5001CC4D0 /* CDAudioManager.m in Sources */,
 				F1C5D3C21C9D4B49001CC4D0 /* CCEGLViewProtocol.cpp in Sources */,
 				F1C5D70D1C9D63A7001CC4D0 /* CCDatas.cpp in Sources */,
 				F1C5DD511C9D6968001CC4D0 /* chipmunk.c in Sources */,
@@ -5058,7 +4860,6 @@
 				F1C5DD5B1C9D6968001CC4D0 /* cpRotaryLimitJoint.c in Sources */,
 				F1C5D8CA1C9D6442001CC4D0 /* MRichLabelTTF.cpp in Sources */,
 				F1C5D6061C9D4B4A001CC4D0 /* CCTouch.cpp in Sources */,
-				F1C5D7F31C9D63D5001CC4D0 /* SimpleAudioEngine_objc.m in Sources */,
 				F1C5D9521C9D6470001CC4D0 /* Util.cpp in Sources */,
 				F1C5DD991C9D6E26001CC4D0 /* CCApplication.mm in Sources */,
 				F1C5D3871C9D4B49001CC4D0 /* CCScene.cpp in Sources */,
@@ -5106,7 +4907,6 @@
 				F1C5DD3F1C9D6968001CC4D0 /* b2ContactSolver.cpp in Sources */,
 				F1C5D72A1C9D63A7001CC4D0 /* CCBSequence.cpp in Sources */,
 				F1C5D36B1C9D4B49001CC4D0 /* CCString.cpp in Sources */,
-				F1C5D7F21C9D63D5001CC4D0 /* SimpleAudioEngine.mm in Sources */,
 				F1C5D74B1C9D63A7001CC4D0 /* CCControlUtils.cpp in Sources */,
 				F1C5DD631C9D6968001CC4D0 /* cpCollision.c in Sources */,
 				F1C5D5F81C9D4B4A001CC4D0 /* ZipUtils.cpp in Sources */,
@@ -5178,7 +4978,6 @@
 				F1C5D37B1C9D4B49001CC4D0 /* quaternion.c in Sources */,
 				F1C5D5EB1C9D4B4A001CC4D0 /* ccUtils.cpp in Sources */,
 				F1C5D3791C9D4B49001CC4D0 /* neon_matrix_impl.c in Sources */,
-				F1C5D8081C9D63D5001CC4D0 /* Makefile in Sources */,
 				F1C5DD5D1C9D6968001CC4D0 /* cpSlideJoint.c in Sources */,
 				F1C5D8961C9D6442001CC4D0 /* mlib_buffer.cpp in Sources */,
 				F1C5DD2A1C9D6968001CC4D0 /* b2TimeOfImpact.cpp in Sources */,
@@ -5200,7 +4999,6 @@
 				F1C5D7111C9D63A7001CC4D0 /* CCDisplayManager.cpp in Sources */,
 				F1C5DD261C9D6968001CC4D0 /* b2CollidePolygon.cpp in Sources */,
 				F1C5D36F1C9D4B49001CC4D0 /* CCDrawNode.cpp in Sources */,
-				F1C5D7F11C9D63D5001CC4D0 /* CocosDenshion.m in Sources */,
 				F1C5D7361C9D63A7001CC4D0 /* CCMenuItemLoader.cpp in Sources */,
 				F1C5DD5F1C9D6968001CC4D0 /* cpArray.c in Sources */,
 				F1C5D3751C9D4B49001CC4D0 /* mat4stack.c in Sources */,
@@ -5218,7 +5016,6 @@
 				F1C5D89A1C9D6442001CC4D0 /* mlib_localize.cpp in Sources */,
 				F1C5D3C51C9D4B49001CC4D0 /* CCSAXParser.cpp in Sources */,
 				F1C5D3541C9D4B49001CC4D0 /* CCActionInterval.cpp in Sources */,
-				F1C5D7F01C9D63D5001CC4D0 /* CDOpenALSupport.m in Sources */,
 				F1C5D7261C9D63A7001CC4D0 /* CCBAnimationManager.cpp in Sources */,
 				F1C5DD371C9D6968001CC4D0 /* b2Fixture.cpp in Sources */,
 				F1C5D7101C9D63A7001CC4D0 /* CCDisplayFactory.cpp in Sources */,

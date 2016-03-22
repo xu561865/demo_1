@@ -95,6 +95,7 @@ CCLayer *CCLayer::create()
 }
 
 /// Touch and Accelerometer related
+
 void CCLayer::registerWithTouchDispatcher()
 {
     CCTouchDispatcher* pDispatcher = CCDirector::sharedDirector()->getTouchDispatcher();

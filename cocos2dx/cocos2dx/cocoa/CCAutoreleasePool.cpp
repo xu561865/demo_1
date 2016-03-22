@@ -158,7 +158,7 @@ void CCPoolManager::pop()
 
      int nCount = m_pReleasePoolStack->count();
 
-    m_pCurReleasePool->clear();
+     m_pCurReleasePool->clear();
  
       if(nCount > 1)
       {
