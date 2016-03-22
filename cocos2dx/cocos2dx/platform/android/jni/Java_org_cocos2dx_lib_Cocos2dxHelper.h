@@ -50,4 +50,8 @@ extern void setFloatForKeyJNI(const char* pKey, float value);
 extern void setDoubleForKeyJNI(const char* pKey, double value);
 extern void setStringForKeyJNI(const char* pKey, const char* value);
 
+// added by xujinyang - begin
+extern void deleteFilesJNI(const char* pPath);
+// added by xujinyang - end
+
 #endif /* __Java_org_cocos2dx_lib_Cocos2dxHelper_H__ */

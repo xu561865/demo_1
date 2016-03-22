@@ -337,3 +337,18 @@ void setStringForKeyJNI(const char* pKey, const char* value)
         t.env->DeleteLocalRef(stringArg2);
     }
 }
+
+// added by xujinyang - begin
+void deleteFilesJNI(const char* pPath) {
+    JniMethodInfo t;
+    std::string ret("");
+    
+    if (JniHelper::getStaticMethodInfo(t, CLASS_NAME, "deleteFiles", "(Ljava/lang/String;)V")) {
+        jstring stringArg = t.env->NewStringUTF(pPath);
+        t.env->CallStaticVoidMethod(t.classID, t.methodID, stringArg);
+        
+        t.env->DeleteLocalRef(t.classID);
+        t.env->DeleteLocalRef(stringArg);
+    }
+}
+// added by xujinyang - end

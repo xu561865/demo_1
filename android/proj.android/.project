@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>tsDemo</name>
+	<name>demo_1</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -42,15 +42,15 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.buildArguments</key>
-					<value></value>
+					<value>${workspace_loc:/demo_1}/build_native.sh NDK_DEBUG=1 V=1 APP_ABI=armeabi DUMP_APP_ABI=1</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.buildCommand</key>
-					<value>make</value>
+					<value>/bin/bash</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.buildLocation</key>
-					<value>${ProjDirPath}</value>
+					<value>${workspace_loc:/demo_1}</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.cleanBuildTarget</key>
@@ -113,24 +113,25 @@
 			<locationURI>PARENT-1-PROJECT_LOC/Classes</locationURI>
 		</link>
 		<link>
-			<name>cocos2dx-src</name>
+			<name>cocos2d-src</name>
 			<type>2</type>
-			<location>/Users/xuyi/test/demo_1/cocos2dx/cocos2dx/platform/android/java/src</location>
+			<location>/Users/xuyi/Program/demo_1/cocos2dx/cocos2dx/platform/android/java/src</location>
 		</link>
 		<link>
 			<name>mlib_c++</name>
 			<type>2</type>
-			<location>/Users/xuyi/test/demo_1/mlib/c++</location>
+			<locationURI>PARENT-1-PROJECT_LOC/mlib/c++</locationURI>
 		</link>
 		<link>
 			<name>mlib_ccext</name>
 			<type>2</type>
-			<location>/Users/xuyi/test/demo_1/mlib/ccext</location>
-		</link>
-		<link>
-			<name>scripting</name>
-			<type>2</type>
-			<locationURI>COCOS2DX/scripting</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/mlib/ccext</locationURI>
 		</link>
 	</linkedResources>
+	<variableList>
+		<variable>
+			<name>HOME_LOC</name>
+			<value>file:/Users/xuyi/Program/demo_1</value>
+		</variable>
+	</variableList>
 </projectDescription>
