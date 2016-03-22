@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>demo_1</name>
+	<name>tsDemo</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -113,19 +113,9 @@
 			<locationURI>PARENT-1-PROJECT_LOC/Classes</locationURI>
 		</link>
 		<link>
-			<name>cocos2dx</name>
-			<type>2</type>
-			<locationURI>COCOS2DX/cocos2dx</locationURI>
-		</link>
-		<link>
 			<name>cocos2dx-src</name>
 			<type>2</type>
-			<locationURI>PARENT-2-PROJECT_LOC/cocos2dx/cocos2dx/platform/android/java/src</locationURI>
-		</link>
-		<link>
-			<name>extensions</name>
-			<type>2</type>
-			<locationURI>COCOS2DX/extensions</locationURI>
+			<location>/Users/xuyi/test/demo_1/cocos2dx/cocos2dx/platform/android/java/src</location>
 		</link>
 		<link>
 			<name>mlib_c++</name>
