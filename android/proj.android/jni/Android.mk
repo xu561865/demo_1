@@ -19,6 +19,7 @@ SRC_DIRS = Classes \
            Classes/android \
            Classes/audio \
            Classes/data \
+           Classes/data/fight \
            Classes/network \
            Classes/ui \
            mlib/ccext \

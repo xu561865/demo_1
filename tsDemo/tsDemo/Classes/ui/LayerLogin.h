@@ -8,7 +8,7 @@
 #include "LodingLayer.h"
 #include "TeXiao.h"
 
-USING_NS_CC;
+using namespace cocos2d;
 
 class LayerLogin
 : public CCLayer
@@ -17,18 +17,18 @@ class LayerLogin
 , public extension::CCNodeLoaderListener
 {
 public:
-    virtual SEL_MenuHandler onResolveCCBCCMenuItemSelector(CCObject * pTarget, const char * pSelectorName) override;
-    virtual extension::SEL_CCControlHandler onResolveCCBCCControlSelector(CCObject * pTarget, const char * pSelectorName) override;
-    virtual bool onAssignCCBMemberVariable(CCObject * pTarget, const char * pMemberVariableName, CCNode * pNode) override;
-    virtual bool onAssignCCBCustomProperty(CCObject* pTarget, const char* pMemberVariableName, extension::CCBValue* pCCBValue) override;
+    virtual SEL_MenuHandler onResolveCCBCCMenuItemSelector(CCObject * pTarget, const char * pSelectorName);
+    virtual extension::SEL_CCControlHandler onResolveCCBCCControlSelector(CCObject * pTarget, const char * pSelectorName);
+    virtual bool onAssignCCBMemberVariable(CCObject * pTarget, const char * pMemberVariableName, CCNode * pNode);
+    virtual bool onAssignCCBCustomProperty(CCObject* pTarget, const char* pMemberVariableName, extension::CCBValue* pCCBValue);
     virtual void onNodeLoaded(CCNode * pNode, extension::CCNodeLoader * pNodeLoader);
     
     LayerLogin();
     virtual ~LayerLogin();
     CREATE_FUNC(LayerLogin);
     virtual bool init();
-    virtual void onEnter() override;
-    virtual void onExit() override;
+    virtual void onEnter();
+    virtual void onExit();
     static CCScene* scene();
     
     CCMenuItemImage* pMenuItemLogin;
