@@ -128,10 +128,4 @@
 			<location>/Users/xuyi/test/demo_1/cocos2dx/cocos2dx/platform/android/java/src</location>
 		</link>
 	</linkedResources>
-	<variableList>
-		<variable>
-			<name>HOME_LOC</name>
-			<value>file:/Users/xuyi/Program/demo_1</value>
-		</variable>
-	</variableList>
 </projectDescription>
