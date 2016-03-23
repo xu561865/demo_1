@@ -125,7 +125,7 @@
 		<link>
 			<name>cocos2dx-src</name>
 			<type>2</type>
-			<location>/Users/xuyi/test/demo_1/cocos2dx/cocos2dx/platform/android/java/src</location>
+			<locationURI>PARENT-2-PROJECT_LOC/cocos2dx/cocos2dx/platform/android/java/src</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
