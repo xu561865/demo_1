@@ -731,6 +731,7 @@
 		F1EC28421CA154CE00B14C9C /* CCTouchHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24281CA154CC00B14C9C /* CCTouchHandler.cpp */; settings = {ASSET_TAGS = (); }; };
 		F1EC28491CA15AF200B14C9C /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EC0ACE1CA153FD00B14C9C /* libwebsockets.a */; };
 		F1EC284B1CA15C6200B14C9C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EC284A1CA15C6200B14C9C /* libsqlite3.tbd */; };
+		F1EC285C1CA391CE00B14C9C /* AndroidSdk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC285B1CA391CE00B14C9C /* AndroidSdk.cpp */; settings = {ASSET_TAGS = (); }; };
 		F1ECF71F1CA1537900B14C9C /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECF68E1CA1537900B14C9C /* CDAudioManager.m */; settings = {ASSET_TAGS = (); }; };
 		F1ECF7201CA1537900B14C9C /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECF6911CA1537900B14C9C /* CDOpenALSupport.m */; settings = {ASSET_TAGS = (); }; };
 		F1ECF7211CA1537900B14C9C /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECF6931CA1537900B14C9C /* CocosDenshion.m */; settings = {ASSET_TAGS = (); }; };
@@ -1928,6 +1929,8 @@
 		F1EC284A1CA15C6200B14C9C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		F1EC284F1CA15C6D00B14C9C /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
 		F1EC28501CA15C6D00B14C9C /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3ext.h; sourceTree = "<group>"; };
+		F1EC285B1CA391CE00B14C9C /* AndroidSdk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AndroidSdk.cpp; path = android_sdk/AndroidSdk.cpp; sourceTree = "<group>"; };
+		F1EC285D1CA391EA00B14C9C /* AndroidSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AndroidSdk.h; path = android_sdk/AndroidSdk.h; sourceTree = "<group>"; };
 		F1ECF68A1CA1537900B14C9C /* Export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Export.h; sourceTree = "<group>"; };
 		F1ECF68B1CA1537900B14C9C /* SimpleAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioEngine.h; sourceTree = "<group>"; };
 		F1ECF68D1CA1537900B14C9C /* CDAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAudioManager.h; sourceTree = "<group>"; };
@@ -2019,6 +2022,7 @@
 		F1C5D80E1C9D6442001CC4D0 /* mlib */ = {
 			isa = PBXGroup;
 			children = (
+				F1EC28581CA3916700B14C9C /* android_sdk */,
 				F1C5D80F1C9D6442001CC4D0 /* c++ */,
 				F1C5D82E1C9D6442001CC4D0 /* ccext */,
 			);
@@ -4147,6 +4151,15 @@
 			path = include;
 			sourceTree = "<group>";
 		};
+		F1EC28581CA3916700B14C9C /* android_sdk */ = {
+			isa = PBXGroup;
+			children = (
+				F1EC285D1CA391EA00B14C9C /* AndroidSdk.h */,
+				F1EC285B1CA391CE00B14C9C /* AndroidSdk.cpp */,
+			);
+			name = android_sdk;
+			sourceTree = "<group>";
+		};
 		F1ECF67E1CA1537900B14C9C /* CocosDenshion */ = {
 			isa = PBXGroup;
 			children = (
@@ -4608,6 +4621,7 @@
 				F1EC19121CA1547A00B14C9C /* CCNode+CCBRelativePositioning.cpp in Sources */,
 				F1C5D8C51C9D6442001CC4D0 /* MIAPTask.cpp in Sources */,
 				F1EC191A1CA1547A00B14C9C /* CCActionFrame.cpp in Sources */,
+				F1EC285C1CA391CE00B14C9C /* AndroidSdk.cpp in Sources */,
 				F1C5D97F1C9D6504001CC4D0 /* RootViewController.mm in Sources */,
 				F1EC24711CA154CC00B14C9C /* CCParticleSystem.cpp in Sources */,
 				F1EC28201CA154CE00B14C9C /* base64.cpp in Sources */,
