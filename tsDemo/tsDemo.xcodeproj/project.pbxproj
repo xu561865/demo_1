@@ -15,38 +15,42 @@
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
-		F14841B61CAEA060000931A6 /* mlib_socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F14841B41CAEA060000931A6 /* mlib_socket.cpp */; settings = {ASSET_TAGS = (); }; };
-		F14841BD1CAEA10E000931A6 /* LSocketCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F14841B71CAEA10E000931A6 /* LSocketCenter.cpp */; settings = {ASSET_TAGS = (); }; };
-		F14841BE1CAEA10E000931A6 /* LSocketErrorHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F14841B91CAEA10E000931A6 /* LSocketErrorHandler.cpp */; settings = {ASSET_TAGS = (); }; };
-		F14841BF1CAEA10E000931A6 /* LSocketRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F14841BB1CAEA10E000931A6 /* LSocketRequest.cpp */; settings = {ASSET_TAGS = (); }; };
-		F157E3F61CA90B52007550A0 /* SocketBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F157E3ED1CA90B52007550A0 /* SocketBuffer.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B4B1C9FCE4300E9135F /* ArenaWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B491C9FCE4300E9135F /* ArenaWindow.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B581C9FCE7500E9135F /* EmployPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B4C1C9FCE7500E9135F /* EmployPage.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B591C9FCE7500E9135F /* friendemploy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B4E1C9FCE7500E9135F /* friendemploy.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B5A1C9FCE7500E9135F /* friendemploycell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B501C9FCE7500E9135F /* friendemploycell.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B5B1C9FCE7500E9135F /* friendemploylog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B521C9FCE7500E9135F /* friendemploylog.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B5C1C9FCE7500E9135F /* friendemploypop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B541C9FCE7500E9135F /* friendemploypop.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B5D1C9FCE7500E9135F /* friendinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B561C9FCE7500E9135F /* friendinfo.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B621C9FCE9500E9135F /* heroItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B5E1C9FCE9500E9135F /* heroItem.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B631C9FCE9500E9135F /* newBuZhen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B601C9FCE9500E9135F /* newBuZhen.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B681C9FCEAD00E9135F /* FightPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B641C9FCEAD00E9135F /* FightPage.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B691C9FCEAD00E9135F /* popwindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B661C9FCEAD00E9135F /* popwindow.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B731C9FCED000E9135F /* CombinePage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B6A1C9FCED000E9135F /* CombinePage.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B741C9FCED000E9135F /* hcbag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B6C1C9FCED000E9135F /* hcbag.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B751C9FCED000E9135F /* hcgoodsitem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B6E1C9FCED000E9135F /* hcgoodsitem.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B761C9FCED000E9135F /* hctooltip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B711C9FCED000E9135F /* hctooltip.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B7F1C9FCEF200E9135F /* BottomPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B771C9FCEF200E9135F /* BottomPage.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B801C9FCEF200E9135F /* headPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B791C9FCEF200E9135F /* headPage.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B811C9FCEF200E9135F /* homePage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B7B1C9FCEF200E9135F /* homePage.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B821C9FCEF200E9135F /* middlePage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B7D1C9FCEF200E9135F /* middlePage.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B891C9FCF0C00E9135F /* LayerLogin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B831C9FCF0C00E9135F /* LayerLogin.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B8A1C9FCF0C00E9135F /* startAnimate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B851C9FCF0C00E9135F /* startAnimate.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B8B1C9FCF0C00E9135F /* xuanren.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B871C9FCF0C00E9135F /* xuanren.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B961C9FCF1E00E9135F /* MailInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B8C1C9FCF1E00E9135F /* MailInfo.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B971C9FCF1E00E9135F /* MailPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B8E1C9FCF1E00E9135F /* MailPage.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B981C9FCF1E00E9135F /* MailRead.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B901C9FCF1E00E9135F /* MailRead.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B991C9FCF1E00E9135F /* MailRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B921C9FCF1E00E9135F /* MailRenderer.cpp */; settings = {ASSET_TAGS = (); }; };
-		F18A0B9A1C9FCF1E00E9135F /* MailWrite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B941C9FCF1E00E9135F /* MailWrite.cpp */; settings = {ASSET_TAGS = (); }; };
+		F14841B61CAEA060000931A6 /* mlib_socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F14841B41CAEA060000931A6 /* mlib_socket.cpp */; };
+		F14841BD1CAEA10E000931A6 /* LSocketCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F14841B71CAEA10E000931A6 /* LSocketCenter.cpp */; };
+		F14841BE1CAEA10E000931A6 /* LSocketErrorHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F14841B91CAEA10E000931A6 /* LSocketErrorHandler.cpp */; };
+		F14841BF1CAEA10E000931A6 /* LSocketRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F14841BB1CAEA10E000931A6 /* LSocketRequest.cpp */; };
+		F179397E1CAECEAF009F6E48 /* ByteBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F17939741CAECEAF009F6E48 /* ByteBuffer.cpp */; };
+		F179397F1CAECEAF009F6E48 /* message.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F17939761CAECEAF009F6E48 /* message.cpp */; };
+		F17939801CAECEAF009F6E48 /* SocketClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F17939781CAECEAF009F6E48 /* SocketClient.cpp */; };
+		F17939811CAECEAF009F6E48 /* SocketManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F179397A1CAECEAF009F6E48 /* SocketManager.cpp */; };
+		F17939821CAECEAF009F6E48 /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F179397C1CAECEAF009F6E48 /* Util.cpp */; };
+		F18A0B4B1C9FCE4300E9135F /* ArenaWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B491C9FCE4300E9135F /* ArenaWindow.cpp */; };
+		F18A0B581C9FCE7500E9135F /* EmployPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B4C1C9FCE7500E9135F /* EmployPage.cpp */; };
+		F18A0B591C9FCE7500E9135F /* friendemploy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B4E1C9FCE7500E9135F /* friendemploy.cpp */; };
+		F18A0B5A1C9FCE7500E9135F /* friendemploycell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B501C9FCE7500E9135F /* friendemploycell.cpp */; };
+		F18A0B5B1C9FCE7500E9135F /* friendemploylog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B521C9FCE7500E9135F /* friendemploylog.cpp */; };
+		F18A0B5C1C9FCE7500E9135F /* friendemploypop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B541C9FCE7500E9135F /* friendemploypop.cpp */; };
+		F18A0B5D1C9FCE7500E9135F /* friendinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B561C9FCE7500E9135F /* friendinfo.cpp */; };
+		F18A0B621C9FCE9500E9135F /* heroItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B5E1C9FCE9500E9135F /* heroItem.cpp */; };
+		F18A0B631C9FCE9500E9135F /* newBuZhen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B601C9FCE9500E9135F /* newBuZhen.cpp */; };
+		F18A0B681C9FCEAD00E9135F /* FightPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B641C9FCEAD00E9135F /* FightPage.cpp */; };
+		F18A0B691C9FCEAD00E9135F /* popwindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B661C9FCEAD00E9135F /* popwindow.cpp */; };
+		F18A0B731C9FCED000E9135F /* CombinePage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B6A1C9FCED000E9135F /* CombinePage.cpp */; };
+		F18A0B741C9FCED000E9135F /* hcbag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B6C1C9FCED000E9135F /* hcbag.cpp */; };
+		F18A0B751C9FCED000E9135F /* hcgoodsitem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B6E1C9FCED000E9135F /* hcgoodsitem.cpp */; };
+		F18A0B761C9FCED000E9135F /* hctooltip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B711C9FCED000E9135F /* hctooltip.cpp */; };
+		F18A0B7F1C9FCEF200E9135F /* BottomPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B771C9FCEF200E9135F /* BottomPage.cpp */; };
+		F18A0B801C9FCEF200E9135F /* headPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B791C9FCEF200E9135F /* headPage.cpp */; };
+		F18A0B811C9FCEF200E9135F /* homePage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B7B1C9FCEF200E9135F /* homePage.cpp */; };
+		F18A0B821C9FCEF200E9135F /* middlePage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B7D1C9FCEF200E9135F /* middlePage.cpp */; };
+		F18A0B891C9FCF0C00E9135F /* LayerLogin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B831C9FCF0C00E9135F /* LayerLogin.cpp */; };
+		F18A0B8A1C9FCF0C00E9135F /* startAnimate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B851C9FCF0C00E9135F /* startAnimate.cpp */; };
+		F18A0B8B1C9FCF0C00E9135F /* xuanren.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B871C9FCF0C00E9135F /* xuanren.cpp */; };
+		F18A0B961C9FCF1E00E9135F /* MailInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B8C1C9FCF1E00E9135F /* MailInfo.cpp */; };
+		F18A0B971C9FCF1E00E9135F /* MailPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B8E1C9FCF1E00E9135F /* MailPage.cpp */; };
+		F18A0B981C9FCF1E00E9135F /* MailRead.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B901C9FCF1E00E9135F /* MailRead.cpp */; };
+		F18A0B991C9FCF1E00E9135F /* MailRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B921C9FCF1E00E9135F /* MailRenderer.cpp */; };
+		F18A0B9A1C9FCF1E00E9135F /* MailWrite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B941C9FCF1E00E9135F /* MailWrite.cpp */; };
 		F1C5D8951C9D6442001CC4D0 /* mlib_thread.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D8131C9D6442001CC4D0 /* mlib_thread.mm */; };
 		F1C5D8961C9D6442001CC4D0 /* mlib_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D8161C9D6442001CC4D0 /* mlib_buffer.cpp */; };
 		F1C5D8971C9D6442001CC4D0 /* mlib_event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D8181C9D6442001CC4D0 /* mlib_event.cpp */; };
@@ -459,284 +463,284 @@
 		F1EAE2FB1C96BB7A006FFF04 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE2FA1C96BB7A006FFF04 /* libz.tbd */; };
 		F1EAE4BB1C96DBFC006FFF04 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE4BA1C96DBFC006FFF04 /* StoreKit.framework */; };
 		F1EAE4BF1C96DD23006FFF04 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE4BE1C96DD23006FFF04 /* AdSupport.framework */; };
-		F1EC172A1CA153FF00B14C9C /* json_internalarray.inl in Resources */ = {isa = PBXBuildFile; fileRef = F1EC0AB81CA153FD00B14C9C /* json_internalarray.inl */; settings = {ASSET_TAGS = (); }; };
-		F1EC172B1CA153FF00B14C9C /* json_internalmap.inl in Resources */ = {isa = PBXBuildFile; fileRef = F1EC0AB91CA153FD00B14C9C /* json_internalmap.inl */; settings = {ASSET_TAGS = (); }; };
-		F1EC172C1CA153FF00B14C9C /* json_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC0ABA1CA153FD00B14C9C /* json_reader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC172D1CA153FF00B14C9C /* json_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC0ABB1CA153FD00B14C9C /* json_value.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC172E1CA153FF00B14C9C /* json_valueiterator.inl in Resources */ = {isa = PBXBuildFile; fileRef = F1EC0ABC1CA153FD00B14C9C /* json_valueiterator.inl */; settings = {ASSET_TAGS = (); }; };
-		F1EC172F1CA153FF00B14C9C /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC0ABD1CA153FD00B14C9C /* json_writer.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19001CA1547A00B14C9C /* AssetsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17541CA1547900B14C9C /* AssetsManager.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19011CA1547A00B14C9C /* CCBAnimationManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17571CA1547900B14C9C /* CCBAnimationManager.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19021CA1547A00B14C9C /* CCBFileLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17591CA1547900B14C9C /* CCBFileLoader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19031CA1547A00B14C9C /* CCBKeyframe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC175B1CA1547900B14C9C /* CCBKeyframe.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19041CA1547A00B14C9C /* CCBReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC175E1CA1547900B14C9C /* CCBReader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19051CA1547A00B14C9C /* CCBSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17611CA1547900B14C9C /* CCBSequence.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19061CA1547A00B14C9C /* CCBSequenceProperty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17631CA1547900B14C9C /* CCBSequenceProperty.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19071CA1547A00B14C9C /* CCBValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17651CA1547900B14C9C /* CCBValue.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19081CA1547A00B14C9C /* CCControlButtonLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17671CA1547900B14C9C /* CCControlButtonLoader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19091CA1547A00B14C9C /* CCControlLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17691CA1547900B14C9C /* CCControlLoader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC190A1CA1547A00B14C9C /* CCData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC176B1CA1547900B14C9C /* CCData.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC190B1CA1547A00B14C9C /* CCLabelBMFontLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC176D1CA1547900B14C9C /* CCLabelBMFontLoader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC190C1CA1547A00B14C9C /* CCLabelTTFLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC176F1CA1547900B14C9C /* CCLabelTTFLoader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC190D1CA1547A00B14C9C /* CCLayerColorLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17711CA1547900B14C9C /* CCLayerColorLoader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC190E1CA1547A00B14C9C /* CCLayerGradientLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17731CA1547900B14C9C /* CCLayerGradientLoader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC190F1CA1547A00B14C9C /* CCLayerLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17751CA1547900B14C9C /* CCLayerLoader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19101CA1547A00B14C9C /* CCMenuItemImageLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17771CA1547900B14C9C /* CCMenuItemImageLoader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19111CA1547A00B14C9C /* CCMenuItemLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17791CA1547900B14C9C /* CCMenuItemLoader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19121CA1547A00B14C9C /* CCNode+CCBRelativePositioning.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC177C1CA1547900B14C9C /* CCNode+CCBRelativePositioning.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19131CA1547A00B14C9C /* CCNodeLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC177E1CA1547900B14C9C /* CCNodeLoader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19141CA1547A00B14C9C /* CCNodeLoaderLibrary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17801CA1547900B14C9C /* CCNodeLoaderLibrary.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19151CA1547A00B14C9C /* CCParticleSystemQuadLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17831CA1547900B14C9C /* CCParticleSystemQuadLoader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19161CA1547A00B14C9C /* CCScale9SpriteLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17851CA1547900B14C9C /* CCScale9SpriteLoader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19171CA1547A00B14C9C /* CCScrollViewLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17871CA1547900B14C9C /* CCScrollViewLoader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19181CA1547A00B14C9C /* CCSpriteLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17891CA1547900B14C9C /* CCSpriteLoader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19191CA1547A00B14C9C /* CCActionEaseEx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC178E1CA1547900B14C9C /* CCActionEaseEx.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC191A1CA1547A00B14C9C /* CCActionFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17901CA1547900B14C9C /* CCActionFrame.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC191B1CA1547A00B14C9C /* CCActionFrameEasing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17921CA1547900B14C9C /* CCActionFrameEasing.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC191C1CA1547A00B14C9C /* CCActionManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17941CA1547900B14C9C /* CCActionManager.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC191D1CA1547A00B14C9C /* CCActionNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17961CA1547900B14C9C /* CCActionNode.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC191E1CA1547A00B14C9C /* CCActionObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17981CA1547900B14C9C /* CCActionObject.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC191F1CA1547A00B14C9C /* CCActionTimeline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC179B1CA1547900B14C9C /* CCActionTimeline.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19201CA1547A00B14C9C /* CCActionTimelineCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC179D1CA1547900B14C9C /* CCActionTimelineCache.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19211CA1547A00B14C9C /* CCFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC179F1CA1547900B14C9C /* CCFrame.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19221CA1547A00B14C9C /* CCNodeReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17A11CA1547900B14C9C /* CCNodeReader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19231CA1547A00B14C9C /* CCTimeLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17A31CA1547900B14C9C /* CCTimeLine.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19241CA1547A00B14C9C /* CCArmatureAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17A81CA1547900B14C9C /* CCArmatureAnimation.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19251CA1547A00B14C9C /* CCProcessBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17AA1CA1547900B14C9C /* CCProcessBase.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19261CA1547A00B14C9C /* CCTween.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17AC1CA1547900B14C9C /* CCTween.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19271CA1547A00B14C9C /* CCArmature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17AE1CA1547900B14C9C /* CCArmature.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19281CA1547A00B14C9C /* CCBone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17B01CA1547900B14C9C /* CCBone.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19291CA1547A00B14C9C /* CCDatas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17B31CA1547900B14C9C /* CCDatas.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC192A1CA1547A00B14C9C /* CCBatchNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17B61CA1547900B14C9C /* CCBatchNode.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC192B1CA1547A00B14C9C /* CCDecorativeDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17B81CA1547900B14C9C /* CCDecorativeDisplay.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC192C1CA1547A00B14C9C /* CCDisplayFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17BA1CA1547900B14C9C /* CCDisplayFactory.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC192D1CA1547A00B14C9C /* CCDisplayManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17BC1CA1547900B14C9C /* CCDisplayManager.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC192E1CA1547A00B14C9C /* CCSkin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17BE1CA1547900B14C9C /* CCSkin.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC192F1CA1547A00B14C9C /* CCColliderDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17C31CA1547900B14C9C /* CCColliderDetector.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19301CA1547A00B14C9C /* CCArmatureDataManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17C61CA1547900B14C9C /* CCArmatureDataManager.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19311CA1547A00B14C9C /* CCArmatureDefine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17C81CA1547900B14C9C /* CCArmatureDefine.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19321CA1547A00B14C9C /* CCDataReaderHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17CA1CA1547900B14C9C /* CCDataReaderHelper.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19331CA1547A00B14C9C /* CCSpriteFrameCacheHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17CC1CA1547900B14C9C /* CCSpriteFrameCacheHelper.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19341CA1547A00B14C9C /* CCTransformHelp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17CE1CA1547900B14C9C /* CCTransformHelp.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19351CA1547A00B14C9C /* CCTweenFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17D01CA1547900B14C9C /* CCTweenFunction.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19361CA1547A00B14C9C /* CCUtilMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17D21CA1547900B14C9C /* CCUtilMath.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19371CA1547A00B14C9C /* CCComAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17D51CA1547900B14C9C /* CCComAttribute.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19381CA1547A00B14C9C /* CCComAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17D71CA1547900B14C9C /* CCComAudio.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19391CA1547A00B14C9C /* CCComController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17DA1CA1547900B14C9C /* CCComController.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC193A1CA1547A00B14C9C /* CCComRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17DC1CA1547900B14C9C /* CCComRender.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC193B1CA1547A00B14C9C /* CCInputDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17DE1CA1547900B14C9C /* CCInputDelegate.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC193C1CA1547A00B14C9C /* UIWidget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17E21CA1547900B14C9C /* UIWidget.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC193D1CA1547A00B14C9C /* UILayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17E51CA1547900B14C9C /* UILayout.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC193E1CA1547A00B14C9C /* UILayoutDefine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17E71CA1547900B14C9C /* UILayoutDefine.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC193F1CA1547A00B14C9C /* UILayoutParameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17E91CA1547900B14C9C /* UILayoutParameter.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19401CA1547A00B14C9C /* CocosGUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17EC1CA1547900B14C9C /* CocosGUI.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19411CA1547A00B14C9C /* UIHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17EF1CA1547900B14C9C /* UIHelper.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19421CA1547A00B14C9C /* UITouchGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17F11CA1547900B14C9C /* UITouchGroup.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19431CA1547A00B14C9C /* UIListView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17F71CA1547900B14C9C /* UIListView.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19441CA1547A00B14C9C /* UIPageView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17F91CA1547900B14C9C /* UIPageView.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19451CA1547A00B14C9C /* UIScrollView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17FC1CA1547900B14C9C /* UIScrollView.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19461CA1547A00B14C9C /* UIButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17FE1CA1547900B14C9C /* UIButton.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19471CA1547A00B14C9C /* UICheckBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18001CA1547900B14C9C /* UICheckBox.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19481CA1547A00B14C9C /* UIImageView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18021CA1547900B14C9C /* UIImageView.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19491CA1547A00B14C9C /* UILabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18041CA1547900B14C9C /* UILabel.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC194A1CA1547A00B14C9C /* UILabelAtlas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18061CA1547900B14C9C /* UILabelAtlas.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC194B1CA1547A00B14C9C /* UILabelBMFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18081CA1547900B14C9C /* UILabelBMFont.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC194C1CA1547A00B14C9C /* UILoadingBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC180A1CA1547900B14C9C /* UILoadingBar.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC194D1CA1547A00B14C9C /* UIRichText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC180C1CA1547900B14C9C /* UIRichText.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC194E1CA1547A00B14C9C /* UISlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC180E1CA1547900B14C9C /* UISlider.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC194F1CA1547A00B14C9C /* UITextField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18101CA1547900B14C9C /* UITextField.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19501CA1547A00B14C9C /* CocoLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18131CA1547900B14C9C /* CocoLoader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19511CA1547A00B14C9C /* DictionaryHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18151CA1547900B14C9C /* DictionaryHelper.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19521CA1547A00B14C9C /* GUIReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18241CA1547900B14C9C /* GUIReader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19531CA1547A00B14C9C /* SceneReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18261CA1547900B14C9C /* SceneReader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19541CA1547A00B14C9C /* ButtonReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC182A1CA1547900B14C9C /* ButtonReader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19551CA1547A00B14C9C /* CheckBoxReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC182D1CA1547900B14C9C /* CheckBoxReader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19561CA1547A00B14C9C /* ImageViewReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18301CA1547900B14C9C /* ImageViewReader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19571CA1547A00B14C9C /* LabelAtlasReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18331CA1547900B14C9C /* LabelAtlasReader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19581CA1547A00B14C9C /* LabelBMFontReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18361CA1547900B14C9C /* LabelBMFontReader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19591CA1547A00B14C9C /* LabelReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18391CA1547900B14C9C /* LabelReader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC195A1CA1547A00B14C9C /* LayoutReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC183C1CA1547900B14C9C /* LayoutReader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC195B1CA1547A00B14C9C /* ListViewReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC183F1CA1547900B14C9C /* ListViewReader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC195C1CA1547A00B14C9C /* LoadingBarReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18421CA1547900B14C9C /* LoadingBarReader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC195D1CA1547A00B14C9C /* PageViewReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18451CA1547900B14C9C /* PageViewReader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC195E1CA1547A00B14C9C /* ScrollViewReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18481CA1547900B14C9C /* ScrollViewReader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC195F1CA1547A00B14C9C /* SliderReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC184B1CA1547900B14C9C /* SliderReader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19601CA1547A00B14C9C /* TextFieldReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC184E1CA1547900B14C9C /* TextFieldReader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19611CA1547A00B14C9C /* WidgetReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18501CA1547900B14C9C /* WidgetReader.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19621CA1547A00B14C9C /* ObjectFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18541CA1547900B14C9C /* ObjectFactory.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19631CA1547A00B14C9C /* TriggerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18561CA1547900B14C9C /* TriggerBase.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19641CA1547A00B14C9C /* TriggerMng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18581CA1547A00B14C9C /* TriggerMng.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19651CA1547A00B14C9C /* TriggerObj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC185A1CA1547A00B14C9C /* TriggerObj.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19661CA1547A00B14C9C /* CCControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18601CA1547A00B14C9C /* CCControl.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19671CA1547A00B14C9C /* CCControlButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18621CA1547A00B14C9C /* CCControlButton.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19681CA1547A00B14C9C /* CCControlColourPicker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18641CA1547A00B14C9C /* CCControlColourPicker.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19691CA1547A00B14C9C /* CCControlHuePicker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18671CA1547A00B14C9C /* CCControlHuePicker.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC196A1CA1547A00B14C9C /* CCControlPotentiometer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18691CA1547A00B14C9C /* CCControlPotentiometer.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC196B1CA1547A00B14C9C /* CCControlSaturationBrightnessPicker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC186B1CA1547A00B14C9C /* CCControlSaturationBrightnessPicker.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC196C1CA1547A00B14C9C /* CCControlSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC186D1CA1547A00B14C9C /* CCControlSlider.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC196D1CA1547A00B14C9C /* CCControlStepper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC186F1CA1547A00B14C9C /* CCControlStepper.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC196E1CA1547A00B14C9C /* CCControlSwitch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18711CA1547A00B14C9C /* CCControlSwitch.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC196F1CA1547A00B14C9C /* CCControlUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18731CA1547A00B14C9C /* CCControlUtils.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19701CA1547A00B14C9C /* CCInvocation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18751CA1547A00B14C9C /* CCInvocation.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19711CA1547A00B14C9C /* CCScale9Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18771CA1547A00B14C9C /* CCScale9Sprite.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19721CA1547A00B14C9C /* CCEditBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC187A1CA1547A00B14C9C /* CCEditBox.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19741CA1547A00B14C9C /* CCEditBoxImplIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18801CA1547A00B14C9C /* CCEditBoxImplIOS.mm */; settings = {ASSET_TAGS = (); }; };
-		F1EC197B1CA1547A00B14C9C /* CCScrollView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC188D1CA1547A00B14C9C /* CCScrollView.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC197C1CA1547A00B14C9C /* CCSorting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC188F1CA1547A00B14C9C /* CCSorting.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC197D1CA1547A00B14C9C /* CCTableView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18911CA1547A00B14C9C /* CCTableView.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC197E1CA1547A00B14C9C /* CCTableViewCell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18931CA1547A00B14C9C /* CCTableViewCell.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC197F1CA1547A00B14C9C /* LocalStorage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18961CA1547A00B14C9C /* LocalStorage.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19801CA1547A00B14C9C /* LocalStorageAndroid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18981CA1547A00B14C9C /* LocalStorageAndroid.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19811CA1547A00B14C9C /* HttpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC189A1CA1547A00B14C9C /* HttpClient.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC19821CA1547A00B14C9C /* WebSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC189E1CA1547A00B14C9C /* WebSocket.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC242A1CA154CC00B14C9C /* CCAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19BA1CA154C800B14C9C /* CCAction.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC242B1CA154CC00B14C9C /* CCActionCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19BC1CA154C800B14C9C /* CCActionCamera.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC242C1CA154CC00B14C9C /* CCActionCatmullRom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19BE1CA154C800B14C9C /* CCActionCatmullRom.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC242D1CA154CC00B14C9C /* CCActionEase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19C01CA154C800B14C9C /* CCActionEase.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC242E1CA154CC00B14C9C /* CCActionGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19C21CA154C800B14C9C /* CCActionGrid.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC242F1CA154CC00B14C9C /* CCActionGrid3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19C41CA154C800B14C9C /* CCActionGrid3D.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24301CA154CC00B14C9C /* CCActionInstant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19C61CA154C800B14C9C /* CCActionInstant.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24311CA154CC00B14C9C /* CCActionInterval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19C81CA154C800B14C9C /* CCActionInterval.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24321CA154CC00B14C9C /* CCActionManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19CA1CA154C800B14C9C /* CCActionManager.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24331CA154CC00B14C9C /* CCActionPageTurn3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19CC1CA154C800B14C9C /* CCActionPageTurn3D.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24341CA154CC00B14C9C /* CCActionProgressTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19CE1CA154C800B14C9C /* CCActionProgressTimer.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24351CA154CC00B14C9C /* CCActionTiledGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19D01CA154C800B14C9C /* CCActionTiledGrid.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24361CA154CC00B14C9C /* CCActionTween.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19D21CA154C800B14C9C /* CCActionTween.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24381CA154CC00B14C9C /* CCAtlasNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19D61CA154C800B14C9C /* CCAtlasNode.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24391CA154CC00B14C9C /* CCGLBufferedNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19D81CA154C800B14C9C /* CCGLBufferedNode.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC243A1CA154CC00B14C9C /* CCNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19DA1CA154C800B14C9C /* CCNode.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC243B1CA154CC00B14C9C /* CCCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19DC1CA154C800B14C9C /* CCCamera.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC243C1CA154CC00B14C9C /* CCConfiguration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19DE1CA154C800B14C9C /* CCConfiguration.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC243D1CA154CC00B14C9C /* CCDirector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19E01CA154C800B14C9C /* CCDirector.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC243E1CA154CC00B14C9C /* ccFPSImages.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19E21CA154C800B14C9C /* ccFPSImages.c */; settings = {ASSET_TAGS = (); }; };
-		F1EC243F1CA154CC00B14C9C /* CCScheduler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19E41CA154C800B14C9C /* CCScheduler.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24401CA154CC00B14C9C /* CCAffineTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19E71CA154C800B14C9C /* CCAffineTransform.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24411CA154CC00B14C9C /* CCArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19E91CA154C800B14C9C /* CCArray.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24421CA154CC00B14C9C /* CCAutoreleasePool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19EB1CA154C800B14C9C /* CCAutoreleasePool.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24431CA154CC00B14C9C /* CCDataVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19EE1CA154C800B14C9C /* CCDataVisitor.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24441CA154CC00B14C9C /* CCDictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19F01CA154C800B14C9C /* CCDictionary.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24451CA154CC00B14C9C /* CCGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19F41CA154C800B14C9C /* CCGeometry.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24461CA154CC00B14C9C /* CCNS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19F71CA154C800B14C9C /* CCNS.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24471CA154CC00B14C9C /* CCObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19F91CA154C800B14C9C /* CCObject.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24481CA154CC00B14C9C /* CCSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19FB1CA154C800B14C9C /* CCSet.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24491CA154CC00B14C9C /* CCString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19FD1CA154C800B14C9C /* CCString.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC244A1CA154CC00B14C9C /* CCZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19FF1CA154C800B14C9C /* CCZone.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC244B1CA154CC00B14C9C /* cocos2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A011CA154C800B14C9C /* cocos2d.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC244C1CA154CC00B14C9C /* CCDrawingPrimitives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A031CA154C800B14C9C /* CCDrawingPrimitives.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC244D1CA154CC00B14C9C /* CCDrawNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A051CA154C800B14C9C /* CCDrawNode.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC244E1CA154CC00B14C9C /* CCGrabber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A081CA154C800B14C9C /* CCGrabber.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC244F1CA154CC00B14C9C /* CCGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A0A1CA154C800B14C9C /* CCGrid.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24501CA154CC00B14C9C /* aabb.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A271CA154C800B14C9C /* aabb.c */; settings = {ASSET_TAGS = (); }; };
-		F1EC24511CA154CC00B14C9C /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = F1EC1A281CA154C800B14C9C /* ChangeLog */; settings = {ASSET_TAGS = (); }; };
-		F1EC24521CA154CC00B14C9C /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = F1EC1A291CA154C800B14C9C /* CMakeLists.txt */; settings = {ASSET_TAGS = (); }; };
-		F1EC24531CA154CC00B14C9C /* mat4stack.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A2B1CA154C800B14C9C /* mat4stack.c */; settings = {ASSET_TAGS = (); }; };
-		F1EC24541CA154CC00B14C9C /* matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A2C1CA154C800B14C9C /* matrix.c */; settings = {ASSET_TAGS = (); }; };
-		F1EC24551CA154CC00B14C9C /* mat3.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A2D1CA154C800B14C9C /* mat3.c */; settings = {ASSET_TAGS = (); }; };
-		F1EC24561CA154CC00B14C9C /* mat4.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A2E1CA154C800B14C9C /* mat4.c */; settings = {ASSET_TAGS = (); }; };
-		F1EC24571CA154CC00B14C9C /* neon_matrix_impl.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A2F1CA154C800B14C9C /* neon_matrix_impl.c */; settings = {ASSET_TAGS = (); }; };
-		F1EC24581CA154CC00B14C9C /* plane.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A301CA154C800B14C9C /* plane.c */; settings = {ASSET_TAGS = (); }; };
-		F1EC24591CA154CC00B14C9C /* quaternion.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A311CA154C800B14C9C /* quaternion.c */; settings = {ASSET_TAGS = (); }; };
-		F1EC245A1CA154CC00B14C9C /* ray2.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A321CA154C800B14C9C /* ray2.c */; settings = {ASSET_TAGS = (); }; };
-		F1EC245B1CA154CC00B14C9C /* utility.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A331CA154C800B14C9C /* utility.c */; settings = {ASSET_TAGS = (); }; };
-		F1EC245C1CA154CC00B14C9C /* vec2.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A341CA154C800B14C9C /* vec2.c */; settings = {ASSET_TAGS = (); }; };
-		F1EC245D1CA154CC00B14C9C /* vec3.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A351CA154C800B14C9C /* vec3.c */; settings = {ASSET_TAGS = (); }; };
-		F1EC245E1CA154CC00B14C9C /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A361CA154C800B14C9C /* vec4.c */; settings = {ASSET_TAGS = (); }; };
-		F1EC245F1CA154CC00B14C9C /* CCKeypadDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A381CA154C800B14C9C /* CCKeypadDelegate.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24601CA154CC00B14C9C /* CCKeypadDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A3A1CA154C800B14C9C /* CCKeypadDispatcher.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24611CA154CC00B14C9C /* CCLabelAtlas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A3D1CA154C800B14C9C /* CCLabelAtlas.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24621CA154CC00B14C9C /* CCLabelBMFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A3F1CA154C800B14C9C /* CCLabelBMFont.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24631CA154CC00B14C9C /* CCLabelTTF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A411CA154C800B14C9C /* CCLabelTTF.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24641CA154CC00B14C9C /* CCLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A441CA154C800B14C9C /* CCLayer.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24651CA154CC00B14C9C /* CCScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A461CA154C800B14C9C /* CCScene.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24661CA154CC00B14C9C /* CCTransition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A481CA154C800B14C9C /* CCTransition.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24671CA154CC00B14C9C /* CCTransitionPageTurn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A4A1CA154C800B14C9C /* CCTransitionPageTurn.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24681CA154CC00B14C9C /* CCTransitionProgress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A4C1CA154C800B14C9C /* CCTransitionProgress.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24691CA154CC00B14C9C /* CCMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A4F1CA154C800B14C9C /* CCMenu.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC246A1CA154CC00B14C9C /* CCMenuItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A511CA154C800B14C9C /* CCMenuItem.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC246B1CA154CC00B14C9C /* CCClippingNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A541CA154C800B14C9C /* CCClippingNode.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC246C1CA154CC00B14C9C /* CCMotionStreak.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A561CA154C800B14C9C /* CCMotionStreak.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC246D1CA154CC00B14C9C /* CCProgressTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A581CA154C800B14C9C /* CCProgressTimer.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC246E1CA154CC00B14C9C /* CCRenderTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A5A1CA154C800B14C9C /* CCRenderTexture.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC246F1CA154CC00B14C9C /* CCParticleBatchNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A5D1CA154C800B14C9C /* CCParticleBatchNode.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24701CA154CC00B14C9C /* CCParticleExamples.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A5F1CA154C800B14C9C /* CCParticleExamples.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24711CA154CC00B14C9C /* CCParticleSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A611CA154C800B14C9C /* CCParticleSystem.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24721CA154CC00B14C9C /* CCParticleSystemQuad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A631CA154C800B14C9C /* CCParticleSystemQuad.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24A01CA154CC00B14C9C /* CCEGLViewProtocol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AB41CA154C800B14C9C /* CCEGLViewProtocol.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24A11CA154CC00B14C9C /* CCFileUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AB61CA154C800B14C9C /* CCFileUtils.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24A21CA154CC00B14C9C /* CCImageCommonWebp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1ABA1CA154C800B14C9C /* CCImageCommonWebp.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24A31CA154CC00B14C9C /* CCSAXParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1ABD1CA154C800B14C9C /* CCSAXParser.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24A41CA154CC00B14C9C /* CCThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1ABF1CA154C800B14C9C /* CCThread.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24AB1CA154CC00B14C9C /* AccelerometerDelegateWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AD11CA154C800B14C9C /* AccelerometerDelegateWrapper.mm */; settings = {ASSET_TAGS = (); }; };
-		F1EC24AC1CA154CC00B14C9C /* CCAccelerometer.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AD31CA154C800B14C9C /* CCAccelerometer.mm */; settings = {ASSET_TAGS = (); }; };
-		F1EC24AD1CA154CC00B14C9C /* CCApplication.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AD51CA154C800B14C9C /* CCApplication.mm */; settings = {ASSET_TAGS = (); }; };
-		F1EC24AE1CA154CC00B14C9C /* CCCommon.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AD61CA154C800B14C9C /* CCCommon.mm */; settings = {ASSET_TAGS = (); }; };
-		F1EC24AF1CA154CC00B14C9C /* CCDevice.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AD71CA154C800B14C9C /* CCDevice.mm */; settings = {ASSET_TAGS = (); }; };
-		F1EC24B01CA154CC00B14C9C /* CCDirectorCaller.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AD91CA154C800B14C9C /* CCDirectorCaller.mm */; settings = {ASSET_TAGS = (); }; };
-		F1EC24B11CA154CC00B14C9C /* CCEGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1ADB1CA154C800B14C9C /* CCEGLView.mm */; settings = {ASSET_TAGS = (); }; };
-		F1EC24B21CA154CC00B14C9C /* CCES2Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1ADD1CA154C800B14C9C /* CCES2Renderer.m */; settings = {ASSET_TAGS = (); }; };
-		F1EC24B31CA154CC00B14C9C /* CCFileUtilsIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AE01CA154C800B14C9C /* CCFileUtilsIOS.mm */; settings = {ASSET_TAGS = (); }; };
-		F1EC24B41CA154CC00B14C9C /* CCImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AE21CA154C800B14C9C /* CCImage.mm */; settings = {ASSET_TAGS = (); }; };
-		F1EC24B51CA154CC00B14C9C /* CCLock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AE31CA154C800B14C9C /* CCLock.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24B61CA154CC00B14C9C /* CCThread.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AE71CA154C800B14C9C /* CCThread.mm */; settings = {ASSET_TAGS = (); }; };
-		F1EC24B71CA154CC00B14C9C /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AE91CA154C800B14C9C /* EAGLView.mm */; settings = {ASSET_TAGS = (); }; };
-		F1EC24B81CA154CC00B14C9C /* AccelerometerSimulation.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AED1CA154C800B14C9C /* AccelerometerSimulation.m */; settings = {ASSET_TAGS = (); }; };
-		F1EC24D91CA154CC00B14C9C /* platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1B351CA154C800B14C9C /* platform.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC24FB1CA154CC00B14C9C /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EC1BF61CA154C800B14C9C /* libcurl.a */; settings = {ASSET_TAGS = (); }; };
-		F1EC24FC1CA154CC00B14C9C /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EC1BF71CA154C800B14C9C /* libwebp.a */; settings = {ASSET_TAGS = (); }; };
-		F1EC28151CA154CE00B14C9C /* CCScriptSupport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23AA1CA154CB00B14C9C /* CCScriptSupport.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28161CA154CE00B14C9C /* CCGLProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23AD1CA154CB00B14C9C /* CCGLProgram.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28171CA154CE00B14C9C /* ccGLStateCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23AF1CA154CB00B14C9C /* ccGLStateCache.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28181CA154CE00B14C9C /* CCShaderCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23C01CA154CB00B14C9C /* CCShaderCache.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28191CA154CE00B14C9C /* ccShaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23C31CA154CB00B14C9C /* ccShaders.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC281A1CA154CE00B14C9C /* CCAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23CB1CA154CB00B14C9C /* CCAnimation.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC281B1CA154CE00B14C9C /* CCAnimationCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23CD1CA154CB00B14C9C /* CCAnimationCache.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC281C1CA154CE00B14C9C /* CCSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23CF1CA154CB00B14C9C /* CCSprite.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC281D1CA154CE00B14C9C /* CCSpriteBatchNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23D11CA154CB00B14C9C /* CCSpriteBatchNode.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC281E1CA154CE00B14C9C /* CCSpriteFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23D31CA154CB00B14C9C /* CCSpriteFrame.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC281F1CA154CE00B14C9C /* CCSpriteFrameCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23D51CA154CB00B14C9C /* CCSpriteFrameCache.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28201CA154CE00B14C9C /* base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23D81CA154CB00B14C9C /* base64.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28211CA154CE00B14C9C /* CCNotificationCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23DA1CA154CB00B14C9C /* CCNotificationCenter.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28221CA154CE00B14C9C /* CCPointExtension.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23DC1CA154CB00B14C9C /* CCPointExtension.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28231CA154CE00B14C9C /* CCProfiling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23DE1CA154CB00B14C9C /* CCProfiling.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28241CA154CE00B14C9C /* ccUTF8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23E01CA154CB00B14C9C /* ccUTF8.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28251CA154CE00B14C9C /* ccUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23E21CA154CB00B14C9C /* ccUtils.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28261CA154CE00B14C9C /* CCVertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23E41CA154CB00B14C9C /* CCVertex.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28271CA154CE00B14C9C /* CCComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23E71CA154CB00B14C9C /* CCComponent.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28281CA154CE00B14C9C /* CCComponentContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23E91CA154CB00B14C9C /* CCComponentContainer.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28291CA154CE00B14C9C /* ccCArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23EC1CA154CB00B14C9C /* ccCArray.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC282A1CA154CE00B14C9C /* TGAlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23F11CA154CB00B14C9C /* TGAlib.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC282B1CA154CE00B14C9C /* tinyxml2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23F41CA154CB00B14C9C /* tinyxml2.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC282C1CA154CE00B14C9C /* TransformUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23F61CA154CB00B14C9C /* TransformUtils.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC282D1CA154CE00B14C9C /* CCUserDefault.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23F91CA154CB00B14C9C /* CCUserDefault.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC282E1CA154CE00B14C9C /* CCUserDefault.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23FB1CA154CB00B14C9C /* CCUserDefault.mm */; settings = {ASSET_TAGS = (); }; };
-		F1EC282F1CA154CE00B14C9C /* CCUserDefaultAndroid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23FC1CA154CB00B14C9C /* CCUserDefaultAndroid.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28301CA154CE00B14C9C /* ioapi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23FE1CA154CB00B14C9C /* ioapi.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28311CA154CE00B14C9C /* unzip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24001CA154CB00B14C9C /* unzip.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28321CA154CE00B14C9C /* ZipUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24021CA154CB00B14C9C /* ZipUtils.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28331CA154CE00B14C9C /* CCIMEDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24061CA154CB00B14C9C /* CCIMEDispatcher.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28341CA154CE00B14C9C /* CCTextFieldTTF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24081CA154CB00B14C9C /* CCTextFieldTTF.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28351CA154CE00B14C9C /* CCTexture2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC240B1CA154CB00B14C9C /* CCTexture2D.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28361CA154CE00B14C9C /* CCTextureAtlas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC240D1CA154CB00B14C9C /* CCTextureAtlas.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28371CA154CE00B14C9C /* CCTextureCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC240F1CA154CB00B14C9C /* CCTextureCache.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28381CA154CE00B14C9C /* CCTextureETC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24111CA154CB00B14C9C /* CCTextureETC.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28391CA154CE00B14C9C /* CCTexturePVR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24131CA154CB00B14C9C /* CCTexturePVR.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC283A1CA154CE00B14C9C /* CCParallaxNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24161CA154CB00B14C9C /* CCParallaxNode.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC283B1CA154CE00B14C9C /* CCTileMapAtlas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24181CA154CB00B14C9C /* CCTileMapAtlas.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC283C1CA154CE00B14C9C /* CCTMXLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC241A1CA154CB00B14C9C /* CCTMXLayer.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC283D1CA154CE00B14C9C /* CCTMXObjectGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC241C1CA154CB00B14C9C /* CCTMXObjectGroup.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC283E1CA154CE00B14C9C /* CCTMXTiledMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC241E1CA154CB00B14C9C /* CCTMXTiledMap.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC283F1CA154CE00B14C9C /* CCTMXXMLParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24201CA154CB00B14C9C /* CCTMXXMLParser.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28401CA154CE00B14C9C /* CCTouch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24231CA154CC00B14C9C /* CCTouch.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28411CA154CE00B14C9C /* CCTouchDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24261CA154CC00B14C9C /* CCTouchDispatcher.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1EC28421CA154CE00B14C9C /* CCTouchHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24281CA154CC00B14C9C /* CCTouchHandler.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1EC172A1CA153FF00B14C9C /* json_internalarray.inl in Resources */ = {isa = PBXBuildFile; fileRef = F1EC0AB81CA153FD00B14C9C /* json_internalarray.inl */; };
+		F1EC172B1CA153FF00B14C9C /* json_internalmap.inl in Resources */ = {isa = PBXBuildFile; fileRef = F1EC0AB91CA153FD00B14C9C /* json_internalmap.inl */; };
+		F1EC172C1CA153FF00B14C9C /* json_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC0ABA1CA153FD00B14C9C /* json_reader.cpp */; };
+		F1EC172D1CA153FF00B14C9C /* json_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC0ABB1CA153FD00B14C9C /* json_value.cpp */; };
+		F1EC172E1CA153FF00B14C9C /* json_valueiterator.inl in Resources */ = {isa = PBXBuildFile; fileRef = F1EC0ABC1CA153FD00B14C9C /* json_valueiterator.inl */; };
+		F1EC172F1CA153FF00B14C9C /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC0ABD1CA153FD00B14C9C /* json_writer.cpp */; };
+		F1EC19001CA1547A00B14C9C /* AssetsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17541CA1547900B14C9C /* AssetsManager.cpp */; };
+		F1EC19011CA1547A00B14C9C /* CCBAnimationManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17571CA1547900B14C9C /* CCBAnimationManager.cpp */; };
+		F1EC19021CA1547A00B14C9C /* CCBFileLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17591CA1547900B14C9C /* CCBFileLoader.cpp */; };
+		F1EC19031CA1547A00B14C9C /* CCBKeyframe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC175B1CA1547900B14C9C /* CCBKeyframe.cpp */; };
+		F1EC19041CA1547A00B14C9C /* CCBReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC175E1CA1547900B14C9C /* CCBReader.cpp */; };
+		F1EC19051CA1547A00B14C9C /* CCBSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17611CA1547900B14C9C /* CCBSequence.cpp */; };
+		F1EC19061CA1547A00B14C9C /* CCBSequenceProperty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17631CA1547900B14C9C /* CCBSequenceProperty.cpp */; };
+		F1EC19071CA1547A00B14C9C /* CCBValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17651CA1547900B14C9C /* CCBValue.cpp */; };
+		F1EC19081CA1547A00B14C9C /* CCControlButtonLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17671CA1547900B14C9C /* CCControlButtonLoader.cpp */; };
+		F1EC19091CA1547A00B14C9C /* CCControlLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17691CA1547900B14C9C /* CCControlLoader.cpp */; };
+		F1EC190A1CA1547A00B14C9C /* CCData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC176B1CA1547900B14C9C /* CCData.cpp */; };
+		F1EC190B1CA1547A00B14C9C /* CCLabelBMFontLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC176D1CA1547900B14C9C /* CCLabelBMFontLoader.cpp */; };
+		F1EC190C1CA1547A00B14C9C /* CCLabelTTFLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC176F1CA1547900B14C9C /* CCLabelTTFLoader.cpp */; };
+		F1EC190D1CA1547A00B14C9C /* CCLayerColorLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17711CA1547900B14C9C /* CCLayerColorLoader.cpp */; };
+		F1EC190E1CA1547A00B14C9C /* CCLayerGradientLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17731CA1547900B14C9C /* CCLayerGradientLoader.cpp */; };
+		F1EC190F1CA1547A00B14C9C /* CCLayerLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17751CA1547900B14C9C /* CCLayerLoader.cpp */; };
+		F1EC19101CA1547A00B14C9C /* CCMenuItemImageLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17771CA1547900B14C9C /* CCMenuItemImageLoader.cpp */; };
+		F1EC19111CA1547A00B14C9C /* CCMenuItemLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17791CA1547900B14C9C /* CCMenuItemLoader.cpp */; };
+		F1EC19121CA1547A00B14C9C /* CCNode+CCBRelativePositioning.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC177C1CA1547900B14C9C /* CCNode+CCBRelativePositioning.cpp */; };
+		F1EC19131CA1547A00B14C9C /* CCNodeLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC177E1CA1547900B14C9C /* CCNodeLoader.cpp */; };
+		F1EC19141CA1547A00B14C9C /* CCNodeLoaderLibrary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17801CA1547900B14C9C /* CCNodeLoaderLibrary.cpp */; };
+		F1EC19151CA1547A00B14C9C /* CCParticleSystemQuadLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17831CA1547900B14C9C /* CCParticleSystemQuadLoader.cpp */; };
+		F1EC19161CA1547A00B14C9C /* CCScale9SpriteLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17851CA1547900B14C9C /* CCScale9SpriteLoader.cpp */; };
+		F1EC19171CA1547A00B14C9C /* CCScrollViewLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17871CA1547900B14C9C /* CCScrollViewLoader.cpp */; };
+		F1EC19181CA1547A00B14C9C /* CCSpriteLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17891CA1547900B14C9C /* CCSpriteLoader.cpp */; };
+		F1EC19191CA1547A00B14C9C /* CCActionEaseEx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC178E1CA1547900B14C9C /* CCActionEaseEx.cpp */; };
+		F1EC191A1CA1547A00B14C9C /* CCActionFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17901CA1547900B14C9C /* CCActionFrame.cpp */; };
+		F1EC191B1CA1547A00B14C9C /* CCActionFrameEasing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17921CA1547900B14C9C /* CCActionFrameEasing.cpp */; };
+		F1EC191C1CA1547A00B14C9C /* CCActionManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17941CA1547900B14C9C /* CCActionManager.cpp */; };
+		F1EC191D1CA1547A00B14C9C /* CCActionNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17961CA1547900B14C9C /* CCActionNode.cpp */; };
+		F1EC191E1CA1547A00B14C9C /* CCActionObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17981CA1547900B14C9C /* CCActionObject.cpp */; };
+		F1EC191F1CA1547A00B14C9C /* CCActionTimeline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC179B1CA1547900B14C9C /* CCActionTimeline.cpp */; };
+		F1EC19201CA1547A00B14C9C /* CCActionTimelineCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC179D1CA1547900B14C9C /* CCActionTimelineCache.cpp */; };
+		F1EC19211CA1547A00B14C9C /* CCFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC179F1CA1547900B14C9C /* CCFrame.cpp */; };
+		F1EC19221CA1547A00B14C9C /* CCNodeReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17A11CA1547900B14C9C /* CCNodeReader.cpp */; };
+		F1EC19231CA1547A00B14C9C /* CCTimeLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17A31CA1547900B14C9C /* CCTimeLine.cpp */; };
+		F1EC19241CA1547A00B14C9C /* CCArmatureAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17A81CA1547900B14C9C /* CCArmatureAnimation.cpp */; };
+		F1EC19251CA1547A00B14C9C /* CCProcessBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17AA1CA1547900B14C9C /* CCProcessBase.cpp */; };
+		F1EC19261CA1547A00B14C9C /* CCTween.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17AC1CA1547900B14C9C /* CCTween.cpp */; };
+		F1EC19271CA1547A00B14C9C /* CCArmature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17AE1CA1547900B14C9C /* CCArmature.cpp */; };
+		F1EC19281CA1547A00B14C9C /* CCBone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17B01CA1547900B14C9C /* CCBone.cpp */; };
+		F1EC19291CA1547A00B14C9C /* CCDatas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17B31CA1547900B14C9C /* CCDatas.cpp */; };
+		F1EC192A1CA1547A00B14C9C /* CCBatchNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17B61CA1547900B14C9C /* CCBatchNode.cpp */; };
+		F1EC192B1CA1547A00B14C9C /* CCDecorativeDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17B81CA1547900B14C9C /* CCDecorativeDisplay.cpp */; };
+		F1EC192C1CA1547A00B14C9C /* CCDisplayFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17BA1CA1547900B14C9C /* CCDisplayFactory.cpp */; };
+		F1EC192D1CA1547A00B14C9C /* CCDisplayManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17BC1CA1547900B14C9C /* CCDisplayManager.cpp */; };
+		F1EC192E1CA1547A00B14C9C /* CCSkin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17BE1CA1547900B14C9C /* CCSkin.cpp */; };
+		F1EC192F1CA1547A00B14C9C /* CCColliderDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17C31CA1547900B14C9C /* CCColliderDetector.cpp */; };
+		F1EC19301CA1547A00B14C9C /* CCArmatureDataManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17C61CA1547900B14C9C /* CCArmatureDataManager.cpp */; };
+		F1EC19311CA1547A00B14C9C /* CCArmatureDefine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17C81CA1547900B14C9C /* CCArmatureDefine.cpp */; };
+		F1EC19321CA1547A00B14C9C /* CCDataReaderHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17CA1CA1547900B14C9C /* CCDataReaderHelper.cpp */; };
+		F1EC19331CA1547A00B14C9C /* CCSpriteFrameCacheHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17CC1CA1547900B14C9C /* CCSpriteFrameCacheHelper.cpp */; };
+		F1EC19341CA1547A00B14C9C /* CCTransformHelp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17CE1CA1547900B14C9C /* CCTransformHelp.cpp */; };
+		F1EC19351CA1547A00B14C9C /* CCTweenFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17D01CA1547900B14C9C /* CCTweenFunction.cpp */; };
+		F1EC19361CA1547A00B14C9C /* CCUtilMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17D21CA1547900B14C9C /* CCUtilMath.cpp */; };
+		F1EC19371CA1547A00B14C9C /* CCComAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17D51CA1547900B14C9C /* CCComAttribute.cpp */; };
+		F1EC19381CA1547A00B14C9C /* CCComAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17D71CA1547900B14C9C /* CCComAudio.cpp */; };
+		F1EC19391CA1547A00B14C9C /* CCComController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17DA1CA1547900B14C9C /* CCComController.cpp */; };
+		F1EC193A1CA1547A00B14C9C /* CCComRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17DC1CA1547900B14C9C /* CCComRender.cpp */; };
+		F1EC193B1CA1547A00B14C9C /* CCInputDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17DE1CA1547900B14C9C /* CCInputDelegate.cpp */; };
+		F1EC193C1CA1547A00B14C9C /* UIWidget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17E21CA1547900B14C9C /* UIWidget.cpp */; };
+		F1EC193D1CA1547A00B14C9C /* UILayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17E51CA1547900B14C9C /* UILayout.cpp */; };
+		F1EC193E1CA1547A00B14C9C /* UILayoutDefine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17E71CA1547900B14C9C /* UILayoutDefine.cpp */; };
+		F1EC193F1CA1547A00B14C9C /* UILayoutParameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17E91CA1547900B14C9C /* UILayoutParameter.cpp */; };
+		F1EC19401CA1547A00B14C9C /* CocosGUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17EC1CA1547900B14C9C /* CocosGUI.cpp */; };
+		F1EC19411CA1547A00B14C9C /* UIHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17EF1CA1547900B14C9C /* UIHelper.cpp */; };
+		F1EC19421CA1547A00B14C9C /* UITouchGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17F11CA1547900B14C9C /* UITouchGroup.cpp */; };
+		F1EC19431CA1547A00B14C9C /* UIListView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17F71CA1547900B14C9C /* UIListView.cpp */; };
+		F1EC19441CA1547A00B14C9C /* UIPageView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17F91CA1547900B14C9C /* UIPageView.cpp */; };
+		F1EC19451CA1547A00B14C9C /* UIScrollView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17FC1CA1547900B14C9C /* UIScrollView.cpp */; };
+		F1EC19461CA1547A00B14C9C /* UIButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC17FE1CA1547900B14C9C /* UIButton.cpp */; };
+		F1EC19471CA1547A00B14C9C /* UICheckBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18001CA1547900B14C9C /* UICheckBox.cpp */; };
+		F1EC19481CA1547A00B14C9C /* UIImageView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18021CA1547900B14C9C /* UIImageView.cpp */; };
+		F1EC19491CA1547A00B14C9C /* UILabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18041CA1547900B14C9C /* UILabel.cpp */; };
+		F1EC194A1CA1547A00B14C9C /* UILabelAtlas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18061CA1547900B14C9C /* UILabelAtlas.cpp */; };
+		F1EC194B1CA1547A00B14C9C /* UILabelBMFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18081CA1547900B14C9C /* UILabelBMFont.cpp */; };
+		F1EC194C1CA1547A00B14C9C /* UILoadingBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC180A1CA1547900B14C9C /* UILoadingBar.cpp */; };
+		F1EC194D1CA1547A00B14C9C /* UIRichText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC180C1CA1547900B14C9C /* UIRichText.cpp */; };
+		F1EC194E1CA1547A00B14C9C /* UISlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC180E1CA1547900B14C9C /* UISlider.cpp */; };
+		F1EC194F1CA1547A00B14C9C /* UITextField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18101CA1547900B14C9C /* UITextField.cpp */; };
+		F1EC19501CA1547A00B14C9C /* CocoLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18131CA1547900B14C9C /* CocoLoader.cpp */; };
+		F1EC19511CA1547A00B14C9C /* DictionaryHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18151CA1547900B14C9C /* DictionaryHelper.cpp */; };
+		F1EC19521CA1547A00B14C9C /* GUIReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18241CA1547900B14C9C /* GUIReader.cpp */; };
+		F1EC19531CA1547A00B14C9C /* SceneReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18261CA1547900B14C9C /* SceneReader.cpp */; };
+		F1EC19541CA1547A00B14C9C /* ButtonReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC182A1CA1547900B14C9C /* ButtonReader.cpp */; };
+		F1EC19551CA1547A00B14C9C /* CheckBoxReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC182D1CA1547900B14C9C /* CheckBoxReader.cpp */; };
+		F1EC19561CA1547A00B14C9C /* ImageViewReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18301CA1547900B14C9C /* ImageViewReader.cpp */; };
+		F1EC19571CA1547A00B14C9C /* LabelAtlasReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18331CA1547900B14C9C /* LabelAtlasReader.cpp */; };
+		F1EC19581CA1547A00B14C9C /* LabelBMFontReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18361CA1547900B14C9C /* LabelBMFontReader.cpp */; };
+		F1EC19591CA1547A00B14C9C /* LabelReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18391CA1547900B14C9C /* LabelReader.cpp */; };
+		F1EC195A1CA1547A00B14C9C /* LayoutReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC183C1CA1547900B14C9C /* LayoutReader.cpp */; };
+		F1EC195B1CA1547A00B14C9C /* ListViewReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC183F1CA1547900B14C9C /* ListViewReader.cpp */; };
+		F1EC195C1CA1547A00B14C9C /* LoadingBarReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18421CA1547900B14C9C /* LoadingBarReader.cpp */; };
+		F1EC195D1CA1547A00B14C9C /* PageViewReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18451CA1547900B14C9C /* PageViewReader.cpp */; };
+		F1EC195E1CA1547A00B14C9C /* ScrollViewReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18481CA1547900B14C9C /* ScrollViewReader.cpp */; };
+		F1EC195F1CA1547A00B14C9C /* SliderReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC184B1CA1547900B14C9C /* SliderReader.cpp */; };
+		F1EC19601CA1547A00B14C9C /* TextFieldReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC184E1CA1547900B14C9C /* TextFieldReader.cpp */; };
+		F1EC19611CA1547A00B14C9C /* WidgetReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18501CA1547900B14C9C /* WidgetReader.cpp */; };
+		F1EC19621CA1547A00B14C9C /* ObjectFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18541CA1547900B14C9C /* ObjectFactory.cpp */; };
+		F1EC19631CA1547A00B14C9C /* TriggerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18561CA1547900B14C9C /* TriggerBase.cpp */; };
+		F1EC19641CA1547A00B14C9C /* TriggerMng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18581CA1547A00B14C9C /* TriggerMng.cpp */; };
+		F1EC19651CA1547A00B14C9C /* TriggerObj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC185A1CA1547A00B14C9C /* TriggerObj.cpp */; };
+		F1EC19661CA1547A00B14C9C /* CCControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18601CA1547A00B14C9C /* CCControl.cpp */; };
+		F1EC19671CA1547A00B14C9C /* CCControlButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18621CA1547A00B14C9C /* CCControlButton.cpp */; };
+		F1EC19681CA1547A00B14C9C /* CCControlColourPicker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18641CA1547A00B14C9C /* CCControlColourPicker.cpp */; };
+		F1EC19691CA1547A00B14C9C /* CCControlHuePicker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18671CA1547A00B14C9C /* CCControlHuePicker.cpp */; };
+		F1EC196A1CA1547A00B14C9C /* CCControlPotentiometer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18691CA1547A00B14C9C /* CCControlPotentiometer.cpp */; };
+		F1EC196B1CA1547A00B14C9C /* CCControlSaturationBrightnessPicker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC186B1CA1547A00B14C9C /* CCControlSaturationBrightnessPicker.cpp */; };
+		F1EC196C1CA1547A00B14C9C /* CCControlSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC186D1CA1547A00B14C9C /* CCControlSlider.cpp */; };
+		F1EC196D1CA1547A00B14C9C /* CCControlStepper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC186F1CA1547A00B14C9C /* CCControlStepper.cpp */; };
+		F1EC196E1CA1547A00B14C9C /* CCControlSwitch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18711CA1547A00B14C9C /* CCControlSwitch.cpp */; };
+		F1EC196F1CA1547A00B14C9C /* CCControlUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18731CA1547A00B14C9C /* CCControlUtils.cpp */; };
+		F1EC19701CA1547A00B14C9C /* CCInvocation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18751CA1547A00B14C9C /* CCInvocation.cpp */; };
+		F1EC19711CA1547A00B14C9C /* CCScale9Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18771CA1547A00B14C9C /* CCScale9Sprite.cpp */; };
+		F1EC19721CA1547A00B14C9C /* CCEditBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC187A1CA1547A00B14C9C /* CCEditBox.cpp */; };
+		F1EC19741CA1547A00B14C9C /* CCEditBoxImplIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18801CA1547A00B14C9C /* CCEditBoxImplIOS.mm */; };
+		F1EC197B1CA1547A00B14C9C /* CCScrollView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC188D1CA1547A00B14C9C /* CCScrollView.cpp */; };
+		F1EC197C1CA1547A00B14C9C /* CCSorting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC188F1CA1547A00B14C9C /* CCSorting.cpp */; };
+		F1EC197D1CA1547A00B14C9C /* CCTableView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18911CA1547A00B14C9C /* CCTableView.cpp */; };
+		F1EC197E1CA1547A00B14C9C /* CCTableViewCell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18931CA1547A00B14C9C /* CCTableViewCell.cpp */; };
+		F1EC197F1CA1547A00B14C9C /* LocalStorage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18961CA1547A00B14C9C /* LocalStorage.cpp */; };
+		F1EC19801CA1547A00B14C9C /* LocalStorageAndroid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC18981CA1547A00B14C9C /* LocalStorageAndroid.cpp */; };
+		F1EC19811CA1547A00B14C9C /* HttpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC189A1CA1547A00B14C9C /* HttpClient.cpp */; };
+		F1EC19821CA1547A00B14C9C /* WebSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC189E1CA1547A00B14C9C /* WebSocket.cpp */; };
+		F1EC242A1CA154CC00B14C9C /* CCAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19BA1CA154C800B14C9C /* CCAction.cpp */; };
+		F1EC242B1CA154CC00B14C9C /* CCActionCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19BC1CA154C800B14C9C /* CCActionCamera.cpp */; };
+		F1EC242C1CA154CC00B14C9C /* CCActionCatmullRom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19BE1CA154C800B14C9C /* CCActionCatmullRom.cpp */; };
+		F1EC242D1CA154CC00B14C9C /* CCActionEase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19C01CA154C800B14C9C /* CCActionEase.cpp */; };
+		F1EC242E1CA154CC00B14C9C /* CCActionGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19C21CA154C800B14C9C /* CCActionGrid.cpp */; };
+		F1EC242F1CA154CC00B14C9C /* CCActionGrid3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19C41CA154C800B14C9C /* CCActionGrid3D.cpp */; };
+		F1EC24301CA154CC00B14C9C /* CCActionInstant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19C61CA154C800B14C9C /* CCActionInstant.cpp */; };
+		F1EC24311CA154CC00B14C9C /* CCActionInterval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19C81CA154C800B14C9C /* CCActionInterval.cpp */; };
+		F1EC24321CA154CC00B14C9C /* CCActionManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19CA1CA154C800B14C9C /* CCActionManager.cpp */; };
+		F1EC24331CA154CC00B14C9C /* CCActionPageTurn3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19CC1CA154C800B14C9C /* CCActionPageTurn3D.cpp */; };
+		F1EC24341CA154CC00B14C9C /* CCActionProgressTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19CE1CA154C800B14C9C /* CCActionProgressTimer.cpp */; };
+		F1EC24351CA154CC00B14C9C /* CCActionTiledGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19D01CA154C800B14C9C /* CCActionTiledGrid.cpp */; };
+		F1EC24361CA154CC00B14C9C /* CCActionTween.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19D21CA154C800B14C9C /* CCActionTween.cpp */; };
+		F1EC24381CA154CC00B14C9C /* CCAtlasNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19D61CA154C800B14C9C /* CCAtlasNode.cpp */; };
+		F1EC24391CA154CC00B14C9C /* CCGLBufferedNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19D81CA154C800B14C9C /* CCGLBufferedNode.cpp */; };
+		F1EC243A1CA154CC00B14C9C /* CCNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19DA1CA154C800B14C9C /* CCNode.cpp */; };
+		F1EC243B1CA154CC00B14C9C /* CCCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19DC1CA154C800B14C9C /* CCCamera.cpp */; };
+		F1EC243C1CA154CC00B14C9C /* CCConfiguration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19DE1CA154C800B14C9C /* CCConfiguration.cpp */; };
+		F1EC243D1CA154CC00B14C9C /* CCDirector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19E01CA154C800B14C9C /* CCDirector.cpp */; };
+		F1EC243E1CA154CC00B14C9C /* ccFPSImages.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19E21CA154C800B14C9C /* ccFPSImages.c */; };
+		F1EC243F1CA154CC00B14C9C /* CCScheduler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19E41CA154C800B14C9C /* CCScheduler.cpp */; };
+		F1EC24401CA154CC00B14C9C /* CCAffineTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19E71CA154C800B14C9C /* CCAffineTransform.cpp */; };
+		F1EC24411CA154CC00B14C9C /* CCArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19E91CA154C800B14C9C /* CCArray.cpp */; };
+		F1EC24421CA154CC00B14C9C /* CCAutoreleasePool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19EB1CA154C800B14C9C /* CCAutoreleasePool.cpp */; };
+		F1EC24431CA154CC00B14C9C /* CCDataVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19EE1CA154C800B14C9C /* CCDataVisitor.cpp */; };
+		F1EC24441CA154CC00B14C9C /* CCDictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19F01CA154C800B14C9C /* CCDictionary.cpp */; };
+		F1EC24451CA154CC00B14C9C /* CCGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19F41CA154C800B14C9C /* CCGeometry.cpp */; };
+		F1EC24461CA154CC00B14C9C /* CCNS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19F71CA154C800B14C9C /* CCNS.cpp */; };
+		F1EC24471CA154CC00B14C9C /* CCObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19F91CA154C800B14C9C /* CCObject.cpp */; };
+		F1EC24481CA154CC00B14C9C /* CCSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19FB1CA154C800B14C9C /* CCSet.cpp */; };
+		F1EC24491CA154CC00B14C9C /* CCString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19FD1CA154C800B14C9C /* CCString.cpp */; };
+		F1EC244A1CA154CC00B14C9C /* CCZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC19FF1CA154C800B14C9C /* CCZone.cpp */; };
+		F1EC244B1CA154CC00B14C9C /* cocos2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A011CA154C800B14C9C /* cocos2d.cpp */; };
+		F1EC244C1CA154CC00B14C9C /* CCDrawingPrimitives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A031CA154C800B14C9C /* CCDrawingPrimitives.cpp */; };
+		F1EC244D1CA154CC00B14C9C /* CCDrawNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A051CA154C800B14C9C /* CCDrawNode.cpp */; };
+		F1EC244E1CA154CC00B14C9C /* CCGrabber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A081CA154C800B14C9C /* CCGrabber.cpp */; };
+		F1EC244F1CA154CC00B14C9C /* CCGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A0A1CA154C800B14C9C /* CCGrid.cpp */; };
+		F1EC24501CA154CC00B14C9C /* aabb.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A271CA154C800B14C9C /* aabb.c */; };
+		F1EC24511CA154CC00B14C9C /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = F1EC1A281CA154C800B14C9C /* ChangeLog */; };
+		F1EC24521CA154CC00B14C9C /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = F1EC1A291CA154C800B14C9C /* CMakeLists.txt */; };
+		F1EC24531CA154CC00B14C9C /* mat4stack.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A2B1CA154C800B14C9C /* mat4stack.c */; };
+		F1EC24541CA154CC00B14C9C /* matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A2C1CA154C800B14C9C /* matrix.c */; };
+		F1EC24551CA154CC00B14C9C /* mat3.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A2D1CA154C800B14C9C /* mat3.c */; };
+		F1EC24561CA154CC00B14C9C /* mat4.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A2E1CA154C800B14C9C /* mat4.c */; };
+		F1EC24571CA154CC00B14C9C /* neon_matrix_impl.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A2F1CA154C800B14C9C /* neon_matrix_impl.c */; };
+		F1EC24581CA154CC00B14C9C /* plane.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A301CA154C800B14C9C /* plane.c */; };
+		F1EC24591CA154CC00B14C9C /* quaternion.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A311CA154C800B14C9C /* quaternion.c */; };
+		F1EC245A1CA154CC00B14C9C /* ray2.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A321CA154C800B14C9C /* ray2.c */; };
+		F1EC245B1CA154CC00B14C9C /* utility.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A331CA154C800B14C9C /* utility.c */; };
+		F1EC245C1CA154CC00B14C9C /* vec2.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A341CA154C800B14C9C /* vec2.c */; };
+		F1EC245D1CA154CC00B14C9C /* vec3.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A351CA154C800B14C9C /* vec3.c */; };
+		F1EC245E1CA154CC00B14C9C /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A361CA154C800B14C9C /* vec4.c */; };
+		F1EC245F1CA154CC00B14C9C /* CCKeypadDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A381CA154C800B14C9C /* CCKeypadDelegate.cpp */; };
+		F1EC24601CA154CC00B14C9C /* CCKeypadDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A3A1CA154C800B14C9C /* CCKeypadDispatcher.cpp */; };
+		F1EC24611CA154CC00B14C9C /* CCLabelAtlas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A3D1CA154C800B14C9C /* CCLabelAtlas.cpp */; };
+		F1EC24621CA154CC00B14C9C /* CCLabelBMFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A3F1CA154C800B14C9C /* CCLabelBMFont.cpp */; };
+		F1EC24631CA154CC00B14C9C /* CCLabelTTF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A411CA154C800B14C9C /* CCLabelTTF.cpp */; };
+		F1EC24641CA154CC00B14C9C /* CCLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A441CA154C800B14C9C /* CCLayer.cpp */; };
+		F1EC24651CA154CC00B14C9C /* CCScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A461CA154C800B14C9C /* CCScene.cpp */; };
+		F1EC24661CA154CC00B14C9C /* CCTransition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A481CA154C800B14C9C /* CCTransition.cpp */; };
+		F1EC24671CA154CC00B14C9C /* CCTransitionPageTurn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A4A1CA154C800B14C9C /* CCTransitionPageTurn.cpp */; };
+		F1EC24681CA154CC00B14C9C /* CCTransitionProgress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A4C1CA154C800B14C9C /* CCTransitionProgress.cpp */; };
+		F1EC24691CA154CC00B14C9C /* CCMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A4F1CA154C800B14C9C /* CCMenu.cpp */; };
+		F1EC246A1CA154CC00B14C9C /* CCMenuItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A511CA154C800B14C9C /* CCMenuItem.cpp */; };
+		F1EC246B1CA154CC00B14C9C /* CCClippingNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A541CA154C800B14C9C /* CCClippingNode.cpp */; };
+		F1EC246C1CA154CC00B14C9C /* CCMotionStreak.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A561CA154C800B14C9C /* CCMotionStreak.cpp */; };
+		F1EC246D1CA154CC00B14C9C /* CCProgressTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A581CA154C800B14C9C /* CCProgressTimer.cpp */; };
+		F1EC246E1CA154CC00B14C9C /* CCRenderTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A5A1CA154C800B14C9C /* CCRenderTexture.cpp */; };
+		F1EC246F1CA154CC00B14C9C /* CCParticleBatchNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A5D1CA154C800B14C9C /* CCParticleBatchNode.cpp */; };
+		F1EC24701CA154CC00B14C9C /* CCParticleExamples.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A5F1CA154C800B14C9C /* CCParticleExamples.cpp */; };
+		F1EC24711CA154CC00B14C9C /* CCParticleSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A611CA154C800B14C9C /* CCParticleSystem.cpp */; };
+		F1EC24721CA154CC00B14C9C /* CCParticleSystemQuad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1A631CA154C800B14C9C /* CCParticleSystemQuad.cpp */; };
+		F1EC24A01CA154CC00B14C9C /* CCEGLViewProtocol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AB41CA154C800B14C9C /* CCEGLViewProtocol.cpp */; };
+		F1EC24A11CA154CC00B14C9C /* CCFileUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AB61CA154C800B14C9C /* CCFileUtils.cpp */; };
+		F1EC24A21CA154CC00B14C9C /* CCImageCommonWebp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1ABA1CA154C800B14C9C /* CCImageCommonWebp.cpp */; };
+		F1EC24A31CA154CC00B14C9C /* CCSAXParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1ABD1CA154C800B14C9C /* CCSAXParser.cpp */; };
+		F1EC24A41CA154CC00B14C9C /* CCThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1ABF1CA154C800B14C9C /* CCThread.cpp */; };
+		F1EC24AB1CA154CC00B14C9C /* AccelerometerDelegateWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AD11CA154C800B14C9C /* AccelerometerDelegateWrapper.mm */; };
+		F1EC24AC1CA154CC00B14C9C /* CCAccelerometer.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AD31CA154C800B14C9C /* CCAccelerometer.mm */; };
+		F1EC24AD1CA154CC00B14C9C /* CCApplication.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AD51CA154C800B14C9C /* CCApplication.mm */; };
+		F1EC24AE1CA154CC00B14C9C /* CCCommon.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AD61CA154C800B14C9C /* CCCommon.mm */; };
+		F1EC24AF1CA154CC00B14C9C /* CCDevice.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AD71CA154C800B14C9C /* CCDevice.mm */; };
+		F1EC24B01CA154CC00B14C9C /* CCDirectorCaller.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AD91CA154C800B14C9C /* CCDirectorCaller.mm */; };
+		F1EC24B11CA154CC00B14C9C /* CCEGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1ADB1CA154C800B14C9C /* CCEGLView.mm */; };
+		F1EC24B21CA154CC00B14C9C /* CCES2Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1ADD1CA154C800B14C9C /* CCES2Renderer.m */; };
+		F1EC24B31CA154CC00B14C9C /* CCFileUtilsIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AE01CA154C800B14C9C /* CCFileUtilsIOS.mm */; };
+		F1EC24B41CA154CC00B14C9C /* CCImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AE21CA154C800B14C9C /* CCImage.mm */; };
+		F1EC24B51CA154CC00B14C9C /* CCLock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AE31CA154C800B14C9C /* CCLock.cpp */; };
+		F1EC24B61CA154CC00B14C9C /* CCThread.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AE71CA154C800B14C9C /* CCThread.mm */; };
+		F1EC24B71CA154CC00B14C9C /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AE91CA154C800B14C9C /* EAGLView.mm */; };
+		F1EC24B81CA154CC00B14C9C /* AccelerometerSimulation.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1AED1CA154C800B14C9C /* AccelerometerSimulation.m */; };
+		F1EC24D91CA154CC00B14C9C /* platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC1B351CA154C800B14C9C /* platform.cpp */; };
+		F1EC24FB1CA154CC00B14C9C /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EC1BF61CA154C800B14C9C /* libcurl.a */; };
+		F1EC24FC1CA154CC00B14C9C /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EC1BF71CA154C800B14C9C /* libwebp.a */; };
+		F1EC28151CA154CE00B14C9C /* CCScriptSupport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23AA1CA154CB00B14C9C /* CCScriptSupport.cpp */; };
+		F1EC28161CA154CE00B14C9C /* CCGLProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23AD1CA154CB00B14C9C /* CCGLProgram.cpp */; };
+		F1EC28171CA154CE00B14C9C /* ccGLStateCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23AF1CA154CB00B14C9C /* ccGLStateCache.cpp */; };
+		F1EC28181CA154CE00B14C9C /* CCShaderCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23C01CA154CB00B14C9C /* CCShaderCache.cpp */; };
+		F1EC28191CA154CE00B14C9C /* ccShaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23C31CA154CB00B14C9C /* ccShaders.cpp */; };
+		F1EC281A1CA154CE00B14C9C /* CCAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23CB1CA154CB00B14C9C /* CCAnimation.cpp */; };
+		F1EC281B1CA154CE00B14C9C /* CCAnimationCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23CD1CA154CB00B14C9C /* CCAnimationCache.cpp */; };
+		F1EC281C1CA154CE00B14C9C /* CCSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23CF1CA154CB00B14C9C /* CCSprite.cpp */; };
+		F1EC281D1CA154CE00B14C9C /* CCSpriteBatchNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23D11CA154CB00B14C9C /* CCSpriteBatchNode.cpp */; };
+		F1EC281E1CA154CE00B14C9C /* CCSpriteFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23D31CA154CB00B14C9C /* CCSpriteFrame.cpp */; };
+		F1EC281F1CA154CE00B14C9C /* CCSpriteFrameCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23D51CA154CB00B14C9C /* CCSpriteFrameCache.cpp */; };
+		F1EC28201CA154CE00B14C9C /* base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23D81CA154CB00B14C9C /* base64.cpp */; };
+		F1EC28211CA154CE00B14C9C /* CCNotificationCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23DA1CA154CB00B14C9C /* CCNotificationCenter.cpp */; };
+		F1EC28221CA154CE00B14C9C /* CCPointExtension.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23DC1CA154CB00B14C9C /* CCPointExtension.cpp */; };
+		F1EC28231CA154CE00B14C9C /* CCProfiling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23DE1CA154CB00B14C9C /* CCProfiling.cpp */; };
+		F1EC28241CA154CE00B14C9C /* ccUTF8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23E01CA154CB00B14C9C /* ccUTF8.cpp */; };
+		F1EC28251CA154CE00B14C9C /* ccUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23E21CA154CB00B14C9C /* ccUtils.cpp */; };
+		F1EC28261CA154CE00B14C9C /* CCVertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23E41CA154CB00B14C9C /* CCVertex.cpp */; };
+		F1EC28271CA154CE00B14C9C /* CCComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23E71CA154CB00B14C9C /* CCComponent.cpp */; };
+		F1EC28281CA154CE00B14C9C /* CCComponentContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23E91CA154CB00B14C9C /* CCComponentContainer.cpp */; };
+		F1EC28291CA154CE00B14C9C /* ccCArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23EC1CA154CB00B14C9C /* ccCArray.cpp */; };
+		F1EC282A1CA154CE00B14C9C /* TGAlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23F11CA154CB00B14C9C /* TGAlib.cpp */; };
+		F1EC282B1CA154CE00B14C9C /* tinyxml2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23F41CA154CB00B14C9C /* tinyxml2.cpp */; };
+		F1EC282C1CA154CE00B14C9C /* TransformUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23F61CA154CB00B14C9C /* TransformUtils.cpp */; };
+		F1EC282D1CA154CE00B14C9C /* CCUserDefault.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23F91CA154CB00B14C9C /* CCUserDefault.cpp */; };
+		F1EC282E1CA154CE00B14C9C /* CCUserDefault.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23FB1CA154CB00B14C9C /* CCUserDefault.mm */; };
+		F1EC282F1CA154CE00B14C9C /* CCUserDefaultAndroid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23FC1CA154CB00B14C9C /* CCUserDefaultAndroid.cpp */; };
+		F1EC28301CA154CE00B14C9C /* ioapi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC23FE1CA154CB00B14C9C /* ioapi.cpp */; };
+		F1EC28311CA154CE00B14C9C /* unzip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24001CA154CB00B14C9C /* unzip.cpp */; };
+		F1EC28321CA154CE00B14C9C /* ZipUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24021CA154CB00B14C9C /* ZipUtils.cpp */; };
+		F1EC28331CA154CE00B14C9C /* CCIMEDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24061CA154CB00B14C9C /* CCIMEDispatcher.cpp */; };
+		F1EC28341CA154CE00B14C9C /* CCTextFieldTTF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24081CA154CB00B14C9C /* CCTextFieldTTF.cpp */; };
+		F1EC28351CA154CE00B14C9C /* CCTexture2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC240B1CA154CB00B14C9C /* CCTexture2D.cpp */; };
+		F1EC28361CA154CE00B14C9C /* CCTextureAtlas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC240D1CA154CB00B14C9C /* CCTextureAtlas.cpp */; };
+		F1EC28371CA154CE00B14C9C /* CCTextureCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC240F1CA154CB00B14C9C /* CCTextureCache.cpp */; };
+		F1EC28381CA154CE00B14C9C /* CCTextureETC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24111CA154CB00B14C9C /* CCTextureETC.cpp */; };
+		F1EC28391CA154CE00B14C9C /* CCTexturePVR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24131CA154CB00B14C9C /* CCTexturePVR.cpp */; };
+		F1EC283A1CA154CE00B14C9C /* CCParallaxNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24161CA154CB00B14C9C /* CCParallaxNode.cpp */; };
+		F1EC283B1CA154CE00B14C9C /* CCTileMapAtlas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24181CA154CB00B14C9C /* CCTileMapAtlas.cpp */; };
+		F1EC283C1CA154CE00B14C9C /* CCTMXLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC241A1CA154CB00B14C9C /* CCTMXLayer.cpp */; };
+		F1EC283D1CA154CE00B14C9C /* CCTMXObjectGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC241C1CA154CB00B14C9C /* CCTMXObjectGroup.cpp */; };
+		F1EC283E1CA154CE00B14C9C /* CCTMXTiledMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC241E1CA154CB00B14C9C /* CCTMXTiledMap.cpp */; };
+		F1EC283F1CA154CE00B14C9C /* CCTMXXMLParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24201CA154CB00B14C9C /* CCTMXXMLParser.cpp */; };
+		F1EC28401CA154CE00B14C9C /* CCTouch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24231CA154CC00B14C9C /* CCTouch.cpp */; };
+		F1EC28411CA154CE00B14C9C /* CCTouchDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24261CA154CC00B14C9C /* CCTouchDispatcher.cpp */; };
+		F1EC28421CA154CE00B14C9C /* CCTouchHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC24281CA154CC00B14C9C /* CCTouchHandler.cpp */; };
 		F1EC28491CA15AF200B14C9C /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EC0ACE1CA153FD00B14C9C /* libwebsockets.a */; };
 		F1EC284B1CA15C6200B14C9C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EC284A1CA15C6200B14C9C /* libsqlite3.tbd */; };
-		F1EC285C1CA391CE00B14C9C /* AndroidSdk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC285B1CA391CE00B14C9C /* AndroidSdk.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1ECF71F1CA1537900B14C9C /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECF68E1CA1537900B14C9C /* CDAudioManager.m */; settings = {ASSET_TAGS = (); }; };
-		F1ECF7201CA1537900B14C9C /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECF6911CA1537900B14C9C /* CDOpenALSupport.m */; settings = {ASSET_TAGS = (); }; };
-		F1ECF7211CA1537900B14C9C /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECF6931CA1537900B14C9C /* CocosDenshion.m */; settings = {ASSET_TAGS = (); }; };
-		F1ECF7221CA1537900B14C9C /* SimpleAudioEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1ECF6941CA1537900B14C9C /* SimpleAudioEngine.mm */; settings = {ASSET_TAGS = (); }; };
-		F1ECF7231CA1537900B14C9C /* SimpleAudioEngine_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECF6961CA1537900B14C9C /* SimpleAudioEngine_objc.m */; settings = {ASSET_TAGS = (); }; };
+		F1EC285C1CA391CE00B14C9C /* AndroidSdk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EC285B1CA391CE00B14C9C /* AndroidSdk.cpp */; };
+		F1ECF71F1CA1537900B14C9C /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECF68E1CA1537900B14C9C /* CDAudioManager.m */; };
+		F1ECF7201CA1537900B14C9C /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECF6911CA1537900B14C9C /* CDOpenALSupport.m */; };
+		F1ECF7211CA1537900B14C9C /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECF6931CA1537900B14C9C /* CocosDenshion.m */; };
+		F1ECF7221CA1537900B14C9C /* SimpleAudioEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1ECF6941CA1537900B14C9C /* SimpleAudioEngine.mm */; };
+		F1ECF7231CA1537900B14C9C /* SimpleAudioEngine_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECF6961CA1537900B14C9C /* SimpleAudioEngine_objc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -757,8 +761,16 @@
 		F14841BA1CAEA10E000931A6 /* LSocketErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSocketErrorHandler.h; sourceTree = "<group>"; };
 		F14841BB1CAEA10E000931A6 /* LSocketRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LSocketRequest.cpp; sourceTree = "<group>"; };
 		F14841BC1CAEA10E000931A6 /* LSocketRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSocketRequest.h; sourceTree = "<group>"; };
-		F157E3ED1CA90B52007550A0 /* SocketBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SocketBuffer.cpp; sourceTree = "<group>"; };
-		F157E3EE1CA90B52007550A0 /* SocketBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketBuffer.h; sourceTree = "<group>"; };
+		F17939741CAECEAF009F6E48 /* ByteBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ByteBuffer.cpp; sourceTree = "<group>"; };
+		F17939751CAECEAF009F6E48 /* ByteBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByteBuffer.h; sourceTree = "<group>"; };
+		F17939761CAECEAF009F6E48 /* message.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = message.cpp; sourceTree = "<group>"; };
+		F17939771CAECEAF009F6E48 /* message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message.h; sourceTree = "<group>"; };
+		F17939781CAECEAF009F6E48 /* SocketClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SocketClient.cpp; sourceTree = "<group>"; };
+		F17939791CAECEAF009F6E48 /* SocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketClient.h; sourceTree = "<group>"; };
+		F179397A1CAECEAF009F6E48 /* SocketManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SocketManager.cpp; sourceTree = "<group>"; };
+		F179397B1CAECEAF009F6E48 /* SocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketManager.h; sourceTree = "<group>"; };
+		F179397C1CAECEAF009F6E48 /* Util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Util.cpp; sourceTree = "<group>"; };
+		F179397D1CAECEAF009F6E48 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		F18A0B491C9FCE4300E9135F /* ArenaWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ArenaWindow.cpp; path = tsDemo/Classes/ui/ArenaWindow.cpp; sourceTree = SOURCE_ROOT; };
 		F18A0B4A1C9FCE4300E9135F /* ArenaWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArenaWindow.h; path = tsDemo/Classes/ui/ArenaWindow.h; sourceTree = SOURCE_ROOT; };
 		F18A0B4C1C9FCE7500E9135F /* EmployPage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EmployPage.cpp; path = tsDemo/Classes/ui/EmployPage.cpp; sourceTree = SOURCE_ROOT; };
@@ -2019,6 +2031,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F17939731CAECEAF009F6E48 /* network_old */ = {
+			isa = PBXGroup;
+			children = (
+				F17939741CAECEAF009F6E48 /* ByteBuffer.cpp */,
+				F17939751CAECEAF009F6E48 /* ByteBuffer.h */,
+				F17939761CAECEAF009F6E48 /* message.cpp */,
+				F17939771CAECEAF009F6E48 /* message.h */,
+				F17939781CAECEAF009F6E48 /* SocketClient.cpp */,
+				F17939791CAECEAF009F6E48 /* SocketClient.h */,
+				F179397A1CAECEAF009F6E48 /* SocketManager.cpp */,
+				F179397B1CAECEAF009F6E48 /* SocketManager.h */,
+				F179397C1CAECEAF009F6E48 /* Util.cpp */,
+				F179397D1CAECEAF009F6E48 /* Util.h */,
+			);
+			path = network_old;
+			sourceTree = "<group>";
+		};
 		F1C5D80E1C9D6442001CC4D0 /* mlib */ = {
 			isa = PBXGroup;
 			children = (
@@ -2182,13 +2211,14 @@
 			isa = PBXGroup;
 			children = (
 				F1C5D8D81C9D6470001CC4D0 /* AppDelegate.cpp */,
-				F1C5D8D91C9D6470001CC4D0 /* AppDelegate.h */,
-				F1C5D8DA1C9D6470001CC4D0 /* audio */,
-				F1C5D8DD1C9D6470001CC4D0 /* data */,
 				F1C5D8EB1C9D6470001CC4D0 /* HelloWorldScene.cpp */,
+				F1C5D8D91C9D6470001CC4D0 /* AppDelegate.h */,
 				F1C5D8EC1C9D6470001CC4D0 /* HelloWorldScene.h */,
 				F1C5D8ED1C9D6470001CC4D0 /* LConstants.h */,
+				F1C5D8DA1C9D6470001CC4D0 /* audio */,
+				F1C5D8DD1C9D6470001CC4D0 /* data */,
 				F1C5D8EE1C9D6470001CC4D0 /* network */,
+				F17939731CAECEAF009F6E48 /* network_old */,
 				F1C5D8F91C9D6470001CC4D0 /* ui */,
 			);
 			name = Classes;
@@ -2240,8 +2270,6 @@
 				F14841BA1CAEA10E000931A6 /* LSocketErrorHandler.h */,
 				F14841BB1CAEA10E000931A6 /* LSocketRequest.cpp */,
 				F14841BC1CAEA10E000931A6 /* LSocketRequest.h */,
-				F157E3ED1CA90B52007550A0 /* SocketBuffer.cpp */,
-				F157E3EE1CA90B52007550A0 /* SocketBuffer.h */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -4616,6 +4644,8 @@
 				F1ECF7221CA1537900B14C9C /* SimpleAudioEngine.mm in Sources */,
 				F1EC196B1CA1547A00B14C9C /* CCControlSaturationBrightnessPicker.cpp in Sources */,
 				F1EC24671CA154CC00B14C9C /* CCTransitionPageTurn.cpp in Sources */,
+				F17939801CAECEAF009F6E48 /* SocketClient.cpp in Sources */,
+				F17939811CAECEAF009F6E48 /* SocketManager.cpp in Sources */,
 				F1EC24D91CA154CC00B14C9C /* platform.cpp in Sources */,
 				F1EC24601CA154CC00B14C9C /* CCKeypadDispatcher.cpp in Sources */,
 				F1EC19121CA1547A00B14C9C /* CCNode+CCBRelativePositioning.cpp in Sources */,
@@ -4656,6 +4686,7 @@
 				F1EC28361CA154CE00B14C9C /* CCTextureAtlas.cpp in Sources */,
 				F18A0B961C9FCF1E00E9135F /* MailInfo.cpp in Sources */,
 				F18A0B8B1C9FCF0C00E9135F /* xuanren.cpp in Sources */,
+				F179397E1CAECEAF009F6E48 /* ByteBuffer.cpp in Sources */,
 				F18A0B731C9FCED000E9135F /* CombinePage.cpp in Sources */,
 				F1EC194B1CA1547A00B14C9C /* UILabelBMFont.cpp in Sources */,
 				F1C5D8D51C9D6442001CC4D0 /* MWebViewImpl.cpp in Sources */,
@@ -4833,7 +4864,6 @@
 				F1C5D8BD1C9D6442001CC4D0 /* MCallbackAction.cpp in Sources */,
 				F1EC19241CA1547A00B14C9C /* CCArmatureAnimation.cpp in Sources */,
 				F1EC192F1CA1547A00B14C9C /* CCColliderDetector.cpp in Sources */,
-				F157E3F61CA90B52007550A0 /* SocketBuffer.cpp in Sources */,
 				F1EC28341CA154CE00B14C9C /* CCTextFieldTTF.cpp in Sources */,
 				F1C5D9601C9D6470001CC4D0 /* goodsItem.cpp in Sources */,
 				F1C5D8BC1C9D6442001CC4D0 /* MButton.cpp in Sources */,
@@ -4847,6 +4877,7 @@
 				F1C5D8D11C9D6442001CC4D0 /* MTextView.cpp in Sources */,
 				F1EC283A1CA154CE00B14C9C /* CCParallaxNode.cpp in Sources */,
 				F1C5D89A1C9D6442001CC4D0 /* mlib_localize.cpp in Sources */,
+				F17939821CAECEAF009F6E48 /* Util.cpp in Sources */,
 				F1EC196F1CA1547A00B14C9C /* CCControlUtils.cpp in Sources */,
 				F1EC191E1CA1547A00B14C9C /* CCActionObject.cpp in Sources */,
 				F1EC28241CA154CE00B14C9C /* ccUTF8.cpp in Sources */,
@@ -4923,6 +4954,7 @@
 				F1EC24661CA154CC00B14C9C /* CCTransition.cpp in Sources */,
 				F1EC281E1CA154CE00B14C9C /* CCSpriteFrame.cpp in Sources */,
 				F1EC24B11CA154CC00B14C9C /* CCEGLView.mm in Sources */,
+				F179397F1CAECEAF009F6E48 /* message.cpp in Sources */,
 				F1EC192A1CA1547A00B14C9C /* CCBatchNode.cpp in Sources */,
 				F1EC194C1CA1547A00B14C9C /* UILoadingBar.cpp in Sources */,
 				F1EC19311CA1547A00B14C9C /* CCArmatureDefine.cpp in Sources */,

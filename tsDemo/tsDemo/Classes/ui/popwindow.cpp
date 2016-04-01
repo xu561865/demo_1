@@ -1,6 +1,6 @@
 #include "popwindow.h"
 #include "FightPage.h"
-#include "LSocketCenter.h"
+#include "SocketManager.h"
 #include "LayerLogin.h"
 #include "message.h"
 #include "homePage.h"

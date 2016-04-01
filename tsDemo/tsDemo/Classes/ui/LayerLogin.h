@@ -3,7 +3,7 @@
 
 #include"cocos2d.h"
 #include"cocos-ext.h"
-#include "LSocketCenter.h"
+#include "SocketManager.h"
 #include "CData.h"
 #include "LodingLayer.h"
 #include "TeXiao.h"

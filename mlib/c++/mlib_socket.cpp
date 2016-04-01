@@ -7,6 +7,7 @@
 #include "mlib_thread.h"
 #include "mlib_buffer.h"
 #include <sys/socket.h>
+#include <unistd.h>
 
 MLIB_NS_BEGIN
 

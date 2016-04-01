@@ -1,6 +1,5 @@
 #include "LSocketRequest.h"
 //#include "LMemory.h"
-#include "LMessageCenter.h"
 #include "LSocketErrorHandler.h"
 
 using namespace mlib;
