@@ -5,7 +5,7 @@
 #include "cocos2d.h"
 #include "cocos-ext.h"
 #include "SimpleAudioEngine.h"
-#include "SocketClient.h"
+#include "LSocketCenter.h"
 #include "message.h"
 #include "LodingLayer.h"
 #include "personalinfo.h"

@@ -5,7 +5,7 @@
 #include "cocos2d.h"
 #include "hcitemdata.h"
 #include "heroItem.h"
-#include "SocketClient.h"
+#include "LSocketCenter.h"
 
 
 USING_NS_CC;

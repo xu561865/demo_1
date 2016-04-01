@@ -4,7 +4,7 @@
 #include <iostream>
 #include "cocos2d.h"
 #include "cocos-ext.h"
-#include "SocketClient.h"
+#include "LSocketCenter.h"
 #include "message.h"
 #include "CData.h"
 #include "LayerLogin.h"

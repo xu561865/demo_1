@@ -15,6 +15,11 @@
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
+		F14841B61CAEA060000931A6 /* mlib_socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F14841B41CAEA060000931A6 /* mlib_socket.cpp */; settings = {ASSET_TAGS = (); }; };
+		F14841BD1CAEA10E000931A6 /* LSocketCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F14841B71CAEA10E000931A6 /* LSocketCenter.cpp */; settings = {ASSET_TAGS = (); }; };
+		F14841BE1CAEA10E000931A6 /* LSocketErrorHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F14841B91CAEA10E000931A6 /* LSocketErrorHandler.cpp */; settings = {ASSET_TAGS = (); }; };
+		F14841BF1CAEA10E000931A6 /* LSocketRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F14841BB1CAEA10E000931A6 /* LSocketRequest.cpp */; settings = {ASSET_TAGS = (); }; };
+		F157E3F61CA90B52007550A0 /* SocketBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F157E3ED1CA90B52007550A0 /* SocketBuffer.cpp */; settings = {ASSET_TAGS = (); }; };
 		F18A0B4B1C9FCE4300E9135F /* ArenaWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B491C9FCE4300E9135F /* ArenaWindow.cpp */; settings = {ASSET_TAGS = (); }; };
 		F18A0B581C9FCE7500E9135F /* EmployPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B4C1C9FCE7500E9135F /* EmployPage.cpp */; settings = {ASSET_TAGS = (); }; };
 		F18A0B591C9FCE7500E9135F /* friendemploy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18A0B4E1C9FCE7500E9135F /* friendemploy.cpp */; settings = {ASSET_TAGS = (); }; };
@@ -107,11 +112,6 @@
 		F1C5D94B1C9D6470001CC4D0 /* TeXiao.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D8E51C9D6470001CC4D0 /* TeXiao.cpp */; };
 		F1C5D94C1C9D6470001CC4D0 /* UserData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D8E91C9D6470001CC4D0 /* UserData.cpp */; };
 		F1C5D94D1C9D6470001CC4D0 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D8EB1C9D6470001CC4D0 /* HelloWorldScene.cpp */; };
-		F1C5D94E1C9D6470001CC4D0 /* ByteBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D8EF1C9D6470001CC4D0 /* ByteBuffer.cpp */; };
-		F1C5D94F1C9D6470001CC4D0 /* message.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D8F11C9D6470001CC4D0 /* message.cpp */; };
-		F1C5D9501C9D6470001CC4D0 /* SocketClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D8F31C9D6470001CC4D0 /* SocketClient.cpp */; };
-		F1C5D9511C9D6470001CC4D0 /* SocketManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D8F51C9D6470001CC4D0 /* SocketManager.cpp */; };
-		F1C5D9521C9D6470001CC4D0 /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D8F71C9D6470001CC4D0 /* Util.cpp */; };
 		F1C5D9541C9D6470001CC4D0 /* CustomPop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D8FD1C9D6470001CC4D0 /* CustomPop.cpp */; };
 		F1C5D95F1C9D6470001CC4D0 /* GameOver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D9161C9D6470001CC4D0 /* GameOver.cpp */; };
 		F1C5D9601C9D6470001CC4D0 /* goodsItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D9181C9D6470001CC4D0 /* goodsItem.cpp */; };
@@ -749,6 +749,16 @@
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F14841B41CAEA060000931A6 /* mlib_socket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mlib_socket.cpp; sourceTree = "<group>"; };
+		F14841B51CAEA060000931A6 /* mlib_socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib_socket.h; sourceTree = "<group>"; };
+		F14841B71CAEA10E000931A6 /* LSocketCenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LSocketCenter.cpp; sourceTree = "<group>"; };
+		F14841B81CAEA10E000931A6 /* LSocketCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSocketCenter.h; sourceTree = "<group>"; };
+		F14841B91CAEA10E000931A6 /* LSocketErrorHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LSocketErrorHandler.cpp; sourceTree = "<group>"; };
+		F14841BA1CAEA10E000931A6 /* LSocketErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSocketErrorHandler.h; sourceTree = "<group>"; };
+		F14841BB1CAEA10E000931A6 /* LSocketRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LSocketRequest.cpp; sourceTree = "<group>"; };
+		F14841BC1CAEA10E000931A6 /* LSocketRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSocketRequest.h; sourceTree = "<group>"; };
+		F157E3ED1CA90B52007550A0 /* SocketBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SocketBuffer.cpp; sourceTree = "<group>"; };
+		F157E3EE1CA90B52007550A0 /* SocketBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketBuffer.h; sourceTree = "<group>"; };
 		F18A0B491C9FCE4300E9135F /* ArenaWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ArenaWindow.cpp; path = tsDemo/Classes/ui/ArenaWindow.cpp; sourceTree = SOURCE_ROOT; };
 		F18A0B4A1C9FCE4300E9135F /* ArenaWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArenaWindow.h; path = tsDemo/Classes/ui/ArenaWindow.h; sourceTree = SOURCE_ROOT; };
 		F18A0B4C1C9FCE7500E9135F /* EmployPage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EmployPage.cpp; path = tsDemo/Classes/ui/EmployPage.cpp; sourceTree = SOURCE_ROOT; };
@@ -939,16 +949,6 @@
 		F1C5D8EB1C9D6470001CC4D0 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
 		F1C5D8EC1C9D6470001CC4D0 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
 		F1C5D8ED1C9D6470001CC4D0 /* LConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LConstants.h; sourceTree = "<group>"; };
-		F1C5D8EF1C9D6470001CC4D0 /* ByteBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ByteBuffer.cpp; sourceTree = "<group>"; };
-		F1C5D8F01C9D6470001CC4D0 /* ByteBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByteBuffer.h; sourceTree = "<group>"; };
-		F1C5D8F11C9D6470001CC4D0 /* message.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = message.cpp; sourceTree = "<group>"; };
-		F1C5D8F21C9D6470001CC4D0 /* message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message.h; sourceTree = "<group>"; };
-		F1C5D8F31C9D6470001CC4D0 /* SocketClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SocketClient.cpp; sourceTree = "<group>"; };
-		F1C5D8F41C9D6470001CC4D0 /* SocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketClient.h; sourceTree = "<group>"; };
-		F1C5D8F51C9D6470001CC4D0 /* SocketManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SocketManager.cpp; sourceTree = "<group>"; };
-		F1C5D8F61C9D6470001CC4D0 /* SocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketManager.h; sourceTree = "<group>"; };
-		F1C5D8F71C9D6470001CC4D0 /* Util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Util.cpp; sourceTree = "<group>"; };
-		F1C5D8F81C9D6470001CC4D0 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		F1C5D8FD1C9D6470001CC4D0 /* CustomPop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomPop.cpp; sourceTree = "<group>"; };
 		F1C5D8FE1C9D6470001CC4D0 /* CustomPop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPop.h; sourceTree = "<group>"; };
 		F1C5D9161C9D6470001CC4D0 /* GameOver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameOver.cpp; sourceTree = "<group>"; };
@@ -2033,33 +2033,35 @@
 		F1C5D80F1C9D6442001CC4D0 /* c++ */ = {
 			isa = PBXGroup;
 			children = (
-				F1C5D8121C9D6442001CC4D0 /* ios */,
-				F1C5D8141C9D6442001CC4D0 /* mlib.h */,
-				F1C5D8151C9D6442001CC4D0 /* mlib_assert.h */,
 				F1C5D8161C9D6442001CC4D0 /* mlib_buffer.cpp */,
-				F1C5D8171C9D6442001CC4D0 /* mlib_buffer.h */,
 				F1C5D8181C9D6442001CC4D0 /* mlib_event.cpp */,
-				F1C5D8191C9D6442001CC4D0 /* mlib_event.h */,
 				F1C5D81A1C9D6442001CC4D0 /* mlib_exception.cpp */,
+				F1C5D81D1C9D6442001CC4D0 /* mlib_http.cpp */,
+				F1C5D81F1C9D6442001CC4D0 /* mlib_localize.cpp */,
+				F1C5D8211C9D6442001CC4D0 /* mlib_log.cpp */,
+				F1C5D8231C9D6442001CC4D0 /* mlib_md5.cpp */,
+				F1C5D8251C9D6442001CC4D0 /* mlib_shared_queue.cpp */,
+				F14841B41CAEA060000931A6 /* mlib_socket.cpp */,
+				F1C5D8271C9D6442001CC4D0 /* mlib_task.cpp */,
+				F1C5D82A1C9D6442001CC4D0 /* mlib_utils.cpp */,
+				F1C5D82C1C9D6442001CC4D0 /* mlib_version_number.cpp */,
+				F1C5D8151C9D6442001CC4D0 /* mlib_assert.h */,
+				F1C5D8171C9D6442001CC4D0 /* mlib_buffer.h */,
+				F1C5D8191C9D6442001CC4D0 /* mlib_event.h */,
 				F1C5D81B1C9D6442001CC4D0 /* mlib_exception.h */,
 				F1C5D81C1C9D6442001CC4D0 /* mlib_helpers.h */,
-				F1C5D81D1C9D6442001CC4D0 /* mlib_http.cpp */,
 				F1C5D81E1C9D6442001CC4D0 /* mlib_http.h */,
-				F1C5D81F1C9D6442001CC4D0 /* mlib_localize.cpp */,
 				F1C5D8201C9D6442001CC4D0 /* mlib_localize.h */,
-				F1C5D8211C9D6442001CC4D0 /* mlib_log.cpp */,
 				F1C5D8221C9D6442001CC4D0 /* mlib_log.h */,
-				F1C5D8231C9D6442001CC4D0 /* mlib_md5.cpp */,
 				F1C5D8241C9D6442001CC4D0 /* mlib_md5.h */,
-				F1C5D8251C9D6442001CC4D0 /* mlib_shared_queue.cpp */,
 				F1C5D8261C9D6442001CC4D0 /* mlib_shared_queue.h */,
-				F1C5D8271C9D6442001CC4D0 /* mlib_task.cpp */,
+				F14841B51CAEA060000931A6 /* mlib_socket.h */,
 				F1C5D8281C9D6442001CC4D0 /* mlib_task.h */,
 				F1C5D8291C9D6442001CC4D0 /* mlib_thread.h */,
-				F1C5D82A1C9D6442001CC4D0 /* mlib_utils.cpp */,
 				F1C5D82B1C9D6442001CC4D0 /* mlib_utils.h */,
-				F1C5D82C1C9D6442001CC4D0 /* mlib_version_number.cpp */,
 				F1C5D82D1C9D6442001CC4D0 /* mlib_version_number.h */,
+				F1C5D8141C9D6442001CC4D0 /* mlib.h */,
+				F1C5D8121C9D6442001CC4D0 /* ios */,
 			);
 			path = "c++";
 			sourceTree = "<group>";
@@ -2232,16 +2234,14 @@
 		F1C5D8EE1C9D6470001CC4D0 /* network */ = {
 			isa = PBXGroup;
 			children = (
-				F1C5D8EF1C9D6470001CC4D0 /* ByteBuffer.cpp */,
-				F1C5D8F01C9D6470001CC4D0 /* ByteBuffer.h */,
-				F1C5D8F11C9D6470001CC4D0 /* message.cpp */,
-				F1C5D8F21C9D6470001CC4D0 /* message.h */,
-				F1C5D8F31C9D6470001CC4D0 /* SocketClient.cpp */,
-				F1C5D8F41C9D6470001CC4D0 /* SocketClient.h */,
-				F1C5D8F51C9D6470001CC4D0 /* SocketManager.cpp */,
-				F1C5D8F61C9D6470001CC4D0 /* SocketManager.h */,
-				F1C5D8F71C9D6470001CC4D0 /* Util.cpp */,
-				F1C5D8F81C9D6470001CC4D0 /* Util.h */,
+				F14841B71CAEA10E000931A6 /* LSocketCenter.cpp */,
+				F14841B81CAEA10E000931A6 /* LSocketCenter.h */,
+				F14841B91CAEA10E000931A6 /* LSocketErrorHandler.cpp */,
+				F14841BA1CAEA10E000931A6 /* LSocketErrorHandler.h */,
+				F14841BB1CAEA10E000931A6 /* LSocketRequest.cpp */,
+				F14841BC1CAEA10E000931A6 /* LSocketRequest.h */,
+				F157E3ED1CA90B52007550A0 /* SocketBuffer.cpp */,
+				F157E3EE1CA90B52007550A0 /* SocketBuffer.h */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -2249,25 +2249,25 @@
 		F1C5D8F91C9D6470001CC4D0 /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				F1C5D8FA1C9D6470001CC4D0 /* arena */,
 				F1C5D8FD1C9D6470001CC4D0 /* CustomPop.cpp */,
+				F1C5D9161C9D6470001CC4D0 /* GameOver.cpp */,
+				F1C5D9181C9D6470001CC4D0 /* goodsItem.cpp */,
+				F1C5D92D1C9D6470001CC4D0 /* LodingLayer.cpp */,
+				F1C5D9411C9D6470001CC4D0 /* personalinfo.cpp */,
+				F1C5D9431C9D6470001CC4D0 /* tiplayer.cpp */,
 				F1C5D8FE1C9D6470001CC4D0 /* CustomPop.h */,
+				F1C5D9171C9D6470001CC4D0 /* GameOver.h */,
+				F1C5D9191C9D6470001CC4D0 /* goodsItem.h */,
+				F1C5D92E1C9D6470001CC4D0 /* LodingLayer.h */,
+				F1C5D9421C9D6470001CC4D0 /* personalinfo.h */,
+				F1C5D9441C9D6470001CC4D0 /* tiplayer.h */,
+				F1C5D8FA1C9D6470001CC4D0 /* arena */,
 				F1C5D8FF1C9D6470001CC4D0 /* employment */,
 				F1C5D90C1C9D6470001CC4D0 /* fight */,
-				F1C5D9161C9D6470001CC4D0 /* GameOver.cpp */,
-				F1C5D9171C9D6470001CC4D0 /* GameOver.h */,
-				F1C5D9181C9D6470001CC4D0 /* goodsItem.cpp */,
-				F1C5D9191C9D6470001CC4D0 /* goodsItem.h */,
 				F1C5D91A1C9D6470001CC4D0 /* hecheng */,
 				F1C5D9241C9D6470001CC4D0 /* homePage */,
-				F1C5D92D1C9D6470001CC4D0 /* LodingLayer.cpp */,
-				F1C5D92E1C9D6470001CC4D0 /* LodingLayer.h */,
 				F1C5D92F1C9D6470001CC4D0 /* loginRegister */,
 				F1C5D9361C9D6470001CC4D0 /* mail */,
-				F1C5D9411C9D6470001CC4D0 /* personalinfo.cpp */,
-				F1C5D9421C9D6470001CC4D0 /* personalinfo.h */,
-				F1C5D9431C9D6470001CC4D0 /* tiplayer.cpp */,
-				F1C5D9441C9D6470001CC4D0 /* tiplayer.h */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -4648,7 +4648,6 @@
 				F1EC246C1CA154CC00B14C9C /* CCMotionStreak.cpp in Sources */,
 				F1C5D8991C9D6442001CC4D0 /* mlib_http.cpp in Sources */,
 				F1EC195B1CA1547A00B14C9C /* ListViewReader.cpp in Sources */,
-				F1C5D94E1C9D6470001CC4D0 /* ByteBuffer.cpp in Sources */,
 				F1EC195A1CA1547A00B14C9C /* LayoutReader.cpp in Sources */,
 				F1C5D97E1C9D6504001CC4D0 /* main.m in Sources */,
 				F1EC172D1CA153FF00B14C9C /* json_value.cpp in Sources */,
@@ -4735,7 +4734,6 @@
 				F1C5D8951C9D6442001CC4D0 /* mlib_thread.mm in Sources */,
 				F1EC28211CA154CE00B14C9C /* CCNotificationCenter.cpp in Sources */,
 				F1C5D8CA1C9D6442001CC4D0 /* MRichLabelTTF.cpp in Sources */,
-				F1C5D9521C9D6470001CC4D0 /* Util.cpp in Sources */,
 				F1EC196C1CA1547A00B14C9C /* CCControlSlider.cpp in Sources */,
 				F1EC19521CA1547A00B14C9C /* GUIReader.cpp in Sources */,
 				F1C5D89B1C9D6442001CC4D0 /* mlib_log.cpp in Sources */,
@@ -4752,7 +4750,6 @@
 				F1C5D9491C9D6470001CC4D0 /* AnimatePacker.cpp in Sources */,
 				F1EC19141CA1547A00B14C9C /* CCNodeLoaderLibrary.cpp in Sources */,
 				F1EC24B81CA154CC00B14C9C /* AccelerometerSimulation.m in Sources */,
-				F1C5D9501C9D6470001CC4D0 /* SocketClient.cpp in Sources */,
 				F1EC24341CA154CC00B14C9C /* CCActionProgressTimer.cpp in Sources */,
 				F18A0B991C9FCF1E00E9135F /* MailRenderer.cpp in Sources */,
 				F1EC243D1CA154CC00B14C9C /* CCDirector.cpp in Sources */,
@@ -4788,6 +4785,7 @@
 				F1EC19001CA1547A00B14C9C /* AssetsManager.cpp in Sources */,
 				F1EC24B41CA154CC00B14C9C /* CCImage.mm in Sources */,
 				F18A0B581C9FCE7500E9135F /* EmployPage.cpp in Sources */,
+				F14841B61CAEA060000931A6 /* mlib_socket.cpp in Sources */,
 				F1C5D8C81C9D6442001CC4D0 /* MRemoteNotificationManager.cpp in Sources */,
 				F1EC19391CA1547A00B14C9C /* CCComController.cpp in Sources */,
 				F1EC19491CA1547A00B14C9C /* UILabel.cpp in Sources */,
@@ -4820,13 +4818,13 @@
 				F1C5D8B61C9D6442001CC4D0 /* MUtilsIOS.mm in Sources */,
 				F1EC283B1CA154CE00B14C9C /* CCTileMapAtlas.cpp in Sources */,
 				F1EC24B21CA154CC00B14C9C /* CCES2Renderer.m in Sources */,
-				F1C5D94F1C9D6470001CC4D0 /* message.cpp in Sources */,
 				F1C5D8D41C9D6442001CC4D0 /* MWebView.cpp in Sources */,
 				F18A0B681C9FCEAD00E9135F /* FightPage.cpp in Sources */,
 				F1EC194A1CA1547A00B14C9C /* UILabelAtlas.cpp in Sources */,
 				F1EC244E1CA154CC00B14C9C /* CCGrabber.cpp in Sources */,
 				F1EC245B1CA154CC00B14C9C /* utility.c in Sources */,
 				F1EC24301CA154CC00B14C9C /* CCActionInstant.cpp in Sources */,
+				F14841BE1CAEA10E000931A6 /* LSocketErrorHandler.cpp in Sources */,
 				F1EC24421CA154CC00B14C9C /* CCAutoreleasePool.cpp in Sources */,
 				F1C5D8961C9D6442001CC4D0 /* mlib_buffer.cpp in Sources */,
 				F1EC282C1CA154CE00B14C9C /* TransformUtils.cpp in Sources */,
@@ -4835,6 +4833,7 @@
 				F1C5D8BD1C9D6442001CC4D0 /* MCallbackAction.cpp in Sources */,
 				F1EC19241CA1547A00B14C9C /* CCArmatureAnimation.cpp in Sources */,
 				F1EC192F1CA1547A00B14C9C /* CCColliderDetector.cpp in Sources */,
+				F157E3F61CA90B52007550A0 /* SocketBuffer.cpp in Sources */,
 				F1EC28341CA154CE00B14C9C /* CCTextFieldTTF.cpp in Sources */,
 				F1C5D9601C9D6470001CC4D0 /* goodsItem.cpp in Sources */,
 				F1C5D8BC1C9D6442001CC4D0 /* MButton.cpp in Sources */,
@@ -4845,7 +4844,6 @@
 				F1EC24581CA154CC00B14C9C /* plane.c in Sources */,
 				F1EC193B1CA1547A00B14C9C /* CCInputDelegate.cpp in Sources */,
 				F18A0B5D1C9FCE7500E9135F /* friendinfo.cpp in Sources */,
-				F1C5D9511C9D6470001CC4D0 /* SocketManager.cpp in Sources */,
 				F1C5D8D11C9D6442001CC4D0 /* MTextView.cpp in Sources */,
 				F1EC283A1CA154CE00B14C9C /* CCParallaxNode.cpp in Sources */,
 				F1C5D89A1C9D6442001CC4D0 /* mlib_localize.cpp in Sources */,
@@ -4856,6 +4854,7 @@
 				F1ECF7211CA1537900B14C9C /* CocosDenshion.m in Sources */,
 				F1EC19111CA1547A00B14C9C /* CCMenuItemLoader.cpp in Sources */,
 				F1EC24351CA154CC00B14C9C /* CCActionTiledGrid.cpp in Sources */,
+				F14841BF1CAEA10E000931A6 /* LSocketRequest.cpp in Sources */,
 				F1EC28271CA154CE00B14C9C /* CCComponent.cpp in Sources */,
 				F1EC19261CA1547A00B14C9C /* CCTween.cpp in Sources */,
 				F1EC242E1CA154CC00B14C9C /* CCActionGrid.cpp in Sources */,
@@ -4960,6 +4959,7 @@
 				F1C5D8C71C9D6442001CC4D0 /* MLayer.cpp in Sources */,
 				F1EC246F1CA154CC00B14C9C /* CCParticleBatchNode.cpp in Sources */,
 				F1C5D8B21C9D6442001CC4D0 /* MIAPTaskIOS.mm in Sources */,
+				F14841BD1CAEA10E000931A6 /* LSocketCenter.cpp in Sources */,
 				F1EC24531CA154CC00B14C9C /* mat4stack.c in Sources */,
 				F1EC24361CA154CC00B14C9C /* CCActionTween.cpp in Sources */,
 				F1C5D89C1C9D6442001CC4D0 /* mlib_md5.cpp in Sources */,

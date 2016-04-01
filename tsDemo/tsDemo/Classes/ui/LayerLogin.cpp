@@ -1,8 +1,8 @@
 #include "LayerLogin.h"
 #include "homePage.h"
 #include "json.h"
-#include "SocketClient.h"
-#include "message.h"
+#include "LSocketCenter.h"
+#include "SocketMessage.h"
 #include "xuanren.h"
 #include "headPage.h"
 #include "startAnimate.h"
@@ -140,18 +140,22 @@ void LayerLogin::menuItemCallbackLogin(CCObject* pSender)
         }
         else
         {
-            load=Loading::create();
+            load = Loading::create();
             addChild(load,9999);
             
-//            Json::Value person;
-//            Json::FastWriter writer;
-//            person["username"]=userName;
-//            person["password"]=password;
-//            std::string strPerson=writer.write(person);
-//            const char *pStr = strPerson.c_str();
-//            CCLog("pwd use %s", pStr);
-//
-//            SocketManager::getInstance()->sendMessage(strPerson.c_str(), 101);
+            
+            LSocketRequest *authReq = LSocketCenter::SharedInstance()->login("", "", false);
+            authReq->onSuccess([this](mlib::MSocketRequest *r) {
+                M_DEBUG("login success");
+                
+                
+            });
+            authReq->onError([this](mlib::MSocketRequest *r) {
+                
+            });
+            authReq->isBackground() = true;
+            authReq->send();
+            
             
             
             Json::Value person;

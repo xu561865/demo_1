@@ -7,7 +7,7 @@
 
 #include "headPage.h"
 #include "message.h"
-#include "SocketClient.h"
+#include "LSocketCenter.h"
 #include "LayerLogin.h"
 #include "CData.h"
 #include "LodingLayer.h"
