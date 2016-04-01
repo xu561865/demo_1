@@ -144,7 +144,14 @@ void LayerLogin::menuItemCallbackLogin(CCObject* pSender)
             addChild(load,9999);
             
             
-            LSocketRequest *authReq = LSocketCenter::SharedInstance()->login("", "", false);
+            Json::Value person;
+            person["User"]=userName;
+            person["Passwd"]=password;
+            
+            Json::Value RegisterMsg;
+            RegisterMsg["RegisterMsg"] = person;
+            
+            LSocketRequest *authReq = LSocketCenter::SharedInstance()->login(RegisterMsg);
             authReq->onSuccess([this](mlib::MSocketRequest *r) {
                 M_DEBUG("login success");
                 
@@ -155,22 +162,8 @@ void LayerLogin::menuItemCallbackLogin(CCObject* pSender)
             });
             authReq->isBackground() = true;
             authReq->send();
-            
-            
-            
-            Json::Value person;
-            person["User"]=userName;
-            person["Passwd"]=password;
-            
-            Json::Value RegisterMsg;
-            RegisterMsg["RegisterMsg"] = person;
-            
-            Json::FastWriter writer;
-            std::string strRegisterMsg=writer.write(RegisterMsg);
-            
-            SocketManager::getInstance()->sendMessage(strRegisterMsg);
-            this->schedule(schedule_selector(LayerLogin::receiveLoginData), 0.2);
         }
+        
     }
     else
     {
