@@ -11,7 +11,7 @@ LSocketCenter * LSocketCenter::SharedInstance()
     return &inst;
 }
 
-LSocketRequest * LSocketCenter::createRequest(const std::string& module, const std::string& action, bool isSigned, bool isBackground)
+LSocketRequest * LSocketCenter::createRequest(bool isSigned, bool isBackground)
 {
     LSocketRequest * req = LSocketRequest::Request(_api);
     
@@ -78,19 +78,23 @@ void LSocketCenter::postLogicRequestHandler(mlib::MEvent *evt)
     }
 }
 
-LSocketRequest * LSocketCenter::auth(std::string password, std::string email/* = ""*/,bool check/* = false*/)
+LSocketRequest * LSocketCenter::login(Json::Value& value)
 {
-    auto req = this->createRequest("account", "auth", false);
+    auto req = this->createRequest(false);
 
-    req->addParameter("pass", password);
-    req->addParameter("check", check);
+    Json::FastWriter writer;
+    std::string strRegisterMsg = writer.write(value);
+    
+//    req->addParameter("pass", password);
+//    req->addParameter("check", check);
     
     
-    auto handler = [req, password,check] (mlib::MEvent * evt) {
+    auto handler = [req] (mlib::MEvent * evt) {
         if (req->isSuccess())
         {
         }
     };
+    
     req->addEventListener(LSocketRequest::EVENT_FINISHED, handler);
     
     return req;

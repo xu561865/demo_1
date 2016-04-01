@@ -4,6 +4,7 @@
 #include "mlib.h"
 
 #include "LSocketRequest.h"
+#include "Json.h"
 
 class LSocketCenter
 {
@@ -14,10 +15,10 @@ public:
     
 public:
     
-    LSocketRequest * login(std::string password, std::string email/* = ""*/,bool check/* = false*/);
+    LSocketRequest * login(Json::Value&);
     
 protected:
-    LSocketRequest * createRequest(const std::string& module, const std::string& action, bool isSigned = true, bool isBackground = false);
+    LSocketRequest * createRequest(bool isSigned = true, bool isBackground = false);
     void preLogicRequestHandler(mlib::MEvent * evt);
     void postLogicRequestHandler(mlib::MEvent * evt);
     
