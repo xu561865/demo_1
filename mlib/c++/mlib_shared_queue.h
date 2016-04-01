@@ -40,7 +40,6 @@ template<typename T> void MSharedQueue<T>::push(const T& data)
         M_ASSERT(_queue.size());
         
     }
-//    M_DEBUG("notifying one in queue! size of queue = " << _queue.size());
     _condition.notify_one();
 }
 

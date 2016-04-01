@@ -13,7 +13,7 @@ LSocketCenter * LSocketCenter::SharedInstance()
 
 LSocketRequest * LSocketCenter::createRequest(bool isSigned, bool isBackground)
 {
-    LSocketRequest * req = LSocketRequest::Request(_api);
+    LSocketRequest * req = LSocketRequest::Request(host(), port());
     
     req->isBackground(isBackground);
     
@@ -29,11 +29,6 @@ void LSocketCenter::preLogicRequestHandler(mlib::MEvent *evt)
 
     auto json = req->parsedResponse()->jsonValue();
     
-    //test
-    if (0 == json["st"].asUInt())
-    {
-        M_DEBUG("st " << json["st"].asUInt() << ", today " <<  json["today"].asUInt() << ", time zone " <<  json["time_zone"].asUInt() << ", code " << req->parsedResponse()->returnCode());
-    }
  
     if (req->parsedResponse()->returnCode() != LSocketErrorHandler::ERROR_NETWORK)
     {
@@ -78,16 +73,13 @@ void LSocketCenter::postLogicRequestHandler(mlib::MEvent *evt)
     }
 }
 
+
+
 LSocketRequest * LSocketCenter::login(Json::Value& value)
 {
     auto req = this->createRequest(false);
 
-    Json::FastWriter writer;
-    std::string strRegisterMsg = writer.write(value);
-    
-//    req->addParameter("pass", password);
-//    req->addParameter("check", check);
-    
+    req->setParameter(value);
     
     auto handler = [req] (mlib::MEvent * evt) {
         if (req->isSuccess())

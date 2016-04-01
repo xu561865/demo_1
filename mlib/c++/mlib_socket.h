@@ -11,6 +11,7 @@
 #include <unordered_map>
 #include <memory>
 #include "mlib_utils.h"
+#include "Json.h"
 
 MLIB_NS_BEGIN
 
@@ -41,17 +42,17 @@ public:
         HIGH
     };
     
-    static MSocketRequest * Request(const std::string& url)
+    static MSocketRequest * Request(const std::string& home, const int port)
     {
-        return new MSocketRequest(url);
+        return new MSocketRequest(home, port);
     }
     
-    template<typename T>
-    void addParameter(const std::string& paramName, const T& value)
+    void setParameter(Json::Value& value)
     {
-        std::stringstream ss;
-        ss << value;
-        _paramStream << "&" << paramName << "=" << urlencode(ss.str());
+        Json::FastWriter writer;
+        _paramStream = writer.write(value).c_str();
+        
+        _paramLen = strlen(_paramStream);
     }
     
     virtual void send();
@@ -62,26 +63,27 @@ public:
     
     MLIB_DECLARE_PROPERTY(Priority, priority)
     MLIB_DECLARE_PROPERTY(SOCKET_STATE, socketState);
-    MLIB_DECLARE_PROPERTY(std::string, url);
+
     MLIB_DECLARE_PROPERTY(long, timeoutInSeconds);
     MLIB_DECLARE_PROPERTY(long, networkTimeout);
     MLIB_DECLARE_READONLY_WEAK_PROPERTY(MSocketResponse *, response);
+    
     MLIB_DECLARE_READONLY_PROPERTY(bool, isSuccess);
     MLIB_DECLARE_READONLY_PROPERTY(bool, isCancelled);
     
     
 protected:
-    MSocketRequest(const std::string& url); // we don't want user to get one on stack
+    MSocketRequest(const std::string& host, const int port); // we don't want user to get one on stack
     virtual MSocketResponse * createResponse(unsigned short statusCode, const char * data, size_t size);
     
     
 private:
+    MLIB_DECLARE_PROPERTY(std::string, host);
+    MLIB_DECLARE_PROPERTY(int , iport);
     
-    std::stringstream _paramStream;
+    const char* _paramStream;
     size_t _paramLen;
-    
-    std::string _host;
-    int _iport;
+
     int _hSocket;
     
     time_t _startTime;

@@ -150,17 +150,18 @@ void LayerLogin::menuItemCallbackLogin(CCObject* pSender)
             Json::Value RegisterMsg;
             RegisterMsg["RegisterMsg"] = person;
             
-            LSocketRequest *authReq = LSocketCenter::SharedInstance()->login(RegisterMsg);
-            authReq->onSuccess([this](mlib::MSocketRequest *r) {
+            LSocketRequest *req = LSocketCenter::SharedInstance()->login(RegisterMsg);
+            req->onSuccess([this](mlib::MSocketRequest *r) {
                 M_DEBUG("login success");
                 
                 
             });
-            authReq->onError([this](mlib::MSocketRequest *r) {
+            req->onError([this](mlib::MSocketRequest *r) {
                 
             });
-            authReq->isBackground() = true;
-            authReq->send();
+            req->isBackground() = true;
+            
+            req->send();
         }
         
     }

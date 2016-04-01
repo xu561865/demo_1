@@ -6,7 +6,7 @@ using namespace mlib;
 
 #pragma mark LSocketRequest
 
-LSocketRequest::LSocketRequest(const std::string& url) : MSocketRequest::MSocketRequest(url)
+LSocketRequest::LSocketRequest(const std::string& host, const int port) : MSocketRequest::MSocketRequest(host, port)
 {
     _timeoutInSeconds = 5;
 }
@@ -32,18 +32,18 @@ LSocketResponse * LSocketRequest::parsedResponse() const
 
 void LSocketRequest::send()
 {
-    if (isBackground())
+    if(this->isBackground())
     {
-        priority(NORMAL);
+        this->priority(NORMAL);
     }
     else
     {
-        priority(HIGH);
+        this->priority(HIGH);
     }
     
     MSocketRequest::send();
     
-    if (!isBackground())
+    if (!this->isBackground())
     {
         M_DEBUG("loadingview popup");
     }

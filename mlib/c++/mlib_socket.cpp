@@ -8,6 +8,7 @@
 #include "mlib_buffer.h"
 #include <sys/socket.h>
 #include <unistd.h>
+#include "cocos2d.h"
 
 MLIB_NS_BEGIN
 
@@ -40,6 +41,8 @@ void __request_thread_run(MSharedQueue<MSocketRequest *> & requests, bool isTemp
         
         requests.pop(req);
         
+        cocos2d::CCLog("aaaaa");
+        
         if (req->socketState() == MSocketRequest::SOCKET_CANCELLED)
         {
             MSocketRequest::Delete(req);
@@ -56,10 +59,7 @@ void __request_thread_run(MSharedQueue<MSocketRequest *> & requests, bool isTemp
         {
             req->socketState(MSocketRequest::SOCKET_FAILED);
             
-            
-            
-            //connect server
-            
+        
             if(req->_hSocket != -1)
             {
                 close(req->_hSocket);
@@ -89,7 +89,11 @@ void __request_thread_run(MSharedQueue<MSocketRequest *> & requests, bool isTemp
             
             req->socketState(MSocketRequest::SOCKET_SUCCESS);
             
-            ssize_t ret = send(req->_hSocket, req->_paramStream.str().c_str(), req->_paramLen, 0);
+            cocos2d::CCLog("send send");
+            cocos2d::CCLog("%x, %s, %zu", req, req->_paramStream, req->_paramLen);
+            
+            
+            ssize_t ret = send(req->_hSocket, req->_paramStream, req->_paramLen, 0);
             if(ret == -1)
             {
                 
@@ -173,6 +177,7 @@ static void __create_thread(MSharedQueue<MSocketRequest *> & queue, uint32_t & c
                 }
                 counter ++;
             }
+            
             __request_thread_run(queue, limit != 0);
             
             {
@@ -190,8 +195,9 @@ static void __create_thread(MSharedQueue<MSocketRequest *> & queue, uint32_t & c
 
 #pragma mark MSocketRequest
 
-MSocketRequest::MSocketRequest(const std::string& url) :
-_url(url),
+MSocketRequest::MSocketRequest(const std::string& host, const int port) :
+_host(host),
+_iport(port),
 _timeoutInSeconds(30),
 _networkTimeout(30),
 _response(nullptr),
@@ -201,13 +207,15 @@ _isSuccess(false),
 _isCancelled(false),
 _priority(NORMAL)
 {
+    
 }
 
 MSocketRequest::~MSocketRequest()
 {
     if (_response)
     {
-        delete _response; _response = nullptr;
+        delete _response;
+        _response = nullptr;
     }
 }
 
@@ -219,7 +227,6 @@ void MSocketRequest::send()
     
     if (!threadInitialized)
     {
-        curl_global_init(CURL_GLOBAL_DEFAULT);
         threadInitialized = true;
         __create_thread(g_requests_low, g_num_of_threads_low, 0 ,1);
         __create_thread(g_requests_normal, g_num_of_threads_normal, 0, 2);
@@ -227,7 +234,6 @@ void MSocketRequest::send()
         
         // monitor thread
         std::thread([](){
-            
             while (1) {
                 __create_thread(g_requests_low, g_num_of_threads_low, 2, g_requests_low.size());
                 __create_thread(g_requests_normal, g_num_of_threads_normal, 10, g_requests_normal.size());
@@ -246,6 +252,7 @@ void MSocketRequest::send()
             break;
         case NORMAL:
             g_requests_normal.push(this);
+            printf("g_requests_normal: %x", &g_requests_normal);
             break;
         case HIGH:
             g_requests_high.push(this);
@@ -255,12 +262,12 @@ void MSocketRequest::send()
             break;
     }
 }
+
 void MSocketRequest::cancel()
 {
     runInMainThread([this] () {
         if (!_isCancelled)
         {
-            M_TRACE("cancel request, url = " << _url);
             _isCancelled = true;
             dispatchEvent(MEvent(EVENT_CANCELLED));
         }

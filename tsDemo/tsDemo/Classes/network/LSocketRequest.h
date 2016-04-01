@@ -23,7 +23,11 @@ public:
 class LSocketRequest : public mlib::MSocketRequest
 {
 public:
-    static LSocketRequest * Request(const std::string& url) { return new LSocketRequest(url); }
+    static LSocketRequest * Request(const std::string& host, const int& port)
+    {
+        return new LSocketRequest(host, port);
+    }
+    
     LSocketResponse * parsedResponse() const;
     
     virtual void send();
@@ -31,7 +35,7 @@ public:
     MLIB_DECLARE_PROPERTY(bool, isBackground);
     
 protected:
-    LSocketRequest(const std::string& url);
+    LSocketRequest(const std::string& host, const int port);
     virtual mlib::MSocketResponse * createResponse(unsigned short statusCode, const char * data, size_t size);
     
 };
