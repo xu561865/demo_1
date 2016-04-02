@@ -48,15 +48,7 @@ public:
         return new MSocketRequest(home, port);
     }
     
-    void setParameter(Json::Value& value)
-    {
-        Json::FastWriter writer;
-        _paramStream = writer.write(value);
-        
-        _paramLen = strlen(_paramStream.c_str());
-        
-        cocos2d::CCLog("message %s", _paramStream.c_str());
-    }
+    void setParameter(Json::Value& value);
     
     virtual void send();
     void cancel();

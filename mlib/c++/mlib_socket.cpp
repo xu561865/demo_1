@@ -84,19 +84,33 @@ void __request_thread_run(MSharedQueue<MSocketRequest *> & requests, bool isTemp
             if (iErrorCode == -1)
             {
                 printf("socket connect error:%d\n",errno);
+                return;
                 
             }
             
             req->socketState(MSocketRequest::SOCKET_SUCCESS);
             
             cocos2d::CCLog("send send");
-            cocos2d::CCLog("%x, %s, %zu", req, req->_paramStream.c_str(), req->_paramLen);
+            cocos2d::CCLog("%x, %s, %zu", req, req->_paramStream.c_str() + 2, req->_paramLen);
             
             
-            ssize_t ret = send(req->_hSocket, req->_paramStream.c_str(), req->_paramLen, 0);
+            const char *pValue = req->_paramStream.c_str();
+            unsigned short msgLen = req->_paramLen + 2;
+            
+            char* pTmpData = new char(msgLen);
+            
+            char *pValueLength = static_cast<char*>(static_cast<void*>(&req->_paramLen));
+            memcpy(pTmpData, pValueLength + 1, sizeof(char));
+            memcpy(pTmpData + 1, pValueLength, sizeof(char));
+            memcpy(pTmpData + 2, pValue, req->_paramLen);
+            
+            cocos2d::CCLog("message2 %s", pTmpData + 2);
+            ssize_t ret = send(req->_hSocket, pTmpData, req->_paramLen, 0);
+            delete pTmpData;
+            
             if(ret == -1)
             {
-                
+                return;
             }
             
             size_t tmpSize = sizeof(char) * 1024;
@@ -217,6 +231,15 @@ MSocketRequest::~MSocketRequest()
         delete _response;
         _response = nullptr;
     }
+}
+
+void MSocketRequest::setParameter(Json::Value& value)
+{
+    Json::FastWriter writer;
+    _paramStream = writer.write(value);
+    _paramLen = strlen(_paramStream.c_str());
+    
+    cocos2d::CCLog("message %s", _paramStream.c_str());
 }
 
 void MSocketRequest::send()
