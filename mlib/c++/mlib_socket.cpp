@@ -41,7 +41,7 @@ void __request_thread_run(MSharedQueue<MSocketRequest *> & requests, bool isTemp
         
         requests.pop(req);
         
-        cocos2d::CCLog("aaaaa");
+        cocos2d::CCLog("req1:%x", req);
         
         if (req->socketState() == MSocketRequest::SOCKET_CANCELLED)
         {
@@ -90,10 +90,10 @@ void __request_thread_run(MSharedQueue<MSocketRequest *> & requests, bool isTemp
             req->socketState(MSocketRequest::SOCKET_SUCCESS);
             
             cocos2d::CCLog("send send");
-            cocos2d::CCLog("%x, %s, %zu", req, req->_paramStream, req->_paramLen);
+            cocos2d::CCLog("%x, %s, %zu", req, req->_paramStream.c_str(), req->_paramLen);
             
             
-            ssize_t ret = send(req->_hSocket, req->_paramStream, req->_paramLen, 0);
+            ssize_t ret = send(req->_hSocket, req->_paramStream.c_str(), req->_paramLen, 0);
             if(ret == -1)
             {
                 
@@ -252,7 +252,6 @@ void MSocketRequest::send()
             break;
         case NORMAL:
             g_requests_normal.push(this);
-            printf("g_requests_normal: %x", &g_requests_normal);
             break;
         case HIGH:
             g_requests_high.push(this);

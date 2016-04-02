@@ -161,6 +161,7 @@ void LayerLogin::menuItemCallbackLogin(CCObject* pSender)
             });
             req->isBackground() = true;
             
+            CCLog("req0: %x", req);
             req->send();
         }
         

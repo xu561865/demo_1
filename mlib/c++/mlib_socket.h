@@ -12,6 +12,7 @@
 #include <memory>
 #include "mlib_utils.h"
 #include "Json.h"
+#include "cocos2d.h"
 
 MLIB_NS_BEGIN
 
@@ -50,9 +51,11 @@ public:
     void setParameter(Json::Value& value)
     {
         Json::FastWriter writer;
-        _paramStream = writer.write(value).c_str();
+        _paramStream = writer.write(value);
         
-        _paramLen = strlen(_paramStream);
+        _paramLen = strlen(_paramStream.c_str());
+        
+        cocos2d::CCLog("message %s", _paramStream.c_str());
     }
     
     virtual void send();
@@ -81,7 +84,7 @@ private:
     MLIB_DECLARE_PROPERTY(std::string, host);
     MLIB_DECLARE_PROPERTY(int , iport);
     
-    const char* _paramStream;
+    std::string _paramStream;
     size_t _paramLen;
 
     int _hSocket;
