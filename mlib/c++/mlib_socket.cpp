@@ -115,7 +115,6 @@ void __request_thread_run(MSharedQueue<MSocketRequest *> & requests, bool isTemp
             
             size_t tmpSize = sizeof(char) * 1024;
             void* pTempBuffer = malloc(tmpSize);
-            
             ret = recv(req->_hSocket, pTempBuffer, tmpSize, 0);
             if(ret == -1)
             {
@@ -131,6 +130,20 @@ void __request_thread_run(MSharedQueue<MSocketRequest *> & requests, bool isTemp
                 
                 auto buf = static_cast<MBuffer *>(pTempBuffer);
                 buf->appendData((const char *)pTempBuffer, tmpSize);
+                
+                
+                /*
+                byte high = recvBuff->getByte();
+                memcpy(static_cast<char*>(pLen) + 1, &high, sizeof(char));
+                
+                byte low = recvBuff->getByte();
+                memcpy(pLen, &low, sizeof(char));
+                
+                CCLog("receive message %d", messageLength);
+                
+                char *pstrMessage = new char(messageLength);
+                recvBuff->get(pstrMessage, 0, messageLength);
+                 */
             }
             
             
