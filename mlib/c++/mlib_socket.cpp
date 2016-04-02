@@ -105,13 +105,13 @@ void __request_thread_run(MSharedQueue<MSocketRequest *> & requests, bool isTemp
             memcpy(pTmpData + 2, pValue, req->_paramLen);
             
             cocos2d::CCLog("message2 %s", pTmpData + 2);
-            ssize_t ret = send(req->_hSocket, pTmpData, req->_paramLen, 0);
-            delete pTmpData;
-            
+            ssize_t ret = send(req->_hSocket, pTmpData, msgLen, 0);
             if(ret == -1)
             {
                 return;
             }
+            
+            delete pTmpData;
             
             size_t tmpSize = sizeof(char) * 1024;
             void* pTempBuffer = malloc(tmpSize);
