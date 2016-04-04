@@ -4,7 +4,7 @@
 #include "SimpleAudioEngine.h"
 #include "LayerLogin.h"
 #include "SocketManager.h"
-#include "LSocketCenter.h"
+#include "SocketCenter.h"
 
 #include "LayerLogin.h"
 
@@ -35,8 +35,8 @@ bool AppDelegate::applicationDidFinishLaunching()
     
     CCEGLView::sharedOpenGLView()->setDesignResolutionSize(480, 800, kResolutionShowAll);
     
-    LSocketCenter::SharedInstance()->host("182.92.129.73");
-    LSocketCenter::SharedInstance()->port(1111);
+    SocketCenter::SharedInstance()->host("182.92.129.73");
+    SocketCenter::SharedInstance()->port(1111);
     
     pDirector->runWithScene(LayerLogin::scene());
 

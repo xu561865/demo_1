@@ -1,11 +1,10 @@
 #include "mlib_socket.h"
-
+#include "SocketBuffer.h"
 #include <curl/curl.h>
 
 #include "mlib_log.h"
 #include "mlib_utils.h"
 #include "mlib_thread.h"
-#include "mlib_buffer.h"
 #include <sys/socket.h>
 #include <unistd.h>
 #include "cocos2d.h"
@@ -41,9 +40,7 @@ void __request_thread_run(MSharedQueue<MSocketRequest *> & requests, bool isTemp
         
         requests.pop(req);
         
-        cocos2d::CCLog("req1:%x", req);
-        
-        if (req->socketState() == MSocketRequest::SOCKET_CANCELLED)
+        if (req->_isCancelled)
         {
             MSocketRequest::Delete(req);
             continue;
@@ -54,11 +51,11 @@ void __request_thread_run(MSharedQueue<MSocketRequest *> & requests, bool isTemp
         {
             req->_response = req->createResponse(MSocketResponse::ERROR, nullptr, 0);
             req->socketState(MSocketRequest::SOCKET_FAILED);
+            req->_isSuccess = false;
         }
         else
         {
-            req->socketState(MSocketRequest::SOCKET_FAILED);
-            
+            req->_isSuccess = false;
         
             if(req->_hSocket != -1)
             {
@@ -113,9 +110,11 @@ void __request_thread_run(MSharedQueue<MSocketRequest *> & requests, bool isTemp
             
             delete pTmpData;
             
-            size_t tmpSize = sizeof(char) * 1024;
-            void* pTempBuffer = malloc(tmpSize);
-            ret = recv(req->_hSocket, pTempBuffer, tmpSize, 0);
+
+            
+            SocketBuffer recvBuff;
+            MBuffer msgBuffer;
+            ret = recv(req->_hSocket, recvBuff.getBuffer() + recvBuff.getPosition(), recvBuff.remaining(), 0);
             if(ret == -1)
             {
                 req->_isSuccess = false;
@@ -128,30 +127,23 @@ void __request_thread_run(MSharedQueue<MSocketRequest *> & requests, bool isTemp
             {
                 req->_isSuccess = true;
                 
-                auto buf = static_cast<MBuffer *>(pTempBuffer);
-                buf->appendData((const char *)pTempBuffer, tmpSize);
+                short msgLen = 0;
+                char* pMsgLen = static_cast<char*>(static_cast<void*>(&msgLen));
                 
+                signed char high = recvBuff.getByte();
+                memcpy(pMsgLen + 1, &high, sizeof(char));
                 
-                /*
-                byte high = recvBuff->getByte();
-                memcpy(static_cast<char*>(pLen) + 1, &high, sizeof(char));
+                signed char low = recvBuff.getByte();
+                memcpy(pMsgLen, &low, sizeof(char));
                 
-                byte low = recvBuff->getByte();
-                memcpy(pLen, &low, sizeof(char));
+                cocos2d::CCLog("receive message %d", msgLen);
                 
-                CCLog("receive message %d", messageLength);
-                
-                char *pstrMessage = new char(messageLength);
-                recvBuff->get(pstrMessage, 0, messageLength);
-                 */
+                msgBuffer.appendData(recvBuff.getBuffer() + recvBuff.getPosition(), msgLen);
             }
             
-            
-            MBuffer buffer;
             if (req->_isSuccess)
             {
-
-                req->_response = req->createResponse(MSocketResponse::OK, buffer.getData(), buffer.size());
+                req->_response = req->createResponse(MSocketResponse::OK, msgBuffer.getData(), msgBuffer.size());
                 
                 req->_isSuccess = req->_isSuccess && req->_response->isValid();
             }
@@ -165,18 +157,23 @@ void __request_thread_run(MSharedQueue<MSocketRequest *> & requests, bool isTemp
             
             if (!req->_isCancelled)
             {
+                cocos2d::CCLog("main thread success");
                 req->addEventListener(MSocketRequest::EVENT_FINISHED, [req] (mlib::MEvent * evt) {
                     if (req->_isSuccess)
                     {
+                        cocos2d::CCLog("_isSuccess");
                         if (req->_successHandler)
                         {
+                            cocos2d::CCLog("_successHandler");
                             req->_successHandler(req);
                         }
                     }
                     else
                     {
+                        cocos2d::CCLog("_error");
                         if (req->_errorHandler)
                         {
+                            cocos2d::CCLog("_errorHandler");
                             req->_errorHandler(req);
                         }
                     }
@@ -184,6 +181,10 @@ void __request_thread_run(MSharedQueue<MSocketRequest *> & requests, bool isTemp
                 
                 req->dispatchEvent(MEvent(MSocketRequest::EVENT_FINISHED));
                 req->removeEventListenerFor(&g_mutex);
+            }
+            else
+            {
+                cocos2d::CCLog("main thread failed");
             }
         });
         

@@ -1,15 +1,15 @@
 
 
-#include "LSocketErrorHandler.h"
+#include "SocketErrorHandler.h"
 #include "mlib.h"
 
 
-void LSocketErrorHandler::showServerMessage(const std::string& message, const std::string& title, uint32_t behavior)
+void SocketErrorHandler::showServerMessage(const std::string& message, const std::string& title, uint32_t behavior)
 {
 
 }
 
-void LSocketErrorHandler::handlerError(uint32_t rc, Json::Value &json, bool isBackground)
+void SocketErrorHandler::handlerError(uint32_t rc, Json::Value &json, bool isBackground)
 {
     mlib::runInMainThread([rc, json, isBackground] () {
         

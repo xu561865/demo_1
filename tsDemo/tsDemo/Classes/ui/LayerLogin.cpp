@@ -1,7 +1,7 @@
 #include "LayerLogin.h"
 #include "homePage.h"
 #include "json.h"
-#include "LSocketCenter.h"
+#include "SocketCenter.h"
 #include "xuanren.h"
 #include "headPage.h"
 #include "startAnimate.h"
@@ -150,7 +150,7 @@ void LayerLogin::menuItemCallbackLogin(CCObject* pSender)
             Json::Value RegisterMsg;
             RegisterMsg["RegisterMsg"] = person;
             
-            LSocketRequest *req = LSocketCenter::SharedInstance()->login(RegisterMsg);
+            SocketRequest *req = SocketCenter::SharedInstance()->login(RegisterMsg);
             req->onSuccess([this](mlib::MSocketRequest *r) {
                 M_DEBUG("login success");
                 

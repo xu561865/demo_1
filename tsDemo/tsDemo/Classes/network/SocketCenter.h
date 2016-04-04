@@ -1,25 +1,25 @@
-#ifndef lsocketcenter_h
-#define lsocketcenter_h
+#ifndef SOCKET_CENTER_H
+#define SOCKET_CENTER_H
 
 #include "mlib.h"
 
-#include "LSocketRequest.h"
+#include "SocketRequest.h"
 #include "Json.h"
 #include <string>
 
-class LSocketCenter
+class SocketCenter
 {
 public:
-    static LSocketCenter * SharedInstance();
+    static SocketCenter * SharedInstance();
     MLIB_DECLARE_PROPERTY(std::string, host);
     MLIB_DECLARE_PROPERTY(int, port);
     
 public:
     
-    LSocketRequest * login(Json::Value&);
+    SocketRequest * login(Json::Value&);
     
 protected:
-    LSocketRequest * createRequest(bool isSigned = true, bool isBackground = true);
+    SocketRequest * createRequest(bool isSigned = true, bool isBackground = true);
     void preLogicRequestHandler(mlib::MEvent * evt);
     void postLogicRequestHandler(mlib::MEvent * evt);
     
@@ -28,4 +28,4 @@ protected:
 
 
 
-#endif // lsocketcenter_h
+#endif // SOCKET_CENTER_H

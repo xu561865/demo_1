@@ -85,11 +85,11 @@ private:
 	static void* ThreadSendMessage(void *p);
 	
 public:
-    SocketClient(std::string host, int port, byte clientId, byte serverId);
+    SocketClient(std::string host, int port, signed char clientId, signed char serverId);
 	
 	~SocketClient();
 	void start();
-	void stop(boolean b);
+	void stop(bool b);
 	
 	bool isWaitConnect();
 	//发送数据
@@ -104,8 +104,8 @@ public:
     Message* constructMessage(const char* data,int commandId);
     NewMessage* constructMessage(Json::Value value, int commandId);
     NewMessage* constructMessage(std::string);
-    static int bytesToInt(byte* data);
-    static byte* intToByte(int i);
+    static int bytesToInt(signed char* data);
+    static signed char* intToByte(int i);
     void swhlie(int commandId);
 };
 

@@ -1,12 +1,12 @@
 
 
-#ifndef __LSocketErrorHandler__
-#define __LSocketErrorHandler__
+#ifndef __SocketErrorHandler__
+#define __SocketErrorHandler__
 
 #include <iostream>
 #include "json.h"
 
-class LSocketErrorHandler
+class SocketErrorHandler
 {
 public:
     
@@ -50,4 +50,4 @@ public:
 
 
 
-#endif /* defined(__LSocketErrorHandler__) */
+#endif /* defined(__SocketErrorHandler__) */

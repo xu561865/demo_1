@@ -6,7 +6,7 @@
 #include "Util.h"
 #include "cocos2d.h"
 
-SocketClient::SocketClient(std::string host, int port, byte clientid, byte serverid):
+SocketClient::SocketClient(std::string host, int port, signed char clientid, signed char serverid):
                             m_iState(SocketClient_WAIT_CONNECT),
                             m_cbRecvBuf(1024*60),m_cbSendBuf(1024*60)
 {   
@@ -91,7 +91,7 @@ Message* constructErrorMessage(int type,int errCode,string error)
 	return msg;
 }
 
-int SocketClient::bytesToInt(byte* bytes)
+int SocketClient::bytesToInt(signed char* bytes)
 {
     int addr = bytes[3] & 0xFF;
     addr |= ((bytes[2] << 8) & 0xFF00);
@@ -101,9 +101,9 @@ int SocketClient::bytesToInt(byte* bytes)
     return addr;
 }
 
-byte* SocketClient::intToByte(int i)
+signed char* SocketClient::intToByte(int i)
 {
-    byte* abyte0 = new byte[4];
+    signed char* abyte0 = new signed char[4];
     abyte0[3] = (byte) (0xff & i);
     abyte0[2] = (byte) ((0xff00 & i) >> 8);
     abyte0[1] = (byte) ((0xff0000 & i) >> 16);
@@ -194,7 +194,7 @@ Message* SocketClient::constructMessage(const char* data,int commandId)
 	return msg;
 }
 
-void SocketClient::stop(boolean b)
+void SocketClient::stop(bool b)
 {
 	m_iState = SocketClient_DESTROY;
 
