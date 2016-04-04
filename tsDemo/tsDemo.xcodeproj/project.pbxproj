@@ -15,6 +15,9 @@
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
+		F12C6C801CB2A6E80025BFD6 /* Memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F12C6C7E1CB2A6E80025BFD6 /* Memory.cpp */; };
+		F12C6C861CB2AE8A0025BFD6 /* ModuleServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F12C6C821CB2AE8A0025BFD6 /* ModuleServer.cpp */; };
+		F12C6C871CB2AE8A0025BFD6 /* ModuleUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F12C6C841CB2AE8A0025BFD6 /* ModuleUser.cpp */; };
 		F14841B61CAEA060000931A6 /* mlib_socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F14841B41CAEA060000931A6 /* mlib_socket.cpp */; };
 		F14841BD1CAEA10E000931A6 /* SocketCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F14841B71CAEA10E000931A6 /* SocketCenter.cpp */; };
 		F14841BE1CAEA10E000931A6 /* SocketErrorHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F14841B91CAEA10E000931A6 /* SocketErrorHandler.cpp */; };
@@ -754,6 +757,12 @@
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F12C6C7E1CB2A6E80025BFD6 /* Memory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Memory.cpp; sourceTree = "<group>"; };
+		F12C6C7F1CB2A6E80025BFD6 /* Memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Memory.h; sourceTree = "<group>"; };
+		F12C6C821CB2AE8A0025BFD6 /* ModuleServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModuleServer.cpp; sourceTree = "<group>"; };
+		F12C6C831CB2AE8A0025BFD6 /* ModuleServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleServer.h; sourceTree = "<group>"; };
+		F12C6C841CB2AE8A0025BFD6 /* ModuleUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModuleUser.cpp; sourceTree = "<group>"; };
+		F12C6C851CB2AE8A0025BFD6 /* ModuleUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleUser.h; sourceTree = "<group>"; };
 		F14841B41CAEA060000931A6 /* mlib_socket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mlib_socket.cpp; sourceTree = "<group>"; };
 		F14841B51CAEA060000931A6 /* mlib_socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlib_socket.h; sourceTree = "<group>"; };
 		F14841B71CAEA10E000931A6 /* SocketCenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SocketCenter.cpp; sourceTree = "<group>"; };
@@ -2034,6 +2043,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F12C6C7D1CB2A6E80025BFD6 /* memory */ = {
+			isa = PBXGroup;
+			children = (
+				F12C6C7E1CB2A6E80025BFD6 /* Memory.cpp */,
+				F12C6C7F1CB2A6E80025BFD6 /* Memory.h */,
+			);
+			path = memory;
+			sourceTree = "<group>";
+		};
+		F12C6C811CB2AE8A0025BFD6 /* module */ = {
+			isa = PBXGroup;
+			children = (
+				F12C6C821CB2AE8A0025BFD6 /* ModuleServer.cpp */,
+				F12C6C831CB2AE8A0025BFD6 /* ModuleServer.h */,
+				F12C6C841CB2AE8A0025BFD6 /* ModuleUser.cpp */,
+				F12C6C851CB2AE8A0025BFD6 /* ModuleUser.h */,
+			);
+			path = module;
+			sourceTree = "<group>";
+		};
 		F17939731CAECEAF009F6E48 /* network_old */ = {
 			isa = PBXGroup;
 			children = (
@@ -2220,6 +2249,8 @@
 				F1C5D8ED1C9D6470001CC4D0 /* LConstants.h */,
 				F1C5D8DA1C9D6470001CC4D0 /* audio */,
 				F1C5D8DD1C9D6470001CC4D0 /* data */,
+				F12C6C7D1CB2A6E80025BFD6 /* memory */,
+				F12C6C811CB2AE8A0025BFD6 /* module */,
 				F1C5D8EE1C9D6470001CC4D0 /* network */,
 				F17939731CAECEAF009F6E48 /* network_old */,
 				F1C5D8F91C9D6470001CC4D0 /* ui */,
@@ -4782,6 +4813,7 @@
 				F1EC190C1CA1547A00B14C9C /* CCLabelTTFLoader.cpp in Sources */,
 				F1EC28281CA154CE00B14C9C /* CCComponentContainer.cpp in Sources */,
 				F1C5D8CE1C9D6442001CC4D0 /* MSprite.cpp in Sources */,
+				F12C6C801CB2A6E80025BFD6 /* Memory.cpp in Sources */,
 				F1EC282A1CA154CE00B14C9C /* TGAlib.cpp in Sources */,
 				F1C5D9461C9D6470001CC4D0 /* AppDelegate.cpp in Sources */,
 				F1C5D9491C9D6470001CC4D0 /* AnimatePacker.cpp in Sources */,
@@ -4829,6 +4861,7 @@
 				F18A0B4B1C9FCE4300E9135F /* ArenaWindow.cpp in Sources */,
 				F1EC24561CA154CC00B14C9C /* mat4.c in Sources */,
 				F1EC19561CA1547A00B14C9C /* ImageViewReader.cpp in Sources */,
+				F12C6C861CB2AE8A0025BFD6 /* ModuleServer.cpp in Sources */,
 				F1C5D9471C9D6470001CC4D0 /* LAudio.cpp in Sources */,
 				F1EC190E1CA1547A00B14C9C /* CCLayerGradientLoader.cpp in Sources */,
 				F18A0B761C9FCED000E9135F /* hctooltip.cpp in Sources */,
@@ -4892,6 +4925,7 @@
 				F1EC19111CA1547A00B14C9C /* CCMenuItemLoader.cpp in Sources */,
 				F1EC24351CA154CC00B14C9C /* CCActionTiledGrid.cpp in Sources */,
 				F14841BF1CAEA10E000931A6 /* SocketRequest.cpp in Sources */,
+				F12C6C871CB2AE8A0025BFD6 /* ModuleUser.cpp in Sources */,
 				F1EC28271CA154CE00B14C9C /* CCComponent.cpp in Sources */,
 				F1EC19261CA1547A00B14C9C /* CCTween.cpp in Sources */,
 				F1EC242E1CA154CC00B14C9C /* CCActionGrid.cpp in Sources */,

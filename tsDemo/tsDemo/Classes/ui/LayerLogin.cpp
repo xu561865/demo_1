@@ -65,6 +65,24 @@ void LayerLogin::onNodeLoaded(cocos2d::CCNode * pNode,  cocos2d::extension::CCNo
     this->pMenuItemStart->setVisible(false);
 }
 
+CCScene* LayerLogin::scene()
+{
+    CCScene *pScene = CCScene::create();
+    
+    extension::CCNodeLoaderLibrary * ccNodeLoaderLibrary = extension::CCNodeLoaderLibrary::newDefaultCCNodeLoaderLibrary();
+    ccNodeLoaderLibrary->registerCCNodeLoader("LayerLogin", LayerLoginLoader::loader());
+    
+    extension::CCBReader * ccbReader = new extension::CCBReader(ccNodeLoaderLibrary);
+    CCNode * node = ccbReader->readNodeGraphFromFile("ccbi/Login.ccbi", pScene);
+    ccbReader->release();
+    if(node != NULL)
+    {
+        pScene->addChild(node);
+    }
+    
+    return pScene;
+}
+
 LayerLogin::LayerLogin()
 {
     
@@ -98,6 +116,11 @@ void LayerLogin::onEnter()
 void LayerLogin::onExit()
 {
     CCLayer::onExit();
+}
+
+void LayerLogin::menuItemCallbackStart(CCObject *pSender)
+{
+    CCDirector::sharedDirector()->replaceScene(CCTransitionFlipY::create(2, HomePage::scene(), kCCTransitionOrientationDownOver));
 }
 
 void LayerLogin::menuItemCallbackLogin(CCObject* pSender)
@@ -153,7 +176,6 @@ void LayerLogin::menuItemCallbackLogin(CCObject* pSender)
             SocketRequest *req = SocketCenter::SharedInstance()->login(RegisterMsg);
             req->onSuccess([this](mlib::MSocketRequest *r) {
                 M_DEBUG("login success");
-                
                 
             });
             req->onError([this](mlib::MSocketRequest *r) {
@@ -256,28 +278,5 @@ void LayerLogin::receivePersonalData()
         pMenuItemLogin->setVisible(false);
         pMenuItemStart->setVisible(true);
     }
-}
-
-void LayerLogin::menuItemCallbackStart(CCObject *pSender)
-{
-    CCDirector::sharedDirector()->replaceScene(CCTransitionFlipY::create(2, HomePage::scene(), kCCTransitionOrientationDownOver));
-}
-
-CCScene* LayerLogin::scene()
-{
-    CCScene *pScene = CCScene::create();
-    
-    extension::CCNodeLoaderLibrary * ccNodeLoaderLibrary = extension::CCNodeLoaderLibrary::newDefaultCCNodeLoaderLibrary();
-    ccNodeLoaderLibrary->registerCCNodeLoader("LayerLogin", LayerLoginLoader::loader());
-    
-    extension::CCBReader * ccbReader = new extension::CCBReader(ccNodeLoaderLibrary);
-    CCNode * node = ccbReader->readNodeGraphFromFile("ccbi/Login.ccbi", pScene);
-    ccbReader->release();
-    if(node != NULL)
-    {
-        pScene->addChild(node);
-    }
-    
-    return pScene;
 }
 
