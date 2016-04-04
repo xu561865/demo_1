@@ -11,48 +11,34 @@ MBuffer::~MBuffer()
     clear();
 }
 
-MBuffer::MBuffer(size_t size, size_t capa) :
-_buffer(NULL), _capa(0), _size(0),
-_pos(0)
+MBuffer::MBuffer(size_t size, size_t capa) : _buffer(NULL), _capa(0), _size(0), _pos(0)
 {
-    if (capa > size) reserve(capa);
+    if (capa > size)
+    {
+        reserve(capa);
+    }
     resize(size);
 }
 
-MBuffer::MBuffer(const std::string & buf) :
-_buffer(NULL), _capa(0), _size(0),
-_pos(0)
+MBuffer::MBuffer(const std::string & buf) : _buffer(NULL), _capa(0), _size(0), _pos(0)
 {
     write(buf);
 }
 
-MBuffer::MBuffer(const char *data, size_t dataLen) :
-_buffer(NULL), _capa(0), _size(0),
-_pos(0)
+MBuffer::MBuffer(const char *data, size_t dataLen) : _buffer(NULL), _capa(0), _size(0), _pos(0)
 {
     M_ASSERT(data != nullptr);
     
     writeData(data, dataLen);
 }
 
-//MBuffer::MBuffer(const MBuffer& buf) :
-//_buffer(NULL), _capa(0), _size(0),
-//_pos(0)
-//{
-//    writeData(buf.getData(), buf.size());
-//}
-
-MBuffer::MBuffer(MBuffer&& buf) :
-_buffer(buf._buffer), _capa(buf._capa), _size(buf._size),
-_pos(buf._pos)
+MBuffer::MBuffer(MBuffer&& buf) : _buffer(buf._buffer), _capa(buf._capa), _size(buf._size), _pos(buf._pos)
 {
     buf._buffer = NULL;
     buf._capa = buf._size = buf._pos = 0;
 }
 
-MBuffer::MBuffer(const char *data) :
-_buffer(NULL), _capa(0), _size(0),
-_pos(0)
+MBuffer::MBuffer(const char *data) : _buffer(NULL), _capa(0), _size(0), _pos(0)
 {
     size_t len = strlen(data);
     if (len) writeData(data, len);
@@ -77,7 +63,6 @@ void MBuffer::reserve(size_t size)
         delete [] _buffer;
         _buffer = newBuf;
         _capa = size;
-        // _pos and _size remain
     }
 }
 
@@ -97,7 +82,10 @@ size_t MBuffer::size() const
 // --- seeking function ---
 bool MBuffer::seek(size_t pos) const
 {
-    if (pos > _size) return false;
+    if (pos > _size)
+    {
+        return false;
+    }
     _pos = pos;
     return true;
 }
@@ -125,13 +113,20 @@ void MBuffer::requestNewCapa(size_t size)
 bool MBuffer::read(std::string& val) const
 {
     size_t len;
-    if (!readVariableInteger(len)) return false;
+    if (!readVariableInteger(len))
+    {
+        return false;
+    }
     
-    if (_pos + len > _size) return false;
+    if (_pos + len > _size)
+    {
+        return false;
+    }
     
     val.clear();
     val.append(_buffer + _pos, len);
     _pos += len;
+    
     return true;
 }
 
@@ -145,7 +140,10 @@ void MBuffer::write(const std::string & val)
     
     memcpy(_buffer + _pos, val.c_str(), val.size());
     _pos += val.size();
-    if (_pos > _size) _size = _pos;
+    if (_pos > _size)
+    {
+        _size = _pos;
+    }
 }
 
 // --- MBuffer reader/writer
@@ -153,9 +151,15 @@ void MBuffer::write(const std::string & val)
 bool MBuffer::read(MBuffer & val) const
 {
     size_t len;
-    if (!readVariableInteger(len)) return false;
+    if (!readVariableInteger(len))
+    {
+        return false;
+    }
     
-    if (_pos + len > _size) return false;
+    if (_pos + len > _size)
+    {
+        return false;
+    }
     
     val.resize(0);
     val.writeData(_buffer + _pos, len);
@@ -173,14 +177,20 @@ void MBuffer::write(const MBuffer & val)
     
     memcpy(_buffer + _pos, val.getData(), val.size());
     _pos += val.size();
-    if (_pos > _size) _size = _pos;
+    if (_pos > _size)
+    {
+        _size = _pos;
+    }
 }
 
 bool MBuffer::readData(char *dest, size_t n) const
 {
     M_ASSERT(dest != nullptr);
     
-    if (_pos + n > _size) return false;
+    if (_pos + n > _size)
+    {
+        return false;
+    }
     
     memcpy(dest, _buffer + _pos, n);
     _pos += n;
@@ -199,7 +209,10 @@ void MBuffer::writeData(const char *dest, size_t n)
     
     memcpy(_buffer + _pos, dest, n);
     _pos += n;
-    if (_pos > _size) _size = _pos;
+    if (_pos > _size)
+    {
+        _size = _pos;
+    }
 }
 
 void MBuffer::write(char c, size_t n)
@@ -218,10 +231,15 @@ bool MBuffer::readVariableInteger(size_t & val) const
 {
     uint8_t b;
     val = 0;
-    if (!readInteger(b)) return false;
+    if (!readInteger(b))
+    {
+        return false;
+    }
+    
     bool nextByte;
     size_t count = 1;
-    do {
+    do
+    {
         nextByte = (b & 0x80);
         val <<= 7;
         val |= (b & 0x7f);
@@ -250,7 +268,10 @@ void MBuffer::writeVariableInteger(size_t val)
     }
     memrcpy(_buffer + _pos, b, i);
     _pos += i;
-    if (_pos > _size) _size = _pos;
+    if (_pos > _size)
+    {
+        _size = _pos;
+    }
 }
 
 void* MBuffer::memrcpy(void *dest, const void *src, size_t n)
@@ -259,29 +280,23 @@ void* MBuffer::memrcpy(void *dest, const void *src, size_t n)
     
     char *dest_ = (char*)(dest);
     const char *src_ = (const char*)(src);
-    for(size_t i = 0;i < n;++i){
+    for(size_t i = 0;i < n;++i)
+    {
         dest_[i] = src_[n - 1 - i];
     }
     return dest;
 }
 
-
-//MBuffer & MBuffer::operator <<(const IMBufferable & obj)
 void MBuffer::write(const IMBufferable& obj)
 {
-    //ZTT_DEBUG("Oveloaded write for IMBufferable!");
     obj.serialize(*this);
 }
 
-
-
-//const MBuffer & MBuffer::operator >>(IMBufferable & obj) const
 bool MBuffer::read(IMBufferable& obj) const
 {
-    //ZTT_DEBUG("Oveloaded load for IMBufferable!");
-    
     obj.deserialize(*this);
     
     return true;
 }
+
 MLIB_NS_END

@@ -136,13 +136,14 @@ void __request_thread_run(MSharedQueue<MSocketRequest *> & requests, bool isTemp
                 signed char low = recvBuff.getByte();
                 memcpy(pMsgLen, &low, sizeof(char));
                 
-                cocos2d::CCLog("receive message %d", msgLen);
+                cocos2d::CCLog("receive message %s, %d", recvBuff.getBuffer() + recvBuff.getPosition(), msgLen);
                 
                 msgBuffer.appendData(recvBuff.getBuffer() + recvBuff.getPosition(), msgLen);
             }
             
             if (req->_isSuccess)
             {
+                cocos2d::CCLog("msg : %s, size : %zu", msgBuffer.getData(), msgBuffer.size());
                 req->_response = req->createResponse(MSocketResponse::OK, msgBuffer.getData(), msgBuffer.size());
                 
                 req->_isSuccess = req->_isSuccess && req->_response->isValid();

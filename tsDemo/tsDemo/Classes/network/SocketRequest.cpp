@@ -58,15 +58,16 @@ SocketResponse::SocketResponse(unsigned short statusCode, const char * data, siz
             case OK:
             {
                 Json::Reader reader;
+                CCLog("responseData : %s", this->responseData().c_str());
                 if (reader.parse(this->responseData(), _jsonValue))
                 {
-                    if (!_jsonValue.isObject() || !_jsonValue.isMember("rc"))
+                    if (!_jsonValue.isObject())
                     {
                         _returnCode = SocketErrorHandler::ERROR_PARSE_JSON;
                     }
                     else
                     {
-                        _returnCode = _jsonValue["rc"].asUInt();
+//                        _returnCode = _jsonValue["rc"].asUInt();
                     }
                 }
                 else
