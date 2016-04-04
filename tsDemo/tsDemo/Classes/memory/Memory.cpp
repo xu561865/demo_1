@@ -306,7 +306,7 @@ bool LMemory::clear()
 
 std::string LMemory::getCurAPI()
 {
-    ModuleServer *info = getCurServer();
+    ModelServer *info = getCurServer();
     if (info != nullptr)
     {
         return info->api();
@@ -316,7 +316,7 @@ std::string LMemory::getCurAPI()
     return "";
 }
 
-ModuleServer * LMemory::getCurServer()
+ModelServer * LMemory::getCurServer()
 {
 //    uint32_t serverId = 0;
 //    if (_lastServerId == 0)

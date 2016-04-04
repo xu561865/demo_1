@@ -7,7 +7,7 @@
 #include "mlib.h"
 #include "cocos2d.h"
 #include "mlib_ccext.h"
-#include "ModuleServer.h"
+#include "ModelServer.h"
 
 
 MLIB_DEFINE_EVENT(EVENT_IAP_COMPLETED);
@@ -36,7 +36,7 @@ public:
     
     void reset();
     
-    ModuleServer * getCurServer();
+    ModelServer * getCurServer();
     std::string getCurAPI();
     
     time_t serverTime();
