@@ -463,61 +463,6 @@
 		F1C5E0821C9D71C7001CC4D0 /* zt_exp_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = F1C5DF141C9D71C7001CC4D0 /* zt_exp_bar.png */; };
 		F1C5E0831C9D71C7001CC4D0 /* zxjtx.png in Resources */ = {isa = PBXBuildFile; fileRef = F1C5DF151C9D71C7001CC4D0 /* zxjtx.png */; };
 		F1C5E0AD1C9D8F25001CC4D0 /* ccbi in Resources */ = {isa = PBXBuildFile; fileRef = F1C5E0AC1C9D8F25001CC4D0 /* ccbi */; };
-		F1D079D91CB68B6400DAB60E /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D0795D1CB68B6400DAB60E /* AppDelegate.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079DA1CB68B6500DAB60E /* LAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079601CB68B6400DAB60E /* LAudio.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079DB1CB68B6500DAB60E /* CData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079631CB68B6400DAB60E /* CData.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079DC1CB68B6500DAB60E /* AnimatePacker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079661CB68B6400DAB60E /* AnimatePacker.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079DD1CB68B6500DAB60E /* skillList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079681CB68B6400DAB60E /* skillList.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079DE1CB68B6500DAB60E /* TeXiao.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D0796A1CB68B6400DAB60E /* TeXiao.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079DF1CB68B6500DAB60E /* UserData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D0796E1CB68B6400DAB60E /* UserData.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079E01CB68B6500DAB60E /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079701CB68B6400DAB60E /* HelloWorldScene.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079E11CB68B6500DAB60E /* Memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079741CB68B6400DAB60E /* Memory.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079E21CB68B6500DAB60E /* ModelServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079771CB68B6400DAB60E /* ModelServer.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079E31CB68B6500DAB60E /* ModelUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079791CB68B6400DAB60E /* ModelUser.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079E41CB68B6500DAB60E /* ModuleServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D0797C1CB68B6400DAB60E /* ModuleServer.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079E51CB68B6500DAB60E /* ModuleUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D0797E1CB68B6400DAB60E /* ModuleUser.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079E61CB68B6500DAB60E /* SocketBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079811CB68B6400DAB60E /* SocketBuffer.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079E71CB68B6500DAB60E /* SocketCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079831CB68B6400DAB60E /* SocketCenter.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079E81CB68B6500DAB60E /* SocketErrorHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079861CB68B6400DAB60E /* SocketErrorHandler.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079E91CB68B6500DAB60E /* SocketRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079881CB68B6400DAB60E /* SocketRequest.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079EA1CB68B6500DAB60E /* ByteBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D0798B1CB68B6400DAB60E /* ByteBuffer.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079EB1CB68B6500DAB60E /* message.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D0798D1CB68B6400DAB60E /* message.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079EC1CB68B6500DAB60E /* SocketClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D0798F1CB68B6400DAB60E /* SocketClient.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079ED1CB68B6500DAB60E /* SocketManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079911CB68B6400DAB60E /* SocketManager.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079EE1CB68B6500DAB60E /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079931CB68B6400DAB60E /* Util.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079EF1CB68B6500DAB60E /* ArenaWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079961CB68B6400DAB60E /* ArenaWindow.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079F01CB68B6500DAB60E /* BottomPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079981CB68B6400DAB60E /* BottomPage.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079F11CB68B6500DAB60E /* CombinePage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D0799A1CB68B6400DAB60E /* CombinePage.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079F21CB68B6500DAB60E /* CustomPop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D0799C1CB68B6400DAB60E /* CustomPop.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079F31CB68B6500DAB60E /* EmployPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D0799E1CB68B6400DAB60E /* EmployPage.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079F41CB68B6500DAB60E /* FightPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079A01CB68B6400DAB60E /* FightPage.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079F51CB68B6500DAB60E /* friendemploy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079A21CB68B6400DAB60E /* friendemploy.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079F61CB68B6500DAB60E /* friendemploycell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079A41CB68B6400DAB60E /* friendemploycell.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079F71CB68B6500DAB60E /* friendemploylog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079A61CB68B6400DAB60E /* friendemploylog.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079F81CB68B6500DAB60E /* friendemploypop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079A81CB68B6400DAB60E /* friendemploypop.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079F91CB68B6500DAB60E /* friendinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079AA1CB68B6400DAB60E /* friendinfo.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079FA1CB68B6500DAB60E /* GameOver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079AC1CB68B6400DAB60E /* GameOver.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079FB1CB68B6500DAB60E /* goodsItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079AE1CB68B6400DAB60E /* goodsItem.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079FC1CB68B6500DAB60E /* hcbag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079B01CB68B6400DAB60E /* hcbag.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079FD1CB68B6500DAB60E /* hcgoodsitem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079B21CB68B6400DAB60E /* hcgoodsitem.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079FE1CB68B6500DAB60E /* hctooltip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079B51CB68B6400DAB60E /* hctooltip.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D079FF1CB68B6500DAB60E /* headPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079B71CB68B6400DAB60E /* headPage.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D07A001CB68B6500DAB60E /* heroItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079B91CB68B6400DAB60E /* heroItem.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D07A011CB68B6500DAB60E /* homePage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079BB1CB68B6400DAB60E /* homePage.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D07A021CB68B6500DAB60E /* LayerLogin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079BD1CB68B6400DAB60E /* LayerLogin.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D07A031CB68B6500DAB60E /* LodingLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079BF1CB68B6400DAB60E /* LodingLayer.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D07A041CB68B6500DAB60E /* MailInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079C11CB68B6400DAB60E /* MailInfo.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D07A051CB68B6500DAB60E /* MailPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079C31CB68B6400DAB60E /* MailPage.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D07A061CB68B6500DAB60E /* MailRead.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079C51CB68B6400DAB60E /* MailRead.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D07A071CB68B6500DAB60E /* MailRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079C71CB68B6400DAB60E /* MailRenderer.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D07A081CB68B6500DAB60E /* MailWrite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079C91CB68B6400DAB60E /* MailWrite.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D07A091CB68B6500DAB60E /* middlePage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079CB1CB68B6400DAB60E /* middlePage.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D07A0A1CB68B6500DAB60E /* newBuZhen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079CD1CB68B6400DAB60E /* newBuZhen.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D07A0B1CB68B6500DAB60E /* personalinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079CF1CB68B6400DAB60E /* personalinfo.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D07A0C1CB68B6500DAB60E /* popwindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079D11CB68B6400DAB60E /* popwindow.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D07A0D1CB68B6500DAB60E /* startAnimate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079D31CB68B6400DAB60E /* startAnimate.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D07A0E1CB68B6500DAB60E /* tiplayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079D51CB68B6400DAB60E /* tiplayer.cpp */; settings = {ASSET_TAGS = (); }; };
-		F1D07A0F1CB68B6500DAB60E /* xuanren.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D079D71CB68B6400DAB60E /* xuanren.cpp */; settings = {ASSET_TAGS = (); }; };
 		F1D07A121CB68BAB00DAB60E /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D07A111CB68BAB00DAB60E /* Utils.cpp */; settings = {ASSET_TAGS = (); }; };
 		F1EAE01B1C969704006FFF04 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE01A1C969704006FFF04 /* WebKit.framework */; };
 		F1EAE2FB1C96BB7A006FFF04 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE2FA1C96BB7A006FFF04 /* libz.tbd */; };
@@ -1380,121 +1325,6 @@
 		F1C5DF141C9D71C7001CC4D0 /* zt_exp_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zt_exp_bar.png; sourceTree = "<group>"; };
 		F1C5DF151C9D71C7001CC4D0 /* zxjtx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zxjtx.png; sourceTree = "<group>"; };
 		F1C5E0AC1C9D8F25001CC4D0 /* ccbi */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ccbi; sourceTree = "<group>"; };
-		F1D0795D1CB68B6400DAB60E /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
-		F1D0795E1CB68B6400DAB60E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F1D079601CB68B6400DAB60E /* LAudio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LAudio.cpp; sourceTree = "<group>"; };
-		F1D079611CB68B6400DAB60E /* LAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAudio.h; sourceTree = "<group>"; };
-		F1D079631CB68B6400DAB60E /* CData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CData.cpp; sourceTree = "<group>"; };
-		F1D079641CB68B6400DAB60E /* CData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CData.h; sourceTree = "<group>"; };
-		F1D079661CB68B6400DAB60E /* AnimatePacker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimatePacker.cpp; sourceTree = "<group>"; };
-		F1D079671CB68B6400DAB60E /* AnimatePacker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatePacker.h; sourceTree = "<group>"; };
-		F1D079681CB68B6400DAB60E /* skillList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = skillList.cpp; sourceTree = "<group>"; };
-		F1D079691CB68B6400DAB60E /* skillList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = skillList.h; sourceTree = "<group>"; };
-		F1D0796A1CB68B6400DAB60E /* TeXiao.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TeXiao.cpp; sourceTree = "<group>"; };
-		F1D0796B1CB68B6400DAB60E /* TeXiao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeXiao.h; sourceTree = "<group>"; };
-		F1D0796C1CB68B6400DAB60E /* myobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myobject.h; sourceTree = "<group>"; };
-		F1D0796D1CB68B6400DAB60E /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
-		F1D0796E1CB68B6400DAB60E /* UserData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UserData.cpp; sourceTree = "<group>"; };
-		F1D0796F1CB68B6400DAB60E /* UserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
-		F1D079701CB68B6400DAB60E /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
-		F1D079711CB68B6400DAB60E /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
-		F1D079721CB68B6400DAB60E /* LConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LConstants.h; sourceTree = "<group>"; };
-		F1D079741CB68B6400DAB60E /* Memory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Memory.cpp; sourceTree = "<group>"; };
-		F1D079751CB68B6400DAB60E /* Memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Memory.h; sourceTree = "<group>"; };
-		F1D079771CB68B6400DAB60E /* ModelServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModelServer.cpp; sourceTree = "<group>"; };
-		F1D079781CB68B6400DAB60E /* ModelServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelServer.h; sourceTree = "<group>"; };
-		F1D079791CB68B6400DAB60E /* ModelUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModelUser.cpp; sourceTree = "<group>"; };
-		F1D0797A1CB68B6400DAB60E /* ModelUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelUser.h; sourceTree = "<group>"; };
-		F1D0797C1CB68B6400DAB60E /* ModuleServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModuleServer.cpp; sourceTree = "<group>"; };
-		F1D0797D1CB68B6400DAB60E /* ModuleServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleServer.h; sourceTree = "<group>"; };
-		F1D0797E1CB68B6400DAB60E /* ModuleUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModuleUser.cpp; sourceTree = "<group>"; };
-		F1D0797F1CB68B6400DAB60E /* ModuleUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleUser.h; sourceTree = "<group>"; };
-		F1D079811CB68B6400DAB60E /* SocketBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SocketBuffer.cpp; sourceTree = "<group>"; };
-		F1D079821CB68B6400DAB60E /* SocketBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketBuffer.h; sourceTree = "<group>"; };
-		F1D079831CB68B6400DAB60E /* SocketCenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SocketCenter.cpp; sourceTree = "<group>"; };
-		F1D079841CB68B6400DAB60E /* SocketCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketCenter.h; sourceTree = "<group>"; };
-		F1D079851CB68B6400DAB60E /* SocketConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketConst.h; sourceTree = "<group>"; };
-		F1D079861CB68B6400DAB60E /* SocketErrorHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SocketErrorHandler.cpp; sourceTree = "<group>"; };
-		F1D079871CB68B6400DAB60E /* SocketErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketErrorHandler.h; sourceTree = "<group>"; };
-		F1D079881CB68B6400DAB60E /* SocketRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SocketRequest.cpp; sourceTree = "<group>"; };
-		F1D079891CB68B6400DAB60E /* SocketRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketRequest.h; sourceTree = "<group>"; };
-		F1D0798B1CB68B6400DAB60E /* ByteBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ByteBuffer.cpp; sourceTree = "<group>"; };
-		F1D0798C1CB68B6400DAB60E /* ByteBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByteBuffer.h; sourceTree = "<group>"; };
-		F1D0798D1CB68B6400DAB60E /* message.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = message.cpp; sourceTree = "<group>"; };
-		F1D0798E1CB68B6400DAB60E /* message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message.h; sourceTree = "<group>"; };
-		F1D0798F1CB68B6400DAB60E /* SocketClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SocketClient.cpp; sourceTree = "<group>"; };
-		F1D079901CB68B6400DAB60E /* SocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketClient.h; sourceTree = "<group>"; };
-		F1D079911CB68B6400DAB60E /* SocketManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SocketManager.cpp; sourceTree = "<group>"; };
-		F1D079921CB68B6400DAB60E /* SocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketManager.h; sourceTree = "<group>"; };
-		F1D079931CB68B6400DAB60E /* Util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Util.cpp; sourceTree = "<group>"; };
-		F1D079941CB68B6400DAB60E /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
-		F1D079961CB68B6400DAB60E /* ArenaWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArenaWindow.cpp; sourceTree = "<group>"; };
-		F1D079971CB68B6400DAB60E /* ArenaWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArenaWindow.h; sourceTree = "<group>"; };
-		F1D079981CB68B6400DAB60E /* BottomPage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BottomPage.cpp; sourceTree = "<group>"; };
-		F1D079991CB68B6400DAB60E /* BottomPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomPage.h; sourceTree = "<group>"; };
-		F1D0799A1CB68B6400DAB60E /* CombinePage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CombinePage.cpp; sourceTree = "<group>"; };
-		F1D0799B1CB68B6400DAB60E /* CombinePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombinePage.h; sourceTree = "<group>"; };
-		F1D0799C1CB68B6400DAB60E /* CustomPop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomPop.cpp; sourceTree = "<group>"; };
-		F1D0799D1CB68B6400DAB60E /* CustomPop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPop.h; sourceTree = "<group>"; };
-		F1D0799E1CB68B6400DAB60E /* EmployPage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EmployPage.cpp; sourceTree = "<group>"; };
-		F1D0799F1CB68B6400DAB60E /* EmployPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployPage.h; sourceTree = "<group>"; };
-		F1D079A01CB68B6400DAB60E /* FightPage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FightPage.cpp; sourceTree = "<group>"; };
-		F1D079A11CB68B6400DAB60E /* FightPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FightPage.h; sourceTree = "<group>"; };
-		F1D079A21CB68B6400DAB60E /* friendemploy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = friendemploy.cpp; sourceTree = "<group>"; };
-		F1D079A31CB68B6400DAB60E /* friendemploy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = friendemploy.h; sourceTree = "<group>"; };
-		F1D079A41CB68B6400DAB60E /* friendemploycell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = friendemploycell.cpp; sourceTree = "<group>"; };
-		F1D079A51CB68B6400DAB60E /* friendemploycell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = friendemploycell.h; sourceTree = "<group>"; };
-		F1D079A61CB68B6400DAB60E /* friendemploylog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = friendemploylog.cpp; sourceTree = "<group>"; };
-		F1D079A71CB68B6400DAB60E /* friendemploylog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = friendemploylog.h; sourceTree = "<group>"; };
-		F1D079A81CB68B6400DAB60E /* friendemploypop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = friendemploypop.cpp; sourceTree = "<group>"; };
-		F1D079A91CB68B6400DAB60E /* friendemploypop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = friendemploypop.h; sourceTree = "<group>"; };
-		F1D079AA1CB68B6400DAB60E /* friendinfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = friendinfo.cpp; sourceTree = "<group>"; };
-		F1D079AB1CB68B6400DAB60E /* friendinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = friendinfo.h; sourceTree = "<group>"; };
-		F1D079AC1CB68B6400DAB60E /* GameOver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameOver.cpp; sourceTree = "<group>"; };
-		F1D079AD1CB68B6400DAB60E /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOver.h; sourceTree = "<group>"; };
-		F1D079AE1CB68B6400DAB60E /* goodsItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = goodsItem.cpp; sourceTree = "<group>"; };
-		F1D079AF1CB68B6400DAB60E /* goodsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = goodsItem.h; sourceTree = "<group>"; };
-		F1D079B01CB68B6400DAB60E /* hcbag.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hcbag.cpp; sourceTree = "<group>"; };
-		F1D079B11CB68B6400DAB60E /* hcbag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hcbag.h; sourceTree = "<group>"; };
-		F1D079B21CB68B6400DAB60E /* hcgoodsitem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hcgoodsitem.cpp; sourceTree = "<group>"; };
-		F1D079B31CB68B6400DAB60E /* hcgoodsitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hcgoodsitem.h; sourceTree = "<group>"; };
-		F1D079B41CB68B6400DAB60E /* hcitemdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hcitemdata.h; sourceTree = "<group>"; };
-		F1D079B51CB68B6400DAB60E /* hctooltip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hctooltip.cpp; sourceTree = "<group>"; };
-		F1D079B61CB68B6400DAB60E /* hctooltip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hctooltip.h; sourceTree = "<group>"; };
-		F1D079B71CB68B6400DAB60E /* headPage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = headPage.cpp; sourceTree = "<group>"; };
-		F1D079B81CB68B6400DAB60E /* headPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = headPage.h; sourceTree = "<group>"; };
-		F1D079B91CB68B6400DAB60E /* heroItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = heroItem.cpp; sourceTree = "<group>"; };
-		F1D079BA1CB68B6400DAB60E /* heroItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = heroItem.h; sourceTree = "<group>"; };
-		F1D079BB1CB68B6400DAB60E /* homePage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = homePage.cpp; sourceTree = "<group>"; };
-		F1D079BC1CB68B6400DAB60E /* homePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homePage.h; sourceTree = "<group>"; };
-		F1D079BD1CB68B6400DAB60E /* LayerLogin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LayerLogin.cpp; sourceTree = "<group>"; };
-		F1D079BE1CB68B6400DAB60E /* LayerLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerLogin.h; sourceTree = "<group>"; };
-		F1D079BF1CB68B6400DAB60E /* LodingLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LodingLayer.cpp; sourceTree = "<group>"; };
-		F1D079C01CB68B6400DAB60E /* LodingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LodingLayer.h; sourceTree = "<group>"; };
-		F1D079C11CB68B6400DAB60E /* MailInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MailInfo.cpp; sourceTree = "<group>"; };
-		F1D079C21CB68B6400DAB60E /* MailInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailInfo.h; sourceTree = "<group>"; };
-		F1D079C31CB68B6400DAB60E /* MailPage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MailPage.cpp; sourceTree = "<group>"; };
-		F1D079C41CB68B6400DAB60E /* MailPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailPage.h; sourceTree = "<group>"; };
-		F1D079C51CB68B6400DAB60E /* MailRead.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MailRead.cpp; sourceTree = "<group>"; };
-		F1D079C61CB68B6400DAB60E /* MailRead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailRead.h; sourceTree = "<group>"; };
-		F1D079C71CB68B6400DAB60E /* MailRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MailRenderer.cpp; sourceTree = "<group>"; };
-		F1D079C81CB68B6400DAB60E /* MailRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailRenderer.h; sourceTree = "<group>"; };
-		F1D079C91CB68B6400DAB60E /* MailWrite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MailWrite.cpp; sourceTree = "<group>"; };
-		F1D079CA1CB68B6400DAB60E /* MailWrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailWrite.h; sourceTree = "<group>"; };
-		F1D079CB1CB68B6400DAB60E /* middlePage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = middlePage.cpp; sourceTree = "<group>"; };
-		F1D079CC1CB68B6400DAB60E /* middlePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = middlePage.h; sourceTree = "<group>"; };
-		F1D079CD1CB68B6400DAB60E /* newBuZhen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = newBuZhen.cpp; sourceTree = "<group>"; };
-		F1D079CE1CB68B6400DAB60E /* newBuZhen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newBuZhen.h; sourceTree = "<group>"; };
-		F1D079CF1CB68B6400DAB60E /* personalinfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = personalinfo.cpp; sourceTree = "<group>"; };
-		F1D079D01CB68B6400DAB60E /* personalinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personalinfo.h; sourceTree = "<group>"; };
-		F1D079D11CB68B6400DAB60E /* popwindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = popwindow.cpp; sourceTree = "<group>"; };
-		F1D079D21CB68B6400DAB60E /* popwindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popwindow.h; sourceTree = "<group>"; };
-		F1D079D31CB68B6400DAB60E /* startAnimate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = startAnimate.cpp; sourceTree = "<group>"; };
-		F1D079D41CB68B6400DAB60E /* startAnimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = startAnimate.h; sourceTree = "<group>"; };
-		F1D079D51CB68B6400DAB60E /* tiplayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tiplayer.cpp; sourceTree = "<group>"; };
-		F1D079D61CB68B6400DAB60E /* tiplayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiplayer.h; sourceTree = "<group>"; };
-		F1D079D71CB68B6400DAB60E /* xuanren.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xuanren.cpp; sourceTree = "<group>"; };
-		F1D079D81CB68B6400DAB60E /* xuanren.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xuanren.h; sourceTree = "<group>"; };
 		F1D07A101CB68B9800DAB60E /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		F1D07A111CB68BAB00DAB60E /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
 		F1EAE01A1C969704006FFF04 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -2416,7 +2246,8 @@
 		F1C5D8D61C9D6470001CC4D0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F1D0795C1CB68B6400DAB60E /* Classes */,
+				F1D07A111CB68BAB00DAB60E /* Utils.cpp */,
+				F1D07A101CB68B9800DAB60E /* Utils.h */,
 				F1C5D8D81C9D6470001CC4D0 /* AppDelegate.cpp */,
 				F1C5D8EB1C9D6470001CC4D0 /* HelloWorldScene.cpp */,
 				F1C5D8D91C9D6470001CC4D0 /* AppDelegate.h */,
@@ -2973,202 +2804,6 @@
 			);
 			name = Resources;
 			path = tsDemo/Resources;
-			sourceTree = "<group>";
-		};
-		F1D0795C1CB68B6400DAB60E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				F1D0795D1CB68B6400DAB60E /* AppDelegate.cpp */,
-				F1D0795E1CB68B6400DAB60E /* AppDelegate.h */,
-				F1D0795F1CB68B6400DAB60E /* audio */,
-				F1D079621CB68B6400DAB60E /* data */,
-				F1D079701CB68B6400DAB60E /* HelloWorldScene.cpp */,
-				F1D079711CB68B6400DAB60E /* HelloWorldScene.h */,
-				F1D079721CB68B6400DAB60E /* LConstants.h */,
-				F1D079731CB68B6400DAB60E /* memory */,
-				F1D079761CB68B6400DAB60E /* model */,
-				F1D0797B1CB68B6400DAB60E /* module */,
-				F1D079801CB68B6400DAB60E /* network */,
-				F1D0798A1CB68B6400DAB60E /* network_old */,
-				F1D079951CB68B6400DAB60E /* ui */,
-				F1D07A111CB68BAB00DAB60E /* Utils.cpp */,
-				F1D07A101CB68B9800DAB60E /* Utils.h */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
-		F1D0795F1CB68B6400DAB60E /* audio */ = {
-			isa = PBXGroup;
-			children = (
-				F1D079601CB68B6400DAB60E /* LAudio.cpp */,
-				F1D079611CB68B6400DAB60E /* LAudio.h */,
-			);
-			path = audio;
-			sourceTree = "<group>";
-		};
-		F1D079621CB68B6400DAB60E /* data */ = {
-			isa = PBXGroup;
-			children = (
-				F1D079631CB68B6400DAB60E /* CData.cpp */,
-				F1D079641CB68B6400DAB60E /* CData.h */,
-				F1D079651CB68B6400DAB60E /* fight */,
-				F1D0796C1CB68B6400DAB60E /* myobject.h */,
-				F1D0796D1CB68B6400DAB60E /* Singleton.h */,
-				F1D0796E1CB68B6400DAB60E /* UserData.cpp */,
-				F1D0796F1CB68B6400DAB60E /* UserData.h */,
-			);
-			path = data;
-			sourceTree = "<group>";
-		};
-		F1D079651CB68B6400DAB60E /* fight */ = {
-			isa = PBXGroup;
-			children = (
-				F1D079661CB68B6400DAB60E /* AnimatePacker.cpp */,
-				F1D079671CB68B6400DAB60E /* AnimatePacker.h */,
-				F1D079681CB68B6400DAB60E /* skillList.cpp */,
-				F1D079691CB68B6400DAB60E /* skillList.h */,
-				F1D0796A1CB68B6400DAB60E /* TeXiao.cpp */,
-				F1D0796B1CB68B6400DAB60E /* TeXiao.h */,
-			);
-			path = fight;
-			sourceTree = "<group>";
-		};
-		F1D079731CB68B6400DAB60E /* memory */ = {
-			isa = PBXGroup;
-			children = (
-				F1D079741CB68B6400DAB60E /* Memory.cpp */,
-				F1D079751CB68B6400DAB60E /* Memory.h */,
-			);
-			path = memory;
-			sourceTree = "<group>";
-		};
-		F1D079761CB68B6400DAB60E /* model */ = {
-			isa = PBXGroup;
-			children = (
-				F1D079771CB68B6400DAB60E /* ModelServer.cpp */,
-				F1D079781CB68B6400DAB60E /* ModelServer.h */,
-				F1D079791CB68B6400DAB60E /* ModelUser.cpp */,
-				F1D0797A1CB68B6400DAB60E /* ModelUser.h */,
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		F1D0797B1CB68B6400DAB60E /* module */ = {
-			isa = PBXGroup;
-			children = (
-				F1D0797C1CB68B6400DAB60E /* ModuleServer.cpp */,
-				F1D0797D1CB68B6400DAB60E /* ModuleServer.h */,
-				F1D0797E1CB68B6400DAB60E /* ModuleUser.cpp */,
-				F1D0797F1CB68B6400DAB60E /* ModuleUser.h */,
-			);
-			path = module;
-			sourceTree = "<group>";
-		};
-		F1D079801CB68B6400DAB60E /* network */ = {
-			isa = PBXGroup;
-			children = (
-				F1D079811CB68B6400DAB60E /* SocketBuffer.cpp */,
-				F1D079821CB68B6400DAB60E /* SocketBuffer.h */,
-				F1D079831CB68B6400DAB60E /* SocketCenter.cpp */,
-				F1D079841CB68B6400DAB60E /* SocketCenter.h */,
-				F1D079851CB68B6400DAB60E /* SocketConst.h */,
-				F1D079861CB68B6400DAB60E /* SocketErrorHandler.cpp */,
-				F1D079871CB68B6400DAB60E /* SocketErrorHandler.h */,
-				F1D079881CB68B6400DAB60E /* SocketRequest.cpp */,
-				F1D079891CB68B6400DAB60E /* SocketRequest.h */,
-			);
-			path = network;
-			sourceTree = "<group>";
-		};
-		F1D0798A1CB68B6400DAB60E /* network_old */ = {
-			isa = PBXGroup;
-			children = (
-				F1D0798B1CB68B6400DAB60E /* ByteBuffer.cpp */,
-				F1D0798C1CB68B6400DAB60E /* ByteBuffer.h */,
-				F1D0798D1CB68B6400DAB60E /* message.cpp */,
-				F1D0798E1CB68B6400DAB60E /* message.h */,
-				F1D0798F1CB68B6400DAB60E /* SocketClient.cpp */,
-				F1D079901CB68B6400DAB60E /* SocketClient.h */,
-				F1D079911CB68B6400DAB60E /* SocketManager.cpp */,
-				F1D079921CB68B6400DAB60E /* SocketManager.h */,
-				F1D079931CB68B6400DAB60E /* Util.cpp */,
-				F1D079941CB68B6400DAB60E /* Util.h */,
-			);
-			path = network_old;
-			sourceTree = "<group>";
-		};
-		F1D079951CB68B6400DAB60E /* ui */ = {
-			isa = PBXGroup;
-			children = (
-				F1D079961CB68B6400DAB60E /* ArenaWindow.cpp */,
-				F1D079971CB68B6400DAB60E /* ArenaWindow.h */,
-				F1D079981CB68B6400DAB60E /* BottomPage.cpp */,
-				F1D079991CB68B6400DAB60E /* BottomPage.h */,
-				F1D0799A1CB68B6400DAB60E /* CombinePage.cpp */,
-				F1D0799B1CB68B6400DAB60E /* CombinePage.h */,
-				F1D0799C1CB68B6400DAB60E /* CustomPop.cpp */,
-				F1D0799D1CB68B6400DAB60E /* CustomPop.h */,
-				F1D0799E1CB68B6400DAB60E /* EmployPage.cpp */,
-				F1D0799F1CB68B6400DAB60E /* EmployPage.h */,
-				F1D079A01CB68B6400DAB60E /* FightPage.cpp */,
-				F1D079A11CB68B6400DAB60E /* FightPage.h */,
-				F1D079A21CB68B6400DAB60E /* friendemploy.cpp */,
-				F1D079A31CB68B6400DAB60E /* friendemploy.h */,
-				F1D079A41CB68B6400DAB60E /* friendemploycell.cpp */,
-				F1D079A51CB68B6400DAB60E /* friendemploycell.h */,
-				F1D079A61CB68B6400DAB60E /* friendemploylog.cpp */,
-				F1D079A71CB68B6400DAB60E /* friendemploylog.h */,
-				F1D079A81CB68B6400DAB60E /* friendemploypop.cpp */,
-				F1D079A91CB68B6400DAB60E /* friendemploypop.h */,
-				F1D079AA1CB68B6400DAB60E /* friendinfo.cpp */,
-				F1D079AB1CB68B6400DAB60E /* friendinfo.h */,
-				F1D079AC1CB68B6400DAB60E /* GameOver.cpp */,
-				F1D079AD1CB68B6400DAB60E /* GameOver.h */,
-				F1D079AE1CB68B6400DAB60E /* goodsItem.cpp */,
-				F1D079AF1CB68B6400DAB60E /* goodsItem.h */,
-				F1D079B01CB68B6400DAB60E /* hcbag.cpp */,
-				F1D079B11CB68B6400DAB60E /* hcbag.h */,
-				F1D079B21CB68B6400DAB60E /* hcgoodsitem.cpp */,
-				F1D079B31CB68B6400DAB60E /* hcgoodsitem.h */,
-				F1D079B41CB68B6400DAB60E /* hcitemdata.h */,
-				F1D079B51CB68B6400DAB60E /* hctooltip.cpp */,
-				F1D079B61CB68B6400DAB60E /* hctooltip.h */,
-				F1D079B71CB68B6400DAB60E /* headPage.cpp */,
-				F1D079B81CB68B6400DAB60E /* headPage.h */,
-				F1D079B91CB68B6400DAB60E /* heroItem.cpp */,
-				F1D079BA1CB68B6400DAB60E /* heroItem.h */,
-				F1D079BB1CB68B6400DAB60E /* homePage.cpp */,
-				F1D079BC1CB68B6400DAB60E /* homePage.h */,
-				F1D079BD1CB68B6400DAB60E /* LayerLogin.cpp */,
-				F1D079BE1CB68B6400DAB60E /* LayerLogin.h */,
-				F1D079BF1CB68B6400DAB60E /* LodingLayer.cpp */,
-				F1D079C01CB68B6400DAB60E /* LodingLayer.h */,
-				F1D079C11CB68B6400DAB60E /* MailInfo.cpp */,
-				F1D079C21CB68B6400DAB60E /* MailInfo.h */,
-				F1D079C31CB68B6400DAB60E /* MailPage.cpp */,
-				F1D079C41CB68B6400DAB60E /* MailPage.h */,
-				F1D079C51CB68B6400DAB60E /* MailRead.cpp */,
-				F1D079C61CB68B6400DAB60E /* MailRead.h */,
-				F1D079C71CB68B6400DAB60E /* MailRenderer.cpp */,
-				F1D079C81CB68B6400DAB60E /* MailRenderer.h */,
-				F1D079C91CB68B6400DAB60E /* MailWrite.cpp */,
-				F1D079CA1CB68B6400DAB60E /* MailWrite.h */,
-				F1D079CB1CB68B6400DAB60E /* middlePage.cpp */,
-				F1D079CC1CB68B6400DAB60E /* middlePage.h */,
-				F1D079CD1CB68B6400DAB60E /* newBuZhen.cpp */,
-				F1D079CE1CB68B6400DAB60E /* newBuZhen.h */,
-				F1D079CF1CB68B6400DAB60E /* personalinfo.cpp */,
-				F1D079D01CB68B6400DAB60E /* personalinfo.h */,
-				F1D079D11CB68B6400DAB60E /* popwindow.cpp */,
-				F1D079D21CB68B6400DAB60E /* popwindow.h */,
-				F1D079D31CB68B6400DAB60E /* startAnimate.cpp */,
-				F1D079D41CB68B6400DAB60E /* startAnimate.h */,
-				F1D079D51CB68B6400DAB60E /* tiplayer.cpp */,
-				F1D079D61CB68B6400DAB60E /* tiplayer.h */,
-				F1D079D71CB68B6400DAB60E /* xuanren.cpp */,
-				F1D079D81CB68B6400DAB60E /* xuanren.h */,
-			);
-			path = ui;
 			sourceTree = "<group>";
 		};
 		F1EAE2FC1C96BC92006FFF04 /* libs */ = {
@@ -5050,16 +4685,13 @@
 				F1C5D8C21C9D6442001CC4D0 /* MFrameAnimation.cpp in Sources */,
 				F1ECF7221CA1537900B14C9C /* SimpleAudioEngine.mm in Sources */,
 				F1EC196B1CA1547A00B14C9C /* CCControlSaturationBrightnessPicker.cpp in Sources */,
-				F1D079FA1CB68B6500DAB60E /* GameOver.cpp in Sources */,
 				F1EC24671CA154CC00B14C9C /* CCTransitionPageTurn.cpp in Sources */,
 				F17939801CAECEAF009F6E48 /* SocketClient.cpp in Sources */,
 				F17939811CAECEAF009F6E48 /* SocketManager.cpp in Sources */,
 				F1EC24D91CA154CC00B14C9C /* platform.cpp in Sources */,
-				F1D07A0C1CB68B6500DAB60E /* popwindow.cpp in Sources */,
 				F1EC24601CA154CC00B14C9C /* CCKeypadDispatcher.cpp in Sources */,
 				F1EC19121CA1547A00B14C9C /* CCNode+CCBRelativePositioning.cpp in Sources */,
 				F1C5D8C51C9D6442001CC4D0 /* MIAPTask.cpp in Sources */,
-				F1D079E71CB68B6500DAB60E /* SocketCenter.cpp in Sources */,
 				F1EC191A1CA1547A00B14C9C /* CCActionFrame.cpp in Sources */,
 				F1EC285C1CA391CE00B14C9C /* AndroidSdk.cpp in Sources */,
 				F1C5D97F1C9D6504001CC4D0 /* RootViewController.mm in Sources */,
@@ -5067,11 +4699,8 @@
 				F1EC28201CA154CE00B14C9C /* base64.cpp in Sources */,
 				F1EC28161CA154CE00B14C9C /* CCGLProgram.cpp in Sources */,
 				F1C5D8D31C9D6442001CC4D0 /* MUtils.cpp in Sources */,
-				F1D079EC1CB68B6500DAB60E /* SocketClient.cpp in Sources */,
 				F1EC19051CA1547A00B14C9C /* CCBSequence.cpp in Sources */,
-				F1D079F21CB68B6500DAB60E /* CustomPop.cpp in Sources */,
 				F1EC24471CA154CC00B14C9C /* CCObject.cpp in Sources */,
-				F1D079E81CB68B6500DAB60E /* SocketErrorHandler.cpp in Sources */,
 				F1EC19201CA1547A00B14C9C /* CCActionTimelineCache.cpp in Sources */,
 				F1EC282D1CA154CE00B14C9C /* CCUserDefault.cpp in Sources */,
 				F18A0B891C9FCF0C00E9135F /* LayerLogin.cpp in Sources */,
@@ -5097,11 +4726,9 @@
 				F1EC283C1CA154CE00B14C9C /* CCTMXLayer.cpp in Sources */,
 				F1EC24541CA154CC00B14C9C /* matrix.c in Sources */,
 				F1EC28361CA154CE00B14C9C /* CCTextureAtlas.cpp in Sources */,
-				F1D079FC1CB68B6500DAB60E /* hcbag.cpp in Sources */,
 				F18A0B961C9FCF1E00E9135F /* MailInfo.cpp in Sources */,
 				F18A0B8B1C9FCF0C00E9135F /* xuanren.cpp in Sources */,
 				F179397E1CAECEAF009F6E48 /* ByteBuffer.cpp in Sources */,
-				F1D079FD1CB68B6500DAB60E /* hcgoodsitem.cpp in Sources */,
 				F18A0B731C9FCED000E9135F /* CombinePage.cpp in Sources */,
 				F1EC194B1CA1547A00B14C9C /* UILabelBMFont.cpp in Sources */,
 				F1C5D8D51C9D6442001CC4D0 /* MWebViewImpl.cpp in Sources */,
@@ -5114,7 +4741,6 @@
 				F1EC19701CA1547A00B14C9C /* CCInvocation.cpp in Sources */,
 				F1EC195D1CA1547A00B14C9C /* PageViewReader.cpp in Sources */,
 				F18A0B971C9FCF1E00E9135F /* MailPage.cpp in Sources */,
-				F1D07A0E1CB68B6500DAB60E /* tiplayer.cpp in Sources */,
 				F1EC28181CA154CE00B14C9C /* CCShaderCache.cpp in Sources */,
 				F1EC28191CA154CE00B14C9C /* ccShaders.cpp in Sources */,
 				F1EC195C1CA1547A00B14C9C /* LoadingBarReader.cpp in Sources */,
@@ -5134,7 +4760,6 @@
 				F1EC24411CA154CC00B14C9C /* CCArray.cpp in Sources */,
 				F1EC24A21CA154CC00B14C9C /* CCImageCommonWebp.cpp in Sources */,
 				F1EC19571CA1547A00B14C9C /* LabelAtlasReader.cpp in Sources */,
-				F1D079DC1CB68B6500DAB60E /* AnimatePacker.cpp in Sources */,
 				F1C5D9721C9D6470001CC4D0 /* personalinfo.cpp in Sources */,
 				F1EC19161CA1547A00B14C9C /* CCScale9SpriteLoader.cpp in Sources */,
 				F1EC19691CA1547A00B14C9C /* CCControlHuePicker.cpp in Sources */,
@@ -5146,19 +4771,15 @@
 				F1EC28391CA154CE00B14C9C /* CCTexturePVR.cpp in Sources */,
 				F1EC24691CA154CC00B14C9C /* CCMenu.cpp in Sources */,
 				F1ECF71F1CA1537900B14C9C /* CDAudioManager.m in Sources */,
-				F1D079FE1CB68B6500DAB60E /* hctooltip.cpp in Sources */,
 				F1C5D8BE1C9D6442001CC4D0 /* MControl.cpp in Sources */,
 				F18A0B591C9FCE7500E9135F /* friendemploy.cpp in Sources */,
 				F1EC19581CA1547A00B14C9C /* LabelBMFontReader.cpp in Sources */,
 				F1EC281D1CA154CE00B14C9C /* CCSpriteBatchNode.cpp in Sources */,
-				F1D07A041CB68B6500DAB60E /* MailInfo.cpp in Sources */,
-				F1D079F91CB68B6500DAB60E /* friendinfo.cpp in Sources */,
 				F1EC24B01CA154CC00B14C9C /* CCDirectorCaller.mm in Sources */,
 				F1EC19081CA1547A00B14C9C /* CCControlButtonLoader.cpp in Sources */,
 				F1C5D8AF1C9D6442001CC4D0 /* MIAP91StoreManager.mm in Sources */,
 				F1EC243B1CA154CC00B14C9C /* CCCamera.cpp in Sources */,
 				F1EC244F1CA154CC00B14C9C /* CCGrid.cpp in Sources */,
-				F1D079E31CB68B6500DAB60E /* ModelUser.cpp in Sources */,
 				F1EC197D1CA1547A00B14C9C /* CCTableView.cpp in Sources */,
 				F17FDF021CB259A500B83E99 /* SocketBuffer.cpp in Sources */,
 				F1EC28371CA154CE00B14C9C /* CCTextureCache.cpp in Sources */,
@@ -5173,7 +4794,6 @@
 				F1EC193C1CA1547A00B14C9C /* UIWidget.cpp in Sources */,
 				F1EC281B1CA154CE00B14C9C /* CCAnimationCache.cpp in Sources */,
 				F1C5D8BA1C9D6442001CC4D0 /* MAppManager.cpp in Sources */,
-				F1D07A051CB68B6500DAB60E /* MailPage.cpp in Sources */,
 				F1EC19221CA1547A00B14C9C /* CCNodeReader.cpp in Sources */,
 				F1C5D8CC1C9D6442001CC4D0 /* MScrollView.cpp in Sources */,
 				F1EC28401CA154CE00B14C9C /* CCTouch.cpp in Sources */,
@@ -5185,7 +4805,6 @@
 				F1C5D94B1C9D6470001CC4D0 /* TeXiao.cpp in Sources */,
 				F18A0B5B1C9FCE7500E9135F /* friendemploylog.cpp in Sources */,
 				F1C5D9541C9D6470001CC4D0 /* CustomPop.cpp in Sources */,
-				F1D079EA1CB68B6500DAB60E /* ByteBuffer.cpp in Sources */,
 				F1C5D8951C9D6442001CC4D0 /* mlib_thread.mm in Sources */,
 				F1EC28211CA154CE00B14C9C /* CCNotificationCenter.cpp in Sources */,
 				F1D07A121CB68BAB00DAB60E /* Utils.cpp in Sources */,
@@ -5193,7 +4812,6 @@
 				F1C5D8CA1C9D6442001CC4D0 /* MRichLabelTTF.cpp in Sources */,
 				F1EC196C1CA1547A00B14C9C /* CCControlSlider.cpp in Sources */,
 				F1EC19521CA1547A00B14C9C /* GUIReader.cpp in Sources */,
-				F1D079E41CB68B6500DAB60E /* ModuleServer.cpp in Sources */,
 				F1C5D89B1C9D6442001CC4D0 /* mlib_log.cpp in Sources */,
 				F1EC281C1CA154CE00B14C9C /* CCSprite.cpp in Sources */,
 				F1C5D8C11C9D6442001CC4D0 /* MFileUtils.cpp in Sources */,
@@ -5202,7 +4820,6 @@
 				F1EC196D1CA1547A00B14C9C /* CCControlStepper.cpp in Sources */,
 				F1EC190C1CA1547A00B14C9C /* CCLabelTTFLoader.cpp in Sources */,
 				F1EC28281CA154CE00B14C9C /* CCComponentContainer.cpp in Sources */,
-				F1D079DA1CB68B6500DAB60E /* LAudio.cpp in Sources */,
 				F1C5D8CE1C9D6442001CC4D0 /* MSprite.cpp in Sources */,
 				F12C6C801CB2A6E80025BFD6 /* Memory.cpp in Sources */,
 				F1EC282A1CA154CE00B14C9C /* TGAlib.cpp in Sources */,
@@ -5219,7 +4836,6 @@
 				F1EC24701CA154CC00B14C9C /* CCParticleExamples.cpp in Sources */,
 				F1EC245D1CA154CC00B14C9C /* vec3.c in Sources */,
 				F1EC192C1CA1547A00B14C9C /* CCDisplayFactory.cpp in Sources */,
-				F1D079E11CB68B6500DAB60E /* Memory.cpp in Sources */,
 				F1C5D9691C9D6470001CC4D0 /* LodingLayer.cpp in Sources */,
 				F1EC194E1CA1547A00B14C9C /* UISlider.cpp in Sources */,
 				F1C5D89E1C9D6442001CC4D0 /* mlib_task.cpp in Sources */,
@@ -5228,7 +4844,6 @@
 				F1EC283D1CA154CE00B14C9C /* CCTMXObjectGroup.cpp in Sources */,
 				F1EC24721CA154CC00B14C9C /* CCParticleSystemQuad.cpp in Sources */,
 				F1EC19361CA1547A00B14C9C /* CCUtilMath.cpp in Sources */,
-				F1D079E61CB68B6500DAB60E /* SocketBuffer.cpp in Sources */,
 				F1EC19211CA1547A00B14C9C /* CCFrame.cpp in Sources */,
 				F1EC19531CA1547A00B14C9C /* SceneReader.cpp in Sources */,
 				F1EC196A1CA1547A00B14C9C /* CCControlPotentiometer.cpp in Sources */,
@@ -5237,22 +4852,16 @@
 				F1EC172F1CA153FF00B14C9C /* json_writer.cpp in Sources */,
 				F1EC24621CA154CC00B14C9C /* CCLabelBMFont.cpp in Sources */,
 				F1EC190A1CA1547A00B14C9C /* CCData.cpp in Sources */,
-				F1D079DF1CB68B6500DAB60E /* UserData.cpp in Sources */,
 				F1EC19591CA1547A00B14C9C /* LabelReader.cpp in Sources */,
 				F12C6C8D1CB2BBF90025BFD6 /* ModelUser.cpp in Sources */,
 				F1EC19821CA1547A00B14C9C /* WebSocket.cpp in Sources */,
 				F1EC242B1CA154CC00B14C9C /* CCActionCamera.cpp in Sources */,
-				F1D07A071CB68B6500DAB60E /* MailRenderer.cpp in Sources */,
-				F1D079E51CB68B6500DAB60E /* ModuleUser.cpp in Sources */,
 				F1EC24B51CA154CC00B14C9C /* CCLock.cpp in Sources */,
 				F1EC195E1CA1547A00B14C9C /* ScrollViewReader.cpp in Sources */,
 				F18A0B621C9FCE9500E9135F /* heroItem.cpp in Sources */,
-				F1D079EE1CB68B6500DAB60E /* Util.cpp in Sources */,
 				F1EC19481CA1547A00B14C9C /* UIImageView.cpp in Sources */,
 				F1EC19001CA1547A00B14C9C /* AssetsManager.cpp in Sources */,
-				F1D07A0D1CB68B6500DAB60E /* startAnimate.cpp in Sources */,
 				F1EC24B41CA154CC00B14C9C /* CCImage.mm in Sources */,
-				F1D07A0F1CB68B6500DAB60E /* xuanren.cpp in Sources */,
 				F18A0B581C9FCE7500E9135F /* EmployPage.cpp in Sources */,
 				F14841B61CAEA060000931A6 /* mlib_socket.cpp in Sources */,
 				F1C5D8C81C9D6442001CC4D0 /* MRemoteNotificationManager.cpp in Sources */,
@@ -5260,11 +4869,8 @@
 				F1EC19491CA1547A00B14C9C /* UILabel.cpp in Sources */,
 				F18A0B4B1C9FCE4300E9135F /* ArenaWindow.cpp in Sources */,
 				F1EC24561CA154CC00B14C9C /* mat4.c in Sources */,
-				F1D079FB1CB68B6500DAB60E /* goodsItem.cpp in Sources */,
 				F1EC19561CA1547A00B14C9C /* ImageViewReader.cpp in Sources */,
-				F1D079D91CB68B6400DAB60E /* AppDelegate.cpp in Sources */,
 				F1C5D9471C9D6470001CC4D0 /* LAudio.cpp in Sources */,
-				F1D07A031CB68B6500DAB60E /* LodingLayer.cpp in Sources */,
 				F1EC190E1CA1547A00B14C9C /* CCLayerGradientLoader.cpp in Sources */,
 				F18A0B761C9FCED000E9135F /* hctooltip.cpp in Sources */,
 				F1EC24451CA154CC00B14C9C /* CCGeometry.cpp in Sources */,
@@ -5276,8 +4882,6 @@
 				F1C5D8CF1C9D6442001CC4D0 /* MSpriteLoader.cpp in Sources */,
 				F1C5D8AD1C9D6442001CC4D0 /* MAppTracker.mm in Sources */,
 				F1EC19511CA1547A00B14C9C /* DictionaryHelper.cpp in Sources */,
-				F1D079E01CB68B6500DAB60E /* HelloWorldScene.cpp in Sources */,
-				F1D079E91CB68B6500DAB60E /* SocketRequest.cpp in Sources */,
 				F1C5D9731C9D6470001CC4D0 /* tiplayer.cpp in Sources */,
 				F1EC28301CA154CE00B14C9C /* ioapi.cpp in Sources */,
 				F1EC24461CA154CC00B14C9C /* CCNS.cpp in Sources */,
@@ -5291,16 +4895,12 @@
 				F1C5D8AB1C9D6442001CC4D0 /* CCRemove.cpp in Sources */,
 				F1C5D8B61C9D6442001CC4D0 /* MUtilsIOS.mm in Sources */,
 				F1EC283B1CA154CE00B14C9C /* CCTileMapAtlas.cpp in Sources */,
-				F1D079F01CB68B6500DAB60E /* BottomPage.cpp in Sources */,
-				F1D079F51CB68B6500DAB60E /* friendemploy.cpp in Sources */,
-				F1D079DE1CB68B6500DAB60E /* TeXiao.cpp in Sources */,
 				F1EC24B21CA154CC00B14C9C /* CCES2Renderer.m in Sources */,
 				F1C5D8D41C9D6442001CC4D0 /* MWebView.cpp in Sources */,
 				F18A0B681C9FCEAD00E9135F /* FightPage.cpp in Sources */,
 				F1EC194A1CA1547A00B14C9C /* UILabelAtlas.cpp in Sources */,
 				F1EC244E1CA154CC00B14C9C /* CCGrabber.cpp in Sources */,
 				F1EC245B1CA154CC00B14C9C /* utility.c in Sources */,
-				F1D079E21CB68B6500DAB60E /* ModelServer.cpp in Sources */,
 				F1EC24301CA154CC00B14C9C /* CCActionInstant.cpp in Sources */,
 				F14841BE1CAEA10E000931A6 /* SocketErrorHandler.cpp in Sources */,
 				F1EC24421CA154CC00B14C9C /* CCAutoreleasePool.cpp in Sources */,
@@ -5308,7 +4908,6 @@
 				F1EC282C1CA154CE00B14C9C /* TransformUtils.cpp in Sources */,
 				F1C5D8AA1C9D6442001CC4D0 /* CCProgressTimerLoader.cpp in Sources */,
 				F1EC24381CA154CC00B14C9C /* CCAtlasNode.cpp in Sources */,
-				F1D07A0B1CB68B6500DAB60E /* personalinfo.cpp in Sources */,
 				F1C5D8BD1C9D6442001CC4D0 /* MCallbackAction.cpp in Sources */,
 				F1EC19241CA1547A00B14C9C /* CCArmatureAnimation.cpp in Sources */,
 				F1EC192F1CA1547A00B14C9C /* CCColliderDetector.cpp in Sources */,
@@ -5318,7 +4917,6 @@
 				F1EC197F1CA1547A00B14C9C /* LocalStorage.cpp in Sources */,
 				F1EC245F1CA154CC00B14C9C /* CCKeypadDelegate.cpp in Sources */,
 				F1EC28251CA154CE00B14C9C /* ccUtils.cpp in Sources */,
-				F1D079EB1CB68B6500DAB60E /* message.cpp in Sources */,
 				F1EC244A1CA154CC00B14C9C /* CCZone.cpp in Sources */,
 				F1EC24581CA154CC00B14C9C /* plane.c in Sources */,
 				F1EC193B1CA1547A00B14C9C /* CCInputDelegate.cpp in Sources */,
@@ -5329,14 +4927,11 @@
 				F17939821CAECEAF009F6E48 /* Util.cpp in Sources */,
 				F1EC196F1CA1547A00B14C9C /* CCControlUtils.cpp in Sources */,
 				F1EC191E1CA1547A00B14C9C /* CCActionObject.cpp in Sources */,
-				F1D07A081CB68B6500DAB60E /* MailWrite.cpp in Sources */,
 				F1EC28241CA154CE00B14C9C /* ccUTF8.cpp in Sources */,
 				F1EC242D1CA154CC00B14C9C /* CCActionEase.cpp in Sources */,
 				F1ECF7211CA1537900B14C9C /* CocosDenshion.m in Sources */,
 				F1EC19111CA1547A00B14C9C /* CCMenuItemLoader.cpp in Sources */,
 				F1EC24351CA154CC00B14C9C /* CCActionTiledGrid.cpp in Sources */,
-				F1D07A0A1CB68B6500DAB60E /* newBuZhen.cpp in Sources */,
-				F1D079FF1CB68B6500DAB60E /* headPage.cpp in Sources */,
 				F14841BF1CAEA10E000931A6 /* SocketRequest.cpp in Sources */,
 				F1EC28271CA154CE00B14C9C /* CCComponent.cpp in Sources */,
 				F1EC19261CA1547A00B14C9C /* CCTween.cpp in Sources */,
@@ -5348,7 +4943,6 @@
 				F18A0B631C9FCE9500E9135F /* newBuZhen.cpp in Sources */,
 				F1EC19031CA1547A00B14C9C /* CCBKeyframe.cpp in Sources */,
 				F1EC28321CA154CE00B14C9C /* ZipUtils.cpp in Sources */,
-				F1D079F81CB68B6500DAB60E /* friendemploypop.cpp in Sources */,
 				F1C5D8AE1C9D6442001CC4D0 /* MFileUtilsIOS.mm in Sources */,
 				F1EC19721CA1547A00B14C9C /* CCEditBox.cpp in Sources */,
 				F1C5D94D1C9D6470001CC4D0 /* HelloWorldScene.cpp in Sources */,
@@ -5362,12 +4956,10 @@
 				F1EC242C1CA154CC00B14C9C /* CCActionCatmullRom.cpp in Sources */,
 				F1EC19351CA1547A00B14C9C /* CCTweenFunction.cpp in Sources */,
 				F18A0B9A1C9FCF1E00E9135F /* MailWrite.cpp in Sources */,
-				F1D079F71CB68B6500DAB60E /* friendemploylog.cpp in Sources */,
 				F1EC24B61CA154CC00B14C9C /* CCThread.mm in Sources */,
 				F1EC28261CA154CE00B14C9C /* CCVertex.cpp in Sources */,
 				F1EC24AD1CA154CC00B14C9C /* CCApplication.mm in Sources */,
 				F1EC24481CA154CC00B14C9C /* CCSet.cpp in Sources */,
-				F1D079F61CB68B6500DAB60E /* friendemploycell.cpp in Sources */,
 				F18A0B801C9FCEF200E9135F /* headPage.cpp in Sources */,
 				F1EC283E1CA154CE00B14C9C /* CCTMXTiledMap.cpp in Sources */,
 				F1EC244D1CA154CC00B14C9C /* CCDrawNode.cpp in Sources */,
@@ -5389,10 +4981,8 @@
 				F1EC282F1CA154CE00B14C9C /* CCUserDefaultAndroid.cpp in Sources */,
 				F18A0B8A1C9FCF0C00E9135F /* startAnimate.cpp in Sources */,
 				F1C5D8A01C9D6442001CC4D0 /* mlib_version_number.cpp in Sources */,
-				F1D07A011CB68B6500DAB60E /* homePage.cpp in Sources */,
 				F1EC28151CA154CE00B14C9C /* CCScriptSupport.cpp in Sources */,
 				F1EC246D1CA154CC00B14C9C /* CCProgressTimer.cpp in Sources */,
-				F1D07A001CB68B6500DAB60E /* heroItem.cpp in Sources */,
 				F1EC24321CA154CC00B14C9C /* CCActionManager.cpp in Sources */,
 				F1C5D8C61C9D6442001CC4D0 /* MIAPTransaction.cpp in Sources */,
 				F1C5D8A91C9D6442001CC4D0 /* CCEditBoxLoader.cpp in Sources */,
@@ -5404,11 +4994,9 @@
 				F1EC19041CA1547A00B14C9C /* CCBReader.cpp in Sources */,
 				F18A0B751C9FCED000E9135F /* hcgoodsitem.cpp in Sources */,
 				F1EC24681CA154CC00B14C9C /* CCTransitionProgress.cpp in Sources */,
-				F1D079EF1CB68B6500DAB60E /* ArenaWindow.cpp in Sources */,
 				F1C5D8981C9D6442001CC4D0 /* mlib_exception.cpp in Sources */,
 				F1C5D8B81C9D6442001CC4D0 /* MAnalysisManager.cpp in Sources */,
 				F1EC172C1CA153FF00B14C9C /* json_reader.cpp in Sources */,
-				F1D07A061CB68B6500DAB60E /* MailRead.cpp in Sources */,
 				F1EC24AE1CA154CC00B14C9C /* CCCommon.mm in Sources */,
 				F1EC24661CA154CC00B14C9C /* CCTransition.cpp in Sources */,
 				F1EC281E1CA154CE00B14C9C /* CCSpriteFrame.cpp in Sources */,
@@ -5416,19 +5004,14 @@
 				F179397F1CAECEAF009F6E48 /* message.cpp in Sources */,
 				F1EC192A1CA1547A00B14C9C /* CCBatchNode.cpp in Sources */,
 				F1EC194C1CA1547A00B14C9C /* UILoadingBar.cpp in Sources */,
-				F1D07A091CB68B6500DAB60E /* middlePage.cpp in Sources */,
 				F1EC19311CA1547A00B14C9C /* CCArmatureDefine.cpp in Sources */,
 				F1EC19021CA1547A00B14C9C /* CCBFileLoader.cpp in Sources */,
 				F1C5D8B41C9D6442001CC4D0 /* MRemoteNotificationManagerIOS.mm in Sources */,
 				F1EC24331CA154CC00B14C9C /* CCActionPageTurn3D.cpp in Sources */,
 				F1EC19181CA1547A00B14C9C /* CCSpriteLoader.cpp in Sources */,
-				F1D079DB1CB68B6500DAB60E /* CData.cpp in Sources */,
 				F1EC243F1CA154CC00B14C9C /* CCScheduler.cpp in Sources */,
 				F1EC190F1CA1547A00B14C9C /* CCLayerLoader.cpp in Sources */,
-				F1D079DD1CB68B6500DAB60E /* skillList.cpp in Sources */,
 				F1EC19401CA1547A00B14C9C /* CocosGUI.cpp in Sources */,
-				F1D079ED1CB68B6500DAB60E /* SocketManager.cpp in Sources */,
-				F1D079F11CB68B6500DAB60E /* CombinePage.cpp in Sources */,
 				F1EC19471CA1547A00B14C9C /* UICheckBox.cpp in Sources */,
 				F1EC19171CA1547A00B14C9C /* CCScrollViewLoader.cpp in Sources */,
 				F1EC19551CA1547A00B14C9C /* CheckBoxReader.cpp in Sources */,
@@ -5463,7 +5046,6 @@
 				F1EC24501CA154CC00B14C9C /* aabb.c in Sources */,
 				F1C5D8B51C9D6442001CC4D0 /* MTextViewImplIOS.mm in Sources */,
 				F1EC246E1CA154CC00B14C9C /* CCRenderTexture.cpp in Sources */,
-				F1D079F31CB68B6500DAB60E /* EmployPage.cpp in Sources */,
 				F1C5D8D21C9D6442001CC4D0 /* MTextViewLoader.cpp in Sources */,
 				F1EC24431CA154CC00B14C9C /* CCDataVisitor.cpp in Sources */,
 				F1EC19321CA1547A00B14C9C /* CCDataReaderHelper.cpp in Sources */,
@@ -5472,9 +5054,7 @@
 				F1EC244B1CA154CC00B14C9C /* cocos2d.cpp in Sources */,
 				F1EC283F1CA154CE00B14C9C /* CCTMXXMLParser.cpp in Sources */,
 				F1EC28351CA154CE00B14C9C /* CCTexture2D.cpp in Sources */,
-				F1D079F41CB68B6500DAB60E /* FightPage.cpp in Sources */,
 				F1EC197C1CA1547A00B14C9C /* CCSorting.cpp in Sources */,
-				F1D07A021CB68B6500DAB60E /* LayerLogin.cpp in Sources */,
 				F1EC245E1CA154CC00B14C9C /* vec4.c in Sources */,
 				F1EC24AB1CA154CC00B14C9C /* AccelerometerDelegateWrapper.mm in Sources */,
 				F1EC19331CA1547A00B14C9C /* CCSpriteFrameCacheHelper.cpp in Sources */,
