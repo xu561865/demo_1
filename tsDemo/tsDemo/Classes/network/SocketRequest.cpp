@@ -49,6 +49,8 @@ void SocketRequest::send()
     }
 }
 
+
+
 #pragma mark LSocketResponse
 
 SocketResponse::SocketResponse(unsigned short statusCode, const char * data, size_t size) : MSocketResponse(statusCode, data, size)
@@ -64,15 +66,17 @@ SocketResponse::SocketResponse(unsigned short statusCode, const char * data, siz
                     if (!_jsonValue.isObject())
                     {
                         _returnCode = SocketErrorHandler::ERROR_PARSE_JSON;
+                        CCLog("ERROR_PARSE_JSON_NOT_OBJECT");
                     }
                     else
                     {
-//                        _returnCode = _jsonValue["rc"].asUInt();
+                        _returnCode = 0;
                     }
                 }
                 else
                 {
                     _returnCode = SocketErrorHandler::ERROR_PARSE_JSON;
+                    CCLog("ERROR_PARSE_JSON");
                 }
             }break;
                 

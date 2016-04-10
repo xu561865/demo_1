@@ -12,7 +12,7 @@ namespace utils
 {
     bool checkUserName(const char* userName)
     {
-        bool ret;
+        bool ret = true;
         
         int i = 0, uIllegal = 0;
         while((userName[i]!='\0'))
@@ -40,7 +40,7 @@ namespace utils
     
     bool checkPwd(const char* password)
     {
-        bool ret;
+        bool ret = true;
         
         int j = 0, pIllegal = 0;
         while(password[j]!='\0')

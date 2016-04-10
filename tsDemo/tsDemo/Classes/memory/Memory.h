@@ -16,15 +16,15 @@ MLIB_DEFINE_EVENT(EVENT_TAB_HIDDEN);
 MLIB_DEFINE_EVENT(EVENT_NEWBIE_SET_NAME_END)
 MLIB_DEFINE_EVENT(EVENT_STAGE_VIEW_WILL_HIDE);
 
-class LMemory : public mlib::MEventDispatcher
+class Memory : public mlib::MEventDispatcher
 {
 public:
     static std::vector<std::string> g_tips;
 
 public:
-    static LMemory * SharedInstance();
-    LMemory();
-    ~LMemory();
+    static Memory * SharedInstance();
+    Memory();
+    ~Memory();
     
     void saveBasic();
     bool loadBasic();
@@ -43,6 +43,15 @@ public:
     void updateServerTime(time_t serverTime);
     
     int32_t getTimeZoneOffsetBetweenServerAndClient(); // in seconds
+    
+public:
+    MLIB_DECLARE_PROPERTY(std::string, userId);
+    MLIB_DECLARE_PROPERTY(std::string, userPwd);
+    MLIB_DECLARE_PROPERTY(int, registerState);
+    
+    MLIB_DECLARE_PROPERTY(unsigned int, level);
+    MLIB_DECLARE_PROPERTY(unsigned int, money);
+    MLIB_DECLARE_PROPERTY(int, loginState);
     
 };
 

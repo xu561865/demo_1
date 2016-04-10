@@ -9,6 +9,7 @@
 #include "CData.h"
 #include "CustomPop.h"
 #include "utils.h"
+#include "Memory.h"
 
 SEL_MenuHandler LayerLogin::onResolveCCBCCMenuItemSelector(CCObject * pTarget, const char * pSelectorName)
 {
@@ -146,12 +147,16 @@ void LayerLogin::menuItemCallbackLogin(CCObject* pSender)
             person["User"]=userName;
             person["Passwd"]=password;
             
+            MEM_INFO->userId(userName);
+            MEM_INFO->userPwd(password);
+            
             Json::Value RegisterMsg;
             RegisterMsg["RegisterMsg"] = person;
             
-            SocketRequest *req = SocketCenter::SharedInstance()->login(RegisterMsg);
-            req->onSuccess([this](mlib::MSocketRequest *r) {
-                M_DEBUG("login success");
+            SocketRequest *req = SocketCenter::SharedInstance()->userRegister(RegisterMsg);
+            req->onSuccess([this, userName, password](mlib::MSocketRequest *r) {
+                
+                login();
                 
             });
             req->onError([this](mlib::MSocketRequest *r) {
@@ -167,6 +172,28 @@ void LayerLogin::menuItemCallbackLogin(CCObject* pSender)
     {
         CustomPop::show("帐号或密码不能为空！~");
     }
+}
+
+void LayerLogin::login()
+{
+    Json::Value person;
+    person["User"] = MEM_INFO->userId();
+    person["Passwd"] = MEM_INFO->userPwd();
+    
+    Json::Value LoginMsg;
+    LoginMsg["LoginMsg"] = person;
+    
+    SocketRequest *req = SocketCenter::SharedInstance()->userLogin(LoginMsg);
+    req->onSuccess([this](mlib::MSocketRequest *r) {
+        
+        
+    });
+    req->onError([this](mlib::MSocketRequest *r) {
+        
+    });
+    req->isBackground() = true;
+    
+    req->send();
 }
 
 void LayerLogin::receiveLoginData()

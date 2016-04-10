@@ -12,7 +12,7 @@ USING_NS_CC;
 #define  MAX_CHAT 30
 
 
-std::vector<std::string> LMemory::g_tips = {
+std::vector<std::string> Memory::g_tips = {
     "角色升级会提升领导力上限和包裹容量上限。",
     "为装备镶嵌合适的符石，能大幅度提升您的实力。",
     "只有队长卡牌的队长技能，才能对小队产生作用。",
@@ -38,28 +38,28 @@ std::vector<std::string> LMemory::g_tips = {
     "摇钱树有几率暴击，获得十倍奖励。",
 };
 
-LMemory * LMemory::SharedInstance()
+Memory * Memory::SharedInstance()
 {
-    static LMemory inst;
+    static Memory inst;
     return &inst;
 }
 
-LMemory::LMemory()
+Memory::Memory()
 {
     reset();
 }
 
-LMemory::~LMemory()
+Memory::~Memory()
 {
     
 }
 
-void LMemory::reset()
+void Memory::reset()
 {
 
 }
 
-void LMemory::saveBasic()
+void Memory::saveBasic()
 {
     CCUserDefault * def = CCUserDefault::sharedUserDefault();
     
@@ -84,15 +84,15 @@ void LMemory::saveBasic()
 //    val["pendingTransactions"] = val2;
     
     
-//    def->setStringForKey("lmemory_basic", SSTR(val));
+//    def->setStringForKey("Memory_basic", SSTR(val));
     def->flush();
 }
 
-bool LMemory::loadBasic()
+bool Memory::loadBasic()
 {
     CCUserDefault * def = CCUserDefault::sharedUserDefault();
     
-    std::string saved = def->getStringForKey("lmemory_basic");
+    std::string saved = def->getStringForKey("Memory_basic");
     Json::Value val;
     Json::Reader reader;
     if (!reader.parse(saved, val))
@@ -135,7 +135,7 @@ bool LMemory::loadBasic()
     return true;
 }
 
-void LMemory::save()
+void Memory::save()
 {
     CCUserDefault * def = CCUserDefault::sharedUserDefault();
     
@@ -197,16 +197,16 @@ void LMemory::save()
 //    //save guild chat messages
 //    saveGuildChatMessages(val);
 //
-//    std::string strKey = SSTR("lmemory_" << _lastServerId);
+//    std::string strKey = SSTR("Memory_" << _lastServerId);
 //    def->setStringForKey(strKey.c_str(), SSTR(val));
     def->flush();
 }
 
-bool LMemory::load()
+bool Memory::load()
 {
     CCUserDefault * def = CCUserDefault::sharedUserDefault();
     
-//    std::string saved = def->getStringForKey(SSTR("lmemory_" << _lastServerId).c_str());
+//    std::string saved = def->getStringForKey(SSTR("Memory_" << _lastServerId).c_str());
 //    Json::Value val;
 //    Json::Reader reader;
 //    if (!reader.parse(saved, val))
@@ -285,14 +285,14 @@ bool LMemory::load()
     return true;
 }
 
-bool LMemory::clear()
+bool Memory::clear()
 {
 //    CCUserDefault * def = CCUserDefault::sharedUserDefault();
-//    def->setStringForKey("lmemory_basic", "");
+//    def->setStringForKey("Memory_basic", "");
 //    
 //    for (uint32_t i = 1; i < 100; i++)
 //    {
-//        std::string key = SSTR("lmemory_" << i);
+//        std::string key = SSTR("Memory_" << i);
 //        if ("false" != def->getStringForKey(key.c_str(), "false"))
 //        {
 //            def->setStringForKey(key.c_str(), "");
@@ -304,7 +304,7 @@ bool LMemory::clear()
     return true;
 }
 
-std::string LMemory::getCurAPI()
+std::string Memory::getCurAPI()
 {
     ModelServer *info = getCurServer();
     if (info != nullptr)
@@ -316,7 +316,7 @@ std::string LMemory::getCurAPI()
     return "";
 }
 
-ModelServer * LMemory::getCurServer()
+ModelServer * Memory::getCurServer()
 {
 //    uint32_t serverId = 0;
 //    if (_lastServerId == 0)

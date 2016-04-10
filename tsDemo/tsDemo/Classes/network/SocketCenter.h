@@ -16,7 +16,8 @@ public:
     
 public:
     
-    SocketRequest * login(Json::Value&);
+    SocketRequest * userRegister(Json::Value&);
+    SocketRequest * userLogin(Json::Value&);
     
 protected:
     SocketRequest * createRequest(bool isSigned = true, bool isBackground = true);

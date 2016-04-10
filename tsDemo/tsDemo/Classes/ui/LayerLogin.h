@@ -44,6 +44,7 @@ public:
     void receiveLoginData();
     void sendPersonalData();
     void receivePersonalData();
+    void login();
     
     CCSprite *pSpriteDialogLogin;
 private:

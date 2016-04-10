@@ -1,6 +1,6 @@
 #include "SocketCenter.h"
 #include "SocketErrorHandler.h"
-//#include "LMemory.h"
+#include "Memory.h"
 
 #include <sstream>
 
@@ -76,7 +76,7 @@ void SocketCenter::postLogicRequestHandler(mlib::MEvent *evt)
 
 
 
-SocketRequest * SocketCenter::login(Json::Value& value)
+SocketRequest * SocketCenter::userRegister(Json::Value& value)
 {
     auto req = this->createRequest(false);
 
@@ -87,9 +87,34 @@ SocketRequest * SocketCenter::login(Json::Value& value)
         {
             Json::Value root = req->parsedResponse()->jsonValue();
             Json::Value data = root["ResRegMsg"];
-            int ret = data["ResState"].asInt();   //0: 成功  1:server error   2:已注册
-            CCLog("%d", ret);
+            
+            MEM_INFO->registerState(data["ResState"].asInt());   //0: 成功  1:server error   2:已注册
+        }
+    };
+    
+    req->addEventListener(SocketRequest::EVENT_FINISHED, handler);
+    
+    return req;
+}
 
+SocketRequest * SocketCenter::userLogin(Json::Value& value)
+{
+    auto req = this->createRequest(false);
+    
+    req->setParameter(value);
+    
+    auto handler = [req] (mlib::MEvent * evt) {
+        if (req->isSuccess())
+        {
+            Json::Value root = req->parsedResponse()->jsonValue();
+            Json::Value data = root["UserInfoMsg"];
+            
+            MEM_INFO->loginState(data["State"].asInt());
+            if(0 == MEM_INFO->loginState())
+            {
+                MEM_INFO->level(data["Level"].asInt());
+                MEM_INFO->money(data["Money"].asDouble());
+            }
         }
     };
     
