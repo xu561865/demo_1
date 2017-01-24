@@ -2,11 +2,7 @@
 
 #include "cocos2d.h"
 #include "SimpleAudioEngine.h"
-#include "LayerLogin.h"
-#include "SocketManager.h"
-#include "SocketCenter.h"
 
-#include "LayerLogin.h"
 
 USING_NS_CC;
 using namespace CocosDenshion;
@@ -35,10 +31,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     
     CCEGLView::sharedOpenGLView()->setDesignResolutionSize(480, 800, kResolutionShowAll);
     
-    SocketCenter::SharedInstance()->host("182.92.129.73");
-    SocketCenter::SharedInstance()->port(1111);
     
-    pDirector->runWithScene(LayerLogin::scene());
 
     return true;
 }
