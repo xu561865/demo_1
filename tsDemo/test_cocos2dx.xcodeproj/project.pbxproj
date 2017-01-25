@@ -15,6 +15,8 @@
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
+		F11BE6071E373E840070D582 /* TestScrollView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F11BE6061E373E840070D582 /* TestScrollView.cpp */; settings = {ASSET_TAGS = (); }; };
+		F11BE60A1E373FFF0070D582 /* NewScrollView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F11BE6091E373FFF0070D582 /* NewScrollView.cpp */; settings = {ASSET_TAGS = (); }; };
 		F1C5D9461C9D6470001CC4D0 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D8D81C9D6470001CC4D0 /* AppDelegate.cpp */; };
 		F1C5D97C1C9D6504001CC4D0 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D9761C9D6504001CC4D0 /* AppController.mm */; };
 		F1C5D97E1C9D6504001CC4D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D9781C9D6504001CC4D0 /* main.m */; };
@@ -646,6 +648,10 @@
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F11BE6051E373E460070D582 /* TestScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestScrollView.h; sourceTree = "<group>"; };
+		F11BE6061E373E840070D582 /* TestScrollView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestScrollView.cpp; sourceTree = "<group>"; };
+		F11BE6081E373FEE0070D582 /* NewScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewScrollView.h; path = NewScrollView/NewScrollView.h; sourceTree = "<group>"; };
+		F11BE6091E373FFF0070D582 /* NewScrollView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NewScrollView.cpp; path = NewScrollView/NewScrollView.cpp; sourceTree = "<group>"; };
 		F1C5D8D81C9D6470001CC4D0 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		F1C5D8D91C9D6470001CC4D0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1C5D9751C9D6504001CC4D0 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = tsDemo/proj.ios/AppController.h; sourceTree = "<group>"; };
@@ -1704,11 +1710,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F11BE6041E373DCC0070D582 /* NewScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F11BE6081E373FEE0070D582 /* NewScrollView.h */,
+				F11BE6091E373FFF0070D582 /* NewScrollView.cpp */,
+			);
+			name = NewScrollView;
+			sourceTree = "<group>";
+		};
 		F1C5D8D61C9D6470001CC4D0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F11BE6041E373DCC0070D582 /* NewScrollView */,
 				F1C5D8D81C9D6470001CC4D0 /* AppDelegate.cpp */,
 				F1C5D8D91C9D6470001CC4D0 /* AppDelegate.h */,
+				F11BE6051E373E460070D582 /* TestScrollView.h */,
+				F11BE6061E373E840070D582 /* TestScrollView.cpp */,
 			);
 			name = Classes;
 			path = tsDemo/Classes;
@@ -3977,6 +3995,7 @@
 				F1EC28191CA154CE00B14C9C /* ccShaders.cpp in Sources */,
 				F1EC195C1CA1547A00B14C9C /* LoadingBarReader.cpp in Sources */,
 				F1EC193F1CA1547A00B14C9C /* UILayoutParameter.cpp in Sources */,
+				F11BE60A1E373FFF0070D582 /* NewScrollView.cpp in Sources */,
 				F1EC190B1CA1547A00B14C9C /* CCLabelBMFontLoader.cpp in Sources */,
 				F1EC19231CA1547A00B14C9C /* CCTimeLine.cpp in Sources */,
 				F1EC19631CA1547A00B14C9C /* TriggerBase.cpp in Sources */,
@@ -4093,6 +4112,7 @@
 				F1EC24381CA154CC00B14C9C /* CCAtlasNode.cpp in Sources */,
 				F1EC19241CA1547A00B14C9C /* CCArmatureAnimation.cpp in Sources */,
 				F1EC192F1CA1547A00B14C9C /* CCColliderDetector.cpp in Sources */,
+				F11BE6071E373E840070D582 /* TestScrollView.cpp in Sources */,
 				F1EC28341CA154CE00B14C9C /* CCTextFieldTTF.cpp in Sources */,
 				F1EC197F1CA1547A00B14C9C /* LocalStorage.cpp in Sources */,
 				F1EC245F1CA154CC00B14C9C /* CCKeypadDelegate.cpp in Sources */,
