@@ -16,6 +16,7 @@ USING_NS_CC;
 class NewScrollView : public CCLayer
 {
 public:
+    static NewScrollView * create();
     NewScrollView();
     virtual ~NewScrollView();
     
@@ -23,9 +24,19 @@ public:
     virtual void ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent);
     virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
     virtual void ccTouchCancelled(CCTouch *pTouch, CCEvent *pEvent);
+    virtual void onEnterTransitionDidFinish();
     
+    void setContainer(CCNode * );
+    void setContentOffset(CCPoint offset);
+    virtual void registerWithTouchDispatcher();
 private:
-    
+    CCNode * m_pContainer;
+    CCArray* m_pTouches;
+    CCPoint m_tTouchPoint;
+    bool m_bDragging;
+    bool m_bTouchMoved;
+    CCPoint m_tScrollDistance;
+    float m_fTouchLength;
 };
 
 #endif /* NewScrollView_h */
