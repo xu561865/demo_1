@@ -463,7 +463,7 @@
 		F1C5E0821C9D71C7001CC4D0 /* zt_exp_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = F1C5DF141C9D71C7001CC4D0 /* zt_exp_bar.png */; };
 		F1C5E0831C9D71C7001CC4D0 /* zxjtx.png in Resources */ = {isa = PBXBuildFile; fileRef = F1C5DF151C9D71C7001CC4D0 /* zxjtx.png */; };
 		F1C5E0AD1C9D8F25001CC4D0 /* ccbi in Resources */ = {isa = PBXBuildFile; fileRef = F1C5E0AC1C9D8F25001CC4D0 /* ccbi */; };
-		F1D07A121CB68BAB00DAB60E /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D07A111CB68BAB00DAB60E /* Utils.cpp */; settings = {ASSET_TAGS = (); }; };
+		F1D07A121CB68BAB00DAB60E /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1D07A111CB68BAB00DAB60E /* Utils.cpp */; };
 		F1EAE01B1C969704006FFF04 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE01A1C969704006FFF04 /* WebKit.framework */; };
 		F1EAE2FB1C96BB7A006FFF04 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE2FA1C96BB7A006FFF04 /* libz.tbd */; };
 		F1EAE4BB1C96DBFC006FFF04 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE4BA1C96DBFC006FFF04 /* StoreKit.framework */; };
@@ -4280,9 +4280,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* tsDemo */ = {
+		1D6058900D05DD3D006BFB54 /* BlackWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "tsDemo" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "BlackWorld" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -4292,7 +4292,7 @@
 			);
 			dependencies = (
 			);
-			name = tsDemo;
+			name = BlackWorld;
 			productName = iphone;
 			productReference = 1D6058910D05DD3D006BFB54 /* 暗黑世界.app */;
 			productType = "com.apple.product-type.application";
@@ -4310,7 +4310,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "tsDemo" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BlackWorld" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -4324,7 +4324,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* tsDemo */,
+				1D6058900D05DD3D006BFB54 /* BlackWorld */,
 			);
 		};
 /* End PBXProject section */
@@ -5219,7 +5219,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "tsDemo" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "BlackWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -5228,7 +5228,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "tsDemo" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BlackWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
