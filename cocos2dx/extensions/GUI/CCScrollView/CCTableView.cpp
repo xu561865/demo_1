@@ -421,7 +421,8 @@ void CCTableView::_setIndexForCell(unsigned int index, CCTableViewCell *cell)
     cell->setIdx(index);
 }
 
-void CCTableView::_updateCellPositions() {
+void CCTableView::_updateCellPositions()
+{
     int cellsCount = m_pDataSource->numberOfCellsInTableView(this);
     m_vCellsPositions.resize(cellsCount + 1, 0.0);
 

@@ -1,16 +1,16 @@
 //
-//  NewScrollView.cpp
+//  NewScrollView_1.cpp
 //  test_cocos2dx
 //
 //  Created by xuyi on 24/01/2017.
 //
 //
 
-#include "NewScrollView.h"
+#include "NewScrollView_1.h"
 
-NewScrollView * NewScrollView::create(CCSize size, ccColor4B c4)
+NewScrollView_1 * NewScrollView_1::create(CCSize size, ccColor4B c4)
 {
-    NewScrollView * scroll = new NewScrollView();
+    NewScrollView_1 * scroll = new NewScrollView_1();
     if(scroll)
     {
         scroll->setContentSize(size);
@@ -25,22 +25,27 @@ NewScrollView * NewScrollView::create(CCSize size, ccColor4B c4)
     return scroll;
 }
 
-NewScrollView::NewScrollView()
+NewScrollView_1::NewScrollView_1()
 {
     m_pContainer = nullptr;
 }
 
-NewScrollView::~NewScrollView()
+NewScrollView_1::~NewScrollView_1()
 {
     
 }
 
-void NewScrollView::registerWithTouchDispatcher()
+void NewScrollView_1::registerWithTouchDispatcher()
 {
     CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, CCLayer::getTouchPriority(), false);
 }
 
-bool NewScrollView::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent)
+void NewScrollView_1::onEnterTransitionDidFinish()
+{
+    CCLayer::onEnterTransitionDidFinish();
+}
+
+bool NewScrollView_1::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent)
 {
     if (!m_pTouches->containsObject(pTouch))
     {
@@ -59,7 +64,7 @@ bool NewScrollView::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent)
     return true;
 }
 
-void NewScrollView::ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent)
+void NewScrollView_1::ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent)
 {
     if (m_pTouches->containsObject(pTouch))
     {
@@ -97,7 +102,7 @@ void NewScrollView::ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent)
     }
 }
 
-void NewScrollView::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
+void NewScrollView_1::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
 {
     if (m_pTouches->containsObject(pTouch))
     {
@@ -111,12 +116,12 @@ void NewScrollView::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
     }
 }
 
-void NewScrollView::ccTouchCancelled(CCTouch *pTouch, CCEvent *pEvent)
+void NewScrollView_1::ccTouchCancelled(CCTouch *pTouch, CCEvent *pEvent)
 {
     
 }
 
-void NewScrollView::setContainer(cocos2d::CCNode * pc)
+void NewScrollView_1::setContainer(cocos2d::CCNode * pc)
 {
     if(nullptr != pc)
     {
@@ -127,7 +132,91 @@ void NewScrollView::setContainer(cocos2d::CCNode * pc)
     }
 }
 
-void NewScrollView::setContentOffset(CCPoint offset)
+void NewScrollView_1::setContentOffset(CCPoint offset)
 {
     m_pContainer->setPosition(offset);
+}
+
+void NewScrollView_1::beforeDraw()
+{
+    CCRect frame = getViewRect();
+    
+    glEnable(GL_SCISSOR_TEST);
+    
+    CCEGLView::sharedOpenGLView()->setScissorInPoints(frame.origin.x, frame.origin.y, frame.size.width, frame.size.height);
+}
+
+void NewScrollView_1::afterDraw()
+{
+    glDisable(GL_SCISSOR_TEST);
+}
+
+void NewScrollView_1::visit()
+{
+    // quick return if not visible
+    if (!isVisible())
+    {
+        return;
+    }
+    
+    kmGLPushMatrix();
+    
+    if (m_pGrid && m_pGrid->isActive())
+    {
+        m_pGrid->beforeDraw();
+        this->transformAncestors();
+    }
+    
+    this->transform();
+    this->beforeDraw();
+    
+    if(m_pChildren)
+    {
+        ccArray *arrayData = m_pChildren->data;
+        unsigned int i=0;
+        
+        // draw children zOrder < 0
+        for( ; i < arrayData->num; i++ )
+        {
+            CCNode *child =  (CCNode*)arrayData->arr[i];
+            if ( child->getZOrder() < 0 )
+            {
+                child->visit();
+            }
+            else
+            {
+                break;
+            }
+        }
+        
+        // this draw
+        this->draw();
+        
+        // draw children zOrder >= 0
+        for( ; i < arrayData->num; i++ )
+        {
+            CCNode* child = (CCNode*)arrayData->arr[i];
+            child->visit();
+        }
+        
+    }
+    else
+    {
+        this->draw();
+    }
+    
+    this->afterDraw();
+    if ( m_pGrid && m_pGrid->isActive())
+    {
+        m_pGrid->afterDraw(this);
+    }
+    
+    kmGLPopMatrix();
+}
+
+CCRect NewScrollView_1::getViewRect()
+{
+    CCPoint screenPos = this->convertToWorldSpace(CCPointZero);
+    
+    return CCRectMake(screenPos.x, screenPos.y, getContentSize().width, getContentSize().height);
 }

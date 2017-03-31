@@ -19,11 +19,13 @@ public:
     TestScrollView();
     virtual ~TestScrollView();
     
-    static TestScrollView * create();
+    static TestScrollView * create(CCSize, ccColor4B);
     
     virtual void onEnter();
     virtual void onExit();
-    
+  
+private:
+    CCSize m_size;
 };
 
 #endif /* TestScrollView_h */

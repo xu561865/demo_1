@@ -15,15 +15,13 @@
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
-		F11BE6071E373E840070D582 /* TestScrollView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F11BE6061E373E840070D582 /* TestScrollView.cpp */; settings = {ASSET_TAGS = (); }; };
-		F11BE60A1E373FFF0070D582 /* NewScrollView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F11BE6091E373FFF0070D582 /* NewScrollView.cpp */; settings = {ASSET_TAGS = (); }; };
+		F11BE60A1E373FFF0070D582 /* NewScrollView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F11BE6091E373FFF0070D582 /* NewScrollView.cpp */; };
 		F1C5D9461C9D6470001CC4D0 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D8D81C9D6470001CC4D0 /* AppDelegate.cpp */; };
 		F1C5D97C1C9D6504001CC4D0 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D9761C9D6504001CC4D0 /* AppController.mm */; };
 		F1C5D97E1C9D6504001CC4D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D9781C9D6504001CC4D0 /* main.m */; };
 		F1C5D97F1C9D6504001CC4D0 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D97B1C9D6504001CC4D0 /* RootViewController.mm */; };
 		F1C5D9811C9D6520001CC4D0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1C5D9801C9D6520001CC4D0 /* Default-568h@2x.png */; };
 		F1C5DC621C9D65AB001CC4D0 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C5DC611C9D65AB001CC4D0 /* libcurl.a */; };
-		F1C5DC641C9D666C001CC4D0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1C5DC631C9D666C001CC4D0 /* Info.plist */; };
 		F1C5DD771C9D6AE6001CC4D0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE4B81C96DBCC006FFF04 /* MediaPlayer.framework */; };
 		F1C5DF161C9D71C7001CC4D0 /* arena_btn_bat_1.png in Resources */ = {isa = PBXBuildFile; fileRef = F1C5DDA61C9D71C6001CC4D0 /* arena_btn_bat_1.png */; };
 		F1C5DF171C9D71C7001CC4D0 /* arena_btn_bat_2.png in Resources */ = {isa = PBXBuildFile; fileRef = F1C5DDA71C9D71C6001CC4D0 /* arena_btn_bat_2.png */; };
@@ -355,6 +353,9 @@
 		F1C5E0821C9D71C7001CC4D0 /* zt_exp_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = F1C5DF141C9D71C7001CC4D0 /* zt_exp_bar.png */; };
 		F1C5E0831C9D71C7001CC4D0 /* zxjtx.png in Resources */ = {isa = PBXBuildFile; fileRef = F1C5DF151C9D71C7001CC4D0 /* zxjtx.png */; };
 		F1C5E0AD1C9D8F25001CC4D0 /* ccbi in Resources */ = {isa = PBXBuildFile; fileRef = F1C5E0AC1C9D8F25001CC4D0 /* ccbi */; };
+		F1C613521E8CF7F90047BFF9 /* NewScrollView_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C613501E8CF7F90047BFF9 /* NewScrollView_1.cpp */; };
+		F1C613571E8E2F7F0047BFF9 /* LayerColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C613561E8E2F7F0047BFF9 /* LayerColor.cpp */; };
+		F1C6135A1E8E33650047BFF9 /* TestScrollView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C613581E8E33650047BFF9 /* TestScrollView.cpp */; };
 		F1EAE01B1C969704006FFF04 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE01A1C969704006FFF04 /* WebKit.framework */; };
 		F1EAE2FB1C96BB7A006FFF04 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE2FA1C96BB7A006FFF04 /* libz.tbd */; };
 		F1EAE4BB1C96DBFC006FFF04 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE4BA1C96DBFC006FFF04 /* StoreKit.framework */; };
@@ -648,8 +649,6 @@
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		F11BE6051E373E460070D582 /* TestScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestScrollView.h; sourceTree = "<group>"; };
-		F11BE6061E373E840070D582 /* TestScrollView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestScrollView.cpp; sourceTree = "<group>"; };
 		F11BE6081E373FEE0070D582 /* NewScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewScrollView.h; path = NewScrollView/NewScrollView.h; sourceTree = "<group>"; };
 		F11BE6091E373FFF0070D582 /* NewScrollView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NewScrollView.cpp; path = NewScrollView/NewScrollView.cpp; sourceTree = "<group>"; };
 		F1C5D8D81C9D6470001CC4D0 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
@@ -993,6 +992,12 @@
 		F1C5DF141C9D71C7001CC4D0 /* zt_exp_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zt_exp_bar.png; sourceTree = "<group>"; };
 		F1C5DF151C9D71C7001CC4D0 /* zxjtx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zxjtx.png; sourceTree = "<group>"; };
 		F1C5E0AC1C9D8F25001CC4D0 /* ccbi */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ccbi; sourceTree = "<group>"; };
+		F1C613501E8CF7F90047BFF9 /* NewScrollView_1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NewScrollView_1.cpp; path = NewScrollView/NewScrollView_1.cpp; sourceTree = "<group>"; };
+		F1C613511E8CF7F90047BFF9 /* NewScrollView_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewScrollView_1.h; path = NewScrollView/NewScrollView_1.h; sourceTree = "<group>"; };
+		F1C613551E8E2F690047BFF9 /* LayerColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LayerColor.h; path = NewScrollView/LayerColor.h; sourceTree = "<group>"; };
+		F1C613561E8E2F7F0047BFF9 /* LayerColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LayerColor.cpp; path = NewScrollView/LayerColor.cpp; sourceTree = "<group>"; };
+		F1C613581E8E33650047BFF9 /* TestScrollView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestScrollView.cpp; path = NewScrollView/TestScrollView.cpp; sourceTree = "<group>"; };
+		F1C613591E8E33650047BFF9 /* TestScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestScrollView.h; path = NewScrollView/TestScrollView.h; sourceTree = "<group>"; };
 		F1EAE01A1C969704006FFF04 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F1EAE2FA1C96BB7A006FFF04 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		F1EAE4B81C96DBCC006FFF04 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -1713,8 +1718,14 @@
 		F11BE6041E373DCC0070D582 /* NewScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				F1C613581E8E33650047BFF9 /* TestScrollView.cpp */,
+				F1C613591E8E33650047BFF9 /* TestScrollView.h */,
+				F1C613501E8CF7F90047BFF9 /* NewScrollView_1.cpp */,
+				F1C613511E8CF7F90047BFF9 /* NewScrollView_1.h */,
 				F11BE6081E373FEE0070D582 /* NewScrollView.h */,
 				F11BE6091E373FFF0070D582 /* NewScrollView.cpp */,
+				F1C613551E8E2F690047BFF9 /* LayerColor.h */,
+				F1C613561E8E2F7F0047BFF9 /* LayerColor.cpp */,
 			);
 			name = NewScrollView;
 			sourceTree = "<group>";
@@ -1725,8 +1736,6 @@
 				F11BE6041E373DCC0070D582 /* NewScrollView */,
 				F1C5D8D81C9D6470001CC4D0 /* AppDelegate.cpp */,
 				F1C5D8D91C9D6470001CC4D0 /* AppDelegate.h */,
-				F11BE6051E373E460070D582 /* TestScrollView.h */,
-				F11BE6061E373E840070D582 /* TestScrollView.cpp */,
 			);
 			name = Classes;
 			path = tsDemo/Classes;
@@ -3571,7 +3580,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0820;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = TW4F5EWQ36;
@@ -3617,7 +3626,6 @@
 				F1C5E00A1C9D71C7001CC4D0 /* qs_6016.png in Resources */,
 				F1C5DF481C9D71C7001CC4D0 /* common_pop_text_bkg.png in Resources */,
 				F1C5E0511C9D71C7001CC4D0 /* wjqf.xml in Resources */,
-				F1C5DC641C9D666C001CC4D0 /* Info.plist in Resources */,
 				F1C5E0261C9D71C7001CC4D0 /* sfzstx.plist in Resources */,
 				F1C5E03D1C9D71C7001CC4D0 /* success.plist in Resources */,
 				F1C5E00F1C9D71C7001CC4D0 /* qs_6037.png in Resources */,
@@ -3952,6 +3960,7 @@
 				F1EC196E1CA1547A00B14C9C /* CCControlSwitch.cpp in Sources */,
 				F1ECF7221CA1537900B14C9C /* SimpleAudioEngine.mm in Sources */,
 				F1EC196B1CA1547A00B14C9C /* CCControlSaturationBrightnessPicker.cpp in Sources */,
+				F1C613571E8E2F7F0047BFF9 /* LayerColor.cpp in Sources */,
 				F1EC24671CA154CC00B14C9C /* CCTransitionPageTurn.cpp in Sources */,
 				F1EC24D91CA154CC00B14C9C /* platform.cpp in Sources */,
 				F1EC24601CA154CC00B14C9C /* CCKeypadDispatcher.cpp in Sources */,
@@ -3995,6 +4004,7 @@
 				F1EC28191CA154CE00B14C9C /* ccShaders.cpp in Sources */,
 				F1EC195C1CA1547A00B14C9C /* LoadingBarReader.cpp in Sources */,
 				F1EC193F1CA1547A00B14C9C /* UILayoutParameter.cpp in Sources */,
+				F1C613521E8CF7F90047BFF9 /* NewScrollView_1.cpp in Sources */,
 				F11BE60A1E373FFF0070D582 /* NewScrollView.cpp in Sources */,
 				F1EC190B1CA1547A00B14C9C /* CCLabelBMFontLoader.cpp in Sources */,
 				F1EC19231CA1547A00B14C9C /* CCTimeLine.cpp in Sources */,
@@ -4052,6 +4062,7 @@
 				F1EC190C1CA1547A00B14C9C /* CCLabelTTFLoader.cpp in Sources */,
 				F1EC28281CA154CE00B14C9C /* CCComponentContainer.cpp in Sources */,
 				F1EC282A1CA154CE00B14C9C /* TGAlib.cpp in Sources */,
+				F1C6135A1E8E33650047BFF9 /* TestScrollView.cpp in Sources */,
 				F1C5D9461C9D6470001CC4D0 /* AppDelegate.cpp in Sources */,
 				F1EC19141CA1547A00B14C9C /* CCNodeLoaderLibrary.cpp in Sources */,
 				F1EC24B81CA154CC00B14C9C /* AccelerometerSimulation.m in Sources */,
@@ -4112,7 +4123,6 @@
 				F1EC24381CA154CC00B14C9C /* CCAtlasNode.cpp in Sources */,
 				F1EC19241CA1547A00B14C9C /* CCArmatureAnimation.cpp in Sources */,
 				F1EC192F1CA1547A00B14C9C /* CCColliderDetector.cpp in Sources */,
-				F11BE6071E373E840070D582 /* TestScrollView.cpp in Sources */,
 				F1EC28341CA154CE00B14C9C /* CCTextFieldTTF.cpp in Sources */,
 				F1EC197F1CA1547A00B14C9C /* LocalStorage.cpp in Sources */,
 				F1EC245F1CA154CC00B14C9C /* CCKeypadDelegate.cpp in Sources */,
@@ -4271,7 +4281,7 @@
 					"\"$(SRCROOT)/../cocos2dx/cocos2dx/platform/ios/Simulation\"",
 				);
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../cocos2dx/cocos2dx/platform/third_party/ios/libraries\"",
 					"\"$(SRCROOT)/../cocos2dx/external/libwebsockets/ios/lib\"",
@@ -4279,6 +4289,7 @@
 					"$(PROJECT_DIR)/tsDemo/proj.ios",
 				);
 				OTHER_CFLAGS = "-O2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test-cocos2dx.app";
 				PRODUCT_NAME = test_cocos2dx;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -4327,13 +4338,14 @@
 					"\"$(SRCROOT)/../cocos2dx/cocos2dx/platform/ios/Simulation\"",
 				);
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../cocos2dx/cocos2dx/platform/third_party/ios/libraries\"",
 					"\"$(SRCROOT)/../cocos2dx/external/libwebsockets/ios/lib\"",
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)/tsDemo/proj.ios",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test-cocos2dx.app";
 				PRODUCT_NAME = test_cocos2dx;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -4348,12 +4360,29 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "armv6 armv7";
 			};
@@ -4362,12 +4391,27 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "armv6 armv7";

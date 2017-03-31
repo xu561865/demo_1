@@ -9,6 +9,9 @@ USING_NS_CC;
 #define RESOLUTION_SIZE_X 640
 #define RESOLUTION_SIZE_Y 960
 
+#define TEST_VIEW_SIZE_X 600
+#define TEST_VIEW_SIZE_Y 900
+
 AppDelegate::AppDelegate()
 {
 
@@ -34,7 +37,9 @@ bool AppDelegate::applicationDidFinishLaunching()
     CCEGLView::sharedOpenGLView()->setDesignResolutionSize(RESOLUTION_SIZE_X, RESOLUTION_SIZE_Y, kResolutionShowAll);
     
     CCScene * pScene = CCScene::create();
-    TestScrollView * pTestScrollView = TestScrollView::create();
+    TestScrollView * pTestScrollView = TestScrollView::create(CCSizeMake(TEST_VIEW_SIZE_X, TEST_VIEW_SIZE_Y), ccc4(255, 255, 255, 255));
+    pTestScrollView->ignoreAnchorPointForPosition(false);
+    pTestScrollView->setAnchorPoint(ccp(0.5, 0.5));
     pTestScrollView->setPosition(ccp(RESOLUTION_SIZE_X / 2, RESOLUTION_SIZE_Y / 2));
     pScene->addChild(pTestScrollView);
     
