@@ -45,10 +45,10 @@ typedef struct {
     GtkWidget       *timer_label;
 
     gint             num_page;
-} PgdAnnotsDemo;
+} PgdAnnoDemo;
 
 static void
-pgd_annots_free (PgdAnnotsDemo *demo)
+pgd_annots_free (PgdAnnoDemo *demo)
 {
     if (!demo)
         return;
@@ -553,7 +553,7 @@ pgd_annot_view_set_annot (GtkWidget    *annot_view,
 
 static void
 pgd_annots_get_annots (GtkWidget     *button,
-                       PgdAnnotsDemo *demo)
+                       PgdAnnoDemo *demo)
 {
     GList       *mapping, *l;
     gint         n_fields;
@@ -634,14 +634,14 @@ pgd_annots_get_annots (GtkWidget     *button,
 
 static void
 pgd_annots_page_selector_value_changed (GtkSpinButton *spinbutton,
-                                        PgdAnnotsDemo *demo)
+                                        PgdAnnoDemo *demo)
 {
     demo->num_page = (gint) gtk_spin_button_get_value (spinbutton) - 1;
 }
 
 static void
 pgd_annots_selection_changed (GtkTreeSelection *treeselection,
-                              PgdAnnotsDemo    *demo)
+                              PgdAnnoDemo    *demo)
 {
     GtkTreeModel *model;
     GtkTreeIter   iter;
@@ -659,7 +659,7 @@ pgd_annots_selection_changed (GtkTreeSelection *treeselection,
 
 static void
 pgd_annots_add_annot (GtkWidget     *button,
-		      PgdAnnotsDemo *demo)
+		      PgdAnnoDemo *demo)
 {
     GtkWidget   *hbox, *vbox;
     GtkWidget   *type_selector;
@@ -767,7 +767,7 @@ pgd_annots_add_annot (GtkWidget     *button,
 GtkWidget *
 pgd_annots_create_widget (PopplerDocument *document)
 {
-    PgdAnnotsDemo    *demo;
+    PgdAnnoDemo    *demo;
     GtkWidget        *label;
     GtkWidget        *vbox;
     GtkWidget        *hbox, *page_selector;
@@ -779,7 +779,7 @@ pgd_annots_create_widget (PopplerDocument *document)
     gchar            *str;
     gint              n_pages;
 
-    demo = g_new0 (PgdAnnotsDemo, 1);
+    demo = g_new0 (PgdAnnoDemo, 1);
 
     demo->doc = g_object_ref (document);
 

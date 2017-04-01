@@ -15,6 +15,7 @@
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
+		F1770F161E8F9F6300467645 /* NewScrollView_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1770F141E8F9F6300467645 /* NewScrollView_3.cpp */; };
 		F194A4291E8E4F6F0048EA19 /* LayerColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F194A4211E8E4F6F0048EA19 /* LayerColor.cpp */; };
 		F194A42A1E8E4F6F0048EA19 /* NewScrollView_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F194A4231E8E4F6F0048EA19 /* NewScrollView_1.cpp */; };
 		F194A42B1E8E4F6F0048EA19 /* NewScrollView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F194A4251E8E4F6F0048EA19 /* NewScrollView.cpp */; };
@@ -355,6 +356,7 @@
 		F194A6CE1E8E500E0048EA19 /* zt_bkg.png in Resources */ = {isa = PBXBuildFile; fileRef = F194A5841E8E500E0048EA19 /* zt_bkg.png */; };
 		F194A6CF1E8E500E0048EA19 /* zt_exp_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = F194A5851E8E500E0048EA19 /* zt_exp_bar.png */; };
 		F194A6D01E8E500E0048EA19 /* zxjtx.png in Resources */ = {isa = PBXBuildFile; fileRef = F194A5861E8E500E0048EA19 /* zxjtx.png */; };
+		F194A6D31E8E510B0048EA19 /* NewScrollView_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F194A6D11E8E510B0048EA19 /* NewScrollView_2.cpp */; };
 		F1C5DC621C9D65AB001CC4D0 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C5DC611C9D65AB001CC4D0 /* libcurl.a */; };
 		F1C5DD771C9D6AE6001CC4D0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE4B81C96DBCC006FFF04 /* MediaPlayer.framework */; };
 		F1EAE01B1C969704006FFF04 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE01A1C969704006FFF04 /* WebKit.framework */; };
@@ -650,6 +652,8 @@
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F1770F141E8F9F6300467645 /* NewScrollView_3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NewScrollView_3.cpp; path = NewScrollView/NewScrollView_3.cpp; sourceTree = "<group>"; };
+		F1770F151E8F9F6300467645 /* NewScrollView_3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewScrollView_3.h; path = NewScrollView/NewScrollView_3.h; sourceTree = "<group>"; };
 		F194A4211E8E4F6F0048EA19 /* LayerColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LayerColor.cpp; path = Demo/Classes/NewScrollView/LayerColor.cpp; sourceTree = SOURCE_ROOT; };
 		F194A4221E8E4F6F0048EA19 /* LayerColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayerColor.h; path = Demo/Classes/NewScrollView/LayerColor.h; sourceTree = SOURCE_ROOT; };
 		F194A4231E8E4F6F0048EA19 /* NewScrollView_1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NewScrollView_1.cpp; path = Demo/Classes/NewScrollView/NewScrollView_1.cpp; sourceTree = SOURCE_ROOT; };
@@ -998,7 +1002,9 @@
 		F194A5841E8E500E0048EA19 /* zt_bkg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zt_bkg.png; path = Demo/Resources/zt_bkg.png; sourceTree = SOURCE_ROOT; };
 		F194A5851E8E500E0048EA19 /* zt_exp_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zt_exp_bar.png; path = Demo/Resources/zt_exp_bar.png; sourceTree = SOURCE_ROOT; };
 		F194A5861E8E500E0048EA19 /* zxjtx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zxjtx.png; path = Demo/Resources/zxjtx.png; sourceTree = SOURCE_ROOT; };
-		F1C5DC611C9D65AB001CC4D0 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = tsDemo/proj.ios/libcurl.a; sourceTree = "<group>"; };
+		F194A6D11E8E510B0048EA19 /* NewScrollView_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NewScrollView_2.cpp; path = Demo/Classes/NewScrollView/NewScrollView_2.cpp; sourceTree = SOURCE_ROOT; };
+		F194A6D21E8E510B0048EA19 /* NewScrollView_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewScrollView_2.h; path = Demo/Classes/NewScrollView/NewScrollView_2.h; sourceTree = SOURCE_ROOT; };
+		F1C5DC611C9D65AB001CC4D0 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = Demo/proj.ios/libcurl.a; sourceTree = "<group>"; };
 		F1C5DC631C9D666C001CC4D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1C5DC651C9D66A1001CC4D0 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		F1EAE01A1C969704006FFF04 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -1725,6 +1731,10 @@
 				F194A4221E8E4F6F0048EA19 /* LayerColor.h */,
 				F194A4231E8E4F6F0048EA19 /* NewScrollView_1.cpp */,
 				F194A4241E8E4F6F0048EA19 /* NewScrollView_1.h */,
+				F194A6D11E8E510B0048EA19 /* NewScrollView_2.cpp */,
+				F194A6D21E8E510B0048EA19 /* NewScrollView_2.h */,
+				F1770F141E8F9F6300467645 /* NewScrollView_3.cpp */,
+				F1770F151E8F9F6300467645 /* NewScrollView_3.h */,
 				F194A4251E8E4F6F0048EA19 /* NewScrollView.cpp */,
 				F194A4261E8E4F6F0048EA19 /* NewScrollView.h */,
 				F194A4271E8E4F6F0048EA19 /* TestScrollView.cpp */,
@@ -1741,7 +1751,7 @@
 				F11BE6041E373DCC0070D582 /* NewScrollView */,
 			);
 			name = Classes;
-			path = tsDemo/Classes;
+			path = Demo/Classes;
 			sourceTree = "<group>";
 		};
 		F1C5D9741C9D64F2001CC4D0 /* ios */ = {
@@ -2095,7 +2105,7 @@
 				F194A5861E8E500E0048EA19 /* zxjtx.png */,
 			);
 			name = Resources;
-			path = tsDemo/Resources;
+			path = Demo/Resources;
 			sourceTree = "<group>";
 		};
 		F1EAE2FC1C96BC92006FFF04 /* libs */ = {
@@ -4033,6 +4043,7 @@
 				F1EC24691CA154CC00B14C9C /* CCMenu.cpp in Sources */,
 				F1ECF71F1CA1537900B14C9C /* CDAudioManager.m in Sources */,
 				F1EC19581CA1547A00B14C9C /* LabelBMFontReader.cpp in Sources */,
+				F1770F161E8F9F6300467645 /* NewScrollView_3.cpp in Sources */,
 				F1EC281D1CA154CE00B14C9C /* CCSpriteBatchNode.cpp in Sources */,
 				F1EC24B01CA154CC00B14C9C /* CCDirectorCaller.mm in Sources */,
 				F1EC19081CA1547A00B14C9C /* CCControlButtonLoader.cpp in Sources */,
@@ -4201,6 +4212,7 @@
 				F194A42B1E8E4F6F0048EA19 /* NewScrollView.cpp in Sources */,
 				F194A4291E8E4F6F0048EA19 /* LayerColor.cpp in Sources */,
 				F1EC19171CA1547A00B14C9C /* CCScrollViewLoader.cpp in Sources */,
+				F194A6D31E8E510B0048EA19 /* NewScrollView_2.cpp in Sources */,
 				F1EC19551CA1547A00B14C9C /* CheckBoxReader.cpp in Sources */,
 				F1EC19411CA1547A00B14C9C /* UIHelper.cpp in Sources */,
 				F1EC24B71CA154CC00B14C9C /* EAGLView.mm in Sources */,
@@ -4292,7 +4304,7 @@
 					"\"$(SRCROOT)/../cocos2dx/cocos2dx/platform/third_party/ios/libraries\"",
 					"\"$(SRCROOT)/../cocos2dx/external/libwebsockets/ios/lib\"",
 					"$(SRCROOT)",
-					"$(PROJECT_DIR)/tsDemo/proj.ios",
+					"$(PROJECT_DIR)/Demo/proj.ios",
 				);
 				OTHER_CFLAGS = "-O2";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test-cocos2dx.app";
@@ -4349,7 +4361,7 @@
 					"\"$(SRCROOT)/../cocos2dx/cocos2dx/platform/third_party/ios/libraries\"",
 					"\"$(SRCROOT)/../cocos2dx/external/libwebsockets/ios/lib\"",
 					"$(SRCROOT)",
-					"$(PROJECT_DIR)/tsDemo/proj.ios",
+					"$(PROJECT_DIR)/Demo/proj.ios",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test-cocos2dx.app";
 				PRODUCT_NAME = test_cocos2dx;

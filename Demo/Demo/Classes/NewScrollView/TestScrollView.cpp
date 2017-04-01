@@ -10,13 +10,17 @@
 #include "LayerColor.h"
 #include "NewScrollView.h"
 #include "NewScrollView_1.h"
+#include "NewScrollView_2.h"
+#include "NewScrollView_3.h"
 
 
 #define TEST_SCROLL_VIEW_SIZE_X 400
 #define TEST_SCROLL_VIEW_SIZE_Y 600
 
 #define CONTAINER_SIZE_X (TEST_SCROLL_VIEW_SIZE_X - 100)
-#define CONTAINER_SIZE_Y (TEST_SCROLL_VIEW_SIZE_X - 100)
+#define CONTAINER_SIZE_Y (TEST_SCROLL_VIEW_SIZE_Y + 100)
+
+
 
 TestScrollView * TestScrollView::create(CCSize size, ccColor4B c4)
 {
@@ -48,6 +52,17 @@ void TestScrollView::onEnter()
     CCLayerColor * scroll_container = CCLayerColor::create();
     scroll_container->initWithColor(ccc4(25, 255, 25, 255), CONTAINER_SIZE_X, CONTAINER_SIZE_Y);
     
+//#define REAL_SCROLL
+#ifdef REAL_SCROLL
+    extension::CCScrollView * scroll = extension::CCScrollView::create(CCSizeMake(TEST_SCROLL_VIEW_SIZE_X, TEST_SCROLL_VIEW_SIZE_Y), scroll_container);
+    scroll->setDirection(extension::kCCScrollViewDirectionVertical);
+//    scroll->setBounceable(false);
+//    scroll->setContainer(scroll_container);
+    scroll->ignoreAnchorPointForPosition(false);
+    scroll->setAnchorPoint(ccp(0.5, 0.5));
+    scroll->setPosition(ccp(m_size.width / 2, m_size.height / 2));
+    this->addChild(scroll);
+#endif
     
 //#define LAYER
 #ifdef LAYER
@@ -68,8 +83,7 @@ void TestScrollView::onEnter()
     this->addChild(scroll);
 #endif
     
-    // set NewScrollView_1
-#define NEW_1
+//#define NEW_1
 #ifdef NEW_1
     NewScrollView_1 * scroll = NewScrollView_1::create(CCSizeMake(TEST_SCROLL_VIEW_SIZE_X, TEST_SCROLL_VIEW_SIZE_Y), ccc4(100, 0, 0, 255));
     scroll->setContainer(scroll_container);
@@ -79,6 +93,30 @@ void TestScrollView::onEnter()
     this->addChild(scroll);
 #endif
     
+//#define NEW_2
+#ifdef NEW_2
+    NewScrollView_2 * scroll = NewScrollView_2::create(CCSizeMake(TEST_SCROLL_VIEW_SIZE_X, TEST_SCROLL_VIEW_SIZE_Y), ccc4(100, 0, 0, 255));
+    scroll->setDirection(ScrollViewDirection2::kScrollViewDirectionVertical);
+    scroll->setContainer(scroll_container);
+    scroll->ignoreAnchorPointForPosition(false);
+    scroll->setAnchorPoint(ccp(0.5, 0.5));
+    scroll->setPosition(ccp(m_size.width / 2, m_size.height / 2));
+    this->addChild(scroll);
+#endif
+    
+#define NEW_3
+#ifdef NEW_3
+    NewScrollView_3 * scroll = NewScrollView_3::create(CCSizeMake(TEST_SCROLL_VIEW_SIZE_X, TEST_SCROLL_VIEW_SIZE_Y), ccc4(100, 0, 0, 255));
+    scroll->setDirection(ScrollViewDirection3::kScrollViewDirectionVertical);
+    scroll->setContainer(scroll_container);
+    scroll->ignoreAnchorPointForPosition(false);
+    scroll->setAnchorPoint(ccp(0.5, 0.5));
+    scroll->setPosition(ccp(m_size.width / 2, m_size.height / 2));
+    this->addChild(scroll);
+    
+    NewScrollView_3DelegateNew * delegate = new NewScrollView_3DelegateNew();
+    scroll->setDelegate(delegate);
+#endif
     
     CCLayerColor::onEnter();
 }
@@ -87,3 +125,10 @@ void TestScrollView::onExit()
 {
     CCLayerColor::onExit();
 }
+
+
+void NewScrollView_3DelegateNew::scrollViewDidScroll(NewScrollView_3 * view)
+{
+    CCLOG("pos: %f, %f", view->getContainerPos().x, view->getContainerPos().y);
+}
+

@@ -27,7 +27,7 @@
 	<key>onlyPublishCCBs</key>
 	<true/>
 	<key>publishDirectory</key>
-	<string>../tsDemo/tsDemo/Resources/ccbi</string>
+	<string>../Demo/Demo/Resources/ccbi</string>
 	<key>publishDirectoryAndroid</key>
 	<string>Published-Android</string>
 	<key>publishDirectoryHTML5</key>
@@ -74,7 +74,7 @@
 		</dict>
 		<dict>
 			<key>path</key>
-			<string>../tsDemo/tsDemo/Resources</string>
+			<string>../Demo/Demo/Resources</string>
 		</dict>
 	</array>
 </dict>

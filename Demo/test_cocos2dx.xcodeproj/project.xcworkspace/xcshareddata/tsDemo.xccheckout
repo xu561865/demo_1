@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>29870EF3-9D1C-4D6A-8D51-1A6EFB4A5456</string>
 	<key>IDESourceControlProjectName</key>
-	<string>tsDemo</string>
+	<string>Demo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>F57A97A6B6483EBC0E7AF18B912C4F404E49A5B7</key>
 		<string>https://github.com/xu561865/demo_1.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>projects/tsDemo/proj.ios/tsDemo.xcodeproj</string>
+	<string>projects/Demo/proj.ios/Demo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>F57A97A6B6483EBC0E7AF18B912C4F404E49A5B7</key>

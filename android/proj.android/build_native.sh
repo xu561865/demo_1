@@ -1,4 +1,4 @@
-APPNAME="tsDemo"
+APPNAME="Demo"
 
 # options
 

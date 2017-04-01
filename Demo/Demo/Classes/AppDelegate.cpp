@@ -44,6 +44,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     pScene->addChild(pTestScrollView);
     
     
+    
     CCDirector::sharedDirector()->runWithScene(pScene);
 
     return true;

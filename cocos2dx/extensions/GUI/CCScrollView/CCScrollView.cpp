@@ -458,11 +458,9 @@ void CCScrollView::updateInset()
 	if (this->getContainer() != NULL)
 	{
 		m_fMaxInset = this->maxContainerOffset();
-		m_fMaxInset = ccp(m_fMaxInset.x + m_tViewSize.width * INSET_RATIO,
-			m_fMaxInset.y + m_tViewSize.height * INSET_RATIO);
+		m_fMaxInset = ccp(m_fMaxInset.x + m_tViewSize.width * INSET_RATIO, m_fMaxInset.y + m_tViewSize.height * INSET_RATIO);
 		m_fMinInset = this->minContainerOffset();
-		m_fMinInset = ccp(m_fMinInset.x - m_tViewSize.width * INSET_RATIO,
-			m_fMinInset.y - m_tViewSize.height * INSET_RATIO);
+		m_fMinInset = ccp(m_fMinInset.x - m_tViewSize.width * INSET_RATIO, m_fMinInset.y - m_tViewSize.height * INSET_RATIO);
 	}
 }
 

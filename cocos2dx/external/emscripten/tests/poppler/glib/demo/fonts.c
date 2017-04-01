@@ -33,10 +33,10 @@ typedef struct {
 	GtkWidget       *progress;
 
 	guint            idle_id;
-} PgdFontsDemo;
+} PgdFonDemo;
 
 static void
-pgd_fonts_free (PgdFontsDemo *demo)
+pgd_fonts_free (PgdFonDemo *demo)
 {
 	if (!demo)
 		return;
@@ -108,7 +108,7 @@ font_type_to_string (PopplerFontType type)
 }
 
 static void
-pgd_fonts_update_progress (PgdFontsDemo *demo,
+pgd_fonts_update_progress (PgdFonDemo *demo,
 			   gint          n_pages,
 			   gint          scanned)
 {
@@ -123,7 +123,7 @@ pgd_fonts_update_progress (PgdFontsDemo *demo,
 }
 
 static gboolean
-pgd_fonts_fill_model (PgdFontsDemo *demo)
+pgd_fonts_fill_model (PgdFonDemo *demo)
 {
 	GtkTreeModel     *model;
 	PopplerFontInfo  *font_info;
@@ -201,7 +201,7 @@ pgd_fonts_fill_model (PgdFontsDemo *demo)
 
 static void
 pgd_fonts_scan_button_clicked (GtkButton    *button,
-			       PgdFontsDemo *demo)
+			       PgdFonDemo *demo)
 {
 	demo->idle_id = g_idle_add ((GSourceFunc)pgd_fonts_fill_model, demo);
 }
@@ -209,7 +209,7 @@ pgd_fonts_scan_button_clicked (GtkButton    *button,
 GtkWidget *
 pgd_fonts_create_widget (PopplerDocument *document)
 {
-	PgdFontsDemo      *demo;
+	PgdFonDemo      *demo;
 	GtkWidget         *vbox;
 	GtkListStore      *model;
 	GtkCellRenderer   *renderer;
@@ -217,7 +217,7 @@ pgd_fonts_create_widget (PopplerDocument *document)
 	GtkWidget         *swindow;
 	GtkWidget         *hbox, *button;
 
-	demo = g_new0 (PgdFontsDemo, 1);
+	demo = g_new0 (PgdFonDemo, 1);
 
 	demo->doc = g_object_ref (document);
 	

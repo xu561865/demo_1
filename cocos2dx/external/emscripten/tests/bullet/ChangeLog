@@ -761,7 +761,7 @@ Added 3D Sweep and Prune Broadphase Collision Detection, Contribution from Simon
 2006 March 2
 	Minor change in license to ZLib/LibPNG
 	This makes it legally a bit easier to deploy on Playstation 3
-	Prepared for more generic constraints, added ConstraintsDemo
+	Prepared for more generic constraints, added ConstrainDemo
 
 2006 Feb 23
 	Rearranged files and dependencies to allow for easier standalone Collision Detection without Bullet Dynamics.
