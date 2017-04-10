@@ -15,7 +15,10 @@
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
+		F17598341E9B714D00ABF4D0 /* NewTableViewCell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F17598331E9B714D00ABF4D0 /* NewTableViewCell.cpp */; };
 		F1770F161E8F9F6300467645 /* NewScrollView_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1770F141E8F9F6300467645 /* NewScrollView_3.cpp */; };
+		F1770F1A1E94D1B300467645 /* NewTableView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1770F191E94D1B300467645 /* NewTableView.cpp */; };
+		F1770F1D1E94D33C00467645 /* TestTableView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1770F1C1E94D33C00467645 /* TestTableView.cpp */; };
 		F194A4291E8E4F6F0048EA19 /* LayerColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F194A4211E8E4F6F0048EA19 /* LayerColor.cpp */; };
 		F194A42A1E8E4F6F0048EA19 /* NewScrollView_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F194A4231E8E4F6F0048EA19 /* NewScrollView_1.cpp */; };
 		F194A42B1E8E4F6F0048EA19 /* NewScrollView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F194A4251E8E4F6F0048EA19 /* NewScrollView.cpp */; };
@@ -652,8 +655,14 @@
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F17598321E9B713E00ABF4D0 /* NewTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewTableViewCell.h; path = NewTableView/NewTableViewCell.h; sourceTree = "<group>"; };
+		F17598331E9B714D00ABF4D0 /* NewTableViewCell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NewTableViewCell.cpp; path = NewTableView/NewTableViewCell.cpp; sourceTree = "<group>"; };
 		F1770F141E8F9F6300467645 /* NewScrollView_3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NewScrollView_3.cpp; path = NewScrollView/NewScrollView_3.cpp; sourceTree = "<group>"; };
 		F1770F151E8F9F6300467645 /* NewScrollView_3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewScrollView_3.h; path = NewScrollView/NewScrollView_3.h; sourceTree = "<group>"; };
+		F1770F181E94D19400467645 /* NewTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewTableView.h; path = NewTableView/NewTableView.h; sourceTree = "<group>"; };
+		F1770F191E94D1B300467645 /* NewTableView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NewTableView.cpp; path = NewTableView/NewTableView.cpp; sourceTree = "<group>"; };
+		F1770F1B1E94D32900467645 /* TestTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TestTableView.h; path = NewTableView/TestTableView.h; sourceTree = "<group>"; };
+		F1770F1C1E94D33C00467645 /* TestTableView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestTableView.cpp; path = NewTableView/TestTableView.cpp; sourceTree = "<group>"; };
 		F194A4211E8E4F6F0048EA19 /* LayerColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LayerColor.cpp; path = Demo/Classes/NewScrollView/LayerColor.cpp; sourceTree = SOURCE_ROOT; };
 		F194A4221E8E4F6F0048EA19 /* LayerColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayerColor.h; path = Demo/Classes/NewScrollView/LayerColor.h; sourceTree = SOURCE_ROOT; };
 		F194A4231E8E4F6F0048EA19 /* NewScrollView_1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NewScrollView_1.cpp; path = Demo/Classes/NewScrollView/NewScrollView_1.cpp; sourceTree = SOURCE_ROOT; };
@@ -1743,12 +1752,26 @@
 			name = NewScrollView;
 			sourceTree = "<group>";
 		};
+		F1770F171E8FAFA400467645 /* NewTableView */ = {
+			isa = PBXGroup;
+			children = (
+				F1770F191E94D1B300467645 /* NewTableView.cpp */,
+				F1770F181E94D19400467645 /* NewTableView.h */,
+				F17598331E9B714D00ABF4D0 /* NewTableViewCell.cpp */,
+				F17598321E9B713E00ABF4D0 /* NewTableViewCell.h */,
+				F1770F1C1E94D33C00467645 /* TestTableView.cpp */,
+				F1770F1B1E94D32900467645 /* TestTableView.h */,
+			);
+			name = NewTableView;
+			sourceTree = "<group>";
+		};
 		F1C5D8D61C9D6470001CC4D0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				F194A42D1E8E4F800048EA19 /* AppDelegate.cpp */,
 				F194A42E1E8E4F800048EA19 /* AppDelegate.h */,
 				F11BE6041E373DCC0070D582 /* NewScrollView */,
+				F1770F171E8FAFA400467645 /* NewTableView */,
 			);
 			name = Classes;
 			path = Demo/Classes;
@@ -4010,6 +4033,7 @@
 				F1EC194B1CA1547A00B14C9C /* UILabelBMFont.cpp in Sources */,
 				F1EC19341CA1547A00B14C9C /* CCTransformHelp.cpp in Sources */,
 				F1EC19461CA1547A00B14C9C /* UIButton.cpp in Sources */,
+				F1770F1D1E94D33C00467645 /* TestTableView.cpp in Sources */,
 				F1EC19191CA1547A00B14C9C /* CCActionEaseEx.cpp in Sources */,
 				F1EC19701CA1547A00B14C9C /* CCInvocation.cpp in Sources */,
 				F1EC195D1CA1547A00B14C9C /* PageViewReader.cpp in Sources */,
@@ -4161,12 +4185,14 @@
 				F1EC19721CA1547A00B14C9C /* CCEditBox.cpp in Sources */,
 				F1EC19741CA1547A00B14C9C /* CCEditBoxImplIOS.mm in Sources */,
 				F1ECF7231CA1537900B14C9C /* SimpleAudioEngine_objc.m in Sources */,
+				F17598341E9B714D00ABF4D0 /* NewTableViewCell.cpp in Sources */,
 				F1EC19371CA1547A00B14C9C /* CCComAttribute.cpp in Sources */,
 				F1EC191F1CA1547A00B14C9C /* CCActionTimeline.cpp in Sources */,
 				F1EC242C1CA154CC00B14C9C /* CCActionCatmullRom.cpp in Sources */,
 				F1EC19351CA1547A00B14C9C /* CCTweenFunction.cpp in Sources */,
 				F1EC24B61CA154CC00B14C9C /* CCThread.mm in Sources */,
 				F1EC28261CA154CE00B14C9C /* CCVertex.cpp in Sources */,
+				F1770F1A1E94D1B300467645 /* NewTableView.cpp in Sources */,
 				F1EC24AD1CA154CC00B14C9C /* CCApplication.mm in Sources */,
 				F1EC24481CA154CC00B14C9C /* CCSet.cpp in Sources */,
 				F1EC283E1CA154CE00B14C9C /* CCTMXTiledMap.cpp in Sources */,

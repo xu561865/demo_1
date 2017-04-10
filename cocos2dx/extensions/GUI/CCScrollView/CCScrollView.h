@@ -188,7 +188,10 @@ public:
     virtual void setDirection(CCScrollViewDirection eDirection) { m_eDirection = eDirection; }
 
     CCScrollViewDelegate* getDelegate() { return m_pDelegate; }
-    void setDelegate(CCScrollViewDelegate* pDelegate) { m_pDelegate = pDelegate; }
+    void setDelegate(CCScrollViewDelegate* pDelegate)
+    {
+        m_pDelegate = pDelegate;
+    }
 
     /** override functions */
     // optional

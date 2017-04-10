@@ -3,6 +3,7 @@
 #include "cocos2d.h"
 #include "SimpleAudioEngine.h"
 #include "TestScrollView.h"
+#include "TestTableView.h"
 
 USING_NS_CC;
 
@@ -37,12 +38,24 @@ bool AppDelegate::applicationDidFinishLaunching()
     CCEGLView::sharedOpenGLView()->setDesignResolutionSize(RESOLUTION_SIZE_X, RESOLUTION_SIZE_Y, kResolutionShowAll);
     
     CCScene * pScene = CCScene::create();
+    
+//#define TEST_SCROLL_VIEW
+#ifdef TEST_SCROLL_VIEW
     TestScrollView * pTestScrollView = TestScrollView::create(CCSizeMake(TEST_VIEW_SIZE_X, TEST_VIEW_SIZE_Y), ccc4(255, 255, 255, 255));
     pTestScrollView->ignoreAnchorPointForPosition(false);
     pTestScrollView->setAnchorPoint(ccp(0.5, 0.5));
     pTestScrollView->setPosition(ccp(RESOLUTION_SIZE_X / 2, RESOLUTION_SIZE_Y / 2));
     pScene->addChild(pTestScrollView);
+#endif
     
+#define TEST_TABLE_VIEW
+#ifdef TEST_TABLE_VIEW
+    TestTableView * pTestTableView = TestTableView::create(CCSizeMake(TEST_VIEW_SIZE_X, TEST_VIEW_SIZE_Y), ccc4(255, 255, 255, 255));
+    pTestTableView->ignoreAnchorPointForPosition(false);
+    pTestTableView->setAnchorPoint(ccp(0.5, 0.5));
+    pTestTableView->setPosition(ccp(RESOLUTION_SIZE_X / 2, RESOLUTION_SIZE_Y / 2));
+    pScene->addChild(pTestTableView);
+#endif
     
     
     CCDirector::sharedDirector()->runWithScene(pScene);

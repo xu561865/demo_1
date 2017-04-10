@@ -34,16 +34,18 @@ class NewScrollView_3 : public CCLayerColor
 {
 public:
     static NewScrollView_3 * create(CCSize, ccColor4B);
+    
     NewScrollView_3();
     virtual ~NewScrollView_3();
     
-    virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
-    virtual void ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent);
-    virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
-    virtual void ccTouchCancelled(CCTouch *pTouch, CCEvent *pEvent);
-    virtual void onEnterTransitionDidFinish();
-    virtual void registerWithTouchDispatcher();
-    virtual void visit();
+    virtual bool init(CCSize size, ccColor4B c4);
+    virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent) override;
+    virtual void ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent) override;
+    virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent) override;
+    virtual void ccTouchCancelled(CCTouch *pTouch, CCEvent *pEvent) override;
+    virtual void onEnterTransitionDidFinish() override;
+    virtual void registerWithTouchDispatcher() override;
+    virtual void visit() override;
     
     void setContainer(CCNode * );
     void setContentOffset(CCPoint offset, bool animated = false);

@@ -1,0 +1,54 @@
+//
+//  TestTableView.h
+//  test_cocos2dx
+//
+//  Created by xuyi on 05/04/2017.
+//
+//
+
+#ifndef TestTableView_h
+#define TestTableView_h
+
+#include "cocos2d.h"
+#include "cocos-ext.h"
+#include "NewTableView.h"
+
+USING_NS_CC;
+
+
+class NewTableViewAll : public CCLayerColor, public NewTableViewDataSource, public NewTableViewDelegate
+{
+public:
+    static NewTableViewAll * create(ccColor4B c4);
+    virtual bool init(ccColor4B c4);
+    
+    virtual void scrollViewDidScroll(extension::CCScrollView* view) override {};
+    virtual void scrollViewDidZoom(extension::CCScrollView* view) override {}
+    
+    virtual void tableCellTouched(NewTableView* table, NewTableViewCell* cell) override;
+    
+    virtual CCSize tableCellSizeForIndex(NewTableView *table, unsigned int idx) override;
+    virtual CCSize cellSizeForTable(NewTableView *table) override {return CCSizeMake(0, 0);};
+    virtual NewTableViewCell* tableCellAtIndex(NewTableView *table, unsigned int idx) override;
+    virtual unsigned int numberOfCellsInTableView(NewTableView *table) override;
+};
+
+
+class TestTableView : public CCLayerColor
+{
+public:
+    TestTableView();
+    virtual ~TestTableView();
+    
+    static TestTableView * create(CCSize, ccColor4B);
+    
+    virtual void onEnter() override;
+    virtual void onExit() override;
+    
+private:
+    CCSize m_size;
+};
+
+
+
+#endif /* TestTableView_h */

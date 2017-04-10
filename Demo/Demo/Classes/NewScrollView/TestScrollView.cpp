@@ -54,7 +54,7 @@ void TestScrollView::onEnter()
     
 //#define REAL_SCROLL
 #ifdef REAL_SCROLL
-    extension::CCScrollView * scroll = extension::CCScrollView::create(CCSizeMake(TEST_SCROLL_VIEW_SIZE_X, TEST_SCROLL_VIEW_SIZE_Y), scroll_container);
+    extension::CCScrollView * scroll = extension::CCScrollView::create(CCSizeMake(640, 960), scroll_container);
     scroll->setDirection(extension::kCCScrollViewDirectionVertical);
 //    scroll->setBounceable(false);
 //    scroll->setContainer(scroll_container);

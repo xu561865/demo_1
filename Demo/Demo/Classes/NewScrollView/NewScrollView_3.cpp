@@ -15,18 +15,14 @@
 NewScrollView_3 * NewScrollView_3::create(CCSize size, ccColor4B c4)
 {
     NewScrollView_3 * scroll = new NewScrollView_3();
-    if(scroll)
+    if(scroll && scroll->init(size, c4))
     {
-        scroll->setContentSize(size);
-        scroll->initWithColor(c4, size.width, size.height);
-        scroll->setTouchEnabled(true);
-        
-        scroll->m_pTouches = new CCArray();
-        
         scroll->autorelease();
+        
+        return scroll;
     }
     
-    return scroll;
+    return nullptr;
 }
 
 NewScrollView_3::NewScrollView_3()
@@ -37,6 +33,22 @@ NewScrollView_3::NewScrollView_3()
 NewScrollView_3::~NewScrollView_3()
 {
     
+}
+
+bool NewScrollView_3::init(CCSize size, ccColor4B c4)
+{
+    if(CCLayerColor::init())
+    {
+        setContentSize(size);
+        initWithColor(c4, size.width, size.height);
+        setTouchEnabled(true);
+        
+        m_pTouches = new CCArray();
+        
+        return true;
+    }
+    
+    return false;
 }
 
 void NewScrollView_3::registerWithTouchDispatcher()
