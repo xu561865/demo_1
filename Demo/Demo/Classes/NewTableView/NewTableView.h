@@ -37,8 +37,6 @@ public:
     virtual unsigned int numberOfCellsInTableView(NewTableView *table) = 0;
 };
 
-
-
 class NewTableView : public extension::CCScrollView, public extension::CCScrollViewDelegate
 {
 public:

@@ -16,6 +16,7 @@
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		F17598341E9B714D00ABF4D0 /* NewTableViewCell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F17598331E9B714D00ABF4D0 /* NewTableViewCell.cpp */; };
+		F17598371E9B8B1A00ABF4D0 /* NewTableView_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F17598351E9B8B1A00ABF4D0 /* NewTableView_1.cpp */; };
 		F1770F161E8F9F6300467645 /* NewScrollView_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1770F141E8F9F6300467645 /* NewScrollView_3.cpp */; };
 		F1770F1A1E94D1B300467645 /* NewTableView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1770F191E94D1B300467645 /* NewTableView.cpp */; };
 		F1770F1D1E94D33C00467645 /* TestTableView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1770F1C1E94D33C00467645 /* TestTableView.cpp */; };
@@ -657,6 +658,8 @@
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F17598321E9B713E00ABF4D0 /* NewTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewTableViewCell.h; path = NewTableView/NewTableViewCell.h; sourceTree = "<group>"; };
 		F17598331E9B714D00ABF4D0 /* NewTableViewCell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NewTableViewCell.cpp; path = NewTableView/NewTableViewCell.cpp; sourceTree = "<group>"; };
+		F17598351E9B8B1A00ABF4D0 /* NewTableView_1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NewTableView_1.cpp; path = NewTableView/NewTableView_1.cpp; sourceTree = "<group>"; };
+		F17598361E9B8B1A00ABF4D0 /* NewTableView_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewTableView_1.h; path = NewTableView/NewTableView_1.h; sourceTree = "<group>"; };
 		F1770F141E8F9F6300467645 /* NewScrollView_3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NewScrollView_3.cpp; path = NewScrollView/NewScrollView_3.cpp; sourceTree = "<group>"; };
 		F1770F151E8F9F6300467645 /* NewScrollView_3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewScrollView_3.h; path = NewScrollView/NewScrollView_3.h; sourceTree = "<group>"; };
 		F1770F181E94D19400467645 /* NewTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewTableView.h; path = NewTableView/NewTableView.h; sourceTree = "<group>"; };
@@ -1755,6 +1758,8 @@
 		F1770F171E8FAFA400467645 /* NewTableView */ = {
 			isa = PBXGroup;
 			children = (
+				F17598351E9B8B1A00ABF4D0 /* NewTableView_1.cpp */,
+				F17598361E9B8B1A00ABF4D0 /* NewTableView_1.h */,
 				F1770F191E94D1B300467645 /* NewTableView.cpp */,
 				F1770F181E94D19400467645 /* NewTableView.h */,
 				F17598331E9B714D00ABF4D0 /* NewTableViewCell.cpp */,
@@ -4056,6 +4061,7 @@
 				F1EC24411CA154CC00B14C9C /* CCArray.cpp in Sources */,
 				F1EC24A21CA154CC00B14C9C /* CCImageCommonWebp.cpp in Sources */,
 				F1EC19571CA1547A00B14C9C /* LabelAtlasReader.cpp in Sources */,
+				F17598371E9B8B1A00ABF4D0 /* NewTableView_1.cpp in Sources */,
 				F1EC19161CA1547A00B14C9C /* CCScale9SpriteLoader.cpp in Sources */,
 				F1EC19691CA1547A00B14C9C /* CCControlHuePicker.cpp in Sources */,
 				F1EC194F1CA1547A00B14C9C /* UITextField.cpp in Sources */,

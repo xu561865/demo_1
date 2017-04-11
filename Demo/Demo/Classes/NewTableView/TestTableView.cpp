@@ -7,7 +7,18 @@
 //
 
 #include "TestTableView.h"
+
+//#define NEW_TABLE_VIEW
+#ifdef NEW_TABLE_VIEW
 #include "NewTableView.h"
+#define NewTableView NewTableView
+#endif
+
+#define NEW_TABLE_VIEW_1
+#ifdef NEW_TABLE_VIEW_1
+#include "NewTableView_1.h"
+#define NewTableView NewTableView_1
+#endif
 
 #define TEST_SCROLL_VIEW_SIZE_X 400
 #define TEST_SCROLL_VIEW_SIZE_Y 600
@@ -63,7 +74,6 @@ void TestTableView::onEnter()
     
 #define NEW_TABLE_VIEW
 #ifdef NEW_TABLE_VIEW
-    
     NewTableViewAll * scroll = NewTableViewAll::create(ccc4(0, 100, 0, 255));
     scroll->ignoreAnchorPointForPosition(false);
     scroll->setAnchorPoint(ccp(0.5, 0.5));
@@ -71,7 +81,7 @@ void TestTableView::onEnter()
     this->addChild(scroll);
     
 #endif
-    
+
     CCLayerColor::onEnter();
 }
 
@@ -107,6 +117,7 @@ bool NewTableViewAll::init(ccColor4B c4)
     }
     
     NewTableView* tableView = NewTableView::create(this, CCSizeMake(TEST_SCROLL_VIEW_SIZE_X, TEST_SCROLL_VIEW_SIZE_Y));
+
     tableView->setDirection(extension::kCCScrollViewDirectionVertical);
     tableView->setAnchorPoint(ccp(0, 0));
     tableView->setPosition(ccp(0, 0));
